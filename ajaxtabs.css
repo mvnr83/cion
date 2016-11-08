@@ -1,0 +1,79 @@
+/* ######### CSS for Shade Tabs. Remove if not using ######### */
+
+.shadetabs1{
+padding: 3px 0;
+margin-left: 0;
+margin-top: 10px;
+margin-bottom:18px;
+font: bold 12px Verdana;
+list-style-type: none;
+text-align: left; /*set to left, center, or right to align the menu as desired*/
+}
+
+.shadetabs1 li{
+display: inline;
+margin: 0;
+}
+
+.shadetabs1 li a{
+float:left;
+   background: url(images/tab-left.gif) no-repeat left top;
+   margin:0;
+   padding:0 5px 0 5px;
+   text-decoration:none;
+   -moz-outline:none;
+   outline:none;
+   cursor:pointer;
+}
+
+.shadetabs1 li a span{
+ float:left;
+   display:block;
+   background: url(images/tab-right.gif) no-repeat right top;
+   padding:8px 15px 8px 8px;
+   color: #034974;
+   cursor:pointer;
+}
+
+.shadetabs1 li a:visited{
+color: #2d2b2b;
+}
+.shadetabs1 li a:hover{
+ background-position:0% -32px;
+color: #000000;
+text-decoration:none;
+}
+
+.shadetabs1 li a:hover span{
+background-position:100% -32px;
+color: #000000;
+text-decoration:none;
+
+}
+
+.shadetabs1 li a.selected{ /*selected main tab style */
+/*position: relative;*/
+top: 5px;
+color:#000000;
+}
+
+.shadetabs1 li a.selected{ /*selected main tab style */
+background-position:0% -32px;
+border-bottom-color: white;
+color:#000000;
+}
+
+.shadetabs1 li a.selected span{ /*selected main tab style */
+background-position:100% -32px;
+border-bottom-color: white;
+color:#000;
+}
+
+.shadetabs1 li a.selected:hover{ /*selected main tab style */
+text-decoration: none;
+}
+
+.shadetabs1 li a.selected:hover span{ /*selected main tab style */
+text-decoration: none;
+}
+

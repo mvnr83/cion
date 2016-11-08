@@ -1,0 +1,14 @@
+
+
+<?php
+ini_set("zlib.output_compression", 4096);
+
+
+
+ini_set("Max_input_time",1000)
+ini_set("upload_max_filesize",1500M)
+ini_set("post_max_size",2000M)
+ini_set("memory_limit",640M)
+ini_set("Max_execution_time",1800)
+
+?>
