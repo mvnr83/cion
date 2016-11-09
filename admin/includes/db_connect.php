@@ -1,0 +1,1 @@
+<?php//mysql_connect("mysql:/tmp/mysql.sock","root","Chakri73");mysql_connect("localhost","root","");mysql_select_db("cionsystems");?>
