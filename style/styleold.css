@@ -1,0 +1,604 @@
+*{
+margin:0px auto;
+padding:0px;
+}
+body{
+background:url(../images/topborder.gif) repeat-x top left;
+font:normal 11px Arial, Helvetica, sans-serif;
+color:#333333;
+line-height:14px;
+behavior:url("csshover3.htc");
+}
+
+
+a,input{
+outline:none;
+-moz-outline:none;
+}
+a
+{
+color: #333333;
+text-decoration:none ;
+}
+
+a:hover
+{
+text-decoration:underline ;
+}
+img, div,span, input,a { behavior: url("iepngfix.htc") }
+img {
+	border: none;
+}
+h2{
+color:#333333;
+padding:10px;
+font-size:16px;
+}
+h2 span{
+
+color:#fc9023;
+}
+h3{
+color:#f66414;
+padding:5px;
+font-size:14px;
+font-weight:bold;
+}
+h4{
+color:#333333;
+padding:5px;
+font-size:12px;
+font-weight:bold;
+}
+h5{
+color:#333333;
+padding:5px;
+font-size:14px;
+font-weight:bold;
+}
+p{
+line-height:16px;
+margin-bottom:5px;
+padding:10px;
+}
+.olink a:link,.olink a:visited
+{
+font-weight:bold;
+color:#fb6e40;
+text-decoration:none;
+}
+.olink a:hover{
+background-color:#fb6e40;
+color:#FFFFFF;
+text-decoration:none;
+padding:2px;
+}
+.error{
+font-weight:bold;
+color:#CC3300;
+}
+.success{
+font-weight:bold;
+color:#009933;
+}
+.txtfield{
+border:1px solid #CCCCCC;
+padding:2px;
+font-size:11px;
+width:180px;
+}
+.txtfield:focus,.txtfield:active{
+border:1px solid #333333;
+padding:2px;
+font-size:11px;
+width:180px;
+}
+.selfield{
+border:1px solid #CCCCCC;
+padding:2px;
+font-size:11px;
+width:185px;
+}
+.selfield:focus,.selfield:active{
+border:1px solid #333333;
+padding:2px;
+font-size:11px;
+width:185px;
+}
+.txtarea{
+border:1px solid #CCCCCC;
+padding:2px;
+font-size:11px;
+width:180px;
+}
+.txtarea:focus,.txtarea:active{
+border:1px solid #333333;
+padding:2px;
+font-size:11px;
+width:180px;
+}
+
+/*HEADER CSS*/
+.toplinks{
+background:url(../images/toplinksbg.gif) no-repeat top;
+height:18px;
+}
+.toplinks a:link,.toplinks a:visited
+{
+font:normal 11px Verdana, Arial, Helvetica, sans-serif;
+}
+
+.searchtxt{
+background-color:transparent;
+border:0px solid #999999;
+width:108px;
+padding:4px;
+font:normal 11px Arial, Helvetica, sans-serif;
+color:#666666;
+}
+.searchtxt_bg{
+background:url(../images/searchtxt.gif) no-repeat left center;
+}
+
+/*NAVIGATION CSS*/
+.navigation{
+background:url(../images/navibg.gif) repeat-x left;
+border:1px solid #cccccc;
+height:33px;
+}
+
+.borderwhite {
+	background:url(../images/navisep.gif) no-repeat;
+}
+
+/*FLASHBOX CSS*/
+.flashbox{
+background:#3d3d3d url(../images/flashbg.jpg) no-repeat;
+height:400px;
+}
+
+/*SOLUTIONS CSS*/
+.solutions{
+background:url(../images/solutionsbg.gif) repeat-x left;
+height:162px;
+}
+.solutions h3{
+color:#333333;
+font-size:14px;
+}
+.solutions td{
+padding:20px;
+}
+#list  {
+	float: left;
+	text-align: center;
+	margin-left:10px;
+	}
+#list ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: url(none) none;
+	
+}
+#list li {
+	display: block;
+	text-align: left;
+	padding:3px 5px 3px 5px;
+}
+#list li img {
+
+	padding:0px 10px 0px 0px;
+}
+#list li:hover {
+	display: block;
+	text-align: left;
+	padding:3px 5px 3px 5px;
+	background-color:#d5d5d5;
+	
+}
+#list a:link,#list a:visited {	
+	font-weight: normal;
+	font-size: 11px;
+	text-align: left;
+	color:#626262;
+	padding:3px 5px 3px 5px;	
+}
+#list a:hover{
+text-decoration:none;
+color:#000000;
+background-color:#d5d5d5;
+}
+
+
+
+.greybox{
+border:2px solid #eaeaea;
+padding:10px;
+}
+.clogo{
+padding-right:8px;
+padding-left:8px;
+}
+
+.greybox h2{
+font-size:18px;
+background:url(../images/sidetitlebg.gif) no-repeat left 27px;
+color:#333333;
+}
+/*FOOTER CSS*/
+.footer{
+background:url(../images/footerlinbg.gif) repeat-x left;
+height:34px;
+}
+.copyright{
+background:url(../images/copyrightbg.gif) repeat-x left top;
+height:33px;
+text-align:center;
+color:#FFFFFF;
+}
+.copyright dd{
+padding-top:10px;
+}
+
+
+
+
+
+
+
+#menuwrapper {
+background:url(../images/newnavibg.gif) repeat-x left;
+border:1px solid #cccccc;
+height:33px;
+
+}
+/*Clears the floated menu items.
+Assigned to a BR tag placed just before
+menuwrapper's closing DIV tag*/
+.clearit {
+	clear: both;
+	height: 0;
+	line-height: 0.0;
+	font-size: 0;
+}
+/*
+p7menubar is the root UL and p7menubar ul applies to all the sub-menu ULs.
+We set padding and margin to zero to eliminate all indentation, turn bullets off,
+and set a font-family different from the global font-family declared for the
+body element above. This sets font for just the menu. Do not add a font-size here.
+*/
+#p7menubar, #p7menubar ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+/*
+Root-Level Links.  Do not change the first two properties.
+Adjust padding values to make the root links taller and to offset them
+from the left and right edges of the link box. The border right creates a
+separator between links. Font-size is set here and will apply to all menu levels.
+Font color is set to light gray.
+*/
+#p7menubar a {
+	display: block;
+	text-decoration: none;
+	padding: 9px 30px 9px 30px;
+	border-right: 1px solid #ccc;
+	font-family:Helvetica,Arial,sans-serif;
+	font-size: 12px;
+	color:#626262;
+	font-weight:bold;
+	text-align:center;
+}
+/*
+Class assigned to those Root-Level links that have associated Sub-Menus.
+The top and bottom padding assigned this element must be the same as
+that assigned to the p7menubar a element. The right padding is increased
+to accomodate the display of background image depicting a downward
+pointing arrow.
+*/
+#p7menubar a.trigger {
+	padding: 9px 30px 9px 30px;
+	background-image: url(../images/p7PM_dark_south.gif);
+	background-repeat: no-repeat;
+	background-position: 95px 12px ;
+}
+/*
+The Root-Level list items. Floating left allows
+them to appear horizontally. Width is for IE5 Mac. The last rule in
+this style sheet will set the width for this element to auto for all
+other browsers - hiding it from IE5 Mac. The width is proportional.
+As you add and edit root menu items, you will need to test this width
+to ensure it is wide enough to accomodate all text.
+*/
+#p7menubar li {
+	float: left;
+	width: 90px;
+}
+/*
+Sets width for Sub-Menu box and the List Items inside - in proportional em units. 
+This allows the sub-menu width to expand if users resize the text in their browsers.
+*/
+#p7menubar li ul, #p7menubar ul li  {
+	width: 180px;
+}
+/*
+The sub-menu links. We set color and turn off the right border, which
+would otherwise be inherited from the root link rule. We set top and 
+bottom padding less than the root items and increas the left padding
+to indent the sub-menu links a small amount in from the root links.
+*/
+#p7menubar ul li a  {
+	color: #333;
+	border-right: 0;
+	padding: 5px 5px 5px 5px;
+	font-weight:normal;
+	text-align:left;
+	display:block;
+}
+/*
+Sub-Menu Unordered Lists describes each dropdown sub-menu grouping. 
+Positioned Absolutely to allow them to appear below their root trigger.
+Set to display none to hide them until trigger is moused over.
+Background Color must be set or problems will be encountered in MSIE.
+Right and bottom borders are set to simulate a raised look.
+A gradient background image is assigned.
+*/
+#p7menubar li ul {
+	position: absolute;
+	display: none;
+	background:#e7e7e7 url(../images/submenubg.gif) repeat-x top left;
+	border-right: 1px solid #999999;
+	border-bottom: 1px solid #999999;
+	
+}
+/*
+Changes the Text color and background color when the Root-Level
+menu items are moused over. The second selector sets color and background
+when Root-Level items are accessed with the keyboard tab key. The third
+selector sets an active state to support keyboard access in MSIE. The fourth 
+selector is assigned to IE5 and IE6 Windows via the P7_ExpMenu script.
+Note that IE7 supports hover on elements other than links and so behaves
+like Firefox, Opera, and Safari - making the menu operable even if JavaScript
+is not enabled.
+*/
+#p7menubar li:hover a, #p7menubar a:focus,
+#p7menubar a:active, #p7menubar li.p7hvr a {
+	color: #000000;
+	background-color:#CCCCCC;
+	
+}
+/*
+Set the Sub-Menu UL to be visible when its associated
+Root-Level link is moused over. The second selector is 
+assigned to IE5 and IE6 via the P7_ExpMenu script.
+*/
+#p7menubar li:hover ul, #p7menubar li.p7hvr ul {
+	display: block;
+}
+/*
+Sets the Text color of the Sub-Level links when the Root-Level
+menu items are moused over. The second selector is 
+assigned to IE5 and IE6 via the P7_ExpMenu script.
+The color set should march the normal Sub-Level link color
+in the rule: #p7menubar ul li a. The background color must be
+transparent to allow the underlying gradient background on the UL
+to show through.
+*/
+#p7menubar li:hover ul a, #p7menubar li.p7hvr ul a {
+	color: #000000;
+	background-color: transparent;
+}
+/*
+The normal hover class for Sub-Level links. The Important directive
+is required for older browsers. We set a background color, which shows
+over the gradient background. We set text color to white.
+*/
+#p7menubar ul a:hover {
+	background-color: #606060!important;
+	color: #FFFFFF!important;
+	display:block;
+}
+/* The single backslash \ character inside this comment
+causes IE5 Mac to ignore the following rule, which allows other
+browsers to render top-level menu items to their natural width.
+Do not edit this rule in any way. */
+#p7menubar li {width: auto;}
+
+
+/*dock menu*/
+#studies_dock {
+	position: relative; 
+	height: 60px; 
+	text-align: center;
+	width: 100%;
+	/*height: 220px;*/
+	/*bottom: 0px;
+	position: absolute;
+	left: 0px;*/
+}
+.dock-container {
+	position: absolute;
+	bottom: 0;
+	margin: 0;
+	height: 60px;
+	/*background: url(images/dock-bg.gif);*/
+	padding-left: 20px;
+}
+li.dock-item {
+	display: block;
+	font: bold 12px Arial, Helvetica, sans-serif;
+	width: 40px; 
+	color: #000; 
+	bottom: 0px; 
+	position: absolute;
+	text-align: center;
+	text-decoration: none;
+}
+li.dock-item a {
+	display: block;
+	padding: 0 5px 0 0;
+}
+.dock-item div {
+	display: none;
+	position: absolute;
+	/*top: -65px;*/
+	bottom: 105%;
+	left: -45px;
+	width: 200px;
+	height:63px;
+	background: url(../images/pop.png) top no-repeat;
+	padding-top: 10px;
+	/*padding-left: 20px;*/
+}
+
+.dock-item img {
+	display: block;
+	border: none; 
+	/*padding: 0 5px;*/
+	/*margin: 5px 10px 0px;*/ 
+	width: 100%; 
+	cursor: pointer;
+}
+
+/*errormessages*/
+#msg {display:none; position:absolute; z-index:1005; background:url(../images/msg_arrow.gif) left center no-repeat; padding-left:7px}
+#msgcontent {display:block; background:#f3e6e6; border:2px solid #924949; border-left:none; padding:5px; min-width:150px; max-width:250px}
+
+/*popup light box*/
+	.black_overlay{
+			display: none;
+			position: fixed;
+			top: 0px;
+	left: 0px;
+			width: 100%;
+			height: 100%;
+			background-color: black;
+			z-index:100;
+			-moz-opacity: 0.8;
+			opacity:.80;
+			filter: alpha(opacity=80);
+	
+		}
+		.white_content {
+			display: none;
+			position: absolute;
+			top: 35%;
+			left: 35%;
+			width: 280px;
+			height: 140px;
+			padding: 5px;
+			border: 2px solid orange;
+			background-color: white;
+			z-index:1002;
+			overflow: auto;
+		}
+
+/*product list*/
+.protitle{
+color:#333333;
+padding:10px;
+font-size:16px;
+border-bottom:2px solid #1ea3d6;
+}
+.headtitle{
+color:#333333;
+padding:10px;
+font-size:13px;
+background-color:#f3f3f3;
+}
+
+.titlebg{
+background:url(../images/headtopbg.gif) repeat-x left top;
+height:32px;
+padding-right:10px;
+}
+.succeed{
+border:2px solid #eaeaea;
+padding:10px;
+}
+.succeed h2{
+font-size:16px;
+background:url(../images/sidetitlebg.gif) no-repeat left 27px;
+color:#fc9023;
+}
+.succeed ul{
+list-style:url(../images/bulletarrow.gif) outside;
+padding:5px 20px 5px 45px;
+}
+.succeed ul li{
+padding:3px 0px 2px 0px;
+}
+.system{
+border:2px solid #eaeaea;
+padding:10px;
+background-color:#f5f5f5;
+}
+.system h3{
+font-size:14px;
+color:#333333;
+}
+.list{
+margin-left:20px;
+}
+.vline{
+background:url(../images/vline.gif) repeat-x bottom;
+}
+.hrline{
+background:url(../images/hrline.gif) repeat-y right;
+}
+
+.head-list{
+margin-left:10px;
+
+}
+.head-list p{
+margin:0px;
+padding:5px 0px 5px 0px ;
+}
+
+.head-list h3{
+font-size:14px;
+color:#333333;
+}
+.head-list ul{
+margin-left:20px;
+padding:5px 0px 5px 0px ;
+}
+.related{
+width:300px;border:2px solid #CCCCCC;background:url(../images/divbg.gif) repeat-x left top;
+}
+.list-points{
+padding:5px 40px 5px 40px;
+}
+.list-points ul li{
+padding:5px 0px 5px 0px;
+}
+
+
+
+.login h2{
+margin:0px;
+font:bold 16px Arial, Helvetica, sans-serif;
+padding:5px;
+color:#333333;
+}
+.login{
+background:#dddbdb url(../images/registerbg.gif) repeat-x left top;
+padding:5px;
+
+}
+.innerlogin{
+background-color:#FFFFFF;
+color:#333333;
+padding:3px;
+font:normal 11px Arial, Helvetica, sans-serif;
+
+}
+
+
+.grid{
+border:1px solid #CCCCCC;
+border-collapse:collapse;
+}

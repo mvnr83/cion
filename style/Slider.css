@@ -1,0 +1,34 @@
+﻿.headerslider
+{
+    position:relative;
+    border:solid 0px #ccc;
+    border-bottom:solid 6px #669BCD;
+    height:400px;
+    width: 900px;
+    overflow:hidden;
+    background-color: #fff;
+}
+ul.slider 
+{
+	margin:0;
+	padding:0px;
+	margin-right:0px;
+	list-style: none outside none;
+	cursor:pointer;
+}
+ul.slider li{ float:left; height:400px;  width:900px; display:inline;}	
+ul.slider li.slide1 { background:url(../images/slide1.jpg) no-repeat center center; }
+ul.slider li.slide2 { background:url(../images/slide2.jpg) no-repeat center center; }
+ul.slider li.slide3 { background:url(../images/slide3.jpg) no-repeat center center; }
+ul.slider li.slide4 { background:url(../images/slide4.jpg) no-repeat center center; }
+ul.slider li.slide5 { background:url(../images/slide5.jpg) no-repeat center center; }
+ul.slider li.slide6 { background:url(../images/slide6.jpg) no-repeat center center; }
+ul.slider li.slide7 { background:url(../images/slide7.jpg) no-repeat center center; }
+
+.navigator{position:absolute; z-index:8; top:370px; left:750px; width:200px; line-height:30px; border:solid 0px #ccc; opacity:0.6; filter:alpha(opacity=60);}
+.navigator div{ height:10px; width:10px; cursor:pointer; border:solid 1px #ccc; float:left; margin-left:4px; margin-right:4px; background-color:#fff;}
+.feathereffect{position:absolute; z-index:5; top:360px; height:30px; width:900px; background-color:#fff;border:solid 0px #ff0000; opacity:0.3;  filter:alpha(opacity=30);}
+.textshadow
+{
+     display:none; font-size:30px; font-family:"Bookman Old Style", "Century Gothic"; font-weight:bold; color:#fff; text-shadow: 0px 0px 10px #000;
+}
