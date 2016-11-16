@@ -151,7 +151,8 @@ function fnOrder(id,or_id)
 										</select>
 										</td>
 										<td class="aril" align="center">{if $array[list].status == 'Active'}<a href="javascript:changestat('{$array[list].id}','Inactive');" class="Sub_menu">Make In Active</a>{else}<a href="javascript:changestat('{$array[list].id}','Active');" class="Sub_menu">Make Active</a>{/if}</td>
-										<td class="aril" align="center"><img src="images/b_view.png"  width="16"/ onclick="javascript:showproduct('{$array[list].id}')" style="cursor:hand" title="View Product Details"> / <img src="images/b_edit.png" width="20" onclick="javascript:editproduct('{$array[list].id}')" style="cursor:hand"  title="Edit Product"/></td>
+                                                                                <td class="aril" align="center"><img src="images/b_view.png"  width="16"/ onclick="javascript:showproduct('{$array[list].id}')" style="cursor:pointer" title="View Product Details"> / <img src="images/b_edit.png" width="20" onclick="javascript:editproduct('{$array[list].id}')" style="cursor:pointer"  title="Edit Product"/> / <a href="subscription_plans.php?product_id={$array[list].id}"><img src="images/subscription_plans.png" width="20" style="cursor:pointer"  title="View Subscription Plans"/></a></td>
+                                                                                
 										<td class="aril" align="center"><img src="images/b_drop.png" onclick="javascript:delproduct('{$array[list].id}')" style="cursor:hand" title="Delete Product" /></td>
 									</tr>
 							 {/section}

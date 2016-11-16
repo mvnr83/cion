@@ -10,6 +10,9 @@ $smarty->compile_dir = 'smarty/templates_c/';
 $smarty->config_dir = 'smarty/configs/';
 $smarty->cache_dir = 'smarty/cache/';
 
+$smarty->assign("SITEURL",'http://localhost/cionsystems/trunk/admin/');
+
 $permissions = $_SESSION['permissions'];
+
 $smarty->assign("permissions",$permissions);
 ?>

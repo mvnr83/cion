@@ -10,6 +10,7 @@ $smarty->compile_dir = 'smarty/templates_c/';
 $smarty->config_dir = 'smarty/configs/';
 $smarty->cache_dir = 'smarty/cache/';
 
+$smarty->assign("SITEURL",'http://localhost/cionsystems/trunk/');
 $smarty->assign("year",date('Y'));
 ?>
 
