@@ -2,6 +2,7 @@
 <script language="javascript" type="text/javascript">
 function validate()
 {
+    
 	var frm = document.form1;
 	if(frm.email.value == '')
 	{
@@ -39,9 +40,9 @@ function validate()
 		return false;
 	}else if(frm.pwd.value.length > 0)
 	{
-            var charpos = frm.pwd.value.search("[^A-Za-z0-9\-_&@]");  
+            var charpos = frm.pwd.value.search("[^A-Za-z0-9\-_&%$!#@]");  
               if(charpos >= 0) {
-		alert("Only alpha-numeric characters allowed in the Password. \n Allowed Special characters are -, _, &, @, %");
+		alert("Only alpha-numeric characters allowed in the Password. \n Allowed Special characters are -, _, &, @, %, $, #, !");
 		frm.pwd.focus();
 		return false;
             }
@@ -125,11 +126,11 @@ function validate()
 
 	}
 
-*/	else
-	{
-		frm.act.value = 'edit';
-		return true;
-	}
+*/	
+        
+        frm.act.value = 'edit';
+        return true;
+	
 }
 </script>
 {/literal}

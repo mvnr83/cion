@@ -13,6 +13,7 @@ else
 	$msg = "you are not logged in";
 	exit(0);
 }
+
 if($_POST[act] == 'edit')
 {
 	 $sql_up = "update users set email = '".$_POST[email]."',first_name = '".$_POST[fname]."',last_name = '".$_POST[lname]."',
@@ -22,6 +23,7 @@ if($_POST[act] == 'edit')
 	$res_up = @mysql_query($sql_up);
 	if(@mysql_affected_rows()>0)
 	{
+            exit('sssss');
 		$msg = "Details Updated Successfully";
 		$smarty->assign("msg",$msg);
 	}

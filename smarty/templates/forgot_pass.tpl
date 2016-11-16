@@ -138,7 +138,7 @@ function check()
 
           <tr>
 
-            <td align="center" valign="top" class="ver11" colspan="3"><strong> An Email has been sent to your mail box ({$smarty.session.session_email})</strong>  
+            <td align="center" valign="top" class="ver11" colspan="3"><strong> Password has been sent to your email address ({$smarty.session.session_email})</strong>  
 
     
 

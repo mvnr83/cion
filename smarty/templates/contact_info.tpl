@@ -2,6 +2,7 @@
 <script language="javascript" type="text/javascript">
 function validate()
 {
+    alert('pppp');
 	var frm = document.form1;
 	if(frm.email.value == '')
 	{
@@ -34,9 +35,17 @@ function validate()
 		return false;
 	}else if(frm.pwd.value.length < 6)
 	{
-		alert("Min length for password is 6 ");
+		alert("Min length for password is 6");
 		frm.pwd.focus();
 		return false;
+	}else if(frm.pwd.value.length > 0)
+	{
+            var charpos = frm.pwd.value.search("[^A-Za-z0-9\-_&%$!#@]");  
+              if(charpos >= 0) {
+		alert("Only alpha-numeric characters allowed in the Password. \n Allowed Special characters are -, _, &, @, %, $, #, !");
+		frm.pwd.focus();
+		return false;
+            }
 	}
 	else if(frm.country.value == '')
 	{
@@ -119,6 +128,7 @@ function validate()
 
 */	else
 	{
+            alert('elase');
 		frm.act.value = 'edit';
 		return true;
 	}
@@ -219,7 +229,7 @@ function validate()
                   </tr>
                   <tr>
                     <td align="right" valign="middle" class="ver11"><span class="error">* </span>Password:</td>
-                    <td align="left" valign="middle"><input name="pwd" type="password" class="txtfield" value="{$array[0].password}" readonly="true" /></td>
+                    <td align="left" valign="middle"><input name="pwd" type="password" class="txtfield" value="{$array[0].password}"  /></td>
                     <td align="right" valign="middle" class="ver11" nowrap="nowrap">Address 2 :</td>
                     <td align="left" valign="middle"><input name="address2" type="text" class="txtfield" value="{$array[0].address2}" /></td>
                   </tr>

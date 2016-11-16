@@ -205,7 +205,7 @@ function V2validateData(strValidateStr,objValue,strError)
            }//case alphanumeric
         case "alphanumericsplchar": 
            { 
-              var charpos = objValue.value.search("[^A-Za-z0-9\-_&%@]"); 
+              var charpos = objValue.value.search("[^A-Za-z0-9\-_&%$!#@]"); 
               if(objValue.value.length > 0 &&  charpos >= 0) 
               { 
                if(!strError || strError.length ==0) 

@@ -2,15 +2,20 @@
 require_once("includes/application_start.php");
 require_once("admin/includes/db_connect.php");
 include("includes/login_check.php");
+
 if($_POST[act] == 'edit')
 {
+    
 	 $sql_up = "update users set email = '".$_POST[email]."',first_name = '".$_POST[fname]."',last_name = '".$_POST[lname]."',
 				country = '".$_POST[country]."',company = '".$_POST[company]."',job_title = '".$_POST[jtitle]."',
 				industry = '".$_POST[industry]."',address1 = '".$_POST[address1]."',address2 = '".$_POST[address2]."',city = '".$_POST[city]."',
-				state = '".$_POST[state]."',zipcode = '".$_POST[pcode]."',phone_no = '".$_POST[phone]."' where id = '".$session[1]."'";
+				state = '".$_POST[state]."',zipcode = '".$_POST[pcode]."',phone_no = '".$_POST[phone]."', password='".$_POST['pwd']."' where id = '".$session[1]."'";
+         
 	$res_up = @mysql_query($sql_up);
+        
 	if(@mysql_affected_rows()>0)
 	{
+            
 		$msg = "Details Updated Successfully";
 		$smarty->assign("msg",$msg);
 	}
