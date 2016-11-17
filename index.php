@@ -75,7 +75,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
  </ul></div>
  </div>
 <?php } ?>
- <div class="cartBlock"><span class="itemcount">6</span>Cart</div>
+ <div class="cartBlock"><span class="itemcount">0</span>Cart</div>
  
  
  
