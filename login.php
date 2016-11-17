@@ -41,6 +41,7 @@ if($_POST['uname'] != '')
 		$result = @mysql_query($in);	
 
 		$_SESSION['username'] = $row[user_name];
+                $_SESSION['lname'] = $row['last_name'];
 
 		$_SESSION['id'] = $row[id];
 

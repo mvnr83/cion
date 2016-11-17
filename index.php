@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,18 +54,44 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
 <!--header start-->
 <header class="head-section container" style="background:#FFF; border:#fff;">
   <div class="navbar navbar-default  ">
-    <div class="row pull-right" style="padding-top:10px;">
-      <div  class="col-md-6 col-sm-6 col-xs-6 ">
-      <center> <a href="http://cionsystems.com/buyitnow.php" class="btn-link">Request for a Quote</a></center>
+    <div class="col-md-7 pull-right topbtn">
+     
+     
+      <div class="registerwrapper"><div  class="btn-wrapper">
+     
+<a href="http://cionsystems.com/buyitnow.php" class="btn-request">Request for a Quote</a>
+<?php if(!isset($_SESSION['username']) && $_SESSION['username'] == ''){ ?>
+ <a href="login.php" class="newlogin" title="Login"> LogIn</a> <a href="register.php" title="Signup" class="newRegister">Signup</a> 
+<?php } else { ?>
+ 
+ 
+ <div class="username"><span>Hi</span> <span class="UN"><?=ucfirst($_SESSION['lname'])?></span><em></em>
+ <div class="useraccountdd"><ul><li><a href="myaccount.php">Your Account</a></li>
+ <li><a href="myaccount.php">Your Orders</a></li>
+ <li><a href="myaccount.php">Your Downloads</a></li>
+ <li class="logoutNew"><a href="logout.php">Logout</a></li>
+ </ul></div>
+ </div>
+<?php } ?>
+ <div class="cartBlock"><span class="itemcount">6</span>Cart</div>
+ 
+ 
+ 
+ 
+ 
       </div>
-      <div class="form-group col-md-6 col-sm-6 col-xs-6">
+
+                        
+</div>
+
+   <!-- <div class="form-group col-md-6 col-sm-6 col-xs-6">
         <form action="#">
           <select class="form-control" id="sel1" style="background:#60b50f; color:#fff;">
             <option>--Free Tools--</option>
             <option><a href="downloadADDiagram.php" class="btn-link">Ad Diagram</a></option>
           </select>
         </form>
-      </div>
+      </div> --> 
      <div class="clearfix"></div>
     </div>
     
@@ -83,7 +110,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
       <ul class="nav navbar-nav">
         <li > <a href="index.php">Home </a> </li>
         <li class="dropdown"> 
-            <a class="dropdown-toggle" data-close-others="false" data-delay="0" onclick="fnRedirect(this);" 
+            <a class="dropdown-toggle" data-close-others="false" data-delay="0" onClick="fnRedirect(this);" 
         data-hover="dropdown" data-toggle="dropdown" href="http://www.cionsystems.com/solution_all.php">Solutions <i class="fa fa-angle-down"></i> </a>
           <ul class="dropdown-menu">
             <li><a href="cmt.php.php">DirSync for O365 | Azure</a></li>
@@ -203,7 +230,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
             <!--<div class="span6">
             <h2 ><a href="http://cionsystems.com/news-events.php" style="color:#F60; font-weight:bold;">News & Events</a></h2>
             <ul class="productHeadging">
-              <li><a href="http://cionsystems.com/press/index-18.html"> August 8, 2014: CionSystemsâ"¢ and WSIPC Enter Into 
+              <li><a href="http://cionsystems.com/press/index-18.html"> August 8, 2014: CionSystemsï¿½"ï¿½ and WSIPC Enter Into 
               Partnership For Providing Low Cost Identity and Access Management Software For School Districts</a> </li>
               <li><a href="http://cionsystems.com/news.php#n1">Data Migration Management for OneDrive</a></li>
               <li><a href="http://cionsystems.com/press/index-17.html">June 19, 2014: CionSystems Releases Active Directory 
