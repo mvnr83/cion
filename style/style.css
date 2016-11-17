@@ -1451,3 +1451,59 @@ background-color:#f3f3f3;
 }
 
 a.news:hover{text-decoration:none}
+
+.registerwrapper{ float:right;}
+.btn-request:before,.newlogin:before,.newRegister:before,.username em, .username:before, .cartBlock:before{ background:url("../img/sprite.png") no-repeat; content:''; position:absolute; top:0; left:0;opacity:.6}
+.btn-request:before{ background-position:-20px -4px; width:15px; height:14px;}
+.topbtn{    padding-top: 10px;    padding-bottom: 10px;}
+
+.newlogin:before{ background-position:-40px -4px; width:9px; height:11px; top:1px}
+.newRegister:before{ background-position:-3px -26px; width:9px; height:12px;}
+.registerwrapper .username:before{ background-position:-2px -1px; width:13px; height:17px; top:-2px}
+.cartBlock:before{ background-position:-17px -25px; width:20px; height:16px; top:-2px}
+
+.registerwrapper .username{ padding-left:22px; cursor:pointer}
+.cartBlock{ padding-left:25px;}
+
+.itemcount{ color:#cf8306;    position: absolute;
+    left: 8px;
+    top: -6px;
+    font-weight: 600;}
+.registerwrapper .btn-wrapper > a{ position:relative; color:#647781; font:normal 13px arial; margin-left:15px; float:left}
+
+.btn-request{ padding-left:20px}
+.newlogin{ padding-left:14px}
+.newRegister{ padding-left:14px}
+
+.registerwrapper .username,  .registerwrapper .cartBlock{ float:left; position:relative;color:#647781; font:normal 13px arial; margin-left:15px; float:left}
+
+.useraccountdd{ position:absolute; top:16px; padding-top:10px;z-index:999; min-width:200px; right:0;  display:none}
+
+
+.useraccountdd ul{background:#fff; border:1px solid #bbbab8; border-radius:4px;  width:100%; float:left; position:relative }
+
+
+
+.useraccountdd ul:after{content:''; border-bottom:12px solid #ccc; border-right:12px solid transparent; border-left:12px solid transparent; content:''; position:absolute; top:-12px; right:10px} 
+
+
+.useraccountdd ul,.useraccountdd ul li{ list-style:none; margin:0; padding:0;}
+.useraccountdd ul li{ padding:6px 0; float:left; width:100%}
+
+.username:hover .useraccountdd{ display:block}
+
+
+
+
+.useraccountdd a{ color:#2b5c75; margin-left:10px;}
+.username em{ width:8px; height:4px; background-position:-43px -29px; float:left; display:block; position:static; margin-top:7px}
+.username span{ float:left; margin-right:4px;}
+.username span.UN{ max-width:100px; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;}
+	.cartBlock{ cursor:pointer}
+	.registerwrapper .btn-wrapper > a:hover, .username:hover,.cartBlock:hover{ color:#000}
+	
+	.registerwrapper .btn-wrapper > a:hover:before, .username:hover:before, .cartBlock:hover:before{opacity:1}
+	
