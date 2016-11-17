@@ -12,5 +12,7 @@ $smarty->cache_dir = 'smarty/cache/';
 
 $smarty->assign("SITEURL",'http://localhost/cionsystems/trunk/');
 $smarty->assign("year",date('Y'));
+
+$smarty->assign("session_lname",$_SESSION['lname']);
 ?>
 
