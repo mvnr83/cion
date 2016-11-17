@@ -61,7 +61,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
      
       <div class="registerwrapper"><div  class="btn-wrapper">
      
-<a href="http://cionsystems.com/buyitnow.php" class="btn-request">Buy Now</a>
+<a href="buyitnow.php" class="btn-request">Buy Now</a>
 <?php if(!isset($_SESSION['username']) && $_SESSION['username'] == ''){ ?>
  <a href="login.php" class="newlogin" title="Login"> LogIn</a> <a href="register.php" title="Signup" class="newRegister">Signup</a> 
 <?php } else { ?>
