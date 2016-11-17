@@ -1,4 +1,6 @@
-<?php session_start(); ?>
+<?php 
+error_reporting(E_ALL^E_NOTICE);
+session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
