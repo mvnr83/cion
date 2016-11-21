@@ -61,16 +61,16 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
      
       <div class="registerwrapper"><div  class="btn-wrapper">
      
-<a href="buyitnow.php" class="btn-request">Buy Now</a>
+<a href="buyitnow.php" class="btn-request">Purchase Online</a>
 <?php if(!isset($_SESSION['username']) && $_SESSION['username'] == ''){ ?>
  <a href="login.php" class="newlogin" title="Login"> LogIn</a> <a href="register.php" title="Signup" class="newRegister">Signup</a> 
 <?php } else { ?>
  
  
  <div class="username"><span>Hi</span> <span class="UN"><?=ucfirst($_SESSION['lname'])?></span><em></em>
- <div class="useraccountdd"><ul><li><a href="myaccount.php">Your Account</a></li>
- <li><a href="myaccount.php">Your Orders</a></li>
- <li><a href="myaccount.php">Your Downloads</a></li>
+ <div class="useraccountdd"><ul><li><a href="myaccount.php">My Account</a></li>
+ <li><a href="myaccount.php">My Orders</a></li>
+ <li><a href="myaccount.php">My Downloads</a></li>
  <li class="logoutNew"><a href="logout.php">Logout</a></li>
  </ul></div>
  </div>
@@ -271,7 +271,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
 								<div class="services_inner">
 
 						  <div class="media_box">
-						<div  class="preloader" title="Pediatric Clinic"><span class="p_img_container"><img src="images/img1.png" title="Pediatric Clinic" alt="Pediatric Clinic" class="fullwidth wp-post-image" style="opacity: 1;"></span><div><ul><li>- GPO authoring, mangement and security workbench.</li>
+						<div  class="preloader" title=""><span class="p_img_container"><img src="images/img1.png" title="" alt="" class="fullwidth wp-post-image" style="opacity: 1;"></span><div><ul><li>- GPO authoring, management and security workbench.</li>
 
 <li>- Gives Active Directory administrators and security personnel's control of GPO changes.</li>
 <li>-  Migration of GPOs to other domain.</li>
@@ -293,23 +293,23 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
   <label><input type="radio" name="noofusers" >Up to 250 Users -- $780</label>
                                         <label><input type="radio" name="noofusers" >Up to 500 Users -- $1480</label>
                                         <label><input type="radio" name="noofusers" > Up to 750 Users -- $2080</label>
-                                         <label>750 or more Users <a href="javascript:;" class="raquote">Request A Quote</a></label>
+                                         <label>750 or more Users <a href="javascript:;" class="raquote">Contact Us</a></label>
 </div>
 
 
- <h5 class="tabing"><label><input type="radio" name="product"value="PRO"> Active Directory Change Notifier</label></h5>
+ <h5 class="tabing"><label><input type="checkbox" name="product"value="PRO"> Active Directory Change Notifier</label></h5>
  <div class="no-of-users" style="display:none">
-  <label><input type="radio" name="noofusersadc" >Up to 250 Users -- $480</label>
+  <label><input type="checkbox" name="noofusersadc" >Up to 250 Users -- $480</label>
                                         <label><input type="radio" name="noofusersadc" >Up to 500 Users -- $880</label>
                                         <label><input type="radio" name="noofusersadc" > Up to 750 Users -- $1280</label>
-                                         <label>750 or more Users <a href="javascript:;" class="raquote">Request A Quote</a></label>
+                                         <label>750 or more Users <a href="javascript:;" class="raquote">Contact Us</a></label>
 </div>
 
 
                                         
 										
                                             
-<div class=" innerbtn">                                             <a class="close">Close</a><a class="buybtn">Buy Now</a> </div>
+<div class=" innerbtn">                                             <a class="close">Close</a><a class="buybtn">Add to Cart</a> </div>
 										</div>
 									</div>
 
@@ -317,11 +317,11 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
 							</article>
 </div>
 <div class="col-xs-12 col-md-4">
-<article class="service">
+<article class="service ">
 								<div class="services_inner">
 
 						  <div class="media_box">
-						<div  class="preloader" title="Pediatric Clinic"><span class="p_img_container"><img src="images/img1.png" title="Pediatric Clinic" alt="Pediatric Clinic" class="fullwidth wp-post-image" style="opacity: 1;"></span><div><ul><li>- GPO authoring, mangement and security workbench.</li>
+						<div  class="preloader" title=""><span class="p_img_container"><img src="images/img1.png" title="" alt="" class="fullwidth wp-post-image" style="opacity: 1;"></span><div><ul><li>- GPO authoring, management and security workbench.</li>
 
 <li>- Gives Active Directory administrators and security personnel's control of GPO changes.</li>
 <li>-  Migration of GPOs to other domain.</li>
@@ -338,28 +338,28 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
                                         
                                         
                                         
- <h5 class="tabing"><label><input type="radio" name="product1"  value="PRO" checked="checked">Active Directory Manager PRO - Annual Subscription</label></h5>
+ <h5 class="tabing"><label><input type="radio" name="product"  value="PRO" checked="checked">Active Directory Manager PRO - Annual Subscription</label></h5>
  <div class="no-of-users">
   <label><input type="radio" name="noofusers" >Up to 250 Users -- $780</label>
-                                        <label><input type="radio" name="noofusers1" >Up to 500 Users -- $1480</label>
-                                        <label><input type="radio" name="noofusers1" > Up to 750 Users -- $2080</label>
-                                         <label>750 or more Users <a href="javascript:;" class="raquote">Request A Quote</a></label>
+                                        <label><input type="radio" name="noofusers" >Up to 500 Users -- $1480</label>
+                                        <label><input type="radio" name="noofusers" > Up to 750 Users -- $2080</label>
+                                         <label>750 or more Users <a href="javascript:;" class="raquote">Contact Us</a></label>
 </div>
 
 
- <h5 class="tabing"><label><input type="radio" name="product1"value="PRO"> Active Directory Change Notifier</label></h5>
+ <h5 class="tabing"><label><input type="checkbox" name="product"value="PRO"> Active Directory Change Notifier</label></h5>
  <div class="no-of-users" style="display:none">
-  <label><input type="radio" name="noofusersadc" >Up to 250 Users -- $480</label>
-                                        <label><input type="radio" name="noofusersadc1" >Up to 500 Users -- $880</label>
-                                        <label><input type="radio" name="noofusersadc1" > Up to 750 Users -- $1280</label>
-                                         <label>750 or more Users <a href="javascript:;" class="raquote">Request A Quote</a></label>
+  <label><input type="checkbox" name="noofusersadc" >Up to 250 Users -- $480</label>
+                                        <label><input type="radio" name="noofusersadc" >Up to 500 Users -- $880</label>
+                                        <label><input type="radio" name="noofusersadc" > Up to 750 Users -- $1280</label>
+                                         <label>750 or more Users <a href="javascript:;" class="raquote">Contact Us</a></label>
 </div>
 
 
                                         
 										
                                             
-<div class=" innerbtn">                                             <a class="close">Close</a><a class="buybtn">Buy Now</a> </div>
+<div class=" innerbtn">                                             <a class="close">Close</a><a class="buybtn">Add to Cart</a> </div>
 										</div>
 									</div>
 
@@ -367,11 +367,11 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
 							</article>
                             </div>
                             <div class="col-xs-12 col-md-4">
-                            <article class="service">
+                            <article class="service ">
 								<div class="services_inner">
 
 						  <div class="media_box">
-						<div  class="preloader" title="Pediatric Clinic"><span class="p_img_container"><img src="images/img1.png" title="Pediatric Clinic" alt="Pediatric Clinic" class="fullwidth wp-post-image" style="opacity: 1;"></span><div><ul><li>- GPO authoring, mangement and security workbench.</li>
+						<div  class="preloader" title=""><span class="p_img_container"><img src="images/img1.png" title="" alt="" class="fullwidth wp-post-image" style="opacity: 1;"></span><div><ul><li>- GPO authoring, management and security workbench.</li>
 
 <li>- Gives Active Directory administrators and security personnel's control of GPO changes.</li>
 <li>-  Migration of GPOs to other domain.</li>
@@ -388,28 +388,28 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
                                         
                                         
                                         
- <h5 class="tabing"><label><input type="radio" name="product2"  value="PRO" checked="checked">Active Directory Manager PRO - Annual Subscription</label></h5>
+ <h5 class="tabing"><label><input type="radio" name="product"  value="PRO" checked="checked">Active Directory Manager PRO - Annual Subscription</label></h5>
  <div class="no-of-users">
-  <label><input type="radio" name="noofusers2" >Up to 250 Users -- $780</label>
-                                        <label><input type="radio" name="noofusers2" >Up to 500 Users -- $1480</label>
-                                        <label><input type="radio" name="noofusers2" > Up to 750 Users -- $2080</label>
-                                         <label>750 or more Users <a href="javascript:;" class="raquote">Request A Quote</a></label>
+  <label><input type="radio" name="noofusers" >Up to 250 Users -- $780</label>
+                                        <label><input type="radio" name="noofusers" >Up to 500 Users -- $1480</label>
+                                        <label><input type="radio" name="noofusers" > Up to 750 Users -- $2080</label>
+                                         <label>750 or more Users <a href="javascript:;" class="raquote">Contact Us</a></label>
 </div>
 
 
- <h5 class="tabing"><label><input type="radio" name="product2"value="PRO"> Active Directory Change Notifier</label></h5>
+ <h5 class="tabing"><label><input type="checkbox" name="product"value="PRO"> Active Directory Change Notifier</label></h5>
  <div class="no-of-users" style="display:none">
-  <label><input type="radio" name="noofusersadc" >Up to 250 Users -- $480</label>
-                                        <label><input type="radio" name="noofusersadc2" >Up to 500 Users -- $880</label>
-                                        <label><input type="radio" name="noofusersadc2" > Up to 750 Users -- $1280</label>
-                                         <label>750 or more Users <a href="javascript:;" class="raquote">Request A Quote</a></label>
+  <label><input type="checkbox" name="noofusersadc" >Up to 250 Users -- $480</label>
+                                        <label><input type="radio" name="noofusersadc" >Up to 500 Users -- $880</label>
+                                        <label><input type="radio" name="noofusersadc" > Up to 750 Users -- $1280</label>
+                                         <label>750 or more Users <a href="javascript:;" class="raquote">Contact Us</a></label>
 </div>
 
 
                                         
 										
                                             
-<div class=" innerbtn">                                             <a class="close">Close</a><a class="buybtn">Buy Now</a> </div>
+<div class=" innerbtn">                                             <a class="close">Close</a><a class="buybtn">Add to Cart</a> </div>
 										</div>
 									</div>
 
@@ -419,7 +419,9 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
          
                   </div>       
                             
+ <div style="align:right;"><a href="dummyproducts.php">View all products...</a></div>
 </div>
+
 <!-- products -->
 
 
