@@ -6194,3 +6194,169 @@ ul.productHeadging li i { padding-right: 10px }
 	
 	.registerwrapper .btn-wrapper > a:hover:before, .username:hover:before, .cartBlock:hover:before{opacity:1}
 	
+	
+	
+	
+/* products */
+
+.productcontainer{ width:900px; margin:0 auto}
+.productcontainer *{ box-sizing:border-box}
+.service{   
+    position: relative;
+	 background:#ebf8fe; float:left;  margin-bottom:10px;}
+
+.services_inner {
+    position: relative;
+    overflow: hidden;
+	border: 1px solid #c3c3c3;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+
+.services_inner > a {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    display: block;
+    z-index: 1;
+}
+
+.services_inner figure {
+    width: 100%;
+    height: 0;
+    padding: 0 0 100%;
+    margin: 0;
+}
+
+
+
+.preloader {
+    display: block;
+    width: 100%;
+    height: 350px;
+  
+    position: relative;
+	float:left
+}
+
+
+
+
+.p_img_container{ overflow:hidden; height:100px; width:100%; position:relative; float:left; border-bottom:1px solid #c3c3c3}
+.p_img_container img{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+	 opacity: 1;
+}
+
+
+.image_rollover {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+}
+
+.service_rollover {
+ 	border: 0px solid #dddddd;
+    border-top: transparent;
+    background: #ffffff;
+    display: block;
+    width: 100%;
+    height: 0%;
+    padding: 0px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	
+	webkit-transition: height 0.3s ease-in-out 0s;
+    -moz-transition: height 0.3s ease-in-out 0s;
+    -ms-transition: height 0.3s ease-in-out 0s;
+    -o-transition: height 0.3s ease-in-out 0s;
+    transition: height 0.3s ease-in-out 0s;
+	
+	
+	
+}
+.footerrow{ position:absolute; bottom:0; left:0; right:0;}
+.footerrow a{ float:right; margin:5px 10px 5px 0; font:14px 'Open Sans', sans-serif; cursor:pointer; opacity:.8 }
+.footerrow a:hover{ opacity:1}
+/*.service:hover .service_rollover{height:80%/* height:80%} } */
+.service_rollover.showhover{height:249px}
+
+.service_rollovernew.showhover{ width:100%}
+
+.service ul,.service li{ list-style:none; margin:0; padding:0}
+.service ul{ padding:20px; float:left}
+.service li{ padding-bottom:10px; font:14px 'Open Sans', sans-serif; color:#000}
+.productreadmore{ color:#6bb55b; font:normal 14px'Open Sans', sans-serif}
+.close{ color:#6bb55b; font:normal 14px'Open Sans', sans-serif}
+.productbuynow{ color:#000; font:normal 14px'Open Sans', sans-serif}
+.raquote{color:#6bb55b; font:normal 14px'Open Sans', sans-serif; text-decoration:none; margin-left:15px;}
+
+
+
+h5.tabing{ float:left; width:100%; float:left; background:#eaf7fd; margin:0; padding:3px 10px; margin-bottom:0px;font:normal 14px'Open Sans', sans-serif}
+.tabing label{margin-bottom:0px;font:normal 14px'Open Sans', sans-serif}
+
+.no-of-users{ float:left; width:100%; margin-top:20px;margin-bottom:20px; padding-left:20px; box-sizing:border-box}
+.no-of-users label{ float:left; clear:both;color:#000; font:normal 14px 'Open Sans', sans-serif; padding:0 0 5px }
+.innerbtn{ position:absolute; bottom:0px; left:0; width:100%; display:none; }
+.innerbtn a{ float:right; margin:5px 10px;font:normal 14px 'Open Sans', sans-serif; opacity:0;webkit-transition: all .2s ease-in-out 0s;
+    -moz-transition: all .2s ease-in-out 0s;
+    -ms-transition: all .2s ease-in-out 0s;
+    -o-transition: all .2s ease-in-out 0s;
+    transition: all .2s ease-in-out 0s;cursor:pointer;  }
+.showhover .innerbtn{ display:block;	opacity:1}
+.showhover .innerbtn a{ opacity:.8;webkit-transition: all .2s ease-in-out 0s;
+    -moz-transition: all .2s ease-in-out 0s;
+    -ms-transition: all .2s ease-in-out 0s;
+    -o-transition: all .2s ease-in-out 0s;
+    transition: all .2s ease-in-out 0s;}
+	.showhover .innerbtn a:hover{ opacity:1;}
+	
+
+
+
+
+.service_rollovernew {
+ 	border: 0px solid #dddddd;
+    border-top: transparent;
+    background: #ffffff;
+    display: block;
+    width: 0%;
+
+    padding: 0px;
+    position: absolute;
+    right: 0;
+    top: 100px;
+bottom:0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	webkit-transition: width 0.3s ease-in-out 0s;
+    -moz-transition: width 0.3s ease-in-out 0s;
+    -ms-transition: width 0.3s ease-in-out 0s;
+    -o-transition: width 0.3s ease-in-out 0s;
+    transition: width 0.3s ease-in-out 0s;
+	
+	
+	
+}
+
+
+/* products */
+	
