@@ -50,7 +50,7 @@
            </tr>
            <tr>
              <td align="right" valign="middle"><span class="error">*</span> First Name:</td>
-             <td align="left" valign="middle"><input name="fname" type="text" class="txtfield" value="{$postval.email}" />
+             <td align="left" valign="middle"><input name="fname" type="text" class="txtfield" value="{$postval.fname}" />
                  <!-- <a href="#" class="ari">We value your privacy</a>--></td>
            </tr>
            <tr>

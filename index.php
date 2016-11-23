@@ -61,16 +61,16 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
      
       <div class="registerwrapper"><div  class="btn-wrapper">
      
-<a href="buyitnow.php" class="btn-request">Buy Now</a>
+<a href="buyitnow.php" class="btn-request">Purchase Online</a>
 <?php if(!isset($_SESSION['username']) && $_SESSION['username'] == ''){ ?>
  <a href="login.php" class="newlogin" title="Login"> LogIn</a> <a href="register.php" title="Signup" class="newRegister">Signup</a> 
 <?php } else { ?>
  
  
  <div class="username"><span>Hi</span> <span class="UN"><?=ucfirst($_SESSION['lname'])?></span><em></em>
- <div class="useraccountdd"><ul><li><a href="myaccount.php">Your Account</a></li>
- <li><a href="myaccount.php">Your Orders</a></li>
- <li><a href="myaccount.php">Your Downloads</a></li>
+ <div class="useraccountdd"><ul><li><a href="myaccount.php">My Account</a></li>
+ <!-- <li><a href="myaccount.php">Your Orders</a></li> -->
+ <li><a href="myaccount.php">My Downloads</a></li>
  <li class="logoutNew"><a href="logout.php">Logout</a></li>
  </ul></div>
  </div>

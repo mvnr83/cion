@@ -1,46 +1,3 @@
-{literal}
-
-<script language="javascript" type="text/javascript">
-
-function check()
-
-{
-
-	var frm = document.form1;
-
-	if(frm.uname.value == '')
-
-	{
-
-		alert("Enter User Name");
-
-		frm.uname.focus();
-
-		return false;
-
-	}
-
-	else if(frm.pwd.value == '')
-
-	{
-
-		alert("Enter Password");
-
-		frm.pwd.focus();
-
-		return false;
-
-	}
-
-	else
-
-		return true;
-
-}
-
-</script>
-
-{/literal}
 
 <table width="100%" border="0" align="left" cellpadding="0" cellspacing="0" class="grstr1left">
 
@@ -54,7 +11,7 @@ function check()
 
                   <td width="2%">&nbsp;</td>
 
-                  <td width="98%" align="left" valign="middle" class="hea">Forgot Password</td>
+                  <td width="98%" align="left" valign="middle" class="hea">Registration Successful</td>
 
                   <br />
 
@@ -138,7 +95,16 @@ function check()
 
           <tr>
 
-            <td align="center" valign="top" class="ver11" colspan="3"><strong> Password has been sent to your email address ({$f_email})</strong>  
+            <td align="center" valign="top" class="ver11" colspan="3"><strong> Thank you for your interest in CionSystems</strong>  
+
+    
+
+</td>
+
+          </tr>
+          <tr>
+
+            <td align="center" valign="top" class="ver11" colspan="3"><strong> A confirmation email has been sent to your email address</strong>  
 
     
 

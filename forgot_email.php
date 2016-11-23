@@ -3,6 +3,7 @@ require_once("includes/application_start.php");
 require_once("admin/includes/db_connect.php");
 //include("includes/login_check.php");
 $smarty->assign("session_username",$_SESSION['username']);
+$smarty->assign("f_email",$_SESSION['email']);
 $smarty->assign("array",$array);
 $content=$smarty->fetch("forgot_pass.tpl");
 $smarty->assign("content",$content);
