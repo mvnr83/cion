@@ -46,7 +46,7 @@
                   <div class="innerlogin">
                     <table width="90%" border="0" cellspacing="3" cellpadding="0">
                       <tr>
-                        <td  height="40">Your Email Id:</td>
+                        <td  height="40">Enter your email id:</td>
                         <td><input type="hidden" name="sendmail"  value="forgot"  />
                             <input type="text" name="emailid" class="txtfield"  style="width:250px;"/>                        </td>
                       </tr>

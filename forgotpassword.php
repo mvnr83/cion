@@ -15,16 +15,15 @@ $_SESSION['email'] = $_POST['emailid'];
 	
 		if(isset($_POST['sendmail']) && $_POST['sendmail']=="forgot")
 		{
-			$subject = "Forgot Password for CionSystems.com";
+			$subject = "Cionsystems Forgot Password Notification";
 			$message = '<html><body>			
-			<table width="40%" border="0" cellspacing="3" cellpadding="2">
+			<table width="100%" border="0" cellspacing="3" cellpadding="2">
+                        <tr><td >Your login details are</td></tr>
 			<tr>
-    		<td>UserName:</td>
-    		<td>'.$row[user_name].'</td>
+    		<td>UserName: '.$row[user_name].'</td>
   			</tr>
   			<tr>
-    		<td>Password:</td>
-    		<td>'.$row[password].'</td>
+    		<td>Password: '.$row[password].'</td>
   			</tr>
 			</table>
 			</body>

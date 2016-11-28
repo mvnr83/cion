@@ -18,7 +18,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
 <title>Cion Systems</title>
 
 <link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+<!-- <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" /> -->
  <link href="css/style.css" rel="stylesheet">
  <link rel="stylesheet" href="css/flexslider.css"/>
 
@@ -61,7 +61,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
      
       <div class="registerwrapper"><div  class="btn-wrapper">
      
-<a href="buyitnow.php" class="btn-request">Purchase Online</a>
+<!-- <a href="buyitnow.php" class="btn-request">Purchase Online</a>-->
 <?php if(!isset($_SESSION['username']) && $_SESSION['username'] == ''){ ?>
  <a href="login.php" class="newlogin" title="Login"> LogIn</a> <a href="register.php" title="Signup" class="newRegister">Signup</a> 
 <?php } else { ?>

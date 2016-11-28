@@ -19,7 +19,7 @@
     <td align="center">Fields marked with<span class="error"> * </span>are required.</td>
   </tr>
   <tr>
-    <td align="center">{$msg}</td>
+      <td align="center"><span style="color:#FF0000;">{$msg}</span></td>
   </tr>
   <tr>
     <td>&nbsp;</td>

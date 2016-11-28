@@ -104,13 +104,14 @@
           </tr>
           <tr>
 
-            <td align="center" valign="top" class="ver11" colspan="3"><strong> A confirmation email has been sent to your email address</strong>  
+            <td align="center" valign="top" class="ver11" colspan="3"><strong> A confirmation email has been sent to your email address. Please login with the details</strong>  
 
     
 
 </td>
 
           </tr>
+          
 
           <tr>
 
