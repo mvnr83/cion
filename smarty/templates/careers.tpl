@@ -60,7 +60,7 @@ Contact us at <a href="mailto:marketpartners@cionsystems.com">marketpartners@cio
 		   </p>		  </td>
       </tr>
 	   <tr>
-        <td height="35" align="center" valign="middle" bgcolor="#F8F8F8" class="olink">Send us your resume at <a href="#">careers@cionsystems.com</a></td>
+        <td height="35" align="center" valign="middle" bgcolor="#F8F8F8" class="olink">Send us your resume at <a href="mailto:careers@cionsystems.com">careers@cionsystems.com</a></td>
       </tr>
       
     </table></td>

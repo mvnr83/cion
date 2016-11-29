@@ -12,12 +12,15 @@ $_SESSION['email'] = $_POST['emailid'];
 	$row = @mysql_fetch_assoc($res);
 	if(@mysql_num_rows($res)>0)
 	{
+            
 	
 		if(isset($_POST['sendmail']) && $_POST['sendmail']=="forgot")
 		{
 			$subject = "Cionsystems Forgot Password Notification";
 			$message = '<html><body>			
 			<table width="100%" border="0" cellspacing="3" cellpadding="2">
+                        <tr><td >Hi '.$row['first_name'].'</td></tr>
+                        <tr><td >&nbsp;</td></tr>
                         <tr><td >Your login details are</td></tr>
 			<tr>
     		<td>UserName: '.$row[user_name].'</td>
@@ -25,6 +28,11 @@ $_SESSION['email'] = $_POST['emailid'];
   			<tr>
     		<td>Password: '.$row[password].'</td>
   			</tr>
+                        <tr><td >&nbsp;</td></tr>
+                        <tr><td>Thanks,</td></tr>
+
+                        <tr><td>Cionsystems</td></tr>
+                        <tr><td>www.cionsystems.com</td></tr>
 			</table>
 			</body>
 			</html>';
