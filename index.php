@@ -548,10 +548,15 @@ Lakdi-ka-pool, Hyderabad-500004,TS, INDIA  &nbsp;
    
    <div class="col-xs-12">
    <h4>Our Business Partners</h4>
-   <div class="footerproduct">
-             <div><img src="img/msLogo.jpg" width="150" style="padding:3px"></div>
+   <div class="footerproduct1">
+           <?php /*?>  <div><img src="img/msLogo.jpg" width="150" style="padding:3px"></div>
             <div> <img src="img/hpLogo.jpg" width="150" style="padding:3px"></div> 
-            <div><img src="img/ibmLogo.jpg" width="150" style="padding:3px"></div> 
+            <div><img src="img/ibmLogo.jpg" width="150" style="padding:3px"></div> <?php */?>
+            
+              <div><img src="images/logos/msLogo.jpg" width="71" style="padding:3px"></div>
+            <div> <img src="images/logos/hpLogo.jpg" width="71" style="padding:3px"></div> 
+            <div><img src="images/logos/ibmLogo.png" width="71" style="padding:3px"></div> 
+            
           </div>
    </div>
    
@@ -588,9 +593,12 @@ Lakdi-ka-pool, Hyderabad-500004,TS, INDIA  &nbsp;
 --> 
   <link rel="stylesheet" type="text/css" href="css/slick.css">
   <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+ 
 <script src="js/jquery-1.8.3.min.js" type="text/javascript"></script> 
 <script src="js/bootstrap.min.js" type="text/javascript"> </script> 
 <script type="text/javascript" src="js/hover-dropdown.js"> </script> 
+
+
 <script src="js/link-hover.js"> </script>
 <script defer src="js/jquery.flexslider.js"> </script> 
 <script src="js/slick.js"> </script>
@@ -605,6 +613,11 @@ function fnRedirect(Obj){
     </script>
  <script type="text/javascript">
     $(document).on('ready', function() {
+	
+
+	
+	
+	
       $(".regular").slick({
         dots: false,
         infinite: false,
