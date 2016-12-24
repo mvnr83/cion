@@ -522,7 +522,7 @@ Lakdi-ka-pool, Hyderabad-500004,TS, INDIA  &nbsp;
      <div class="col-lg-5 col-sm-12">
     <div class="row">
       <div class="col-lg-8 col-sm-6">
-        <div class="page-footer wow fadeInUp" data-wow-duration="2s" data-wow-delay=".5s">
+        <div class="page-footer1 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".5s">
           <h1> Our Company </h1>
           <ul class="page-footer-list">
             <li> <i class="fa fa-angle-right"></i> <a href="aboutus.php">About Us</a> </li>
@@ -546,7 +546,7 @@ Lakdi-ka-pool, Hyderabad-500004,TS, INDIA  &nbsp;
       
       </div>
    
-   <div class="col-xs-12">
+   <div class="col-xs-12 col-lg-12 pull-left">
    <h4>Our Business Partners</h4>
    <div class="footerproduct1">
            <?php /*?>  <div><img src="img/msLogo.jpg" width="150" style="padding:3px"></div>
