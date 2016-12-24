@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.5-dev, created on 2016-11-17 17:30:01
+<?php /* Smarty version 2.6.5-dev, created on 2016-12-24 04:42:31
          compiled from viewproducts.tpl */ ?>
 <?php require_once(SMARTY_DIR . 'core' . DIRECTORY_SEPARATOR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'truncate', 'viewproducts.tpl', 145, false),)), $this); ?>

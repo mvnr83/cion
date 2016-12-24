@@ -208,6 +208,30 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
 </div>
 
 <br/><br/>
+
+<div class="container">
+<section class="regular slider" style="background:#052c4a">
+    <div>
+       <a href="#"><img src="images/products/multifactors_img.png"></a>
+        <a href="#" class="sliderlink"><img src="images/products/free_icon.png" border="0"> </a>
+    </div>
+    <div>
+      <a href="#"> <img src="images/products/provisioning_img.png"></a>
+      <a href="#" class="sliderlink"><img src="images/products/free_icon.png" border="0"> </a>
+    </div>
+     <div>
+      <a href="#"> <img src="images/products/multifactors_img.png"></a>
+       <a href="#" class="sliderlink"><img src="images/products/download_trial.png" border="0"> </a>
+    </div>
+    
+    
+    
+  </section>
+  <!-- End container --> 
+</div>
+
+
+
 <div class="container">
 <div class="property gray-bg">
   
@@ -256,6 +280,176 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
   </div>
   <!-- End container --> 
 </div>
+
+
+
+
+
+<!-- products -->
+
+ <div class="container">
+ <div style="font-family: 'Open Sans', sans-serif; font-weight:700; font-size:30px; margin-top:20px; clear:both" align="center"> Products</div>
+ <div class="row" style="padding-top:20px;">
+<div class="col-xs-12 col-md-4">
+<article class="service ">
+								<div class="services_inner">
+
+						  <div class="media_box">
+						<div  class="preloader" title="Pediatric Clinic"><span class="p_img_container"><img src="images/img1.png" title="Pediatric Clinic" alt="Pediatric Clinic" class="fullwidth wp-post-image" style="opacity: 1;"></span><div><ul><li>- GPO authoring, mangement and security workbench.</li>
+
+<li>- Gives Active Directory administrators and security personnel's control of GPO changes.</li>
+<li>-  Migration of GPOs to other domain.</li>
+<li>- Disaster recovery via backup and rollback capabilities.</li>
+</ul>
+<div class="footerrow"><a class="productreadmore">Readmore</a>  <a class="productbuynow">Buy Now</a></div>
+
+</div></div></div>
+
+									<div class="service_rollover" >
+									
+										
+										<div class="entry-content">
+                                        
+                                        
+                                        
+ <h5 class="tabing"><label><input type="radio" name="product"  value="PRO" checked="checked">Active Directory Manager PRO - Annual Subscription</label></h5>
+ <div class="no-of-users">
+  <label><input type="radio" name="noofusers" >Up to 250 Users -- $780</label>
+                                        <label><input type="radio" name="noofusers" >Up to 500 Users -- $1480</label>
+                                        <label><input type="radio" name="noofusers" > Up to 750 Users -- $2080</label>
+                                         <label>750 or more Users <a href="javascript:;" class="raquote">Request A Quote</a></label>
+</div>
+
+
+ <h5 class="tabing"><label><input type="radio" name="product"value="PRO"> Active Directory Change Notifier</label></h5>
+ <div class="no-of-users" style="display:none">
+  <label><input type="radio" name="noofusersadc" >Up to 250 Users -- $480</label>
+                                        <label><input type="radio" name="noofusersadc" >Up to 500 Users -- $880</label>
+                                        <label><input type="radio" name="noofusersadc" > Up to 750 Users -- $1280</label>
+                                         <label>750 or more Users <a href="javascript:;" class="raquote">Request A Quote</a></label>
+</div>
+
+
+                                        
+										
+                                            
+<div class=" innerbtn">                                             <a class="close">Close</a><a class="buybtn">Buy Now</a> </div>
+										</div>
+									</div>
+
+                                </div>
+							</article>
+</div>
+<div class="col-xs-12 col-md-4">
+<article class="service">
+								<div class="services_inner">
+
+						  <div class="media_box">
+						<div  class="preloader" title="Pediatric Clinic"><span class="p_img_container"><img src="images/img1.png" title="Pediatric Clinic" alt="Pediatric Clinic" class="fullwidth wp-post-image" style="opacity: 1;"></span><div><ul><li>- GPO authoring, mangement and security workbench.</li>
+
+<li>- Gives Active Directory administrators and security personnel's control of GPO changes.</li>
+<li>-  Migration of GPOs to other domain.</li>
+<li>- Disaster recovery via backup and rollback capabilities.</li>
+</ul>
+<div class="footerrow"><a class="productreadmore">Readmore</a>  <a class="productbuynow">Buy Now</a></div>
+
+</div></div></div>
+
+									<div class="service_rollover" >
+									
+										
+										<div class="entry-content">
+                                        
+                                        
+                                        
+ <h5 class="tabing"><label><input type="radio" name="product1"  value="PRO" checked="checked">Active Directory Manager PRO - Annual Subscription</label></h5>
+ <div class="no-of-users">
+  <label><input type="radio" name="noofusers" >Up to 250 Users -- $780</label>
+                                        <label><input type="radio" name="noofusers1" >Up to 500 Users -- $1480</label>
+                                        <label><input type="radio" name="noofusers1" > Up to 750 Users -- $2080</label>
+                                         <label>750 or more Users <a href="javascript:;" class="raquote">Request A Quote</a></label>
+</div>
+
+
+ <h5 class="tabing"><label><input type="radio" name="product1"value="PRO"> Active Directory Change Notifier</label></h5>
+ <div class="no-of-users" style="display:none">
+  <label><input type="radio" name="noofusersadc" >Up to 250 Users -- $480</label>
+                                        <label><input type="radio" name="noofusersadc1" >Up to 500 Users -- $880</label>
+                                        <label><input type="radio" name="noofusersadc1" > Up to 750 Users -- $1280</label>
+                                         <label>750 or more Users <a href="javascript:;" class="raquote">Request A Quote</a></label>
+</div>
+
+
+                                        
+										
+                                            
+<div class=" innerbtn">                                             <a class="close">Close</a><a class="buybtn">Buy Now</a> </div>
+										</div>
+									</div>
+
+                                </div>
+							</article>
+                            </div>
+                            <div class="col-xs-12 col-md-4">
+                            <article class="service">
+								<div class="services_inner">
+
+						  <div class="media_box">
+						<div  class="preloader" title="Pediatric Clinic"><span class="p_img_container"><img src="images/img1.png" title="Pediatric Clinic" alt="Pediatric Clinic" class="fullwidth wp-post-image" style="opacity: 1;"></span><div><ul><li>- GPO authoring, mangement and security workbench.</li>
+
+<li>- Gives Active Directory administrators and security personnel's control of GPO changes.</li>
+<li>-  Migration of GPOs to other domain.</li>
+<li>- Disaster recovery via backup and rollback capabilities.</li>
+</ul>
+<div class="footerrow"><a class="productreadmore">Readmore</a>  <a class="productbuynow">Buy Now</a></div>
+
+</div></div></div>
+
+									<div class="service_rollover" >
+									
+										
+										<div class="entry-content">
+                                        
+                                        
+                                        
+ <h5 class="tabing"><label><input type="radio" name="product2"  value="PRO" checked="checked">Active Directory Manager PRO - Annual Subscription</label></h5>
+ <div class="no-of-users">
+  <label><input type="radio" name="noofusers2" >Up to 250 Users -- $780</label>
+                                        <label><input type="radio" name="noofusers2" >Up to 500 Users -- $1480</label>
+                                        <label><input type="radio" name="noofusers2" > Up to 750 Users -- $2080</label>
+                                         <label>750 or more Users <a href="javascript:;" class="raquote">Request A Quote</a></label>
+</div>
+
+
+ <h5 class="tabing"><label><input type="radio" name="product2"value="PRO"> Active Directory Change Notifier</label></h5>
+ <div class="no-of-users" style="display:none">
+  <label><input type="radio" name="noofusersadc" >Up to 250 Users -- $480</label>
+                                        <label><input type="radio" name="noofusersadc2" >Up to 500 Users -- $880</label>
+                                        <label><input type="radio" name="noofusersadc2" > Up to 750 Users -- $1280</label>
+                                         <label>750 or more Users <a href="javascript:;" class="raquote">Request A Quote</a></label>
+</div>
+
+
+                                        
+										
+                                            
+<div class=" innerbtn">                                             <a class="close">Close</a><a class="buybtn">Buy Now</a> </div>
+										</div>
+									</div>
+
+                                </div>
+							</article>
+                         </div>
+         
+                  </div>       
+                            
+</div>
+<!-- products -->
+
+
+
+
+
 
 
 <!--property start--><div class="container">
@@ -322,8 +516,38 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
     <!-- End row --> 
   </div>
  
-</div>
+</div> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
 
+$('.productbuynow').click(function(){
+
+$(this).closest('.service').find('.service_rollover').addClass('showhover')
+$(this).closest('.service').find('.service_rollovernew').addClass('showhover')
+
+
+});
+
+$('.close').click(function(){
+
+$(this).closest('.service').find('.service_rollover').removeClass('showhover')
+$(this).closest('.service').find('.service_rollovernew').removeClass('showhover')
+});
+
+
+$('.tabing input').click(function(){
+
+if($(this).is(':checked'))
+{
+$(this).closest('.service').find('.no-of-users').hide();
+$(this).closest('.tabing').next('.no-of-users').show();
+}
+
+})
+
+})
+
+</script>
 <div id="home-services">
   <div class="container">
     <div class="row"> 
@@ -458,13 +682,14 @@ Lakdi-ka-pool, Hyderabad-500004,TS, INDIA  &nbsp;
 <script src="js/jquery.js">
 </script>
 --> 
-
+  <link rel="stylesheet" type="text/css" href="css/slick.css">
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
 <script src="js/jquery-1.8.3.min.js" type="text/javascript"></script> 
 <script src="js/bootstrap.min.js" type="text/javascript"> </script> 
 <script type="text/javascript" src="js/hover-dropdown.js"> </script> 
 <script src="js/link-hover.js"> </script>
 <script defer src="js/jquery.flexslider.js"> </script> 
-
+<script src="js/slick.js"> </script>
 <script>
 
 function fnRedirect(Obj){
@@ -474,7 +699,28 @@ function fnRedirect(Obj){
 }
     
     </script>
-
+ <script type="text/javascript">
+    $(document).on('ready', function() {
+      $(".regular").slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1
+      });
+      $(".center").slick({
+        dots: true,
+        infinite: true,
+        centerMode: true,
+        slidesToShow: 2,
+        slidesToScroll: 1
+      });
+      $(".variable").slick({
+        dots: true,
+        infinite: true,
+        variableWidth: true
+      });
+    });
+  </script>
 
 </body>
 </html>

@@ -19,7 +19,7 @@ function delproduct(id)
 	{
 		frm.act.value = 'del';
 		frm.uid.value = id;
-		frm.action = 'viewproducts.php';
+		frm.action = 'subscription_plans.php?product_id='+document.getElementById('product_id').value;
 		frm.submit();
 	}
 }
@@ -29,7 +29,7 @@ function changestat(id,st)
 	frm.uid.value = id;
 	frm.st.value = st;
 	frm.act.value = 'change';
-	frm.action = 'viewproducts.php';
+	frm.action = 'subscription_plans.php?product_id='+document.getElementById('product_id').value;
 	frm.submit();
 }
 function fnOrder(id,or_id)
@@ -67,6 +67,7 @@ function fnOrder(id,or_id)
 				<input type="hidden" name="act" />
 				<input type="hidden" name="uid" />
 				<input type="hidden" name="st"  />
+                                <input type="hidden" name="product_id" id="product_id" value="{$product_id}"  />
 				<input type="hidden" name="order_hid" id="order_hid" value="" />
 				<input type="hidden" name="ordder" id="ordder" value="" />
                   <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" class="stroke">
@@ -105,7 +106,7 @@ function fnOrder(id,or_id)
 										<td class="aril" align="center">{$array[list].plan_name}</td>
 										<td class="aril" align="center">{$array[list].plan_type}</td>
 										<td class="aril" align="center">{$array[list].price}</td>
-										<td class="aril" align="center">{if $array[list].status == '1'}<a href="javascript:changestat('{$array[list].sub_id}','Inactive');" class="Sub_menu">Make In Active</a>{else}<a href="javascript:changestat('{$array[list].id}','Active');" class="Sub_menu">Make Active</a>{/if}</td>
+										<td class="aril" align="center">{if $array[list].status == '1'}<a href="javascript:changestat('{$array[list].sub_id}','0');" class="Sub_menu">Make In Active</a>{else}<a href="javascript:changestat('{$array[list].sub_id}','1');" class="Sub_menu">Make Active</a>{/if}</td>
                                                                                 <td class="aril" align="center">
                                                                                      <img src="images/b_edit.png" width="20" onclick="javascript:editproduct('{$array[list].sub_id}','{$product_id}')" style="cursor:pointer"  title="Edit Plan"/> </td>
                                                                                 

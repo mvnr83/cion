@@ -28,7 +28,7 @@ if($_POST['act'] == 'del')
 }
 if($_POST[act] == 'change')
 {
-	$sql_up = "update subscription_plans set status = '".$_POST[st]."' where sub_id = '".$_POST[uid]."'";
+    	$sql_up = "update subscription_plans set status = '".$_POST[st]."' where sub_id = '".$_POST[uid]."'";
 	$res_up = @mysql_query($sql_up);
 	if(@mysql_affected_rows()>0)
 		$msg = "Status changed Successfully";
