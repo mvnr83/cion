@@ -9,8 +9,7 @@ session_start(); ?>
 <title>Active Directory Solutions | Managing Active Directory Company</title>
 <meta name='keywords' content='Microsoft, Azure, Quest, self-service, de-prvisioning, Ofice 365, active directory, exchange, 
 management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring, utilities, solutions,synchronization,maintenance,
- unix, self service,user import, user provision, user de-provision, Group Policy, Group policy object, gpo
-'>
+ unix, self service,user import, user provision, user de-provision, Group Policy, Group policy object, gpo'>
 <meta name='description' content='We at Cion Systems offers active directory solutions to simplify your daily tasks and increased ROI. Simplify your AD infrastructure with the best active directory management company.'>
 <!--<meta name="google-site-verification" content="N28xp5KoLEmZKdtJalg54yKL1N6FxNkAeIMXemUgpXY" /> -->
 <meta name="google-site-verification" content="wyA5AqlyQ4FwzP0gM4MOYomx6JSmuLHEZV7L3aTAjLc" />
@@ -38,7 +37,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
 
 </script>
 
-
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300 600 700' rel='stylesheet' type='text/css'>
 <!--
 <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
  HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
@@ -210,29 +209,71 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
 <br/><br/>
 
 <div class="container">
-<section class="regular slider" style="background:#052c4a">
+<h1>Welcome to Cion Systems</h1>
+<div class="welcomeblock"><p><strong>CionSystems</strong> delivers a simple and cost effective solution to improve security and streamline managing IT infrastructure.  CionSystems Identity Management solutions are designed to integrate with enterprise HR systems, school information systems and other systems. Products are designed to provide benefits for schools districts and IT organizations of varying size, complexity, and skill levels in verticals like finance, insurance, education, telecom, technology etc.  Implement process driven Security and Auditing to reduce support costs and quickly respond to security incidents while continuous monitoring, reporting and alerting of directories like Active Directory, ldap, openldap, office365, azure AD.</p></div>
+
+
+
+
+<div class="productBlockmain">
+<div class="welcomeblock productBlock"><ul>
+<li><a href="javascript:;">Manage identities (users, computers, and all other resources) of Active Directory, OpenLDAP., Office 365, Azure and other SaaS applications.</a></li>
+<li><a href="javascript:;">Automated user and access provisioning / de-provisioning processes</a></li>
+
+<li><a href="javascript:;">Group policies tracking and work bench</a></li>
+<li><a href="javascript:;">Office365/Azure directory sync from Active Directory and openldap</a></li>
+<li><a href="javascript:;">Office365 user,  group, license management and reporting</a></li>
+<li><a href="javascript:;">Email and one drive migration, archiving  and management.</a></li>
+</ul>
+<ul>
+<li><a href="javascript:;">Self service, password management, profile and automated access management</a></li>
+<li><a href="javascript:;">Active Directory Change tracking, auditing, reporting, compliance.</a></li>
+<li><a href="javascript:;">Active Directory Change tracking, auditing, reporting, compliance</a></li>
+<li><a href="javascript:;">Active directory backup and recovery</a></li>
+<li><a href="javascript:;">Multifactor authentication 2FA  for virtual systems, servers and clouds</a></li>
+
+</ul>
+</div>
+</div>
+
+
+</div>
+
+
+<div class="container">
+<div class="row">
+ <div class="col-xs-12"> <h2  class="subheading">Products<a class="viewmoreproducts" href="#">View more products &gt;&gt;</a></h2></div>
+
+<section class="regular slider col-xs-12">
     <div>
-       <a href="#"><img src="images/products/multifactors_img.png"></a>
-        <a href="#" class="sliderlink"><img src="images/products/free_icon.png" border="0"> </a>
+      <div class="custom"><a href="#"><img src="images/products/multifactors_img.png"></a>
+      
+      <span class="pbottom"> <span class="ptitle">Multifactor Authentication</span>
+              <a href="#" class="sliderlinkbuy">Buy Now</a> <a href="#" class="sliderlinktry">Try Now</a></span></div>
     </div>
     <div>
-      <a href="#"> <img src="images/products/provisioning_img.png"></a>
-      <a href="#" class="sliderlink"><img src="images/products/free_icon.png" border="0"> </a>
+     <div class="custom"><a href="#"> <img src="images/products/provisioning_img.png"></a>
+      <span class="pbottom"> <span class="ptitle">Provisioning System</span>
+              <a href="#" class="sliderlinkbuy">Buy Now</a> <a href="#" class="sliderlinktry">Try Now</a></span></div>
     </div>
      <div>
-      <a href="#"> <img src="images/products/multifactors_img.png"></a>
-       <a href="#" class="sliderlink"><img src="images/products/download_trial.png" border="0"> </a>
+    <div class="custom"><a href="#"> <img src="images/products/multifactors_img.png"></a>
+      <span class="pbottom"> <span class="ptitle">Multifactor Authentication</span>
+              <a href="#" class="sliderlinkbuy">Buy Now</a> <a href="#" class="sliderlinktry">Try Now</a></span></div>
     </div>
     
     
     
   </section>
   <!-- End container --> 
+
+<div class="col-xs-12"></div>
+
+</div>
 </div>
 
 
-
-<div class="container">
+<!--<div class="container">
 <div class="property gray-bg">
   
    <div class="row"><br>
@@ -253,23 +294,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
         <center> <img src="img/provisioning_img_txt.png" border="0"><br><br>
 	   <a href="http://cionsystems.com/ADProvisioning.php"><img src="img/provisioning_img.png" width="490" height="180" class="img-responsive" ></a> 
         </center>    
-            <!--<div class="span6">
-            <h2 ><a href="http://cionsystems.com/news-events.php" style="color:#F60; font-weight:bold;">News & Events</a></h2>
-            <ul class="productHeadging">
-              <li><a href="http://cionsystems.com/press/index-18.html"> August 8, 2014: CionSystems�"� and WSIPC Enter Into 
-              Partnership For Providing Low Cost Identity and Access Management Software For School Districts</a> </li>
-              <li><a href="http://cionsystems.com/news.php#n1">Data Migration Management for OneDrive</a></li>
-              <li><a href="http://cionsystems.com/press/index-17.html">June 19, 2014: CionSystems Releases Active Directory 
-              Reporter version 5.0</a> </li>
-              <li><a href="http://cionsystems.com/press/index-16.html">June 12, 2014: CionSystems Releases Active Directory 
-              Manager Pro version 5.0</a></li>
-              <li><a href="http://cionsystems.com/press/index-15.html">January 6, 2014: CionSystems Releases Enterprise Self 
-              Service Version 4.0</a></li>
-              <li><a href="http://cionsystems.com/press/index-14.html">July 16, 2013: CionSystems Releases Enterprise Self 
-              Service Version 3.0</a></li>
-              <li><a href="#http://cionsystems.com/news-events.php"> more news..</a></li>
-            </ul>
-          </div>-->
+          
         <div style="float:center"><br/>
 		 <center>
 	  <a href="http://cionsystems.com/ADProvisioning.php"><img src="img/download_trial.png" border="0"> </a></center>
@@ -278,8 +303,8 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
       </div>
    </div>
   </div>
-  <!-- End container --> 
-</div>
+ 
+</div>-->
 
 
 
@@ -287,163 +312,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
 
 <!-- products -->
 
- <div class="container">
- <div style="font-family: 'Open Sans', sans-serif; font-weight:700; font-size:30px; margin-top:20px; clear:both" align="center"> Products</div>
- <div class="row" style="padding-top:20px;">
-<div class="col-xs-12 col-md-4">
-<article class="service ">
-								<div class="services_inner">
-
-						  <div class="media_box">
-						<div  class="preloader" title="Pediatric Clinic"><span class="p_img_container"><img src="images/img1.png" title="Pediatric Clinic" alt="Pediatric Clinic" class="fullwidth wp-post-image" style="opacity: 1;"></span><div><ul><li>- GPO authoring, mangement and security workbench.</li>
-
-<li>- Gives Active Directory administrators and security personnel's control of GPO changes.</li>
-<li>-  Migration of GPOs to other domain.</li>
-<li>- Disaster recovery via backup and rollback capabilities.</li>
-</ul>
-<div class="footerrow"><a class="productreadmore">Readmore</a>  <a class="productbuynow">Buy Now</a></div>
-
-</div></div></div>
-
-									<div class="service_rollover" >
-									
-										
-										<div class="entry-content">
-                                        
-                                        
-                                        
- <h5 class="tabing"><label><input type="radio" name="product"  value="PRO" checked="checked">Active Directory Manager PRO - Annual Subscription</label></h5>
- <div class="no-of-users">
-  <label><input type="radio" name="noofusers" >Up to 250 Users -- $780</label>
-                                        <label><input type="radio" name="noofusers" >Up to 500 Users -- $1480</label>
-                                        <label><input type="radio" name="noofusers" > Up to 750 Users -- $2080</label>
-                                         <label>750 or more Users <a href="javascript:;" class="raquote">Request A Quote</a></label>
-</div>
-
-
- <h5 class="tabing"><label><input type="radio" name="product"value="PRO"> Active Directory Change Notifier</label></h5>
- <div class="no-of-users" style="display:none">
-  <label><input type="radio" name="noofusersadc" >Up to 250 Users -- $480</label>
-                                        <label><input type="radio" name="noofusersadc" >Up to 500 Users -- $880</label>
-                                        <label><input type="radio" name="noofusersadc" > Up to 750 Users -- $1280</label>
-                                         <label>750 or more Users <a href="javascript:;" class="raquote">Request A Quote</a></label>
-</div>
-
-
-                                        
-										
-                                            
-<div class=" innerbtn">                                             <a class="close">Close</a><a class="buybtn">Buy Now</a> </div>
-										</div>
-									</div>
-
-                                </div>
-							</article>
-</div>
-<div class="col-xs-12 col-md-4">
-<article class="service">
-								<div class="services_inner">
-
-						  <div class="media_box">
-						<div  class="preloader" title="Pediatric Clinic"><span class="p_img_container"><img src="images/img1.png" title="Pediatric Clinic" alt="Pediatric Clinic" class="fullwidth wp-post-image" style="opacity: 1;"></span><div><ul><li>- GPO authoring, mangement and security workbench.</li>
-
-<li>- Gives Active Directory administrators and security personnel's control of GPO changes.</li>
-<li>-  Migration of GPOs to other domain.</li>
-<li>- Disaster recovery via backup and rollback capabilities.</li>
-</ul>
-<div class="footerrow"><a class="productreadmore">Readmore</a>  <a class="productbuynow">Buy Now</a></div>
-
-</div></div></div>
-
-									<div class="service_rollover" >
-									
-										
-										<div class="entry-content">
-                                        
-                                        
-                                        
- <h5 class="tabing"><label><input type="radio" name="product1"  value="PRO" checked="checked">Active Directory Manager PRO - Annual Subscription</label></h5>
- <div class="no-of-users">
-  <label><input type="radio" name="noofusers" >Up to 250 Users -- $780</label>
-                                        <label><input type="radio" name="noofusers1" >Up to 500 Users -- $1480</label>
-                                        <label><input type="radio" name="noofusers1" > Up to 750 Users -- $2080</label>
-                                         <label>750 or more Users <a href="javascript:;" class="raquote">Request A Quote</a></label>
-</div>
-
-
- <h5 class="tabing"><label><input type="radio" name="product1"value="PRO"> Active Directory Change Notifier</label></h5>
- <div class="no-of-users" style="display:none">
-  <label><input type="radio" name="noofusersadc" >Up to 250 Users -- $480</label>
-                                        <label><input type="radio" name="noofusersadc1" >Up to 500 Users -- $880</label>
-                                        <label><input type="radio" name="noofusersadc1" > Up to 750 Users -- $1280</label>
-                                         <label>750 or more Users <a href="javascript:;" class="raquote">Request A Quote</a></label>
-</div>
-
-
-                                        
-										
-                                            
-<div class=" innerbtn">                                             <a class="close">Close</a><a class="buybtn">Buy Now</a> </div>
-										</div>
-									</div>
-
-                                </div>
-							</article>
-                            </div>
-                            <div class="col-xs-12 col-md-4">
-                            <article class="service">
-								<div class="services_inner">
-
-						  <div class="media_box">
-						<div  class="preloader" title="Pediatric Clinic"><span class="p_img_container"><img src="images/img1.png" title="Pediatric Clinic" alt="Pediatric Clinic" class="fullwidth wp-post-image" style="opacity: 1;"></span><div><ul><li>- GPO authoring, mangement and security workbench.</li>
-
-<li>- Gives Active Directory administrators and security personnel's control of GPO changes.</li>
-<li>-  Migration of GPOs to other domain.</li>
-<li>- Disaster recovery via backup and rollback capabilities.</li>
-</ul>
-<div class="footerrow"><a class="productreadmore">Readmore</a>  <a class="productbuynow">Buy Now</a></div>
-
-</div></div></div>
-
-									<div class="service_rollover" >
-									
-										
-										<div class="entry-content">
-                                        
-                                        
-                                        
- <h5 class="tabing"><label><input type="radio" name="product2"  value="PRO" checked="checked">Active Directory Manager PRO - Annual Subscription</label></h5>
- <div class="no-of-users">
-  <label><input type="radio" name="noofusers2" >Up to 250 Users -- $780</label>
-                                        <label><input type="radio" name="noofusers2" >Up to 500 Users -- $1480</label>
-                                        <label><input type="radio" name="noofusers2" > Up to 750 Users -- $2080</label>
-                                         <label>750 or more Users <a href="javascript:;" class="raquote">Request A Quote</a></label>
-</div>
-
-
- <h5 class="tabing"><label><input type="radio" name="product2"value="PRO"> Active Directory Change Notifier</label></h5>
- <div class="no-of-users" style="display:none">
-  <label><input type="radio" name="noofusersadc" >Up to 250 Users -- $480</label>
-                                        <label><input type="radio" name="noofusersadc2" >Up to 500 Users -- $880</label>
-                                        <label><input type="radio" name="noofusersadc2" > Up to 750 Users -- $1280</label>
-                                         <label>750 or more Users <a href="javascript:;" class="raquote">Request A Quote</a></label>
-</div>
-
-
-                                        
-										
-                                            
-<div class=" innerbtn">                                             <a class="close">Close</a><a class="buybtn">Buy Now</a> </div>
-										</div>
-									</div>
-
-                                </div>
-							</article>
-                         </div>
-         
-                  </div>       
-                            
-</div>
+ 
 <!-- products -->
 
 
@@ -454,9 +323,16 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
 
 <!--property start--><div class="container">
  <div class="row">
-    <div class="profile">
-      <div style="font-family: 'Open Sans', sans-serif; font-weight:700; font-size:30px;" align="center"> Our Solutions Works With</div><br>
-      <div class="col-md-2 col-sm-4 col-xs-6 nopadding">
+    <div class="profile col-xs-12">
+      <h3  class="subheading"> Our Solutions Works With</h3>
+    
+    </div>
+    <!-- End row --> 
+  </div>
+  
+  
+  <div class="row">
+    <div class="col-md-2 col-sm-4 col-xs-6 nopadding">
         <div class="thumbnail" data-wow-delay=".1s"> <img src="img/office-365-cloud-_01.png" class="img-responsive" alt="">
           <div class="caption">
             <center>
@@ -512,9 +388,10 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
           </div>
         </div>
       </div>
-    </div>
-    <!-- End row --> 
+  
   </div>
+  
+  
  
 </div> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>
@@ -548,13 +425,13 @@ $(this).closest('.tabing').next('.no-of-users').show();
 })
 
 </script>
-<div id="home-services">
+<?php /*?><div id="home-services" style="display:none" >
   <div class="container">
     <div class="row"> 
       <!-- one-->
       <div class="col-md-6" >
- <div class="col-md-12" style="background:#ccc; color:#000; font-weight:bold;  padding:5px">Our Business Partners</div>
-        <div style="border:solid 1px #ccc; padding:10px; margin-bottom:5px" >
+ <div class="col-md-12 borderradius-top" style="background:#ccc; color:#000; font-weight:bold;  padding:5px">Our Business Partners</div>
+        <div class="borderradius-bottom" style="border:solid 1px #ccc; padding:10px; margin-bottom:5px" >
           <div class="h-service-content wow fadeInUp" >
              <img src="img/msLogo.jpg" width="150" style="padding:3px">
              <img src="img/hpLogo.jpg" width="150" style="padding:3px"> 
@@ -565,8 +442,8 @@ $(this).closest('.tabing').next('.no-of-users').show();
       <!-- two-->
            
             <div class="col-md-6" >
- <div class="col-md-12" style="background:#ccc; color:#000; font-weight:bold;  padding:5px">Our Test Drive Application Gallery</div>
-        <div style="border:solid 1px #ccc; padding:10px; margin-bottom:5px" >
+ <div class="col-md-12 borderradius-top" style="background:#ccc; color:#000; font-weight:bold;  padding:5px">Our Test Drive Application Gallery</div>
+        <div  class="borderradius-bottom" style="border:solid 1px #ccc; padding:10px; margin-bottom:5px" >
           <div class="h-service-content wow fadeInUp" >
           <div class="row">
           <div class="col-lg-2" style="padding-top:12px; padding-bottom:0;"><a href="http://mfa.ciontestdrive.com/MFASelfService/frmUserLogin.aspx" target="_blank"> <img src="img/mfa_icon.jpg" width="86px" class="img-responsive"  border="0" ></a></div>
@@ -589,10 +466,10 @@ $(this).closest('.tabing').next('.no-of-users').show();
       </div>
   </div>
   <!-- /container --> 
-</div>
+</div><?php */?>
 <!-- service end -->
 
-<p>&nbsp;</p>
+
 
 <!--footer start-->
 <div class="container">
@@ -601,8 +478,8 @@ $(this).closest('.tabing').next('.no-of-users').show();
 
 <div class="clearfix"></div>
     <div class="row">
-      <div class="col-lg-3 col-sm-4 address wow fadeInUp" data-wow-duration="2s" data-wow-delay=".1s" style="padding-left:30px;">
-
+      <div class="col-lg-3 col-sm-6  wow fadeInUp" data-wow-duration="2s" data-wow-delay=".1s" style="padding-left:30px;">
+<div class="address">
         <h1> contact info </h1>
         <address>
         <p style="color:#F90">USA Address</p>
@@ -613,8 +490,21 @@ Lakdi-ka-pool, Hyderabad-500004,TS, INDIA  &nbsp;
 <i class="fa fa-phone"></i>Phone : 91-40-64644486 </p>
         <p><i class="fa fa-envelope "></i>Email : <a href="javascript:;">info@cionsystems.com</a></p>
         </address>
+        </div>
+        <h4>Our Test Drive </h4>
+        <div class="testdrive">
+          <div><a href="http://mfa.ciontestdrive.com/MFASelfService/frmUserLogin.aspx" target="_blank"> <img src="img/mfa_icon.jpg" width="86px" class="img-responsive" border="0"></a></div>
+		  <div><a href="https://www.ciontestdrive.com/ActiveDirectoryManager/UserLogin.aspx"> <img src="img/adm_icon.jpg" width="86px" class="img-responsive" border="0"></a></div>
+       
+          <div><a href="https://www.ciontestdrive.com/SelfService/frmUserLogin.aspx" target="_blank"> <img src="img/cim_icon.jpg" width="86px" class="img-responsive" border="0"></a></div>
+          <div><a href="https://ciontestdrive.com/ADSelfService/frmUserLogin.aspx" target="_blank"> <img src="img/ess_icon.jpg" width="70px" class="img-responsive" border="0"></a></div>
+          <div><a href="https://ciontestdrive.com/ADRecoverySetup/UserLogin.aspx" target="_blank"> <img src="img/adr_icon.jpg" width="76px" class="img-responsive" border="0"></a></div>
+          </div>
+        
+        
+        
       </div>
-      <div class="col-lg-4 col-sm-4">
+      <div class="col-lg-4 col-sm-6">
         <div class="page-footer wow fadeInUp" data-wow-duration="2s" data-wow-delay=".5s">
           <h1> Products </h1>
           <ul class="page-footer-list">
@@ -629,7 +519,9 @@ Lakdi-ka-pool, Hyderabad-500004,TS, INDIA  &nbsp;
           </ul>
         </div>
       </div>
-      <div class="col-lg-3 col-sm-4">
+     <div class="col-lg-5 col-sm-12">
+    <div class="row">
+      <div class="col-lg-8 col-sm-6">
         <div class="page-footer wow fadeInUp" data-wow-duration="2s" data-wow-delay=".5s">
           <h1> Our Company </h1>
           <ul class="page-footer-list">
@@ -642,17 +534,29 @@ Lakdi-ka-pool, Hyderabad-500004,TS, INDIA  &nbsp;
           </ul>
         </div>
       </div>
-      
-      <div class="col-lg-2">
+      <div class="col-lg-4 col-sm-6">
         <h1> Follow us </h1>
         <a href="https://www.facebook.com/cionsystems/" target="_blank"><img src="img/facebook.png" ></a>  
         <a href="https://www.linkedin.com/company/cionsystems-inc" target="_blank"><img src="img/linkedin.png" ></a>
     	<a href="https://twitter.com/cionsystems?lang=en" target="_blank"><img src="img/twitter.png" ></a>
         <a href="https://www.youtube.com/channel/UCQdQ5lAZR5Fupfi-ZTw8m6Q" ta><img src="img/youtube.png" ></a>
 		<a href="http://blog.cionsystems.com/?feed=rss2" target="_blank" ><img src="img/rssfeed_01.png"></a>
+        <a href="http://gplus.com" target="_blank" ><img src="img/gplus.png"></a>
 	  
       
       </div>
+   
+   <div class="col-xs-12">
+   <h4>Our Business Partners</h4>
+   <div class="footerproduct">
+             <div><img src="img/msLogo.jpg" width="150" style="padding:3px"></div>
+            <div> <img src="img/hpLogo.jpg" width="150" style="padding:3px"></div> 
+            <div><img src="img/ibmLogo.jpg" width="150" style="padding:3px"></div> 
+          </div>
+   </div>
+   
+    </div>
+    </div>
     </div>
   </div>
 </footer>
@@ -702,23 +606,12 @@ function fnRedirect(Obj){
  <script type="text/javascript">
     $(document).on('ready', function() {
       $(".regular").slick({
-        dots: true,
-        infinite: true,
+        dots: false,
+        infinite: false,
         slidesToShow: 2,
         slidesToScroll: 1
       });
-      $(".center").slick({
-        dots: true,
-        infinite: true,
-        centerMode: true,
-        slidesToShow: 2,
-        slidesToScroll: 1
-      });
-      $(".variable").slick({
-        dots: true,
-        infinite: true,
-        variableWidth: true
-      });
+   
     });
   </script>
 
