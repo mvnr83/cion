@@ -6483,3 +6483,5 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
 .footerproduct div,.testdrive > div{ display:table-cell}
 
 .footerproduct div img,.testdrive > div img{ width:100% !important; max-width:100% !important;     border-radius: 8px; padding:5px;}
+.footerproduct1 div{ float:left}
+.footerproduct1 div img{ width:90px !important; max-width:100% !important;     border-radius: 8px; padding:5px;}
