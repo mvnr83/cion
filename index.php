@@ -331,6 +331,11 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
   </div>
   
   
+  
+  
+  
+  
+  
   <div class="row">
     <div class="col-md-2 col-sm-4 col-xs-6 nopadding">
         <div class="thumbnail" data-wow-delay=".1s"> <img src="img/office-365-cloud-_01.png" class="img-responsive" alt="">
@@ -392,8 +397,66 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
   </div>
   
   
+  
+  
+  <div class="row">
+  <div class="col-xs-12">
+ <h3 class="subheading">Partners</h3>
+  <div class="greybox partners">
+                
+                <div  class="marquee" id="mycrawler">
+<img src="images/logos/marqueelogos/microsoft.jpg" alt="Microsoft" class="img-responsive" />
+<img src="images/logos/marqueelogos/hp.jpg" alt="Business Partner" width="100"  height="50"/>
+<img src="images/logos/marqueelogos/ibm.jpg" alt="International Business Machines" width="100"  height="50"/>
+<img src="images/logos/marqueelogos/wageworks.jpg" alt="Wage Works" width="100"  height="50"/>
+<img src="images/logos/marqueelogos/ces.jpg" alt="Ces" width="100"  height="50"/>
+<img src="images/logos/marqueelogos/afl.jpg" alt="Afl" width="100"  height="50"/>
+<img src="images/logos/marqueelogos/svi.jpg" alt="svi" width="100"  height="50"/>
+<img src="images/logos/marqueelogos/mentis.jpg" alt="Mentis systems" width="100"  height="50"/>
+<img src="images/logos/marqueelogos/districtlogo.jpg" alt="District" width="100"  height="50"/>
+<img src="images/logos/marqueelogos/roche.jpg" alt="Roche" width="100"  height="50"/>
+<img src="images/logos/marqueelogos/akc.jpg" alt="American Kennel Club" width="100"  height="50"/>
+<img src="images/logos/marqueelogos/scotch.jpg" alt="Scotch College Melbourne" width="100"  height="50"/>
+<img src="images/logos/marqueelogos/softchoice.jpg" alt="Softchoice" width="100"  height="50"/>
+<img src="images/logos/marqueelogos/uoi.jpg" alt="University of Idaho" width="100"  height="50"/>
+<img src="images/logos/marqueelogos/itn.jpg" alt="Itn" width="100"  height="50"/>
+<img src="images/logos/marqueelogos/mmr.jpg" alt="Market Manage Results" width="100"  height="50"/>
+<img src="images/logos/marqueelogos/PCV.jpg" alt="Proactive" width="227"  height="50"/>
+<img src="images/logos/marqueelogos/ascom.JPG" alt="Ascom" width="132" height="56" />
+<img src="images/logos/marqueelogos/kpit.jpg" alt="KPIT Cummins Infosystems Limited" width="89" height="56"/>
+</div>
+                </div>
+</div>
+
+  
+  </div>
+  
+  
+  
+  
  
 </div> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/crawler.js"> </script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+marqueeInit({
+	uniqueid: 'mycrawler',
+	style: {
+		'padding': '2px',
+		//'width': '300px',
+		//'height': '50px'
+	},
+	inc: 1, //speed - pixel increment for each iteration of this marquee's movement
+	mouse: 'cursor driven', //mouseover behavior ('pause' 'cursor driven' or false)
+	moveatleast: 1,
+	neutral: 150,
+	savedirection: true
+});
+});
+</script>
+
+
 <script>
 $(document).ready(function(){
 
@@ -493,12 +556,12 @@ Lakdi-ka-pool, Hyderabad-500004,TS, INDIA  &nbsp;
         </div>
         <h4>Our Test Drive </h4>
         <div class="testdrive">
-          <div><a href="http://mfa.ciontestdrive.com/MFASelfService/frmUserLogin.aspx" target="_blank"> <img src="img/mfa_icon.jpg" width="86px" class="img-responsive" border="0"></a></div>
-		  <div><a href="https://www.ciontestdrive.com/ActiveDirectoryManager/UserLogin.aspx"> <img src="img/adm_icon.jpg" width="86px" class="img-responsive" border="0"></a></div>
+          <div><a href="http://mfa.ciontestdrive.com/MFASelfService/frmUserLogin.aspx" target="_blank"> <img src="images/logos/mfa_icon.png" width="86px" class="img-responsive" border="0"></a></div>
+		  <div><a href="https://www.ciontestdrive.com/ActiveDirectoryManager/UserLogin.aspx"> <img src="images/logos/adm_icon.png" width="86px" class="img-responsive" border="0"></a></div>
        
-          <div><a href="https://www.ciontestdrive.com/SelfService/frmUserLogin.aspx" target="_blank"> <img src="img/cim_icon.jpg" width="86px" class="img-responsive" border="0"></a></div>
-          <div><a href="https://ciontestdrive.com/ADSelfService/frmUserLogin.aspx" target="_blank"> <img src="img/ess_icon.jpg" width="70px" class="img-responsive" border="0"></a></div>
-          <div><a href="https://ciontestdrive.com/ADRecoverySetup/UserLogin.aspx" target="_blank"> <img src="img/adr_icon.jpg" width="76px" class="img-responsive" border="0"></a></div>
+          <div><a href="https://www.ciontestdrive.com/SelfService/frmUserLogin.aspx" target="_blank"> <img src="images/logos/cim_icon.png" width="86px" class="img-responsive" border="0"></a></div>
+          <div><a href="https://ciontestdrive.com/ADSelfService/frmUserLogin.aspx" target="_blank"> <img src="images/logos/ess_icon.png" width="70px" class="img-responsive" border="0"></a></div>
+          <div><a href="https://ciontestdrive.com/ADRecoverySetup/UserLogin.aspx" target="_blank"> <img src="images/logos/adr_icon.png" width="76px" class="img-responsive" border="0"></a></div>
           </div>
         
         
@@ -553,8 +616,8 @@ Lakdi-ka-pool, Hyderabad-500004,TS, INDIA  &nbsp;
             <div> <img src="img/hpLogo.jpg" width="150" style="padding:3px"></div> 
             <div><img src="img/ibmLogo.jpg" width="150" style="padding:3px"></div> <?php */?>
             
-              <div><img src="images/logos/msLogo.jpg" width="71" style="padding:3px"></div>
-            <div> <img src="images/logos/hpLogo.jpg" width="71" style="padding:3px"></div> 
+              <div><img src="images/logos/msLogo.png" width="71" style="padding:3px"></div>
+            <div> <img src="images/logos/hpLogo.png" width="71" style="padding:3px"></div> 
             <div><img src="images/logos/ibmLogo.png" width="71" style="padding:3px"></div> 
             
           </div>
