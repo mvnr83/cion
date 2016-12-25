@@ -6484,4 +6484,7 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
 
 .footerproduct div img,.testdrive > div img{ width:100% !important; max-width:100% !important;     border-radius: 8px; padding:5px;}
 .footerproduct1 div{ float:left}
-.footerproduct1 div img{ width:90px !important; max-width:100% !important;     border-radius: 8px; padding:5px;}
+.footerproduct1 div img{ width:90px !important; max-width:100% !important;     border-radius: 8px; padding:5px; margin-right:10px}
+.thumbnail{ border:0;}
+.address{ margin-bottom:10px; float:left; width:100%}
+.greybox.partners{ float:left; width:100%; margin-bottom:30px;}
