@@ -6458,13 +6458,15 @@ ul.popupulfirst{    margin: 0 0 20px 0;padding: 0;float: left;width: 100%;}
 .close1:after{ background:url(../images/close.png) no-repeat left top !important; width:16px; height:16px; background-size: 16px 16px !important;content:''; position:absolute; top:5px; left:5px; border-radius:50%;}
 .modal-backdrop.in{    opacity: .9;
     filter: alpha(opacity=90);}
-	.buynowBtn{ border-radius:10px; border:1px solid #6cb5d6; padding:5px 10px;/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#207cca+0,70bde0+0,ffffff+100 */
+	.buynowBtn{ border-radius:10px; border:1px solid #6cb5d6; padding:5px 10px;
 background: #207cca; /* Old browsers */
 background: -moz-linear-gradient(top,  #207cca 0%, #70bde0 0%, #ffffff 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(top,  #207cca 0%,#70bde0 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to bottom,  #207cca 0%,#70bde0 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#207cca', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
-font:400 14px 'Open Sans'; color:#002033; float:right}
+font:400 14px 'Open Sans'; color:#002033; float:right; cursor:pointer}
+
+a.buynowBtn:hover{ color:#000; opacity:.8 }
 .productsmodal .modal-footer{ margin:0; padding-top:0; border:0;}
 .addonssec {
     float: left;
@@ -6483,9 +6485,35 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
 .footerproduct div,.testdrive > div{ display:table-cell}
 
 .footerproduct div img,.testdrive > div img{ width:100% !important; max-width:100% !important;     border-radius: 8px; padding:5px;}
-.footerproduct1 div{ float:left}
+.footerproduct1 div,.footerproduct2 div{ float:left}
 .footerproduct1 div img{ width:90px !important; max-width:100% !important;     border-radius: 8px; padding:5px; margin-right:10px}
+.footerproduct2 div img{ max-width:100% !important;     border-radius: 8px; padding:5px;}
+.footerproduct2,.testdrive1{    float: left;
+    border: 1px solid #ccc;
+    border-radius: 8px; margin-bottom:30px;
+}
 .thumbnail{ border:0;}
 .address{ margin-bottom:10px; float:left; width:100%}
-.greybox.partners{ float:left; width:100%; margin-bottom:30px;}
-.thumb img{ width:100px !important; height:auto !important}
+.greybox.partners{     float: left;
+    width: 100%;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px 0;
+    background: #ccc;}
+.thumb img{ width:auto !important; height:100px !important}
+
+.solutionthumb  .thumbnail{ border:1px solid #ddd; float:left; width:100%; min-height:210px; margin-bottom:26px;border-radius: 10px;}
+.thumbcontent{ width:100%; text-align:center; padding:10px;    font: 400 13px 'Open Sans';
+    color: #484747;}
+.solutionthumb  .thumbnail .caption{ padding:0;}
+.thumbreadmore { float:right; margin-bottom:10px; margin-right:10px;}
+
+.thumb.solutionthumb .slick-prev:before, .thumb.solutionthumb .slick-next:before{     color: #2d2b2b;; font-size:36px;}
+.thumb.solutionthumb .slick-next {
+    right: 5px;  margin-top:-18px;
+}
+.thumb.solutionthumb .slick-prev {
+    left: -7px;
+    z-index: 99;margin-top:-18px;
+}
