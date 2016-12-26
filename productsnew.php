@@ -306,7 +306,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
         
       </div>
       <div class="modal-footer">
-        <a class="buynowBtn">Buy Now</a>
+        <a class="buynowBtn popupBuynow" href="javascript:;">Buy Now</a>
       </div>
     </div>
 
@@ -315,38 +315,9 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
 
 
 
-<!--property start--> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-
-$('.productbuynow').click(function(){
-
-$(this).closest('.service').find('.service_rollover').addClass('showhover')
-$(this).closest('.service').find('.service_rollovernew').addClass('showhover')
+<!--property start-->
 
 
-});
-
-$('.close').click(function(){
-
-$(this).closest('.service').find('.service_rollover').removeClass('showhover')
-$(this).closest('.service').find('.service_rollovernew').removeClass('showhover')
-});
-
-
-$('.tabing input').click(function(){
-
-if($(this).is(':checked'))
-{
-$(this).closest('.service').find('.no-of-users').hide();
-$(this).closest('.tabing').next('.no-of-users').show();
-}
-
-})
-
-})
-
-</script>
 
 <!-- service end -->
 
@@ -446,6 +417,7 @@ Lakdi-ka-pool, Hyderabad-500004,TS, INDIA  &nbsp;
 <script src="js/bootstrap.min.js" type="text/javascript"> </script> 
 <script type="text/javascript" src="js/hover-dropdown.js"> </script> 
 <script src="js/link-hover.js"> </script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 <script defer src="js/jquery.flexslider.js"> </script> 
 <script src="js/slick.js"> </script>
 <script>
@@ -459,6 +431,7 @@ function fnRedirect(Obj){
     </script>
  <script type="text/javascript">
     $(document).on('ready', function() {
+	
       $(".regular").slick({
         dots: false,
         infinite: false,
@@ -468,6 +441,66 @@ function fnRedirect(Obj){
    
     });
   </script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+
+
+$(document).on('click','.popupBuynow', function () {
+        var cart = $('.cartBlock');
+        var imgtodrag = $(this).closest('.modal-content').find(".modal-title");
+		
+		$(this).closest('.modal-content').find('.close1').click()
+		$("html, body").animate({ scrollTop: 0 }, "slow");
+		if (imgtodrag) {
+	
+            var imgclone = imgtodrag.clone().offset({
+                top: imgtodrag.offset().top,
+                left: imgtodrag.offset().left
+            })
+                .css({
+                'opacity': '0.5',
+                    'position': 'absolute',
+                    'height': '50px',
+                    'width': '400px',
+                    'z-index': '999999',
+					
+            })
+                .appendTo($('body'))
+                .animate({
+                'top': cart.offset().top + 10,
+                    'left': cart.offset().left + 10,
+                    'width': 75,
+                    'height': 75
+            }, 1000, 'easeInOutExpo');
+            
+            setTimeout(function () {
+                cart.effect("shake", {
+                    times: 2
+                }, 200);
+            }, 1500);
+
+            imgclone.animate({
+                'width': 0,
+                    'height': 0
+            }, function () {
+                $(this).detach()
+            });
+        }
+    });
+</script>
+
 
 </body>
 </html>
