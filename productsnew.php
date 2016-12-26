@@ -17,7 +17,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
 <title>Cion Systems</title>
 
 <link href="css/bootstrap.min.css" rel="stylesheet">
- <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" /> 
+
  <link href="css/style.css" rel="stylesheet">
  <link rel="stylesheet" href="css/flexslider.css"/>
 
