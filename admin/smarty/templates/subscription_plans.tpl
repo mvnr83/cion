@@ -88,10 +88,10 @@ function fnOrder(id,or_id)
                         <tr>
                           <td align="left" valign="top"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
                               <tr>
-							  	<td align="center" valign="middle" class="Sub_menu"><input type="checkbox"/></td>
+							  	<!-- <td align="center" valign="middle" class="Sub_menu"><input type="checkbox"/></td> -->
                                 <td align="center" valign="middle" class="Sub_menu">S.No </td>
 								<td align="center" valign="middle" class="Sub_menu">Plan name </td>
-								<td align="center" valign="middle" class="Sub_menu">Plan type</td>
+								<td align="center" valign="middle" class="Sub_menu">Full / Trail</td>
                                                                 <td align="center" valign="middle" class="Sub_menu">Price</td>
 								
 								<td align="center" valign="middle" class="Sub_menu">Status</td>
@@ -101,11 +101,11 @@ function fnOrder(id,or_id)
                               {if $count gt 0}
                              {section name=list loop=$array}
 									<tr>
-										<td align="center" valign="middle" class="Sub_menu"><input type="checkbox" name="id" value="{$array[list].sub_id}" /></td>
+										<!-- <td align="center" valign="middle" class="Sub_menu"><input type="checkbox" name="id" value="{$array[list].sub_id}" /></td> -->
 										<td class="aril" align="center">{$smarty.section.list.rownum}</td>
 										<td class="aril" align="center">{$array[list].plan_name}</td>
-										<td class="aril" align="center">{$array[list].plan_type}</td>
-										<td class="aril" align="center">{$array[list].price}</td>
+										<td class="aril" align="center">{if $array[list].plan_type eq 1}Full{else}Trail{/if}</td>
+										<td class="aril" align="center">{if $array[list].price_type eq 1} Request Quote{else}{$array[list].price}{/if}</td>
 										<td class="aril" align="center">{if $array[list].status == '1'}<a href="javascript:changestat('{$array[list].sub_id}','0');" class="Sub_menu">Make In Active</a>{else}<a href="javascript:changestat('{$array[list].sub_id}','1');" class="Sub_menu">Make Active</a>{/if}</td>
                                                                                 <td class="aril" align="center">
                                                                                      <img src="images/b_edit.png" width="20" onclick="javascript:editproduct('{$array[list].sub_id}','{$product_id}')" style="cursor:pointer"  title="Edit Plan"/> </td>

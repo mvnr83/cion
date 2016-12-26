@@ -242,14 +242,14 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
 
 <div class="container">
 <div class="row">
- <div class="col-xs-12"> <h2  class="subheading">Products<a class="viewmoreproducts" href="#">View more products &gt;&gt;</a></h2></div>
+ <div class="col-xs-12"> <h2  class="subheading">Products<a class="viewmoreproducts" href="productsnew.php">View more products &gt;&gt;</a></h2></div>
 
 <section class="regular slider col-xs-12">
     <div>
       <div class="custom"><a href="#"><img src="images/products/multifactors_img.png"></a>
       
       <span class="pbottom"> <span class="ptitle">Multifactor Authentication</span>
-              <a href="#" class="sliderlinkbuy">Buy Now</a> <a href="#" class="sliderlinktry">Try Now</a></span></div>
+              <a href="productsnew.php" class="sliderlinkbuy">Buy Now</a> <a href="#" class="sliderlinktry">Try Now</a></span></div>
     </div>
     <div>
      <div class="custom"><a href="#"> <img src="images/products/provisioning_img.png"></a>

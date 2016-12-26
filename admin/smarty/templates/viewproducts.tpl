@@ -1,5 +1,14 @@
 {literal}
 <script language="javascript" type="text/javascript">
+function fnToggleHomepage(id){
+ 
+	var frm = document.form1;
+	frm.uid.value = id;
+	frm.act.value = 'make_premium';
+	frm.action = 'viewproducts.php';
+	frm.submit();
+  
+}
 function check()
 {
 	var frm = document.form1;
@@ -128,7 +137,11 @@ function fnOrder(id,or_id)
                         <tr>
                           <td align="left" valign="top"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
                               <tr>
-							  	<td align="center" valign="middle" class="Sub_menu"><input type="checkbox"/></td>
+							  	<td align="center" valign="middle" class="Sub_menu">
+                                                                    
+                                                                    <!-- <input type="checkbox"/> -->
+                                                                    
+                                                                </td>
                                 <td align="center" valign="middle" class="Sub_menu">S.No </td>
 								<td align="center" valign="middle" class="Sub_menu">Product Name </td>
 								<!--<td align="center" valign="middle" class="Sub_menu">Short Description </td>-->
@@ -139,7 +152,15 @@ function fnOrder(id,or_id)
                               </tr>
                              {section name=list loop=$array}
 									<tr>
-										<td align="center" valign="middle" class="Sub_menu"><input type="checkbox" name="id" value="{$array[list].id}" /></td>
+										<td align="center" valign="middle" class="Sub_menu">
+                                                                                    {if $array[list].display_home_page eq 1}
+                                                                                        <img onclick="javascript: fnToggleHomepage('{$array[list].id}');" src="images/star_on.png" alt="click to hide on home page" title="click to hide on home page" style="cursor:pointer;width:16px; height:16px;">
+                                                                                    {else}
+                                                                                        <img onclick="javascript: fnToggleHomepage('{$array[list].id}');" src="images/star_off.png" alt="click to display on home page" title="click to display on home page" style="cursor:pointer;width:16px; height:16px;">
+                                                                                    {/if}
+                                                                                    
+                                                                                    <!-- <input type="checkbox" name="id" value="{$array[list].id}" /> -->
+                                                                                    </td>
 										<td class="aril" align="center">{$smarty.section.list.rownum}</td>
 										<td class="aril" align="center">{$array[list].product_name}</td>
 										<!--<td class="aril" align="center">{$array[list].short_description|truncate:50}</td>-->
@@ -151,7 +172,7 @@ function fnOrder(id,or_id)
 										</select>
 										</td>
 										<td class="aril" align="center">{if $array[list].status == 'Active'}<a href="javascript:changestat('{$array[list].id}','Inactive');" class="Sub_menu">Make In Active</a>{else}<a href="javascript:changestat('{$array[list].id}','Active');" class="Sub_menu">Make Active</a>{/if}</td>
-                                                                                <td class="aril" align="center"><img src="images/b_view.png"  width="16"/ onclick="javascript:showproduct('{$array[list].id}')" style="cursor:pointer" title="View Product Details"> / <img src="images/b_edit.png" width="20" onclick="javascript:editproduct('{$array[list].id}')" style="cursor:pointer"  title="Edit Product"/> / <a href="subscription_plans.php?product_id={$array[list].id}"><img src="images/subscription_plans.png" width="20" style="cursor:pointer"  title="View Subscription Plans"/></a></td>
+                                                                                <td class="aril" align="center"><img src="images/b_view.png"  width="16" onclick="javascript:showproduct('{$array[list].id}')" style="cursor:pointer" title="View Product Details"> / <img src="images/b_edit.png" width="20" onclick="javascript:editproduct('{$array[list].id}')" style="cursor:pointer"  title="Edit Product"/> / <a href="subscription_plans.php?product_id={$array[list].id}"><img src="images/subscription_plans.png" width="20" style="cursor:pointer"  title="View Subscription Plans"/></a></td>
                                                                                 
 										<td class="aril" align="center"><img src="images/b_drop.png" onclick="javascript:delproduct('{$array[list].id}')" style="cursor:hand" title="Delete Product" /></td>
 									</tr>
