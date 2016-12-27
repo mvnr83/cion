@@ -272,7 +272,7 @@ Lakdi-ka-pool, Hyderabad-500004,TS, INDIA  &nbsp;
     	<a href="https://twitter.com/cionsystems?lang=en" target="_blank"><img src="img/twitter.png" ></a>
         <a href="https://www.youtube.com/channel/UCQdQ5lAZR5Fupfi-ZTw8m6Q" ta><img src="img/youtube.png" ></a>
         <a href="http://gplus.com" target="_blank"><img src="img/gplus.png"></a>
-		<a href="http://blog.cionsystems.com/?feed=rss2" target="_blank" ><img src="img/rssfeed_01.png"></a>
+		
 	  
       
       </div>
