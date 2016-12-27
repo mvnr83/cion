@@ -356,7 +356,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
     <div class="col-md-12 col-sm-12 col-xs-12 nopadding">
         <div class="thumbnail" data-wow-delay=".1s"> <img src="img/am_az.jpg" class="img-responsive" alt="">
           <div class="caption">
-           <div class="thumbcontent"> CionSystems Cloud Identity Minder is a cloud-based identity, authentication and self service user life cycle management solution.</div> <center>
+           <div class="thumbcontent"> CionSystems Cloud Identity Minder is a cloud-based identity, authentication and self service.</div> <center>
               <a href="http://www.cionsystems.com/cloud-management.php" class="thumbreadmore">Read More</a>
             </center>
           </div>
@@ -367,7 +367,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
     <div class="col-md-12 col-sm-12 col-xs-12 nopadding">
         <div class="thumbnail wow fadeInUp" data-wow-delay=".5s"> <img src="img/redHat.jpg" alt="" class="img-responsive">
           <div class="caption">
-           <div class="thumbcontent"> CionSystems Cloud Identity Minder is a cloud-based identity, authentication and self service user life cycle management solution.</div>  <center>
+           <div class="thumbcontent"> CionSystems Cloud Identity Minder is a cloud-based identity, authentication and self service.</div>  <center>
               <a href="http://www.cionsystems.com/Cloud_Identity_Minder.php" class="thumbreadmore">Read More</a>
             </center>
           </div>
@@ -376,7 +376,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
     <div class="col-md-12 col-sm-12 col-xs-12 nopadding">
         <div class="thumbnail wow fadeInUp" data-wow-delay=".7s" > <img src="img/activeDirectory.jpg" alt="">
           <div class="caption">
-            <div class="thumbcontent"> CionSystems Cloud Identity Minder is a cloud-based identity, authentication and self service user life cycle management solution.</div>  <center>
+            <div class="thumbcontent"> CionSystems Cloud Identity Minder is a cloud-based identity, authentication and self service.</div>  <center>
               <a href="http://www.cionsystems.com/active_directory.php" class="thumbreadmore">Read More </a>
             </center>
           </div>
@@ -387,7 +387,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
     <div class="col-md-12 col-sm-12 col-xs-12 nopadding">
         <div class="thumbnail wow fadeInUp" data-wow-delay=".7s" > <img src="img/microsoftExchange.jpg" alt="">
           <div class="caption">
-           <div class="thumbcontent"> CionSystems Cloud Identity Minder is a cloud-based identity, authentication and self service user life cycle management solution.</div>   <center>
+           <div class="thumbcontent"> CionSystems Cloud Identity Minder is a cloud-based identity, authentication and self service.</div>   <center>
               <a href="http://www.cionsystems.com/microsoft_exchange.php" class="thumbreadmore">Read More </a>
             </center>
           </div>
@@ -396,7 +396,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
     <div class="col-md-12 col-sm-12 col-xs-12 nopadding">
         <div class="thumbnail wow fadeInUp" data-wow-delay=".7s" > <img src="img/sharePointLogo.jpg" alt="">
           <div class="caption">
-            <div class="thumbcontent"> CionSystems Cloud Identity Minder is a cloud-based identity, authentication and self service user life cycle management solution.</div>  <center>
+            <div class="thumbcontent"> CionSystems Cloud Identity Minder is a cloud-based identity, authentication and self service.</div>  <center>
               <a href="http://www.cionsystems.com/espm.php" class="thumbreadmore">Read More </a>
             </center>
           </div>
@@ -432,9 +432,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
 </div>
                 </div>
 
-
-
-  <h3 class="subheading">Our Test Drive </h3>
+<h3 class="subheading">Test Drive </h3>
         <div class="testdrive testdrive1">
           <div><a href="http://mfa.ciontestdrive.com/MFASelfService/frmUserLogin.aspx" target="_blank"> <img src="images/logos/mfa_icon.png" width="86px" class="img-responsive" border="0"></a></div>
 		  <div><a href="https://www.ciontestdrive.com/ActiveDirectoryManager/UserLogin.aspx"> <img src="images/logos/adm_icon.png" width="86px" class="img-responsive" border="0"></a></div>
@@ -443,9 +441,8 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
           <div><a href="https://ciontestdrive.com/ADSelfService/frmUserLogin.aspx" target="_blank"> <img src="images/logos/ess_icon.png" width="70px" class="img-responsive" border="0"></a></div>
           <div><a href="https://ciontestdrive.com/ADRecoverySetup/UserLogin.aspx" target="_blank"> <img src="images/logos/adr_icon.png" width="76px" class="img-responsive" border="0"></a></div>
           </div>
-        
- <h3 class="subheading bu-subHea">Our Business Partners</h3>
-   <div class="footerproduct2">
+<h3 class="subheading bu-subHea">Business Partners</h3>
+   <div class="footerproduct2" style="background:#ccc none repeat scroll 0 0;">
            <?php /*?>  <div><img src="img/msLogo.jpg" width="150" style="padding:3px"></div>
             <div> <img src="img/hpLogo.jpg" width="150" style="padding:3px"></div> 
             <div><img src="img/ibmLogo.jpg" width="150" style="padding:3px"></div> <?php */?>
@@ -455,6 +452,9 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
             <div><img src="images/logos/plo/ibmLogo.jpg"></div>
             
           </div>
+  
+        
+ 
 
 
 
