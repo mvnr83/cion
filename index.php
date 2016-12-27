@@ -17,7 +17,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
 <title>Cion Systems</title>
 
 <link href="css/bootstrap.min.css" rel="stylesheet">
-<!-- <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" /> -->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
  <link href="css/style.css" rel="stylesheet">
  <link rel="stylesheet" href="css/flexslider.css"/>
 
@@ -209,7 +209,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
 <br/><br/>
 
 <div class="container">
-<h1>Welcome to Cion Systems</h1>
+<h1>Welcome to CionSystems</h1>
 <div class="welcomeblock"><p><strong>CionSystems</strong> delivers a simple and cost effective solution to improve security and streamline managing IT infrastructure.  CionSystems Identity Management solutions are designed to integrate with enterprise HR systems, school information systems and other systems. Products are designed to provide benefits for schools districts and IT organizations of varying size, complexity, and skill levels in verticals like finance, insurance, education, telecom, technology etc.  Implement process driven Security and Auditing to reduce support costs and quickly respond to security incidents while continuous monitoring, reporting and alerting of directories like Active Directory, ldap, openldap, office365, azure AD.</p></div>
 
 
@@ -674,17 +674,22 @@ Lakdi-ka-pool, Hyderabad-500004,TS, INDIA  &nbsp;
 <footer class="footer-small">
   <div class="container">
     <div class="row">
-      <div class="col-lg-3 col-sm-3" style="color:#fff"> 2016 &copy; Copyright - Coinsystems. </div>
-      <div class="col-lg-9 col-sm-9">
-      <a href=""  style="color:#fff">CionSystems Professional Services</a> |      
-      <a href="http://www.cionsystems.com/whitepapers.php" style="color:#fff">WhitePapers</a>  | 
-      <a href="http://www.cionsystems.com/termsofuse.php" class="social-link-footer" style="color:#fff"> Terms of Use</a>  |  
-      <a href="http://www.cionsystems.com/privacy_policy.php" style="color:#fff">Privacy Policy </a> |  
-      <a href="http://www.cionsystems.com/aboutus.php" style="color:#fff">About Us</a>  |  
-      <a href="http://cionsystems.com/press/" style="color:#fff"> Press </a> |  
-      <a href="http://blog.cionsystems.com/" style="color:#fff">BLOG</a> 
-   
+      
+      <div class="col-lg-12 xol-xs-12 col-sm-12 text-center footernavmain pill-left">
+     <ul class="footernav"><li>     
+      <a href=""  style="color:#fff">CionSystems Professional Services</a></li>
+      <li><a href="http://www.cionsystems.com/whitepapers.php" style="color:#fff">WhitePapers</a></li> 
+      <li><a href="http://www.cionsystems.com/termsofuse.php" class="social-link-footer" style="color:#fff"> Terms of Use</a></li> 
+     <li> <a href="http://www.cionsystems.com/privacy_policy.php" style="color:#fff">Privacy Policy </a></li>  
+     <li> <a href="http://www.cionsystems.com/aboutus.php" style="color:#fff">About Us</a></li> 
+     <li> <a href="http://cionsystems.com/press/" style="color:#fff"> Press </a></li> 
+    <li>  <a href="http://blog.cionsystems.com/" style="color:#fff">BLOG</a> </li></ul>
+   <a href="http://blog.cionsystems.com/?feed=rss2" target="_blank" class="rssblock"> <img src="images/rssicon.png"  border="0" title="RSS" alt="rss"></a>
       </div>
+      
+      <div class="col-lg-12 col-sm-12 text-center copyright1 pull-left" style="color:#fff"> 2016 &copy; Copyright - Coinsystems. </div>
+      
+      
     </div>
   </div>
 </footer>

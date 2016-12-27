@@ -2649,6 +2649,7 @@ ul.page-footer-list li i { padding-right: 10px }
     text-align: left;
 
     margin-bottom: 10px;
+	padding:0;
 
 }
 
@@ -6511,10 +6512,27 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
 
 .thumb.solutionthumb .slick-prev:before, .thumb.solutionthumb .slick-next:before{     color: #2d2b2b;; font-size:36px;}
 .thumb.solutionthumb .slick-next {
-    right: 5px;  margin-top:-18px;
+    right: -4px;  margin-top:-18px;
 }
 .thumb.solutionthumb .slick-prev {
     left: -7px;
     z-index: 99;margin-top:-18px;
 }
 .subheading.bu-subHea{ clear:both}
+.footernav{  list-style:none; padding:0; margin:10px 0 0 0; width:100%; float:left}
+.footernav li{display:inline-block; margin:0; list-style:none;  margin:0; padding:0 10px ; position:relative}
+.footernav li:before{ position:absolute; content:''; top:5px; left:0; bottom:3px; width:1px; background:#ccc}
+.footernav li:first-child:before{ display:none}
+.copyright1{ margin-bottom:10px;  margin-top:10px}
+.footernavmain{ position:relative}
+.rssblock{ position:absolute; top:10px; right:10px;}
+
+.thumb.solutionthumb .slick-prev.slick-arrow, .thumb.solutionthumb .slick-next.slick-arrow{
+        font: normal 14px/1 FontAwesome;
+}
+.thumb.solutionthumb .slick-prev.slick-arrow:before {
+content: "\f053"; font: normal 33px/1 FontAwesome;}
+.thumb.solutionthumb .slick-next.slick-arrow:before {
+    content: "\f054";font: normal 33px/1 FontAwesome;}
+
+
