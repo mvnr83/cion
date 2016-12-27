@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.5-dev, created on 2016-12-24 03:40:32
+<?php /* Smarty version 2.6.5-dev, created on 2016-12-27 06:46:53
          compiled from welcome.tpl */ ?>
 <table width="99%" border="0" align="center" cellpadding="0" cellspacing="0" >
 <tr>

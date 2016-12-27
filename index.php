@@ -112,9 +112,9 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
         <li > <a href="index.php">Home </a> </li>
         <li class="dropdown"> 
             <a class="dropdown-toggle" data-close-others="false" data-delay="0" onClick="fnRedirect(this);" 
-        data-hover="dropdown" data-toggle="dropdown" href="http://www.cionsystems.com/solution_all.php">Solutions <i class="fa fa-angle-down"></i> </a>
+        data-hover="dropdown" data-toggle="dropdown" href="solution_all.php">Solutions <i class="fa fa-angle-down"></i> </a>
           <ul class="dropdown-menu">
-            <li><a href="cmt.php.php">DirSync for O365 | Azure</a></li>
+            <li><a href="cmt.php">DirSync for O365 | Azure</a></li>
             <li> <a href="active_directory.php">Active Directory</a> </li>
             <li> <a href="windows-management.php">Windows Management</a> </li>
             <li> <a href="microsoft_exchange.php">Microsoft Exchange</a> </li>
@@ -127,7 +127,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
         </li>
         <li class="dropdown"> 
 		<a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover="dropdown" role="button"
-					  data-toggle="dropdown"  onclick="fnRedirect(this);" href="http://www.cionsystems.com/active-directory-tools.php">
+					  data-toggle="dropdown"  onclick="fnRedirect(this);" href="active-directory-tools.php">
 					  Products <i class="fa fa-angle-down"></i> </a>
           <ul class="dropdown-menu">
 		   <li><a href="mfauthentication.php">MultiFactor Autentication</a> </li>
@@ -148,7 +148,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
         </li>
         <li><a href="support_overview.php">Support</a></li>
         <li class="dropdown"> <a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover=
-                      "dropdown" data-toggle="dropdown"  onclick="fnRedirect(this);" href="http://www.cionsystems.com/active-directory-tools.php">Downloads <i class="fa fa-angle-down"></i> </a>
+                      "dropdown" data-toggle="dropdown"  onclick="fnRedirect(this);" href="active-directory-tools.php">Downloads <i class="fa fa-angle-down"></i> </a>
           <ul class="dropdown-menu">
             <li><a href="active-directory-tools.php">Products</a> </li>
             <li> <a href="whitepapers.php">Whitepapers</a> </li>
@@ -156,7 +156,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
           </ul>
         </li>
         <li class="dropdown"> <a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover=
-                      "dropdown" data-toggle="dropdown"  onclick="fnRedirect(this);" href="http://www.cionsystems.com/partners.php">Partners <i class="fa fa-angle-down"></i> </a>
+                      "dropdown" data-toggle="dropdown"  onclick="fnRedirect(this);" href="partners.php">Partners <i class="fa fa-angle-down"></i> </a>
           <ul class="dropdown-menu">
             <li> <a href="partners.php">Program Overview</a> </li>
             <li> <a href="partnerportal/register.php">Become a Partner</a> </li>
@@ -164,7 +164,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
           </ul>
         </li>
         <li class="dropdown"> <a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover=
-                      "dropdown" data-toggle="dropdown"  onclick="fnRedirect(this);" href="http://www.cionsystems.com/aboutus.php">Company <i class="fa fa-angle-down"></i> </a>
+                      "dropdown" data-toggle="dropdown"  onclick="fnRedirect(this);" href="aboutus.php">Company <i class="fa fa-angle-down"></i> </a>
           <ul class="dropdown-menu">
             <li> <a href="http://cionsystems.com/aboutus.php">About Us</a> </li>
             <li> <a href="http://cionsystems.com/events/">News and Events</a> </li>
