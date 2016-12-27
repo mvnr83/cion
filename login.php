@@ -537,6 +537,6 @@ $content=$smarty->fetch("login.tpl");
 
 $smarty->assign("content",$content);
 
-$smarty->display("index.tpl");
+$smarty->display("home.tpl");
 
 ?>

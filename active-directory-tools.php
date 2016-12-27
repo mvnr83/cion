@@ -80,13 +80,13 @@ while($res = mysql_fetch_assoc($sql)){
     }
     $products[$res['id']]['sub_plans_json'] = json_encode($products[$res['id']]['sub_plans']);
 }
-echo "<pre>";
-print_r($products);
-exit();
+//echo "<pre>";
+//print_r($products);
+//exit();
 $smarty->assign("productname",$pro_name);
 
 $smarty->assign("session_username",$_SESSION['username']);
-
+$smarty->assign("products",$products);
 $content=$smarty->fetch("productsnew.tpl");
 
 $smarty->assign("content",$content);
