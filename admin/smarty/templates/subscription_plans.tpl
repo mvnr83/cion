@@ -93,6 +93,7 @@ function fnOrder(id,or_id)
 								<td align="center" valign="middle" class="Sub_menu">Plan name </td>
 								<td align="center" valign="middle" class="Sub_menu">Full / Trail</td>
                                                                 <td align="center" valign="middle" class="Sub_menu">Price</td>
+                                                                <td align="center" valign="middle" class="Sub_menu">Add-On</td>
 								
 								<td align="center" valign="middle" class="Sub_menu">Status</td>
 								<td align="center" valign="middle" class="Sub_menu">Edit</td>
@@ -106,6 +107,7 @@ function fnOrder(id,or_id)
 										<td class="aril" align="center">{$array[list].plan_name}</td>
 										<td class="aril" align="center">{if $array[list].plan_type eq 1}Full{else}Trail{/if}</td>
 										<td class="aril" align="center">{if $array[list].price_type eq 1} Request Quote{else}{$array[list].price}{/if}</td>
+                                                                                <td class="aril" align="center">{if $array[list].is_addon == '1'}Yes{else}No{/if}</td>
 										<td class="aril" align="center">{if $array[list].status == '1'}<a href="javascript:changestat('{$array[list].sub_id}','0');" class="Sub_menu">Make In Active</a>{else}<a href="javascript:changestat('{$array[list].sub_id}','1');" class="Sub_menu">Make Active</a>{/if}</td>
                                                                                 <td class="aril" align="center">
                                                                                      <img src="images/b_edit.png" width="20" onclick="javascript:editproduct('{$array[list].sub_id}','{$product_id}')" style="cursor:pointer"  title="Edit Plan"/> </td>

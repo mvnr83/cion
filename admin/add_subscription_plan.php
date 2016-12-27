@@ -18,8 +18,8 @@ while($p_sel = @mysql_fetch_assoc($sql))
 
 if($_POST[act] =='add')
 {
-		$sql_ins = "insert into subscription_plans (product_id,plan_name,price,plan_type,price_type,status) "
-                        . "values ('".$product_id."','".$_POST['plan_name']."','".$_POST['price']."','".$_POST['plan_type']."','".$_POST['price_type']."','".$_POST[status]."')";
+		$sql_ins = "insert into subscription_plans (product_id,plan_name,price,plan_type,price_type,is_addon,status) "
+                        . "values ('".$product_id."','".$_POST['plan_name']."','".$_POST['price']."','".$_POST['plan_type']."','".$_POST['price_type']."','".$_POST[is_addon]."','".$_POST[status]."')";
 		$res_ins = @mysql_query($sql_ins);
 		if(@mysql_affected_rows()>0)
 		{

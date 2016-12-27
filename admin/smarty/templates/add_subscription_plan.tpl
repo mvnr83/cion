@@ -95,6 +95,17 @@ function clear()
                                 <td align="left" valign="middle">Request Quote/Contact Us</td>
                                 <td align="left" valign="middle">&nbsp;</td>
                               </tr>
+                              
+                              <tr>
+                                <td align="right" valign="middle" class="aril">Is this Addon :</td>
+                                <td align="center" valign="middle">&nbsp;</td>
+                                <td height="25" align="left" valign="middle"><select name="is_addon">
+								
+								<option value="1"  selected="selected">Yes</option>
+								<option value="0">No</option>
+								</select></td>
+                                <td align="left" valign="middle">&nbsp;</td>
+                              </tr>
 							  
 							 <tr>
                                 <td align="right" valign="middle" class="aril">Status :</td>
