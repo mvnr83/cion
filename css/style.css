@@ -6536,3 +6536,12 @@ content: "\f053"; font: normal 33px/1 FontAwesome;}
     content: "\f054";font: normal 33px/1 FontAwesome;}
 
 
+.navbar-collapse{ padding-left:0 !important;padding-right:0 !important}
+.topbtn{padding-right:0 !important}
+
+@media only screen and (max-width: 1023px) {.ptitle{ width:100%; clear:both; float:left; font-size:12px;}
+.sliderlinkbuy:before,.sliderlinktry:before{ background-size:16px;}
+.sliderlinkbuy,.sliderlinktry{ font-size:12px;}
+.subheading{ font-size:18px;}
+.productBlock ul{ width:100%}
+}
