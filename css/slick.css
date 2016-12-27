@@ -118,26 +118,5 @@
 .slick-slide img{ max-width:100%}
 .sliderlink{ text-align:center; display: inherit; }
 .sliderlink img{    display: inline-block;}
-.regular .slick-slide{ padding:5px 10px;}
-.slick-slide .custom{ background:#052c4a; border-radius:10px;}
-
-.slick-slide .custom a:first-child img{ border-radius:15px;} 
+.regular{ background:#052c4a; padding:20px;}
 .slick-slide a img{ padding:10px;}
-
-.regular .slick-prev:before, .regular .slick-next:before{ color:#fff; font-size:36px;    top: 1px !important;
-    position: absolute;
-    left: 0px;}
-.regular .slick-next {
-    right: 8px;
-}
-.regular .slick-prev{ left:8px; z-index:999}
-
-
-.regular .slick-prev ,.regular .slick-next{
-   
-    z-index: 999;
-    background: #112225  !important;
-    border-radius: 50%;
-    height: 35px;
-    width: 35px;
-	}
