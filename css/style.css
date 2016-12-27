@@ -6490,7 +6490,7 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
 .footerproduct2 div img{ max-width:100% !important;     border-radius: 8px; padding:5px;}
 .footerproduct2,.testdrive1{    float: left;
     border: 1px solid #ccc;
-    border-radius: 8px; margin-bottom:30px;
+    border-radius: 8px; margin-bottom:30px; width:100%;
 }
 .thumbnail{ border:0;}
 .address{ margin-bottom:10px; float:left; width:100%}
