@@ -344,69 +344,80 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
  
   <div class="items1 "> 
    <div class="col-md-12 col-sm-12 col-xs-12 nopadding">
-        <div class="thumbnail" data-wow-delay=".1s"> <img src="img/office-365-cloud-_01.png" class="img-responsive" alt="">
-          <div class="thumbcontent">CionSystems’ cloud based Identity and Access Management (IAM) Solution, CIMT</div>
-          <div class="caption">
-            <center>
-              <a href="http://www.cionsystems.com/cmt.php" class="thumbreadmore ">Read More</a>
-            </center>
-          </div>
+        <div class="thumbnail" data-wow-delay=".1s"><a href="http://www.cionsystems.com/cmt.php" class=" "> <img src="img/office-365-cloud-_01.png" class="img-responsive" alt=""></a>
+          
+         
         </div>
       </div>
     <div class="col-md-12 col-sm-12 col-xs-12 nopadding">
-        <div class="thumbnail" data-wow-delay=".1s"> <img src="img/am_az.jpg" class="img-responsive" alt="">
-          <div class="caption">
-           <div class="thumbcontent"> CionSystems Cloud Identity Minder is a cloud-based identity, authentication and self service.</div> <center>
-              <a href="http://www.cionsystems.com/cloud-management.php" class="thumbreadmore">Read More</a>
-            </center>
-          </div>
+        <div class="thumbnail" data-wow-delay=".1s"> <a href="http://www.cionsystems.com/cloud-management.php" class=""> <img src="img/am_az.jpg" class="img-responsive" alt=""></a>
+        
+             
+         
         </div>
       </div>
   </div>
     <div class="items1">
     <div class="col-md-12 col-sm-12 col-xs-12 nopadding">
-        <div class="thumbnail wow fadeInUp" data-wow-delay=".5s"> <img src="img/redHat.jpg" alt="" class="img-responsive">
-          <div class="caption">
-           <div class="thumbcontent"> CionSystems Cloud Identity Minder is a cloud-based identity, authentication and self service.</div>  <center>
-              <a href="http://www.cionsystems.com/Cloud_Identity_Minder.php" class="thumbreadmore">Read More</a>
-            </center>
-          </div>
+        <div class="thumbnail wow fadeInUp" data-wow-delay=".5s">   <a href="http://www.cionsystems.com/Cloud_Identity_Minder.php" class=""><img src="img/redHat.jpg" alt="" class="img-responsive"></a>
+       
         </div>
       </div>
     <div class="col-md-12 col-sm-12 col-xs-12 nopadding">
-        <div class="thumbnail wow fadeInUp" data-wow-delay=".7s" > <img src="img/activeDirectory.jpg" alt="">
-          <div class="caption">
-            <div class="thumbcontent"> CionSystems Cloud Identity Minder is a cloud-based identity, authentication and self service.</div>  <center>
-              <a href="http://www.cionsystems.com/active_directory.php" class="thumbreadmore">Read More </a>
-            </center>
-          </div>
+        <div class="thumbnail wow fadeInUp" data-wow-delay=".7s" > <a href="http://www.cionsystems.com/active_directory.php" class=""> <img src="img/activeDirectory.jpg" alt=""></a>
+         
         </div>
       </div>
     </div>
       <div class="items1">
     <div class="col-md-12 col-sm-12 col-xs-12 nopadding">
-        <div class="thumbnail wow fadeInUp" data-wow-delay=".7s" > <img src="img/microsoftExchange.jpg" alt="">
-          <div class="caption">
-           <div class="thumbcontent"> CionSystems Cloud Identity Minder is a cloud-based identity, authentication and self service.</div>   <center>
-              <a href="http://www.cionsystems.com/microsoft_exchange.php" class="thumbreadmore">Read More </a>
-            </center>
-          </div>
+        <div class="thumbnail wow fadeInUp" data-wow-delay=".7s" ><a href="http://www.cionsystems.com/microsoft_exchange.php" class=""> <img src="img/microsoftExchange.jpg" alt=""></a>
+          
         </div>
       </div>
     <div class="col-md-12 col-sm-12 col-xs-12 nopadding">
-        <div class="thumbnail wow fadeInUp" data-wow-delay=".7s" > <img src="img/sharePointLogo.jpg" alt="">
-          <div class="caption">
-            <div class="thumbcontent"> CionSystems Cloud Identity Minder is a cloud-based identity, authentication and self service.</div>  <center>
-              <a href="http://www.cionsystems.com/espm.php" class="thumbreadmore">Read More </a>
-            </center>
-          </div>
+        <div class="thumbnail wow fadeInUp" data-wow-delay=".7s" ><a href="http://www.cionsystems.com/espm.php"><img src="img/sharePointLogo.jpg" alt=""></a>
+       
         </div>
       </div>
       </div>
   </div>
   </div>
   <div class="col-xs-12  col-md-4">
- <h3 class="subheading">Customers</h3>
+
+
+<h3 class="subheading">Test Drive </h3>
+        <div class="testdrive testdrive1">
+          <div><a href="http://mfa.ciontestdrive.com/MFASelfService/frmUserLogin.aspx" target="_blank"> <img src="images/logos/mfa_icon.png" width="86px" class="img-responsive" border="0"></a></div>
+		  <div><a href="https://www.ciontestdrive.com/ActiveDirectoryManager/UserLogin.aspx"> <img src="images/logos/adm_icon.png" width="86px" class="img-responsive" border="0"></a></div>
+       
+          <div><a href="https://www.ciontestdrive.com/SelfService/frmUserLogin.aspx" target="_blank"> <img src="images/logos/cim_icon.png" width="86px" class="img-responsive" border="0"></a></div>
+          <div><a href="https://ciontestdrive.com/ADSelfService/frmUserLogin.aspx" target="_blank"> <img src="images/logos/ess_icon.png" width="70px" class="img-responsive" border="0"></a></div>
+          <div><a href="https://ciontestdrive.com/ADRecoverySetup/UserLogin.aspx" target="_blank"> <img src="images/logos/adr_icon.png" width="76px" class="img-responsive" border="0"></a></div>
+          </div>
+<h3 class="subheading bu-subHea">Business Partners</h3>
+   <div class="footerproduct2" >
+           <?php /*?>  <div><img src="img/msLogo.jpg" width="150" style="padding:3px"></div>
+            <div> <img src="img/hpLogo.jpg" width="150" style="padding:3px"></div> 
+            <div><img src="img/ibmLogo.jpg" width="150" style="padding:3px"></div> <?php */?>
+            
+            <div><img src="images/logos/plo/msLogo.jpg"  ></div>
+            <div> <img src="images/logos/plo/hpLogo.jpg" ></div> 
+            <div><img src="images/logos/plo/ibmLogo.jpg"></div>
+            
+          </div>
+  
+        
+ 
+
+
+
+
+</div>
+  
+  
+  <div class="col-xs-12 col-lg-12 pull-left">
+   <h3 class="subheading">Customers</h3>
   <div class="greybox partners">
                 
                 <div  class="marquee" id="mycrawler">
@@ -431,36 +442,8 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
 <img src="images/logos/marqueelogos/kpit.jpg" alt="KPIT Cummins Infosystems Limited" width="89" height="56"/>
 </div>
                 </div>
-
-<h3 class="subheading">Test Drive </h3>
-        <div class="testdrive testdrive1">
-          <div><a href="http://mfa.ciontestdrive.com/MFASelfService/frmUserLogin.aspx" target="_blank"> <img src="images/logos/mfa_icon.png" width="86px" class="img-responsive" border="0"></a></div>
-		  <div><a href="https://www.ciontestdrive.com/ActiveDirectoryManager/UserLogin.aspx"> <img src="images/logos/adm_icon.png" width="86px" class="img-responsive" border="0"></a></div>
-       
-          <div><a href="https://www.ciontestdrive.com/SelfService/frmUserLogin.aspx" target="_blank"> <img src="images/logos/cim_icon.png" width="86px" class="img-responsive" border="0"></a></div>
-          <div><a href="https://ciontestdrive.com/ADSelfService/frmUserLogin.aspx" target="_blank"> <img src="images/logos/ess_icon.png" width="70px" class="img-responsive" border="0"></a></div>
-          <div><a href="https://ciontestdrive.com/ADRecoverySetup/UserLogin.aspx" target="_blank"> <img src="images/logos/adr_icon.png" width="76px" class="img-responsive" border="0"></a></div>
-          </div>
-<h3 class="subheading bu-subHea">Business Partners</h3>
-   <div class="footerproduct2" style="background:#ccc none repeat scroll 0 0;">
-           <?php /*?>  <div><img src="img/msLogo.jpg" width="150" style="padding:3px"></div>
-            <div> <img src="img/hpLogo.jpg" width="150" style="padding:3px"></div> 
-            <div><img src="img/ibmLogo.jpg" width="150" style="padding:3px"></div> <?php */?>
-            
-            <div><img src="images/logos/plo/msLogo.jpg"  ></div>
-            <div> <img src="images/logos/plo/hpLogo.jpg" ></div> 
-            <div><img src="images/logos/plo/ibmLogo.jpg"></div>
-            
-          </div>
   
-        
- 
-
-
-
-
-</div>
-  
+  </div>
   
   
   </div>
@@ -674,8 +657,8 @@ Lakdi-ka-pool, Hyderabad-500004,TS, INDIA  &nbsp;
 <footer class="footer-small">
   <div class="container">
     <div class="row">
-      
-      <div class="col-lg-12 xol-xs-12 col-sm-12 text-center footernavmain pill-left">
+       <div class="col-lg-3 col-sm-12 copyright1 pull-left" style="color:#fff"> 2016 &copy; Copyright - Coinsystems. </div>
+      <div class="col-lg-9 xol-xs-12 col-sm-12 text-center footernavmain pull-right">
      <ul class="footernav"><li>     
       <a href=""  style="color:#fff">CionSystems Professional Services</a></li>
       <li><a href="http://www.cionsystems.com/whitepapers.php" style="color:#fff">WhitePapers</a></li> 
@@ -687,7 +670,7 @@ Lakdi-ka-pool, Hyderabad-500004,TS, INDIA  &nbsp;
    <a href="http://blog.cionsystems.com/?feed=rss2" target="_blank" class="rssblock"> <img src="images/rssicon.png"  border="0" title="RSS" alt="rss"></a>
       </div>
       
-      <div class="col-lg-12 col-sm-12 text-center copyright1 pull-left" style="color:#fff"> 2016 &copy; Copyright - Coinsystems. </div>
+     
       
       
     </div>
@@ -739,7 +722,7 @@ function fnRedirect(Obj){
      dots: false,
         infinite: true,
         slidesToShow: 2,
-        slidesToScroll: 1, autoplay:true,
+        slidesToScroll: 1, autoplay:false,
 
     responsive: [{ 
         breakpoint: 600,

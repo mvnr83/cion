@@ -6488,11 +6488,12 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
 .footerproduct div img,.testdrive > div img{ width:100% !important; max-width:100% !important;     border-radius: 8px; padding:5px;}
 .footerproduct1 div,.footerproduct2 div{ float:left}
 .footerproduct1 div img{ width:90px !important; max-width:100% !important;     border-radius: 8px; padding:5px; margin-right:10px}
-.footerproduct2 div img{ max-width:100% !important;     border-radius: 8px; padding:5px;}
+.footerproduct2 div img{ max-width:100% !important;     border-radius: 8px; padding:2px 5px;}
 .footerproduct2,.testdrive1{    float: left;
     border: 1px solid #ccc;
     border-radius: 8px; margin-bottom:30px; width:100%;
-}
+}.footerproduct2{margin-bottom:5px; }
+.testdrive1{ padding:3px 0}
 .thumbnail{ border:0;}
 .address{ margin-bottom:10px; float:left; width:100%}
 .greybox.partners{     float: left;
@@ -6501,10 +6502,12 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 10px 0;
-    background: #ccc;}
+    background: #e8e8e8;}
 .thumb img{ width:auto !important; height:100px !important}
 
-.solutionthumb  .thumbnail{ border:1px solid #ddd; float:left; width:100%; min-height:210px; margin-bottom:26px;border-radius: 10px;}
+.solutionthumb  .thumbnail{ border:1px solid #ddd; float:left; width:100%; margin-bottom:20px;border-radius: 10px; text-align:center}
+.solutionthumb  .thumbnail img,.solutionthumb  .thumbnail a{ display:inline-block !important}
+
 .thumbcontent{ width:100%; text-align:center; padding:10px;    font: 400 13px 'Open Sans';
     color: #484747;}
 .solutionthumb  .thumbnail .caption{ padding:0;}
@@ -6516,10 +6519,10 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
 }
 .thumb.solutionthumb .slick-prev {
     left: -7px;
-    z-index: 99;margin-top:-18px;
+    z-index: 99;margin-top:-12px;
 }
 .subheading.bu-subHea{ clear:both}
-.footernav{  list-style:none; padding:0; margin:10px 0 0 0; width:100%; float:left}
+.footernav{  list-style:none; padding:0 30px 0 0; margin:10px 0 0 0; width:100%; float:left}
 .footernav li{display:inline-block; margin:0; list-style:none;  margin:0; padding:0 10px ; position:relative}
 .footernav li:before{ position:absolute; content:''; top:5px; left:0; bottom:3px; width:1px; background:#ccc}
 .footernav li:first-child:before{ display:none}
@@ -6538,6 +6541,9 @@ content: "\f053"; font: normal 33px/1 FontAwesome;}
 
 .navbar-collapse{ padding-left:0 !important;padding-right:0 !important}
 .topbtn{padding-right:0 !important}
+.solutionthumb.slick-slider{ margin-bottom:0;}
+
+
 
 @media only screen and (max-width: 1023px) {.ptitle{ width:100%; clear:both; float:left; font-size:12px;}
 .sliderlinkbuy:before,.sliderlinktry:before{ background-size:16px;}
