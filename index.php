@@ -210,7 +210,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
 
 <div class="container">
 <h1>Welcome to CionSystems</h1>
-<div class="welcomeblock"><p><strong>CionSystems</strong> delivers a simple and cost effective solution to improve security and streamline managing IT infrastructure.  CionSystems Identity Management solutions are designed to integrate with enterprise HR systems, school information systems and other systems. Products are designed to provide benefits for schools districts and IT organizations of varying size, complexity, and skill levels in verticals like finance, insurance, education, telecom, technology etc.  Implement process driven Security and Auditing to reduce support costs and quickly respond to security incidents while continuous monitoring, reporting and alerting of directories like Active Directory, ldap, openldap, office365, azure AD.</p></div>
+<div class="welcomeblock"><p class="text-justify"><strong>CionSystems</strong> delivers a simple and cost effective solution to improve security and streamline managing IT infrastructure.  CionSystems Identity Management solutions are designed to integrate with enterprise HR systems, school information systems and other systems. Products are designed to provide benefits for schools districts and IT organizations of varying size, complexity, and skill levels in verticals like finance, insurance, education, telecom, technology etc.  Implement process driven Security and Auditing to reduce support costs and quickly respond to security incidents while continuous monitoring, reporting and alerting of directories like Active Directory, ldap, openldap, office365, azure AD.</p></div>
 
 
 
@@ -338,7 +338,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
   
   <div class="row">
     
-   <div class="col-xs-8 ">
+   <div class="col-xs-12  col-md-8">
    <h3  class="subheading"> Our Solutions Works With</h3>
  <div class="thumb solutionthumb">
  
@@ -405,7 +405,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
       </div>
   </div>
   </div>
-  <div class="col-xs-4">
+  <div class="col-xs-12  col-md-4">
  <h3 class="subheading">Customers</h3>
   <div class="greybox partners">
                 
