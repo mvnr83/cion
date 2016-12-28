@@ -158,7 +158,7 @@ $(document).on('click','.popupBuynow', function () {
         var cart = $('.cartBlock');
         var imgtodrag = $(this).closest('.modal-content').find(".modal-title");
 		
-		$(this).closest('.modal-content').find('.close1').click()
+		$(this).closest('.modal-content').find('.close1').click();
 		$("html, body").animate({ scrollTop: 0 }, "slow");
 		if (imgtodrag) {
 	
@@ -183,6 +183,9 @@ $(document).on('click','.popupBuynow', function () {
             }, 1000, 'easeInOutExpo');
             
             setTimeout(function () {
+			$('.itemcount').html(parseInt($('.itemcount').html()) + 1);
+			
+			
                 cart.effect("shake", {
                     times: 2
                 }, 200);
