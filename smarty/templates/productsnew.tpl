@@ -148,12 +148,13 @@
 
 
 
-{literal}
+{literal}<script src="js/jquery-1.8.3.min.js" type="text/javascript"></script> <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 <script>
 
 
 
 $(document).on('click','.popupBuynow', function () {
+
         var cart = $('.cartBlock');
         var imgtodrag = $(this).closest('.modal-content').find(".modal-title");
 		
