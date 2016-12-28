@@ -6374,8 +6374,8 @@ h1 span{ color:#fc9c1d}
 		.productBlock{ background:#f1f1f1; border-radius:10px; padding:20px 20px 10px; float:left; width:100%; margin-bottom:14px;border: 1px solid #ccc;}
 		.productBlock ul{float:left; width:50%;}
 		.productBlock ul,.productBlock li{ margin:0; padding:0; list-style:none; position:relative}
-		.productBlock li{  padding:0 14px; box-sizing:border-box; margin-bottom:14px; line-height:1.3; color:#292929; font-size:15px}
-		.productBlock li:before{ content:''; position:absolute; top:7px; left:0; width:6px; height:6px; border-radius:50%; background:#5289a9}
+		.productBlock li{  padding:0 14px 0 16px; box-sizing:border-box; margin-bottom:14px; line-height:1.3; color:#292929; font-size:15px}
+		.productBlock li:before{color:#5289a9; content:"\f101"; position:absolute; top:2px; left:0; width:6px; height:6px;   font:normal 16px/1 FontAwesome}
 		.profile{ margin-top:0;}
 		.text-justify,.text-justify p{ text-align:justify}
 		.productminheight{ min-height:39px;}
@@ -6485,24 +6485,18 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
 .footerproduct,.testdrive{ display:table;    table-layout: fixed;    width: 100%;}
 .footerproduct div,.testdrive > div{ display:table-cell}
 
-.footerproduct div img,.testdrive > div img{ width:100% !important; max-width:100% !important;     border-radius: 8px; padding:5px;}
+.footerproduct div img,.testdrive > div img{ width:100% !important; max-width:100% !important;     border-radius: 8px; padding:3px 5px;}
 .footerproduct1 div,.footerproduct2 div{ float:left}
 .footerproduct1 div img{ width:90px !important; max-width:100% !important;     border-radius: 8px; padding:5px; margin-right:10px}
-.footerproduct2 div img{ max-width:100% !important;     border-radius: 8px; padding:2px 5px;}
+.footerproduct2 div img{ max-width:100% !important;     border-radius: 8px; padding:0px 5px;}
 .footerproduct2,.testdrive1{    float: left;
     border: 1px solid #ccc;
-    border-radius: 8px; margin-bottom:30px; width:100%;
+    border-radius: 8px; margin-bottom:38px; width:100%;
 }.footerproduct2{margin-bottom:5px; }
 .testdrive1{ padding:3px 0}
 .thumbnail{ border:0;}
 .address{ margin-bottom:10px; float:left; width:100%}
-.greybox.partners{     float: left;
-    width: 100%;
-    margin-bottom: 30px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 10px 0;
-    background: #e8e8e8;}
+.greybox.partners{ float: left;width: 100%; margin-bottom: 30px;border: 1px solid #ccc;border-radius: 10px;padding: 5px 0 0 0;}
 .thumb img{ width:auto !important; height:100px !important}
 
 .solutionthumb  .thumbnail{ border:1px solid #ddd; float:left; width:100%; margin-bottom:20px;border-radius: 10px; text-align:center}
@@ -6522,13 +6516,13 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
     z-index: 99;margin-top:-12px;
 }
 .subheading.bu-subHea{ clear:both}
-.footernav{  list-style:none; padding:0 30px 0 0; margin:10px 0 0 0; width:100%; float:left}
+.footernav{  list-style:none; padding:0 30px 0 0; margin:0px 0 0 0; width:100%; float:left}
 .footernav li{display:inline-block; margin:0; list-style:none;  margin:0; padding:0 10px ; position:relative}
 .footernav li:before{ position:absolute; content:''; top:5px; left:0; bottom:3px; width:1px; background:#ccc}
 .footernav li:first-child:before{ display:none}
-.copyright1{ margin-bottom:10px;  margin-top:10px}
+.copyright1{ margin-bottom:5px;  margin-top:0px}
 .footernavmain{ position:relative}
-.rssblock{ position:absolute; top:10px; right:10px;}
+.rssblock{ position:absolute; top:-2px; right:10px;}
 
 .thumb.solutionthumb .slick-prev.slick-arrow, .thumb.solutionthumb .slick-next.slick-arrow{
         font: normal 14px/1 FontAwesome;
@@ -6542,7 +6536,33 @@ content: "\f053"; font: normal 33px/1 FontAwesome;}
 .navbar-collapse{ padding-left:0 !important;padding-right:0 !important}
 .topbtn{padding-right:0 !important}
 .solutionthumb.slick-slider{ margin-bottom:0;}
+.shopingcarttable th{ color:#048ac3; font:600 18px 'Open Sans'}
+.Total{ color:#048ac3;font:600 17px 'Open Sans'}
+.shopingcarttable img{ border-radius:10px; border:1px solid #ccc}
+.shopingcarttable td{ vertical-align:middle !important; position:relative; padding-bottom:30px !important;}
+a.productremove{ position:absolute; bottom:5px; left:0px; color:#048ac3 !important; font:400 13px 'Open Sans'}
+.estimate{ color:#7a9eb3;  font:400 20px 'Open Sans'}
+.TotalCost{ color:#048ac3;  font:600 20px 'Open Sans'}
 
+.btn-shoping{/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e0dbdb+0,e0dbdb+50,fbfafa+100,fbfafa+100,fbfafa+100,fbfafa+101 */
+background: #e0dbdb; /* Old browsers */
+background: -moz-linear-gradient(top,  #e0dbdb 0%, #e0dbdb 50%, #fbfafa 100%, #fbfafa 100%, #fbfafa 100%, #fbfafa 101%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #e0dbdb 0%,#e0dbdb 50%,#fbfafa 100%,#fbfafa 100%,#fbfafa 100%,#fbfafa 101%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #e0dbdb 0%,#e0dbdb 50%,#fbfafa 100%,#fbfafa 100%,#fbfafa 100%,#fbfafa 101%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0dbdb', endColorstr='#fbfafa',GradientType=0 ); /* IE6-9 */
+
+border-radius:6px; border:1px solid #ccc; padding:10px; float:right; margin:0 10px 10px;font:600 18px 'Open Sans'
+}
+
+.btn-place{/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#034a69+0,034a69+50,537b8c+98,537b8c+100,fbfafa+100,fbfafa+100,537b8c+100 */
+background: #034a69; /* Old browsers */
+background: -moz-linear-gradient(top,  #034a69 0%, #034a69 50%, #537b8c 98%, #537b8c 100%, #fbfafa 100%, #fbfafa 100%, #537b8c 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #034a69 0%,#034a69 50%,#537b8c 98%,#537b8c 100%,#fbfafa 100%,#fbfafa 100%,#537b8c 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #034a69 0%,#034a69 50%,#537b8c 98%,#537b8c 100%,#fbfafa 100%,#fbfafa 100%,#537b8c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#034a69', endColorstr='#537b8c',GradientType=0 ); /* IE6-9 */
+border-radius:6px; border:1px solid #ccc; padding:10px; float:right; margin:0 10px 10px; color:#fff; font:600 18px 'Open Sans'
+}
+.btn-place:hover{ color:#f2f2f2 !important; opacity:.8}
 
 
 @media only screen and (max-width: 1023px) {.ptitle{ width:100%; clear:both; float:left; font-size:12px;}

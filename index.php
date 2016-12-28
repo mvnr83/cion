@@ -129,7 +129,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
 		<a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover="dropdown" role="button"
 					  data-toggle="dropdown"  onclick="fnRedirect(this);" href="active-directory-tools.php">
 					  Products <i class="fa fa-angle-down"></i> </a>
-          <ul class="dropdown-menu">
+       <ul class="dropdown-menu">
 		   <li><a href="mfauthentication.php">MultiFactor Autentication</a> </li>
  <li> <a href="active-directory-manager.php">Active Directory Manager Pro</a> </li>
  </li>
@@ -646,7 +646,7 @@ Lakdi-ka-pool, Hyderabad-500004,TS, INDIA  &nbsp;
             
           </div>
    </div><?php */?>
-   
+
     </div>
     </div>
     </div>
@@ -677,6 +677,7 @@ Lakdi-ka-pool, Hyderabad-500004,TS, INDIA  &nbsp;
   </div>
 </footer>
 </div>
+
 <!--small footer end--> 
 
 <!-- js placed at the end of the document so the pages load faster
