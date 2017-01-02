@@ -233,7 +233,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
         <p># 6-2-47,Yeturu Tower , 505, 5th Floor
 Lakdi-ka-pool, Hyderabad-500004,TS, INDIA  &nbsp;
 <i class="fa fa-phone"></i>Phone : 91-40-64644486 </p>
-        <p><i class="fa fa-envelope "></i>Email : <a href="javascript:;">info@cionsystems.com</a></p>
+        <p><i class="fa fa-envelope "></i>&nbsp;Email : <a href="javascript:;">info@cionsystems.com</a></p>
         </address>
         </div>
       </div>
