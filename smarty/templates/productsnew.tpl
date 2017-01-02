@@ -1,19 +1,39 @@
 <div class="row"><div class="col-xs-12 "><div class="col-xs-12 maincontentbg">
             
             <h1><span>P</span>roducts</h1>
-<div class="welcomeblock"><p><strong>CionSystems</strong> delivers a simple and cost effective solution to improve security and streamline managing IT infrastructure.  CionSystems Identity Management solutions are designed to integrate with enterprise HR systems, school information systems and other systems. Products are designed to provide benefits for schools districts and IT organizations of varying size, complexity, and skill levels in verticals like finance, insurance, education, telecom, technology etc.  Implement process driven Security and Auditing to reduce support costs and quickly respond to security incidents while continuous monitoring, reporting and alerting of directories like Active Directory, ldap, openldap, office365, azure AD.</p></div></div></div></div>
+<div class="welcomeblock"><p style="text-align: justify"><strong>CionSystems</strong> delivers a simple and cost effective solution to improve security and streamline managing IT infrastructure.  CionSystems Identity Management solutions are designed to integrate with enterprise HR systems, school information systems and other systems. Products are designed to provide benefits for schools districts and IT organizations of varying size, complexity, and skill levels in verticals like finance, insurance, education, telecom, technology etc.  Implement process driven Security and Auditing to reduce support costs and quickly respond to security incidents while continuous monitoring, reporting and alerting of directories like Active Directory, ldap, openldap, office365, azure AD.</p></div></div></div></div>
 
 
 <div class="row"><div class="col-xs-12">
         
 {foreach from=$products item=product_info}
-        <div class="col-md-4"><div class="singleproduct"><div class="singleproductinner"><div class="productheader"><a><img src="images/newproducts/productsheader1.jpg" /></a></div>
+        <div class="col-md-4"><div class="singleproduct"><div class="singleproductinner"><div class="productheader"><a>
+                            {assign var="pimg" value="product_images/$product_info.product_image"}
+                            {if file_exists($pimg)}
+                            
+                            <img src="product_images/{$product_info.product_image}">
+                            {else} <img src="images/newproducts/productsheader1.jpg" />{/if}
+                                 
+                            
+                            </a>
+                    </div>
 
-<ul><li>GPO authoring, mangement and security workbench.</li><li>Gives Active Directory administrators and security personnel's control of  GPO changes.</li><li>GPO authoring, mangement and security workbench.</li></ul>
+                    <div style="text-align:justify;color: #010101;font: 14px 'Open Sans'; padding:0 0 10px; margin:15px 0 0;">{if $product_info.short_description|strlen gt 340} {$product_info.short_description|substr:340}... {else}{$product_info.short_description}{/if}</div>
+<!-- <ul>
+    <li>GPO authoring, mangement and security workbench.</li>
+    <li>Gives Active Directory administrators and security personnel's control of  GPO changes.</li>
+    <li>GPO authoring, mangement and security workbench.</li>
+</ul>
+-->
 
 </div>
 
-<div class="productbottom"><div class="pull-right"><a class="pBuy" href="javascript:;" data-toggle="modal" data-target="#myModal-{$product_info.id}">Buy Now</a><a class="pread" href="javascript:;">Read More</a></div></div>
+<div class="productbottom">
+    <div class="pull-right">
+        <a class="pBuy" href="javascript:;" data-toggle="modal" data-target="#myModal-{$product_info.id}">Buy Now</a>
+        <a class="pread" href="{$product_info.html_file_name}">Read More</a>
+    </div>
+</div>
 
 </div>
 

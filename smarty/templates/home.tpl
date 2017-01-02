@@ -28,6 +28,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
 
  <link href="css/style.css" rel="stylesheet">
  <link rel="stylesheet" href="css/flexslider.css"/>
+ <link rel="stylesheet" type="text/css" href="ajaxtabs.css" />
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
  <link href="css/style-responsive.css" rel="stylesheet" />
 {literal}
@@ -322,6 +323,12 @@ Lakdi-ka-pool, Hyderabad-500004,TS, INDIA  &nbsp;
 <script type="text/javascript" src="js/hover-dropdown.js"> </script> 
 <script src="js/link-hover.js"> </script>
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<script src="Script/roundies.js" type="text/javascript"></script>
+
+
+<script src="Scripts/ajaxtabs.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="Script/p7exp.js"></script>
 <script defer src="js/jquery.flexslider.js"> </script> 
 <script src="js/slick.js"> </script>
 {literal}

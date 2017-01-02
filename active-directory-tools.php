@@ -70,19 +70,20 @@ $pro_name = "<title>".$metatitle."</title>
 
 //get products information
 $sql = mysql_query("SELECT * FROM product_details WHERE status = 'Active' ");
+ini_set('display_errors','On');
+error_reporting(E_ALL^E_NOTICE);
 $products = array();
 while($res = mysql_fetch_assoc($sql)){
     $products[$res['id']] = $res;
     $products[$res['id']]['sub_plans'] = array();
     $pSql = mysql_query("SELECT * FROM subscription_plans WHERE product_id = '".$res['id']."'");
+    
     while($pres = mysql_fetch_assoc($pSql)){
         $products[$res['id']]['sub_plans'][] = $pres;
     }
-    $products[$res['id']]['sub_plans_json'] = json_encode($products[$res['id']]['sub_plans']);
+    //$products[$res['id']]['sub_plans_json'] = json_encode($products[$res['id']]['sub_plans']);
 }
-//echo "<pre>";
-//print_r($products);
-//exit();
+
 $smarty->assign("productname",$pro_name);
 
 $smarty->assign("session_username",$_SESSION['username']);
