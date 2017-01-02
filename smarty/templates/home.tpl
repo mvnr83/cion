@@ -191,7 +191,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
 
 
 
-<div class="container">
+<div class="container maincontentbginner">
 {$content}
 
         </div>
