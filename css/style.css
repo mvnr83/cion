@@ -6414,7 +6414,7 @@ background: -webkit-linear-gradient(top, rgba(223,231,236,1) 0%, rgba(223,231,23
 background: -o-linear-gradient(top, rgba(223,231,236,1) 0%, rgba(223,231,236,1) 3%, rgba(255,255,255,1) 150px, rgba(255,255,255,1) 180px, rgba(255,255,255,1) 100%);
 background: -ms-linear-gradient(top, rgba(223,231,236,1) 0%, rgba(223,231,236,1) 3%, rgba(255,255,255,1) 150px, rgba(255,255,255,1) 180px, rgba(255,255,255,1) 100%);
 background: linear-gradient(to bottom, rgba(223,231,236,1) 0%, rgba(223,231,236,1) 3%, rgba(255,255,255,1) 150px, rgba(255,255,255,1) 180px, rgba(255,255,255,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfe7ec', endColorstr='#ffffff', GradientType=0 );  }
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfe7ec', endColorstr='#ffffff', GradientType=0 ); float:left  }
 
 
 
