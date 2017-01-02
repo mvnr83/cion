@@ -6580,7 +6580,7 @@ border-radius:6px; border:1px solid #ccc; padding:10px; float:right; margin:0 10
 .btn-place:hover{ color:#f2f2f2 !important; opacity:.8}
 .thumb.solutionthumb .slick-list{ margin:0 -16px!important;}
 .footer-small li a,.copyright1 { font-size:13px;}
-
+.productContent{text-align:justify;color: #010101;font: 14px 'Open Sans';padding:0 0 10px;margin:15px 0 0;float: left;clear: both;}
 @media only screen and (max-width: 1023px) {.ptitle{ width:100%; clear:both; float:left; font-size:12px;}
 .sliderlinkbuy:before,.sliderlinktry:before{ background-size:16px;}
 .sliderlinkbuy,.sliderlinktry{ font-size:12px;}
