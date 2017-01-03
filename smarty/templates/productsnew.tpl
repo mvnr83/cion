@@ -18,7 +18,7 @@
                             </a>
                     </div>
 
-                    <div class="productContent">{if $product_info.short_description|strlen gt 340} {$product_info.short_description|substr:340}... {else}{$product_info.short_description}{/if}</div>
+                    <div class="productContent">{if $product_info.short_description|strlen gt 340} {$product_info.short_description|substr:0:320}... {else}{$product_info.short_description}{/if}</div>
 <!-- <ul>
     <li>GPO authoring, mangement and security workbench.</li>
     <li>Gives Active Directory administrators and security personnel's control of  GPO changes.</li>
@@ -122,23 +122,50 @@
         <h4 class="modal-title">{$product_info.product_name}</h4>
       </div>
       <div class="modal-body">
-        <h5>Active Directory Manager PRO - <span>Annual Subscription</span></h5>
-        <ul class="popupulfirst"><li><div class="labelValue"><label class="radioBlock"><input type="radio" name="topGroup"/><span></span>Up to 250 Users</label></div><div class="divider">--</div><div class="costValue">$780</div></li>
-        <li><div class="labelValue"><label class="radioBlock"><input type="radio" name="topGroup"/><span></span>Up to 250 Users</label></div><div class="divider">--</div><div class="costValue">$780</div></li>
+        <h5>{$product_info.subscription_plan_name}</h5>
+        <ul class="popupulfirst">
+        {section name=cust loop=$product_info.sub_plans}
+            <li>
+                <div class="labelValue">
+                    <label class="radioBlock">
+                        <input type="radio" name="topGroup" value="{$product_info.sub_plans[cust].sub_id}"/>
+                        <span></span>{$product_info.sub_plans[cust].plan_name}
+                    </label>
+                </div>
+                <div class="divider">--</div>
+                <div class="costValue">{if $product_info.sub_plans[cust].price_type eq 1}<a href="javascript:;">Request A Quote</a> {else}{$product_info.sub_plans[cust].price}{/if}</div>
+            </li>
+        {/section}
+        <!-- <li><div class="labelValue"><label class="radioBlock"><input type="radio" name="topGroup"/><span></span>Up to 250 Users</label></div><div class="divider">--</div><div class="costValue">$780</div></li>
         <li><div class="labelValue"><label class="radioBlock"><input type="radio" name="topGroup"/><span></span>Up to 250 Users</label></div><div class="divider">--</div><div class="costValue">$780</div></li>
   <li><div class="labelValue">Up to 250 Users</div><div class="divider">--</div><div class="costValue"><a href="javascript:;">Request A Quote</a> </div></li>
+        -->
         </ul>
-        
+        {if $product_info.sub_plans_addon|@count gt 0}
+            
         <div class="addonssec">
-        <h5><label class="checkBlock"><input type="checkbox"><em></em>Active Directory Change Notifier</label></h5>
-        <ul class="popupulfirst"><li><div class="labelValue"><label class="radioBlock"><input type="radio" name="changeGroup"/><span></span>Up to 250 Users</label></div><div class="divider">--</div><div class="costValue">$780</div></li>
-        <li><div class="labelValue"><label class="radioBlock"><input type="radio" name="changeGroup"/><span></span>Up to 250 Users</label></div><div class="divider">--</div><div class="costValue">$780</div></li>
+        <h5><label class="checkBlock"><input type="checkbox"><em></em>{$product_info.subscription_addon_name_1}</label></h5>
+        <ul class="popupulfirst">
+            {section name=cust loop=$product_info.sub_plans_addon}
+                <li>
+                    <div class="labelValue">
+                        <label class="radioBlock">
+                            <input type="radio" name="changeGroup" id="{$product_info.sub_plans[cust].sub_id}"/>
+                            <span></span>{$product_info.sub_plans_addon[cust].plan_name}
+                        </label>
+                    </div>
+                    <div class="divider">--</div>
+                    <div class="costValue">{if $product_info.sub_plans_addon[cust].price_type eq 1}<a href="javascript:;">Request A Quote</a> {else}{$product_info.sub_plans_addon[cust].price}{/if}</div>
+                </li>
+            {/section}
+        <!-- <li><div class="labelValue"><label class="radioBlock"><input type="radio" name="changeGroup"/><span></span>Up to 250 Users</label></div><div class="divider">--</div><div class="costValue">$780</div></li>
         <li><div class="labelValue"><label class="radioBlock"><input type="radio" name="changeGroup"/><span></span>Up to 250 Users</label></div><div class="divider">--</div><div class="costValue">$780</div></li>
   <li><div class="labelValue">Up to 250 Users</div><div class="divider">--</div><div class="costValue"><a href="javascript:;">Request A Quote</a> </div></li>
+            -->
         </ul>
         
         </div>
-        
+        {/if}
       </div>
       <div class="modal-footer">
         <a class="buynowBtn popupBuynow" href="javascript:;">Buy Now</a>
@@ -174,6 +201,19 @@
 
 
 $(document).on('click','.popupBuynow', function () {
+    
+    //add to session
+    $.ajax({
+                type: 'POST',
+                data: {pid:'9',addonid:'8'},
+                async: false,
+                url: "add_to_cart.php",
+                success: function(result) {
+                    console.log(result);
+                    $('.itemcount').html(result);
+                }
+            });
+
 
         var cart = $('.cartBlock');
         var imgtodrag = $(this).closest('.modal-content').find(".modal-title");
@@ -203,7 +243,7 @@ $(document).on('click','.popupBuynow', function () {
             }, 1000, 'easeInOutExpo');
             
             setTimeout(function () {
-			$('.itemcount').html(parseInt($('.itemcount').html()) + 1);
+			
 			
 			
                 cart.effect("shake", {

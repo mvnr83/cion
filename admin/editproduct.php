@@ -6,7 +6,7 @@ $uid = $_GET['uid'];
 if($_POST[act] == 'edit')
 {
 
-	$sql_up = "update product_details set product_name = '".$_POST[pname]."',short_description = '".$_POST[sdec]."',html_file_name = '".$_POST[hfname]."',status = '".$_POST[status]."'";
+	$sql_up = "update product_details set product_name = '".$_POST[pname]."',short_description = '".$_POST[sdec]."',html_file_name = '".$_POST[hfname]."',status = '".$_POST[status]."',subscription_plan_name = '".$_POST[subscription_plan_name]."',subscription_addon_name_1 = '".$_POST[subscription_addon_name_1]."',subscription_addon_name_2 = '".$_POST[subscription_addon_name_2]."'";
 	$file = $_FILES['tfpath']['tmp_name'];
 		$filename = $_FILES['tfpath']['name'];
 		//$name = explode(".",$filename);
@@ -64,6 +64,7 @@ if($_POST[act] == 'edit')
 			}
 		}
 	$sql_up .= " where id = '".$uid."'";
+        
 	$res_up = @mysql_query($sql_up) or die(mysql_error());
 	
 	if($res_up)

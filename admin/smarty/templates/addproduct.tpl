@@ -170,6 +170,24 @@ function clear()
                                 <td height="25" align="left" valign="middle"><input name="download_img" type="file" /></td>
                                 <td align="left" valign="middle">&nbsp;</td>
                               </tr>
+                              <tr>
+                                <td align="right" valign="middle" class="aril">Subscription Plan Name  :</td>
+                                <td align="center" valign="middle">&nbsp;</td>
+                                <td height="25" align="left" valign="middle"><input name="subscription_plan_name" type="text" value=""/></td>
+                                <td align="left" valign="middle">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                <td align="right" valign="middle" class="aril">Subscription plan add-on name 1  :</td>
+                                <td align="center" valign="middle">&nbsp;</td>
+                                <td height="25" align="left" valign="middle"><input name="subscription_addon_name_1" type="text" value=""/></td>
+                                <td align="left" valign="middle">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                <td align="right" valign="middle" class="aril">Subscription plan add-on name 2 :</td>
+                                <td align="center" valign="middle">&nbsp;</td>
+                                <td height="25" align="left" valign="middle"><input name="subscription_addon_name_2" type="text" value=""/></td>
+                                <td align="left" valign="middle">&nbsp;</td>
+                              </tr>
 							 <tr>
                                 <td align="right" valign="middle" class="aril">Status :</td>
                                 <td align="center" valign="middle">&nbsp;</td>

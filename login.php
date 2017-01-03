@@ -7,7 +7,6 @@ require_once("admin/includes/db_connect.php");
 //include("includes/login_check.php");
 
 
-
 if($_SESSION['username']!='')
 
 {
