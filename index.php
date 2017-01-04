@@ -132,7 +132,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
        <ul class="dropdown-menu">
 		   <li><a href="mfauthentication.php">MultiFactor Autentication</a> </li>
  <li> <a href="active-directory-manager.php">Active Directory Manager Pro</a> </li>
- </li>
+
 <li> <a href="office365_bundle.php" tabindex="-1">Office 365 | Azure Management Simplified</a> </li>
             <li><a href="active-directory-gpomanager.php">GPO Manager</a> </li>
             <li> <a href="cim_selfservice.php">DirSync for O365 | Azure</a> </li>
@@ -145,7 +145,6 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
             <li> <a href="SystemInformation_comparison.php">System Information & Comparison</a> </li>
              <li> <a href="ADProvisioning.php">Provisioning System</a>
           </ul>
-        </li>
         <li><a href="support_overview.php">Support</a></li>
         <li class="dropdown"> <a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover=
                       "dropdown" data-toggle="dropdown"  onclick="fnRedirect(this);" href="active-directory-tools.php">Downloads <i class="fa fa-angle-down"></i> </a>
@@ -363,13 +362,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
 
 
 <!--property start--><div class="container">
- <div class="row">
-    <div class="profile col-xs-12">
-    
-    
-    </div>
-    <!-- End row --> 
-  </div>
+
   
   
   
