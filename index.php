@@ -283,7 +283,37 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
 </div>
 </div>
 
+<div class="container">
+<div class="row">
+ <div class="col-xs-12"> <h2  class="subheading">Products<a class="viewmoreproducts" href="active-directory-tools.php">View more products &gt;&gt;</a></h2></div>
 
+<section class="regular slider col-xs-12">
+    <div>
+      <div class="custom"><a href="#"><div class="mainproductssec"><div>Secure and Manage identities (all resources) of Active Directory, OpenLDAP, Office 365, Azure etc.</div><div><img src="images/products/multifactors_img.png"></div></div></a>
+      
+      <span class="pbottom"> <span class="ptitle">Multifactor Authentication</span>
+              <a href="active-directory-tools.php" class="sliderlinkbuy">Buy Now</a> <a href="#" class="sliderlinktry">Try Now</a></span></div>
+    </div>
+    <div>
+     <div class="custom"><a href="#"><div class="mainproductssec"><div>Secure and Manage identities (all resources) of Active Directory, OpenLDAP, Office 365, Azure etc.</div><div> <img src="images/products/provisioning_img.png"></div></div></a>
+      <span class="pbottom"> <span class="ptitle">Provisioning System</span>
+              <a href="#" class="sliderlinkbuy">Buy Now</a> <a href="#" class="sliderlinktry">Try Now</a></span></div>
+    </div>
+     <div>
+    <div class="custom"><a href="#"> <div class="mainproductssec"><div>Secure and Manage identities (all resources) of Active Directory, OpenLDAP, Office 365, Azure etc.</div><div> <img src="images/products/multifactors_img.png"></div></div></a>
+      <span class="pbottom"> <span class="ptitle">Multifactor Authentication</span>
+              <a href="#" class="sliderlinkbuy">Buy Now</a> <a href="#" class="sliderlinktry">Try Now</a></span></div>
+    </div>
+    
+    
+    
+  </section>
+  <!-- End container --> 
+
+<div class="col-xs-12"></div>
+
+</div>
+</div>
 <!--<div class="container">
 <div class="property gray-bg">
   
@@ -726,8 +756,34 @@ function fnRedirect(Obj){
         dots: false,
         infinite: false,
         slidesToShow: 2,
-        slidesToScroll: 1
+        slidesToScroll: 1,  responsive: [{ 
+        breakpoint: 600,
+        settings: {
+            dots: false,
+             dots: false,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1, autoplay:false
+        } 
+    }]
       });
+	  
+	    $(".regular1").slick({
+        dots: false,
+        infinite: false,
+        slidesToShow: 2,
+        slidesToScroll: 1,  responsive: [{ 
+        breakpoint: 600,
+        settings: {
+            dots: false,
+             dots: false,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1, autoplay:false
+        } 
+    }]
+      });
+	  
 	  
 		$(".solutionthumb").slick({
 

@@ -6581,6 +6581,10 @@ border-radius:6px; border:1px solid #ccc; padding:10px; float:right; margin:0 10
 .thumb.solutionthumb .slick-list{ margin:0 -16px!important;}
 .footer-small li a,.copyright1 { font-size:13px;}
 .productContent{text-align:justify;color: #010101;font: 14px 'Open Sans';padding:0 0 10px;margin:15px 0 0;float: left;clear: both;min-height: 181px;overflow: hidden;}
+.mainproductssec{ display:table; width:100%;}
+.mainproductssec > div{ display:table-cell; vertical-align:top; width:50%}.mainproductssec > div:first-child{ padding:10px; color:#fff}
+
+
 @media only screen and (max-width: 1023px) {.ptitle{ width:100%; clear:both; float:left; font-size:12px;}
 .sliderlinkbuy:before,.sliderlinktry:before{ background-size:16px;}
 .sliderlinkbuy,.sliderlinktry{ font-size:12px;}
