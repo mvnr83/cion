@@ -4533,7 +4533,6 @@ span.filter {
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 
-    .container { width: 70% }
 
 }
 
@@ -6590,4 +6589,23 @@ border-radius:6px; border:1px solid #ccc; padding:10px; float:right; margin:0 10
 .sliderlinkbuy,.sliderlinktry{ font-size:12px;}
 .subheading{ font-size:18px;}
 .productBlock ul{ width:100%}
+body{ text-align:left;}
+.thumb.solutionthumb .slick-next,.thumb.solutionthumb .slick-prev{ display:none !important}
+.page-footer {
+     padding: 0}
+	.footer .row >div { padding:0  15px 15px!important; float:left; width:100% !important}
 }
+@media only screen and (max-width: 700px) {
+.mainproductssec{ display:block}
+.mainproductssec > div {
+    display: block;
+    vertical-align: top;
+    width: 100%;
+}
+}
+
+
+@media only screen and (max-width: 480px) {.footernav{ text-align:left;}
+h1 { font-size:21px}
+}
+
