@@ -290,7 +290,7 @@ Lakdi-ka-pool, Hyderabad-500004,TS, INDIA  &nbsp;
 <footer class="footer-small">
   <div class="container">
     <div class="row">
-       <div class="col-lg-3 col-sm-12 copyright1 pull-left" style="color:#fff"> 2016 &copy; Copyright - Coinsystems. </div>
+       <div class="col-lg-3 col-sm-12 copyright1 pull-left" style="color:#fff"> 2016 &copy; Copyright - Cionsystems. </div>
       <div class="col-lg-9 xol-xs-12 col-sm-12 text-center footernavmain pull-right">
      <ul class="footernav"><li>     
       <a href=""  style="color:#fff">CionSystems Professional Services</a></li>
