@@ -132,13 +132,13 @@ color:#004a80;
 
 padding:5px;
 
-font-size:15px;
+font-size:16px;
 
-font-weight:bold;
+font-weight:600;
 
 line-height:16px;
 
-background-color:#f4f4f4;
+
 
 }
 
@@ -1102,11 +1102,12 @@ padding:10px;
 
 .succeed h2{
 
-font-size:16px;
+font-size:18px;
 
-background:url(../images/sidetitlebg.gif) no-repeat left 27px;
+background:url(../images/sidetitlebg.gif) no-repeat left bottom;
 
 color:#fc9023;
+margin:0; padding:0 0 20px 0; font-weight:600;
 
 }
 
@@ -1122,7 +1123,7 @@ color:#fc9023;
 
 list-style:url(../images/bulletarrow.gif) outside;
 
-padding:5px 20px 5px 45px;
+padding:5px 20px 5px 18px;
 
 }
 
@@ -1153,6 +1154,7 @@ color:#333333;
 .list{
 
 margin-left:20px;
+margin-top:20px;
 
 }
 
@@ -1165,7 +1167,7 @@ background:url(../images/vline.gif) repeat-x bottom;
 .hrline{
 
 background:url(../images/hrline.gif) repeat-y right;
-
+padding-right:20px;
 }
 
 
@@ -1188,15 +1190,18 @@ padding:5px 0px 5px 0px ;
 
 
 
-.head-list h3{
+.head-list h3, .system h3{
+
+font-size:18px;
+
+margin:0; padding:20px 0 5px 0; font-weight:600;
 
 
-
-font-size: 14px;
 
 color:#333333;
 
 }
+.system h3{ padding-top:0}
 
 .head-list ul{
 
@@ -1510,4 +1515,11 @@ a.news:hover{text-decoration:none}
 	.registerwrapper .btn-wrapper > a:hover, .username:hover,.cartBlock:hover{ color:#000}
 	
 	.registerwrapper .btn-wrapper > a:hover:before, .username:hover:before, .cartBlock:hover:before{opacity:1}
-	
+	.boxlist{    background: #fccd4d;
+    width: 100%;
+    border: solid 1px #a57901;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 10px 20px; margin-top:30px;}
+.boxlist a.newbox,.boxlist span.newbox { font-size:16px;}
+	td{ vertical-align:top}

@@ -6361,8 +6361,8 @@ bottom:0;
 /* products */
 	
 		
-	h1{ color: #2f7ca9; font-weight:600; font-size:30px;  margin:0 0 8px 0; padding:0 0 8px 0; position:relative;font-family: 'Open Sans', sans-serif; }
-	h1:after{ position:absolute; content:''; left:0; bottom:0; width:30px; height:2px; background:#2f7ca9 }
+	h1{ color: #2f7ca9; font-weight:600; font-size:24px;  margin:0 0 8px 0; padding:0 0 8px 0; position:relative;font-family: 'Open Sans', sans-serif; }
+	h1:after{ position:absolute; content:''; left:0; bottom:0; width:30px; height:2px; background:#2f7ca9; display:none }
 h1 span{ color:#fc9c1d}
 	.subheading{font-family: 'Open Sans', sans-serif; font-weight:600; font-size:23px;position:relative; color: #263035;margin:0 0 8px 0; padding:0 0 8px 0;}
 		.subheading:after{ position:absolute; content:''; left:0; bottom:0; width:20px; height:2px; background:#263035 }
@@ -6372,10 +6372,13 @@ h1 span{ color:#fc9c1d}
 		.welcomeblock p{ line-height:1.5; font-size:15px; font-family: 'Open Sans', sans-serif;}
 		.productBlock{ background:#f1f1f1; border-radius:10px; padding:20px 20px 10px; float:left; width:100%; margin-bottom:14px;border: 1px solid #ccc;}
 		.productBlock ul{float:left; width:50%;}
-		.productBlock ul,.productBlock li, .list-points ul, .list-points ul li{ margin:0; padding:0; list-style:none; position:relative}
-		.productBlock li,.list-points ul li{  padding:0 14px 0 16px; box-sizing:border-box; margin-bottom:14px; line-height:1.3; color:#292929; font-size:15px}
+		.productBlock ul,.productBlock li, .list-points ul, .list-points ul li,.list li{ margin:0; padding:0; list-style:none; position:relative}
+		.productBlock li,.list-points ul li,  .list li{  padding:0 14px 0 16px; box-sizing:border-box; margin-bottom:14px; line-height:1.3; color:#292929; font-size:15px; text-align:left}
 		
-		.productBlock li:before,.list-points ul li:before{color:#5289a9; content:"\f101"; position:absolute; top:2px; left:0; width:6px; height:6px;   font:normal 16px/1 FontAwesome}
+		.productBlock li:before,.list-points ul li:before, .list li:before{color:#5289a9; content:"\f101"; position:absolute; top:2px; left:0; width:6px; height:6px;   font:normal 16px/1 FontAwesome}
+
+	.system .list{ margin-left:0;}	
+	.list li p{ margin:0; padding:0}
 		.profile{ margin-top:0;}
 		.text-justify,.text-justify p{ text-align:justify}
 		.productminheight{ min-height:39px;}
@@ -6406,14 +6409,13 @@ background: linear-gradient(to bottom, rgba(223,231,236,1) 0%, rgba(223,231,236,
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfe7ec', endColorstr='#ffffff', GradientType=0 );  padding-top:30px;} */
 	.maincontentbg{ padding-top:30px;}
 
-.maincontentbginner{ border-top:2px solid #5b98bb;  background: rgba(223,231,236,1);
-background: -moz-linear-gradient(top, rgba(223,231,236,1) 0%, rgba(223,231,236,1) 3%, rgba(255,255,255,1) 150px, rgba(255,255,255,1) 180px, rgba(255,255,255,1) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(223,231,236,1)), color-stop(3%, rgba(223,231,236,1)), color-stop(150px, rgba(255,255,255,1)), color-stop(180px, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
-background: -webkit-linear-gradient(top, rgba(223,231,236,1) 0%, rgba(223,231,236,1) 3%, rgba(255,255,255,1) 150px, rgba(255,255,255,1) 180px, rgba(255,255,255,1) 100%);
-background: -o-linear-gradient(top, rgba(223,231,236,1) 0%, rgba(223,231,236,1) 3%, rgba(255,255,255,1) 150px, rgba(255,255,255,1) 180px, rgba(255,255,255,1) 100%);
-background: -ms-linear-gradient(top, rgba(223,231,236,1) 0%, rgba(223,231,236,1) 3%, rgba(255,255,255,1) 150px, rgba(255,255,255,1) 180px, rgba(255,255,255,1) 100%);
-background: linear-gradient(to bottom, rgba(223,231,236,1) 0%, rgba(223,231,236,1) 3%, rgba(255,255,255,1) 150px, rgba(255,255,255,1) 180px, rgba(255,255,255,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfe7ec', endColorstr='#ffffff', GradientType=0 ); float:left  }
+.maincontentbginner{ border-top:2px solid #5b98bb;/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dbf3fc+0,eaf8fd+50,eaf8fd+52,ffffff+100 */
+background: #dbf3fc; /* Old browsers */
+background: -moz-linear-gradient(top,  #dbf3fc 0%, #eaf8fd 10px, #eaf8fd 15px, #ffffff 30px); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #dbf3fc 0%, #eaf8fd 10px, #eaf8fd 15px, #ffffff 30px); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #dbf3fc 0%,#eaf8fd 10px,#eaf8fd 15px,#ffffff 30px); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbf3fc', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+ float:left  }
 
 
 
@@ -6609,3 +6611,4 @@ body{ text-align:left;}
 h1 { font-size:21px}
 }
 
+.googleapp{ float:left; margin-top:30px; width:100%}
