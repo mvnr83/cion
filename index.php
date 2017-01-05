@@ -455,9 +455,10 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
   <div class="greybox partners">
                 
                 <div  class="marquee" id="mycrawler">
-<img src="images/logos/marqueelogos/microsoft.jpg" alt="Microsoft" class="img-responsive" />
+<!-- <img src="images/logos/marqueelogos/microsoft.jpg" alt="Microsoft" class="img-responsive" />
 <img src="images/logos/marqueelogos/hp.jpg" alt="Business Partner" width="100"  height="50"/>
 <img src="images/logos/marqueelogos/ibm.jpg" alt="International Business Machines" width="100"  height="50"/>
+-->
 <img src="images/logos/marqueelogos/wageworks.jpg" alt="Wage Works" width="100"  height="50"/>
 <img src="images/logos/marqueelogos/ces.jpg" alt="Ces" width="100"  height="50"/>
 <img src="images/logos/marqueelogos/afl.jpg" alt="Afl" width="100"  height="50"/>
