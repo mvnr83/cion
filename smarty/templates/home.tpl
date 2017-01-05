@@ -356,5 +356,31 @@ function fnRedirect(Obj){
 
 
 {/literal}
+
+
+<div id="innerBuyModal" class="modal fade productsmodal" role="dialog" style="display: none;">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close1" data-dismiss="modal"></button>
+        <h4 class="modal-title">Active Directory Manager PRO</h4>
+      </div>
+      <div class="modal-body">
+        <h5></h5>
+        <ul class="popupulfirst">
+              
+        </ul>
+              </div>
+      <div class="modal-footer">
+        <a class="buynowBtn popupBuynow" href="javascript:;">Buy Now</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
 </body>
 </html>
