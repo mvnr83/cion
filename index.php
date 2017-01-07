@@ -286,22 +286,24 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
 <div class="row">
  <div class="col-xs-12"> <h2  class="subheading">Products<a class="viewmoreproducts" href="active-directory-tools.php">View more products &gt;&gt;</a></h2></div>
 
-<section class="regular slider col-xs-12">
+<section class="regular slider col-xs-12 regularnew">
     <div>
-      <div class="custom"><a href="#"><div class="mainproductssec"><div>Secure and Manage identities (all resources) of Active Directory, OpenLDAP, Office 365, Azure etc.</div><div><img src="images/products/multifactors_img.png"></div></div></a>
+      <div class="custom"><a href="#"><div class="mainproductssec"><div class="slidercontent">Secure and Manage identities (all resources) of Active Directory, OpenLDAP, Office 365, Azure etc.</div><div  class="sliderimg"><img src="images/products/adcn_filter.png"></div></div></a>
       
       <span class="pbottom"> <span class="ptitle">Multifactor Authentication</span>
               <a href="active-directory-tools.php" class="sliderlinkbuy">Buy Now</a> <a href="#" class="sliderlinktry">Try Now</a></span></div>
     </div>
     <div>
-     <div class="custom"><a href="#"><div class="mainproductssec"><div>Secure and Manage identities (all resources) of Active Directory, OpenLDAP, Office 365, Azure etc.</div><div> <img src="images/products/provisioning_img.png"></div></div></a>
+      <div class="custom"><a href="#"><div class="mainproductssec"><div class="slidercontent">Secure and Manage identities (all resources) of Active Directory, OpenLDAP, Office 365, Azure etc.</div><div  class="sliderimg"><img src="images/products/admpro_dashboard.png"></div></div></a>
+      
       <span class="pbottom"> <span class="ptitle">Provisioning System</span>
-              <a href="#" class="sliderlinkbuy">Buy Now</a> <a href="#" class="sliderlinktry">Try Now</a></span></div>
+              <a href="active-directory-tools.php" class="sliderlinkbuy">Buy Now</a> <a href="#" class="sliderlinktry">Try Now</a></span></div>
     </div>
      <div>
-    <div class="custom"><a href="#"> <div class="mainproductssec"><div>Secure and Manage identities (all resources) of Active Directory, OpenLDAP, Office 365, Azure etc.</div><div> <img src="images/products/multifactors_img.png"></div></div></a>
+      <div class="custom"><a href="#"><div class="mainproductssec"><div class="slidercontent">Secure and Manage identities (all resources) of Active Directory, OpenLDAP, Office 365, Azure etc.</div><div  class="sliderimg"><img src="images/products/adcn_filter.png"></div></div></a>
+      
       <span class="pbottom"> <span class="ptitle">Multifactor Authentication</span>
-              <a href="#" class="sliderlinkbuy">Buy Now</a> <a href="#" class="sliderlinktry">Try Now</a></span></div>
+              <a href="active-directory-tools.php" class="sliderlinkbuy">Buy Now</a> <a href="#" class="sliderlinktry">Try Now</a></span></div>
     </div>
     
     
@@ -378,13 +380,13 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
  
   <div class="items1 "> 
    <div class="col-md-12 col-sm-12 col-xs-12 nopadding">
-        <div class="thumbnail" data-wow-delay=".1s"><a href="cmt.php" class=" "> <img src="img/office-365-cloud-_01.png" class="img-responsive" alt=""></a>
+        <div class="thumbnail" data-wow-delay=".1s"><a href="cmt.php" class=" "> <img src="images/products//office-365-cloud-_01.png" class="img-responsive" alt=""></a>
           
          
         </div>
       </div>
     <div class="col-md-12 col-sm-12 col-xs-12 nopadding">
-        <div class="thumbnail" data-wow-delay=".1s"> <a href="cloud-management.php" class=""> <img src="img/am_az.jpg" class="img-responsive" alt=""></a>
+        <div class="thumbnail" data-wow-delay=".1s"> <a href="cloud-management.php" class=""> <img src="images/products/am_az.jpg" class="img-responsive" alt=""></a>
         
              
          
@@ -393,24 +395,24 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
   </div>
     <div class="items1">
     <div class="col-md-12 col-sm-12 col-xs-12 nopadding">
-        <div class="thumbnail wow fadeInUp" data-wow-delay=".5s">   <a href="Cloud_Identity_Minder.php" class=""><img src="img/redHat.jpg" alt="" class="img-responsive"></a>
+        <div class="thumbnail wow fadeInUp" data-wow-delay=".5s">   <a href="Cloud_Identity_Minder.php" class=""><img src="images/products/redHat.jpg" alt="" class="img-responsive"></a>
        
         </div>
       </div>
     <div class="col-md-12 col-sm-12 col-xs-12 nopadding">
-        <div class="thumbnail wow fadeInUp" data-wow-delay=".7s" > <a href="active_directory.php" class=""> <img src="img/activeDirectory.jpg" alt=""></a>
+        <div class="thumbnail wow fadeInUp" data-wow-delay=".7s" > <a href="active_directory.php" class=""> <img src="images/products/activeDirectory.jpg" alt=""></a>
          
         </div>
       </div>
     </div>
       <div class="items1">
     <div class="col-md-12 col-sm-12 col-xs-12 nopadding">
-        <div class="thumbnail wow fadeInUp" data-wow-delay=".7s" ><a href="microsoft_exchange.php" class=""> <img src="img/microsoftExchange.jpg" alt=""></a>
+        <div class="thumbnail wow fadeInUp" data-wow-delay=".7s" ><a href="microsoft_exchange.php" class=""> <img src="images/products/microsoftExchange.jpg" alt=""></a>
           
         </div>
       </div>
     <div class="col-md-12 col-sm-12 col-xs-12 nopadding">
-        <div class="thumbnail wow fadeInUp" data-wow-delay=".7s" ><a href="espm.php"><img src="img/sharePointLogo.jpg" alt=""></a>
+        <div class="thumbnail wow fadeInUp" data-wow-delay=".7s" ><a href="espm.php"><img src="images/products/sharePointLogo.jpg" alt=""></a>
        
         </div>
       </div>

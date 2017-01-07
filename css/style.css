@@ -6583,7 +6583,22 @@ border-radius:6px; border:1px solid #ccc; padding:10px; float:right; margin:0 10
 .footer-small li a,.copyright1 { font-size:13px;}
 .productContent{text-align:justify;color: #010101;font: 14px 'Open Sans';padding:0 0 10px;margin:15px 0 0;float: left;clear: both;min-height: 181px;overflow: hidden;}
 .mainproductssec{ display:table; width:100%;}
-.mainproductssec > div{ display:table-cell; vertical-align:top; width:50%}.mainproductssec > div:first-child{ padding:10px; color:#fff}
+.mainproductssec > div{ display:table-cell; vertical-align:top; width:60%;}.mainproductssec > div:first-child{ padding:10px; color:#fff;width:40%; font-size:12px; text-align:left;  vertical-align:middle}
+
+
+.mainproductssec{background: rgba(129,129,129,1);
+background: -moz-linear-gradient(45deg, rgba(129,129,129,1) 0%, rgba(115,115,115,1) 32%, rgba(79,74,79,1) 42%, rgba(48,45,48,1) 72%, rgba(20,18,20,1) 100%);
+background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(129,129,129,1)), color-stop(32%, rgba(115,115,115,1)), color-stop(42%, rgba(79,74,79,1)), color-stop(72%, rgba(48,45,48,1)), color-stop(100%, rgba(20,18,20,1)));
+background: -webkit-linear-gradient(45deg, rgba(129,129,129,1) 0%, rgba(115,115,115,1) 32%, rgba(79,74,79,1) 42%, rgba(48,45,48,1) 72%, rgba(20,18,20,1) 100%);
+background: -o-linear-gradient(45deg, rgba(129,129,129,1) 0%, rgba(115,115,115,1) 32%, rgba(79,74,79,1) 42%, rgba(48,45,48,1) 72%, rgba(20,18,20,1) 100%);
+background: -ms-linear-gradient(45deg, rgba(129,129,129,1) 0%, rgba(115,115,115,1) 32%, rgba(79,74,79,1) 42%, rgba(48,45,48,1) 72%, rgba(20,18,20,1) 100%);
+background: linear-gradient(45deg, rgba(129,129,129,1) 0%, rgba(115,115,115,1) 32%, rgba(79,74,79,1) 42%, rgba(48,45,48,1) 72%, rgba(20,18,20,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#818181', endColorstr='#141214', GradientType=1 ); border:3px solid #b7bdca; border-radius:10px;}
+.regularnew .custom{ padding:10px; }
+.regularnew .custom > a{float:left; width:100%; margin-bottom:10px;}
+
+.regular.regularnew .slick-prev, .regular.regularnew .slick-next{ width:26px; height:26px;}
+.regular.regularnew .slick-prev:before, .regular.regularnew .slick-next:before{font-size:26px;}
 
 
 @media only screen and (max-width: 1023px) {.ptitle{ width:100%; clear:both; float:left; font-size:12px;}
