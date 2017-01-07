@@ -122,9 +122,9 @@
 
               <p>Active Directory Reporter  has an extensive list of reports with over 200 out-of-the-box reports on the AD  infrastructure resources. The web-based interface enables users with no  scripting or command-line knowledge to generate reports on AD in accordance to  the specific needs of the organization. The Dashboard view  helps you and other IT staff to quickly view the AD object status.&nbsp; Adherence to various external and internal  policies can be monitored by periodically generating and analyzing the policy  related reports. The scheduled reports and notifications (such as password  expiration and email inbox size limit) can be sent to a one or more email  addresses as needed.</p></td>
 
-            <td align="center" valign="middle"><a href="buyitnow.php"><img src="images/requesta_quote.gif" width="175" height="37" border="0" /></a> <br />
+            <td align="center" valign="middle" class="sidebtns"><a href="buyitnow.php"><img src="images/requesta_quote.gif" width="175" height="37" border="0" /></a>
 
-              <a href="Videos_all.php" target="_blank"><img src="images/videos.gif" height="37" width="175" border="0" /></a><br />
+              <a href="Videos_all.php" target="_blank"><img src="images/videos.gif" height="37" width="175" border="0" /></a>
 
               {section name=cust loop=$array}
 
@@ -148,7 +148,7 @@
 
               
 
-              {if $session_username != ""} <a href="download.php?id={$product_id}"><img src="images/download_trail.gif" width="175" height="37" border="0" /></a> {else} <a href="javascript:void(0);" onclick="javascript:return login('{$product_id}','{$pname}');"><img src="images/download_trail.gif" width="175" height="37" border="0" /></a> {/if} <br />
+              {if $session_username != ""} <a href="download.php?id={$product_id}"><img src="images/download_trail.gif" width="175" height="37" border="0" /></a> {else} <a href="javascript:void(0);" onclick="javascript:return login('{$product_id}','{$pname}');"><img src="images/download_trail.gif" width="175" height="37" border="0" /></a> {/if} 
 
               
 

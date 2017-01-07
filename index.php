@@ -663,9 +663,9 @@ Lakdi-ka-pool, Hyderabad-500004,TS, INDIA  &nbsp;
         <a href="https://www.facebook.com/cionsystems/" target="_blank"><img src="img/facebook.png" ></a>  
         <a href="https://www.linkedin.com/company/cionsystems-inc" target="_blank"><img src="img/linkedin.png" ></a>
     	<a href="https://twitter.com/cionsystems?lang=en" target="_blank"><img src="img/twitter.png" ></a>
-        <a href="https://www.youtube.com/channel/UCQdQ5lAZR5Fupfi-ZTw8m6Q" ta><img src="img/youtube.png" ></a>
+        <a href="https://www.youtube.com/channel/UCQdQ5lAZR5Fupfi-ZTw8m6Q" target="_blank"><img src="img/youtube.png" ></a>
 		
-        <a href="http://gplus.com" target="_blank" ><img src="img/gplus.png"></a>
+        <a href="https://plus.google.com/110645672691254501959" target="_blank" ><img src="img/gplus.png"></a>
 	  
       
       </div>
