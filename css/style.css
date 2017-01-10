@@ -6451,7 +6451,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfe7ec', end
 .productsmodal .modal-body, .productsmodal .modal-content, .productsmodal .modal-footer{ float:left; width:100%}
 
 ul.popupulfirst{    margin: 0 0 20px 0;padding: 0;float: left;width: 100%;}
-.popupulfirst li{ display:table; margin-bottom:10px;}
+.popupulfirst li{ display:table; margin-bottom:10px; text-align:left; width:100%}
 .popupulfirst li div{ display:table-cell;}
 .popupulfirst li div.labelValue{ width:200px;}
 .popupulfirst li div label, .popupulfirst li div{ color:#2a2825; font:400 16px/1 'open Sans'}
@@ -6490,7 +6490,7 @@ a.buynowBtn:hover{ color:#000; opacity:.8 }
     width: 100%;
     border: 1px solid #ccc;
     padding: 10px 10px;
-    background: rgba(239,239,239,.6);
+    background: rgba(239,239,239,.6); margin-bottom:10px;
 }
 body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom {
     margin-right: 15px !important;

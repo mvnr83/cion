@@ -315,7 +315,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
               <a href="active-directory-tools.php" class="sliderlinkbuy">Buy Now</a> <a href="#" class="sliderlinktry">Try Now</a></span></div>
     </div>
      <div>
-      <div class="custom"><a href="#"><div class="mainproductssec"><div class="slidercontent">Secure and Manage identities (all resources) of Active Directory, OpenLDAP, Office 365, Azure etc.</div><div  class="sliderimg"><img src="images/products/adcn_filter.png"></div></div></a>
+      <div class="custom"><a href="#"><div class="mainproductssec"><div class="slidercontent">Secure and Manage identities (all resources) of Active Directory, OpenLDAP, Office 365, Azure etc.</div><div  class="sliderimg"><img src="images/products/adm_pro_function.png"></div></div></a>
       
       <span class="pbottom"> <span class="ptitle">Multifactor Authentication</span>
               <a href="active-directory-tools.php" class="sliderlinkbuy">Buy Now</a> <a href="#" class="sliderlinktry">Try Now</a></span></div>
