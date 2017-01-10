@@ -250,11 +250,11 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
 </div>
 
 
-<div class="container">
+<?php /*?><div class="container">
 <div class="row">
- <div class="col-xs-12"> <h2  class="subheading">Products<a class="viewmoreproducts" href="active-directory-tools.php">View more products &gt;&gt;</a></h2></div>
+ <div class="col-xs-12"> <h2  class="subheading">Products<a class="viewmoreproducts" href="active-directory-tools.php">View more products &gt;&gt;</a></h2></div><?php */?>
 
-<section class="regular slider col-xs-12">
+<?php /*?><section class="regular slider col-xs-12">
     <div>
       <div class="custom"><a href="#"><img src="images/products/multifactors_img.png"></a>
       
@@ -274,7 +274,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
     
     
     
-  </section>
+  </section><?php */?>
   <!-- End container --> 
 
 <div class="col-xs-12"></div>
@@ -287,6 +287,21 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
  <div class="col-xs-12"> <h2  class="subheading">Products<a class="viewmoreproducts" href="active-directory-tools.php">View more products &gt;&gt;</a></h2></div>
 
 <section class="regular slider col-xs-12 regularnew">
+ 
+ <div class="mainslides">
+    <div class="custom"><a href="#"> <div class="mainproductssingle"><div><img src="images/products/multifactors_img.png"></div></div></a>
+      <span class="pbottom"> <span class="ptitle">Multifactor Authentication</span>
+              <a href="#" class="sliderlinkbuy">Buy Now</a> <a href="#" class="sliderlinktry">Try Now</a></span></div>
+    </div>
+ <div class="mainslides">
+    <div class="custom"><a href="#"> <div class="mainproductssingle"><div><img src="images/products/provisioning_img.png"></div></div></a>
+      <span class="pbottom"> <span class="ptitle">Provisioning System</span>
+              <a href="#" class="sliderlinkbuy">Buy Now</a> <a href="#" class="sliderlinktry">Try Now</a></span></div>
+    </div>
+ 
+ 
+ 
+ 
     <div>
       <div class="custom"><a href="#"><div class="mainproductssec"><div class="slidercontent">Secure and Manage identities (all resources) of Active Directory, OpenLDAP, Office 365, Azure etc.</div><div  class="sliderimg"><img src="images/products/adcn_filter.png"></div></div></a>
       

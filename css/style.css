@@ -6582,7 +6582,7 @@ border-radius:6px; border:1px solid #ccc; padding:10px; float:right; margin:0 10
 .thumb.solutionthumb .slick-list{ margin:0 -16px!important;}
 .footer-small li a,.copyright1 { font-size:13px;}
 .productContent{text-align:justify;color: #010101;font: 14px 'Open Sans';padding:0 0 10px;margin:15px 0 0;float: left;clear: both;min-height: 181px;overflow: hidden;}
-.mainproductssec{ display:table; width:100%;}
+.mainproductssec{ display:table; width:100%; table-layout:fixed}
 .mainproductssec > div{ display:table-cell; vertical-align:top; width:60%;}.mainproductssec > div:first-child{ padding:10px; color:#fff;width:40%; font-size:12px; text-align:left;  vertical-align:middle}
 
 
@@ -6627,3 +6627,9 @@ h1 { font-size:21px}
 }
 
 .googleapp{ float:left; margin-top:30px; width:100%}
+.regularnew  .slick-slide .custom{min-height:281px;}
+.mainproductssingle,.mainproductssec{ display:table; table-layout:fixed; height:224px;}
+.mainproductssingle{ height:234px;}
+.mainproductssingle div{ display:table-cell; height:100%}
+.mainproductssingle img{ height:100%; padding-bottom:0 !important; padding-right:10px !important}
+.mainslides .custom{ padding:0 !important}
