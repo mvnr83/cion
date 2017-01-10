@@ -68,33 +68,56 @@ $pro_name = "<title>".$metatitle."</title>
 
 ";
 
+echo "<pre>";
+print_r($_SESSION);
+echo "</pre>";
 
+
+$cartInfo = array();
 //get subscription plan information
 if(isset($_SESSION['cart']) && count($_SESSION['cart']) > 0){
     foreach($_SESSION['cart'] as $k => $v){
-        
+        $pInfo = array();
+        $sql = mysql_query("SELECT * FROM subscription_plans WHERE product_id = '".$v['pid']."'");
+        while($res = mysql_fetch_assoc($sql)){
+            $pInfo = $res;
+            
+        }
+        if(isset($v['add_on']) && count($v['add_on']) > 0){
+            $pInfo['addons'] = array();
+            $sql = mysql_query("SELECT * FROM subscription_plans WHERE product_id IN (".implode(',',$v['add_on']).")");
+            while($res = mysql_fetch_assoc($sql)){
+                $pInfo['addons'][] = $res;
+
+            }
+        }
+        $cartInfo[] = $pInfo;
     }
 }
 
-
-//get products information
-$sql = mysql_query("SELECT * FROM product_details WHERE status = 'Active' ORDER BY order_product ASC ");
-
-$products = array();
-while($res = mysql_fetch_assoc($sql)){
-    $products[$res['id']] = $res;
-    $products[$res['id']]['sub_plans'] = array();
-    $pSql = mysql_query("SELECT * FROM subscription_plans WHERE product_id = '".$res['id']." AND is_addon = 0 ORDER BY id ASC'");
-    
-    while($pres = mysql_fetch_assoc($pSql)){
-        if($pres['is_addon'] == 1)
-            $products[$res['id']]['sub_plans_addon'][] = $pres;
-        else
-            $products[$res['id']]['sub_plans'][] = $pres;
-    }
-    
-    //$products[$res['id']]['sub_plans_json'] = json_encode($products[$res['id']]['sub_plans']);
-}
+//echo "<pre>";
+//print_r($cartInfo);
+//echo "</pre>";
+//exit();
+//
+////get products information
+//$sql = mysql_query("SELECT * FROM product_details WHERE status = 'Active' ORDER BY order_product ASC ");
+//
+//$products = array();
+//while($res = mysql_fetch_assoc($sql)){
+//    $products[$res['id']] = $res;
+//    $products[$res['id']]['sub_plans'] = array();
+//    $pSql = mysql_query("SELECT * FROM subscription_plans WHERE product_id = '".$res['id']." AND is_addon = 0 ORDER BY id ASC'");
+//    
+//    while($pres = mysql_fetch_assoc($pSql)){
+//        if($pres['is_addon'] == 1)
+//            $products[$res['id']]['sub_plans_addon'][] = $pres;
+//        else
+//            $products[$res['id']]['sub_plans'][] = $pres;
+//    }
+//    
+//    //$products[$res['id']]['sub_plans_json'] = json_encode($products[$res['id']]['sub_plans']);
+//}
 //echo "<pre>";
 //print_r($products);
 //echo "</pre>";
