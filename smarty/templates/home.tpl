@@ -84,7 +84,8 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
  </ul></div>
  </div>
 {/if}
- <div class="cartBlock"><span class="itemcount">{$cartnumber}</span>Cart</div>
+
+ <div class="cartBlock"><a href="checkout.php"><span class="itemcount">{$cartnumber}</span>Cart</a></div>
  
  
  
