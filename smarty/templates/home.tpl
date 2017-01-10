@@ -350,6 +350,41 @@ function fnRedirect(Obj){
         slidesToShow: 2,
         slidesToScroll: 1
       });
+	  
+	  
+	  
+	  
+	  
+	  
+	  $(document).on('click','.addonssec .checkBlock',function(e){
+	 e.stopPropagation();
+	  })
+	   $(document).on('click','.addonssec .checkBlock input',function(e){
+	 
+	 if($(this).is(':checked'))
+	 {
+	
+    	$(this).closest('.addonssec').find('.popupulfirst li:first').find('.radioBlock input').click();
+	 }
+	 else
+	 {
+	 $(this).closest('.addonssec').find('.popupulfirst li').find('.radioBlock input').removeAttr('checked')
+	 	
+	 }
+	  });
+	  
+	  
+	    $(document).on('click','.popupulfirst .radioBlock input',function(e){
+			if(!$(this).closest('.addonssec').find('.checkBlock input').is(':checked'))
+			{
+			
+			$(this).closest('.addonssec').find('.checkBlock input').attr('checked','checked')
+			}
+	    });
+	  
+	  
+	  
+	  
    
     });
   </script>
