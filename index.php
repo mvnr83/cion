@@ -303,13 +303,13 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
  
  
     <div>
-      <div class="custom"><a href="#"><div class="mainproductssec"><div class="slidercontent">Secure and Manage identities (all resources) of Active Directory, OpenLDAP, Office 365, Azure etc.</div><div  class="sliderimg"><img src="images/products/adcn_filter.png"></div></div></a>
+      <div class="custom"><a href="#"><div class="mainproductssec"><div class="slidercontent"></div><div  class="sliderimg"><img src="images/products/adcn_filter.png"></div></div></a>
       
       <span class="pbottom"> <span class="ptitle">Multifactor Authentication</span>
               <a href="active-directory-tools.php" class="sliderlinkbuy">Buy Now</a> <a href="#" class="sliderlinktry">Try Now</a></span></div>
     </div>
     <div>
-      <div class="custom"><a href="#"><div class="mainproductssec"><div class="slidercontent">Secure and Manage identities (all resources) of Active Directory, OpenLDAP, Office 365, Azure etc.</div><div  class="sliderimg"><img src="images/products/admpro_dashboard.png"></div></div></a>
+      <div class="custom"><a href="#"><div class="mainproductssec"><div class="slidercontent">Secure and Manage identities (all resources) of Active Directory</div><div  class="sliderimg"><img src="images/products/admpro_dashboard.png"></div></div></a>
       
       <span class="pbottom"> <span class="ptitle">Provisioning System</span>
               <a href="active-directory-tools.php" class="sliderlinkbuy">Buy Now</a> <a href="#" class="sliderlinktry">Try Now</a></span></div>
@@ -626,9 +626,8 @@ $(this).closest('.tabing').next('.no-of-users').show();
         <p style="color:#F90">USA Address</p>
         <p>6640 185th Ave NE, Redmond, WA-98052. &nbsp;<i class="fa fa-phone"></i>Phone: 1-425-605-5325 </p>
         <p style="color:#F90">INDIA Address</p>
-        <p># 6-2-47,Yeturu Tower , 505, 5th Floor
-Lakdi-ka-pool, Hyderabad-500004,TS, INDIA  &nbsp;
-<i class="fa fa-phone"></i>Phone : 91-40-64644486 </p>
+        <p># 6-2-47,Yeturu Tower , 505, 5th Floor, Lakdi-ka-pool, Hyderabad-500004, Telangana, INDIA</p> 
+<p><i class="fa fa-phone"></i>Phone : 91-40-64644486 </p>
         <p><i class="fa fa-envelope "></i>&nbsp;Email : <a href="javascript:;">info@cionsystems.com</a></p>
         </address>
         </div>

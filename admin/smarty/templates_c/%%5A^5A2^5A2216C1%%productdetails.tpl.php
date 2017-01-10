@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.5-dev, created on 2016-11-16 18:17:27
+<?php /* Smarty version 2.6.5-dev, created on 2017-01-04 08:05:15
          compiled from productdetails.tpl */ ?>
 <?php echo '
 <link href="css/style_sheet.css" type="text/css" rel="stylesheet"/>

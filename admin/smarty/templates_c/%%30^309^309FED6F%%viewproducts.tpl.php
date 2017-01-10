@@ -1,9 +1,18 @@
-<?php /* Smarty version 2.6.5-dev, created on 2016-12-24 04:42:31
+<?php /* Smarty version 2.6.5-dev, created on 2017-01-04 09:20:52
          compiled from viewproducts.tpl */ ?>
 <?php require_once(SMARTY_DIR . 'core' . DIRECTORY_SEPARATOR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('modifier', 'truncate', 'viewproducts.tpl', 145, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'truncate', 'viewproducts.tpl', 166, false),)), $this); ?>
 <?php echo '
 <script language="javascript" type="text/javascript">
+function fnToggleHomepage(id){
+ 
+	var frm = document.form1;
+	frm.uid.value = id;
+	frm.act.value = \'make_premium\';
+	frm.action = \'viewproducts.php\';
+	frm.submit();
+  
+}
 function check()
 {
 	var frm = document.form1;
@@ -135,7 +144,11 @@ function fnOrder(id,or_id)
                         <tr>
                           <td align="left" valign="top"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
                               <tr>
-							  	<td align="center" valign="middle" class="Sub_menu"><input type="checkbox"/></td>
+							  	<td align="center" valign="middle" class="Sub_menu">
+                                                                    
+                                                                    <!-- <input type="checkbox"/> -->
+                                                                    
+                                                                </td>
                                 <td align="center" valign="middle" class="Sub_menu">S.No </td>
 								<td align="center" valign="middle" class="Sub_menu">Product Name </td>
 								<!--<td align="center" valign="middle" class="Sub_menu">Short Description </td>-->
@@ -169,8 +182,18 @@ $this->_sections['list']['first']      = ($this->_sections['list']['iteration'] 
 $this->_sections['list']['last']       = ($this->_sections['list']['iteration'] == $this->_sections['list']['total']);
 ?>
 									<tr>
-										<td align="center" valign="middle" class="Sub_menu"><input type="checkbox" name="id" value="<?php echo $this->_tpl_vars['array'][$this->_sections['list']['index']]['id']; ?>
-" /></td>
+										<td align="center" valign="middle" class="Sub_menu">
+                                                                                    <?php if ($this->_tpl_vars['array'][$this->_sections['list']['index']]['display_home_page'] == 1): ?>
+                                                                                        <img onclick="javascript: fnToggleHomepage('<?php echo $this->_tpl_vars['array'][$this->_sections['list']['index']]['id']; ?>
+');" src="images/star_on.png" alt="click to hide on home page" title="click to hide on home page" style="cursor:pointer;width:16px; height:16px;">
+                                                                                    <?php else: ?>
+                                                                                        <img onclick="javascript: fnToggleHomepage('<?php echo $this->_tpl_vars['array'][$this->_sections['list']['index']]['id']; ?>
+');" src="images/star_off.png" alt="click to display on home page" title="click to display on home page" style="cursor:pointer;width:16px; height:16px;">
+                                                                                    <?php endif; ?>
+                                                                                    
+                                                                                    <!-- <input type="checkbox" name="id" value="<?php echo $this->_tpl_vars['array'][$this->_sections['list']['index']]['id']; ?>
+" /> -->
+                                                                                    </td>
 										<td class="aril" align="center"><?php echo $this->_sections['list']['rownum']; ?>
 </td>
 										<td class="aril" align="center"><?php echo $this->_tpl_vars['array'][$this->_sections['list']['index']]['product_name']; ?>
@@ -214,7 +237,7 @@ $this->_sections['count_list']['last']       = ($this->_sections['count_list']['
 										<td class="aril" align="center"><?php if ($this->_tpl_vars['array'][$this->_sections['list']['index']]['status'] == 'Active'): ?><a href="javascript:changestat('<?php echo $this->_tpl_vars['array'][$this->_sections['list']['index']]['id']; ?>
 ','Inactive');" class="Sub_menu">Make In Active</a><?php else: ?><a href="javascript:changestat('<?php echo $this->_tpl_vars['array'][$this->_sections['list']['index']]['id']; ?>
 ','Active');" class="Sub_menu">Make Active</a><?php endif; ?></td>
-                                                                                <td class="aril" align="center"><img src="images/b_view.png"  width="16"/ onclick="javascript:showproduct('<?php echo $this->_tpl_vars['array'][$this->_sections['list']['index']]['id']; ?>
+                                                                                <td class="aril" align="center"><img src="images/b_view.png"  width="16" onclick="javascript:showproduct('<?php echo $this->_tpl_vars['array'][$this->_sections['list']['index']]['id']; ?>
 ')" style="cursor:pointer" title="View Product Details"> / <img src="images/b_edit.png" width="20" onclick="javascript:editproduct('<?php echo $this->_tpl_vars['array'][$this->_sections['list']['index']]['id']; ?>
 ')" style="cursor:pointer"  title="Edit Product"/> / <a href="subscription_plans.php?product_id=<?php echo $this->_tpl_vars['array'][$this->_sections['list']['index']]['id']; ?>
 "><img src="images/subscription_plans.png" width="20" style="cursor:pointer"  title="View Subscription Plans"/></a></td>

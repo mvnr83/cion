@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.5-dev, created on 2016-11-18 03:13:03
+<?php /* Smarty version 2.6.5-dev, created on 2017-01-03 07:42:59
          compiled from office365_bundle.tpl */ ?>
 <?php echo '
 <script type="text/javascript">

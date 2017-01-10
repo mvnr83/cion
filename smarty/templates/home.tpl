@@ -231,9 +231,8 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
         <p style="color:#F90">USA Address</p>
         <p>6640 185th Ave NE, Redmond, WA-98052. &nbsp;<i class="fa fa-phone"></i>Phone: 1-425-605-5325 </p>
         <p style="color:#F90">INDIA Address</p>
-        <p># 6-2-47,Yeturu Tower , 505, 5th Floor
-Lakdi-ka-pool, Hyderabad-500004,TS, INDIA  &nbsp;
-<i class="fa fa-phone"></i>Phone : 91-40-64644486 </p>
+        <p># 6-2-47,Yeturu Tower , 505, 5th Floor, Lakdi-ka-pool, Hyderabad-500004, Telangana, INDIA</p> 
+<p><i class="fa fa-phone"></i>Phone : 91-40-64644486 </p>
         <p><i class="fa fa-envelope "></i>&nbsp;Email : <a href="javascript:;">info@cionsystems.com</a></p>
         </address>
         </div>
@@ -290,7 +289,7 @@ Lakdi-ka-pool, Hyderabad-500004,TS, INDIA  &nbsp;
 <footer class="footer-small">
   <div class="container">
     <div class="row">
-       <div class="col-lg-3 col-sm-12 copyright1 pull-left" style="color:#fff"> 2016 &copy; Copyright - Cionsystems. </div>
+       <div class="col-lg-3 col-sm-12 copyright1 pull-left" style="color:#fff"> {$year} &copy; Copyright - CionSystems Inc. </div>
       <div class="col-lg-9 xol-xs-12 col-sm-12 text-center footernavmain pull-right">
      <ul class="footernav"><li>     
       <a href=""  style="color:#fff">CionSystems Professional Services</a></li>
