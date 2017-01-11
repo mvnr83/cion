@@ -309,7 +309,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
              <?php /*?> <a href="active-directory-tools.php" class="sliderlinkbuy">Buy Now</a><?php */?> <a href="active-directory-ChangeNotifier.php" class="sliderlinktry">Try Now</a></span></div>
     </div>
     <div>
-      <div class="custom"><a href="active-directory-manager.php"><div class="mainproductssec"><div class="slidercontent">Secure and Manage identities (all resources) of Active Directory</div><div  class="sliderimg"><img src="images/products/admpro_dashboard.png"></div></div></a>
+      <div class="custom"><a href="active-directory-manager.php"><div class="mainproductssec"><div class="slidercontent">Secure and Manage identities (all resources) of Active Directory</div><div  class="sliderimg"><img src="images/products/dummy.png"></div></div></a>
       
       <span class="pbottom"><a href="active-directory-manager.php"> <span class="ptitle">Active Directory Manager Pro</span></a>
              <?php /*?> <a href="active-directory-tools.php" class="sliderlinkbuy">Buy Now</a><?php */?> <a href="active-directory-manager.php" class="sliderlinktry">Try Now</a></span></div>
