@@ -6555,7 +6555,7 @@ content: "\f053"; font: normal 33px/1 FontAwesome;}
 .shopingcarttable th{ color:#048ac3; font:600 18px 'Open Sans'}
 .Total{ color:#048ac3;font:600 17px 'Open Sans'}
 .shopingcarttable img{ border-radius:10px; border:1px solid #ccc}
-.shopingcarttable td{ vertical-align:middle !important; position:relative; padding-bottom:30px !important;}
+.shopingcarttable td{ vertical-align:middle !important; position:relative;}
 a.productremove{ position:absolute; bottom:5px; left:0px; color:#048ac3 !important; font:400 13px 'Open Sans'}
 .estimate{ color:#7a9eb3;  font:400 20px 'Open Sans'}
 .TotalCost{ color:#048ac3;  font:600 20px 'Open Sans'}
