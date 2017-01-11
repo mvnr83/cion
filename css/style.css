@@ -68,7 +68,7 @@ h6 {
 
 a { color: #444e67 }
 
-a:hover { color: #48cfad }
+a:hover , a:focus{ color: #48cfad }
 
 p { line-height: 22px }
 
