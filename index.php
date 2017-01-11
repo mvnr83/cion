@@ -289,14 +289,14 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
 <section class="regular slider col-xs-12 regularnew">
  
  <div class="mainslides">
-    <div class="custom"><a href="#"> <div class="mainproductssingle"><div><img src="images/products/multifactors_img.png"></div></div></a>
-      <span class="pbottom"> <span class="ptitle">Multifactor Authentication</span>
-              <a href="#" class="sliderlinkbuy">Buy Now</a> <a href="#" class="sliderlinktry">Try Now</a></span></div>
+    <div class="custom"><a href="mfauthentication.php"> <div class="mainproductssingle"><div><img src="images/products/multifactors_img.png"></div></div></a>
+      <span class="pbottom"> <a href="mfauthentication.php"> <span class="ptitle">Multifactor Authentication</span></a>
+             <?php /*?> <a href="#" class="sliderlinkbuy">Buy Now</a><?php */?> <a href="mfauthentication.php" class="sliderlinktry">Try Now</a></span></div>
     </div>
  <div class="mainslides">
-    <div class="custom"><a href="#"> <div class="mainproductssingle"><div><img src="images/products/provisioning_img.png"></div></div></a>
-      <span class="pbottom"> <span class="ptitle">Provisioning System</span>
-              <a href="#" class="sliderlinkbuy">Buy Now</a> <a href="#" class="sliderlinktry">Try Now</a></span></div>
+    <div class="custom"><a href="ADProvisioning.php"> <div class="mainproductssingle"><div><img src="images/products/provisioning_img.png"></div></div></a>
+      <span class="pbottom"> <a href="ADProvisioning.php"><span class="ptitle">Provisioning System</span></a>
+             <?php /*?> <a href="#" class="sliderlinkbuy">Buy Now</a> <?php */?><a href="ADProvisioning.php" class="sliderlinktry">Try Now</a></span></div>
     </div>
  
  
