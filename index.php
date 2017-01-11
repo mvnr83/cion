@@ -303,7 +303,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
  
  
     <div>
-      <div class="custom"><a href="active-directory-ChangeNotifier.php"><div class="mainproductssec"><div class="slidercontent"></div><div  class="sliderimg"><img src="images/products/adcn_filter.png"></div></div></a>
+      <div class="custom"><a href="active-directory-ChangeNotifier.php"><div class="mainproductssec"><div class="slidercontent">Secure and Manage identities (all resources) of Active Directory</div><div  class="sliderimg"><img src="images/products/adcn_filter.png"></div></div></a>
       
       <span class="pbottom"> <a href="active-directory-ChangeNotifier.php"><span class="ptitle">Active Directory Change Notifier</span></a>
              <?php /*?> <a href="active-directory-tools.php" class="sliderlinkbuy">Buy Now</a><?php */?> <a href="active-directory-ChangeNotifier.php" class="sliderlinktry">Try Now</a></span></div>
