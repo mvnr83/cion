@@ -303,13 +303,13 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
  
  
     <div>
-      <div class="custom"><a href="active-directory-ChangeNotifier.php"><div class="mainproductssec"><div class="slidercontent">Secure and Manage identities (all resources) of Active Directory</div><div  class="sliderimg"><img src="images/products/adcn_filter.png"></div></div></a>
+      <div class="custom"><a href="active-directory-ChangeNotifier.php"><div class="mainproductssec"><div class="slidercontent">Tracks and notifies "every" change to Active Directory proactively in real time allowing you to manage threats and weaknesses.</div><div  class="sliderimg"><img src="images/products/adcn_filter.png"></div></div></a>
       
       <span class="pbottom"> <a href="active-directory-ChangeNotifier.php"><span class="ptitle">Active Directory Change Notifier</span></a>
              <?php /*?> <a href="active-directory-tools.php" class="sliderlinkbuy">Buy Now</a><?php */?> <a href="active-directory-ChangeNotifier.php" class="sliderlinktry">Try Now</a></span></div>
     </div>
     <div>
-      <div class="custom"><a href="active-directory-manager.php"><div class="mainproductssec"><div class="slidercontent">Secure and Manage identities (all resources) of Active Directory</div><div  class="sliderimg"><img src="images/products/admpro_dashboard.png"></div></div></a>
+      <div class="custom"><a href="active-directory-manager.php"><div class="mainproductssec"><div class="slidercontent">Centralize and Securely manage your organization Active Directories  - includes delegation, workflow, attestation, reports, single and bulk object management, templates, policies ACL, GPO's and much more</div><div  class="sliderimg"><img src="images/products/admpro_dashboard.png"></div></div></a>
       
       <span class="pbottom"><a href="active-directory-manager.php"> <span class="ptitle">Active Directory Manager Pro</span></a>
              <?php /*?> <a href="active-directory-tools.php" class="sliderlinkbuy">Buy Now</a><?php */?> <a href="active-directory-manager.php" class="sliderlinktry">Try Now</a></span></div>
@@ -318,7 +318,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
     
     
     <div>
-      <div class="custom"><a href="active-directory-gpomanager.php"><div class="mainproductssec"><div class="slidercontent">Secure and Manage identities (all resources) of Active Directory</div><div  class="sliderimg"><img src="images/products/gpomanager.png"></div></div></a>
+      <div class="custom"><a href="active-directory-gpomanager.php"><div class="mainproductssec"><div class="slidercontent">GPOManager provides a much easier, more efficient and more secure way to manage Group Policies, includes workflow, backup/restore, migration, versioning, compare and much more.</div><div  class="sliderimg"><img src="images/products/gpomanager.png"></div></div></a>
       
       <span class="pbottom"><a href="active-directory-gpomanager.php"> <span class="ptitle">GPO Manager</span></a>
              <?php /*?> <a href="active-directory-tools.php" class="sliderlinkbuy">Buy Now</a><?php */?> <a href="active-directory-gpomanager.php" class="sliderlinktry">Try Now</a></span></div>
@@ -326,7 +326,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
     
     
     <div>
-      <div class="custom"><a href="Enterprise-Self-Service.php"><div class="mainproductssec"><div class="slidercontent">Secure and Manage identities (all resources) of Active Directory</div><div  class="sliderimg"><img src="images/products/ess_dashboard.png"></div></div></a>
+      <div class="custom"><a href="Enterprise-Self-Service.php"><div class="mainproductssec"><div class="slidercontent">Easy and simple for end-users and IT staff and scales to the needs of very large organizations for password, profiles, objects, access control, audit management.</div><div  class="sliderimg"><img src="images/products/ess_dashboard.png"></div></div></a>
       
       <span class="pbottom"><a href="Enterprise-Self-Service.php"> <span class="ptitle">Enterprise Self-Service</span></a>
              <?php /*?> <a href="active-directory-tools.php" class="sliderlinkbuy">Buy Now</a><?php */?> <a href="Enterprise-Self-Service.php" class="sliderlinktry">Try Now</a></span></div>
@@ -335,13 +335,13 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
     
     
     <div>
-      <div class="custom"><a href="active-directory-reporter.php"><div class="mainproductssec"><div class="slidercontent">Secure and Manage identities (all resources) of Active Directory</div><div  class="sliderimg"><img src="images/products/adreporter_dashboard.png"></div></div></a>
+      <div class="custom"><a href="active-directory-reporter.php"><div class="mainproductssec"><div class="slidercontent">Hundreds of reports on Windows Active Directory (AD, Exchange and others) gives IT administrators the essential information needed to troubleshoot, secure and compliance reports their enterprise.</div><div  class="sliderimg"><img src="images/products/adreporter_dashboard.png"></div></div></a>
       
       <span class="pbottom"><a href="active-directory-reporter.php"> <span class="ptitle">Active Directory Reporter</span></a>
              <?php /*?> <a href="active-directory-tools.php" class="sliderlinkbuy">Buy Now</a><?php */?> <a href="active-directory-reporter.php" class="sliderlinktry">Try Now</a></span></div>
     </div>
     <div>
-      <div class="custom"><a href="Cloud_Identity_Minder.php"><div class="mainproductssec"><div class="slidercontent">Secure and Manage identities (all resources) of Active Directory</div><div  class="sliderimg"><img src="images/products/cim_user_login.png"></div></div></a>
+      <div class="custom"><a href="Cloud_Identity_Minder.php"><div class="mainproductssec"><div class="slidercontent">Cloud Identity Minder is a cloud-based identity, authentication and self-service user life cycle management solution and API. Extends existing enterprise Identity store to cloud and allows SaaS applications to integrate.</div><div  class="sliderimg"><img src="images/products/cim_user_login.png"></div></div></a>
       
       <span class="pbottom"><a href="Cloud_Identity_Minder.php"> <span class="ptitle">Cloud Identity Minder</span></a>
              <?php /*?> <a href="active-directory-tools.php" class="sliderlinkbuy">Buy Now</a><?php */?> <a href="Cloud_Identity_Minder.php" class="sliderlinktry">Try Now</a></span></div>
@@ -356,20 +356,20 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
     
     
     <div>
-      <div class="custom"><a href="office365_bundle.php"><div class="mainproductssec"><div class="slidercontent">Secure and Manage identities (all resources) of Active Directory</div><div  class="sliderimg"><img src="images/products/office-365.png"></div></div></a>
+      <div class="custom"><a href="office365_bundle.php"><div class="mainproductssec"><div class="slidercontent">A centralized on premise enterprise to Microsoft | Office 365 | Azure AD cloud identity integration, access and management and data migration and archiving solution.</div><div  class="sliderimg"><img src="images/products/office-365.png"></div></div></a>
       
       <span class="pbottom"><a href="office365_bundle.php"> <span class="ptitle">Office 365 | Azure Management Simplified</span></a>
              <?php /*?> <a href="active-directory-tools.php" class="sliderlinkbuy">Buy Now</a><?php */?> <a href="office365_bundle.php" class="sliderlinktry">Try Now</a></span></div>
     </div>
      
     <div>
-      <div class="custom"><a href="active-directory-recovery.php"><div class="mainproductssec"><div class="slidercontent">Secure and Manage identities (all resources) of Active Directory</div><div  class="sliderimg"><img src="images/products/adr.png"></div></div></a>
+      <div class="custom"><a href="active-directory-recovery.php"><div class="mainproductssec"><div class="slidercontent">Quickly and accurately backup your Active Directory, then painlessly recover your AD when needed down to a single attribute or complete domain.</div><div  class="sliderimg"><img src="images/products/adr.png"></div></div></a>
       
       <span class="pbottom"><a href="active-directory-recovery.php"> <span class="ptitle">Active Directory Recovery</span></a>
              <?php /*?> <a href="active-directory-tools.php" class="sliderlinkbuy">Buy Now</a><?php */?> <a href="active-directory-recovery.php" class="sliderlinktry">Try Now</a></span></div>
     </div>
     <div>
-      <div class="custom"><a href="SystemInformation_comparison.php"><div class="mainproductssec"><div class="slidercontent">Secure and Manage identities (all resources) of Active Directory</div><div  class="sliderimg"><img src="images/products/sic.png"></div></div></a>
+      <div class="custom"><a href="SystemInformation_comparison.php"><div class="mainproductssec"><div class="slidercontent">Helps track all configuration changes including applications, updates, patches, files and registry to any VM, server, desktop and workstations on premise or in any cloud system.</div><div  class="sliderimg"><img src="images/products/sic.png"></div></div></a>
       
       <span class="pbottom"><a href="SystemInformation_comparison.php"> <span class="ptitle">System Information &amp; Comparison</span></a>
              <?php /*?> <a href="active-directory-tools.php" class="sliderlinkbuy">Buy Now</a><?php */?> <a href="SystemInformation_comparison.php" class="sliderlinktry">Try Now</a></span></div>
