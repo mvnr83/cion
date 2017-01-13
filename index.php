@@ -347,7 +347,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
              <?php /*?> <a href="active-directory-tools.php" class="sliderlinkbuy">Buy Now</a><?php */?> <a href="Cloud_Identity_Minder.php" class="sliderlinktry">Try Now</a></span></div>
     </div>
     <div>
-      <div class="custom"><a href="cim_selfservice.php"><div class="mainproductssec"><div class="slidercontent">Secure and Manage identities (all resources) of Active Directory</div><div  class="sliderimg"><img src="images/products/cmt.png"></div></div></a>
+      <div class="custom"><a href="cim_selfservice.php"><div class="mainproductssec"><div class="slidercontent">A centralized on premise enterprise to Microsoft | Office 365 | Azure AD cloud identity integration, access and management and data migration and archiving solution.</div><div  class="sliderimg"><img src="images/products/cmt.png"></div></div></a>
       
       <span class="pbottom"><a href="cim_selfservice.php"> <span class="ptitle">DirSync for O365 | Azure</span></a>
              <?php /*?> <a href="active-directory-tools.php" class="sliderlinkbuy">Buy Now</a><?php */?> <a href="cim_selfservice.php" class="sliderlinktry">Try Now</a></span></div>
@@ -356,7 +356,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
     
     
     <div>
-      <div class="custom"><a href="office365_bundle.php"><div class="mainproductssec"><div class="slidercontent">A centralized on premise enterprise to Microsoft | Office 365 | Azure AD cloud identity integration, access and management and data migration and archiving solution.</div><div  class="sliderimg"><img src="images/products/office-365.png"></div></div></a>
+      <div class="custom"><a href="office365_bundle.php"><div class="mainproductssec"><div class="slidercontent">Secure and Manage identities (all resources) of Active Directory</div><div  class="sliderimg"><img src="images/products/office-365.png"></div></div></a>
       
       <span class="pbottom"><a href="office365_bundle.php"> <span class="ptitle">Office 365 | Azure Management Simplified</span></a>
              <?php /*?> <a href="active-directory-tools.php" class="sliderlinkbuy">Buy Now</a><?php */?> <a href="office365_bundle.php" class="sliderlinktry">Try Now</a></span></div>
