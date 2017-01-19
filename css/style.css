@@ -6601,7 +6601,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#818181', end
 .regular.regularnew .slick-prev:before, .regular.regularnew .slick-next:before{font-size:26px;}
 
 
-@media only screen and (max-width: 1023px) {.ptitle{ width:100%; clear:both; float:left; font-size:12px;}
+@media only screen and (max-width: 1023px) {.ptitle{ float:left; font-size:12px;}
 .sliderlinkbuy:before,.sliderlinktry:before{ background-size:16px;}
 .sliderlinkbuy,.sliderlinktry{ font-size:12px;}
 .subheading{ font-size:18px;}
@@ -6675,3 +6675,26 @@ address,.address{ margin-bottom:0;}
 .mainslides .custom{ max-width:100%}
 .mainslides .custom img{ width:100%}
 .thumb.solutionthumb .slick-prev.slick-arrow, .thumb.solutionthumb .slick-next.slick-arrow{ height:32px;}
+
+
+
+
+
+
+
+/* new one */
+.regularnew  .slick-slide .custom{ min-height:10px;}
+.mainproductssingle{ height:auto }
+
+.mainproductssingle div{ border:0;}
+.mainslides.slick-slide .custom {
+     padding: 0px !important; 
+}
+.slick-slide.mainslides a img {
+    padding: 10px;
+}
+.mainproductssingle div{ background:none !important}
+
+
+
+
