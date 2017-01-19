@@ -6620,7 +6620,7 @@ body{ text-align:left;}
     width: 100% !important;
 }
 
-.mainproductssec > div.sliderimg img{ max-height:180px;} 
+.mainproductssec > div.sliderimg img{ max-height:200px;} 
 
 .mainproductssec > div:first-child{ padding:5px 10px !important;white-space: nowrap;
     text-overflow: ellipsis;
@@ -6633,6 +6633,26 @@ body{ text-align:left;}
  display:table-cell;
 }
 #myCarousel + br{ display:none}
+
+.mainproductssingle img{ height:auto !important}
+.mainproductssingle div{ vertical-align:middle;
+background: rgba(129,129,129,1);
+background: -moz-linear-gradient(45deg, rgba(129,129,129,1) 0%, rgba(115,115,115,1) 32%, rgba(79,74,79,1) 42%, rgba(48,45,48,1) 72%, rgba(20,18,20,1) 100%);
+background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(129,129,129,1)), color-stop(32%, rgba(115,115,115,1)), color-stop(42%, rgba(79,74,79,1)), color-stop(72%, rgba(48,45,48,1)), color-stop(100%, rgba(20,18,20,1)));
+background: -webkit-linear-gradient(45deg, rgba(129,129,129,1) 0%, rgba(115,115,115,1) 32%, rgba(79,74,79,1) 42%, rgba(48,45,48,1) 72%, rgba(20,18,20,1) 100%);
+background: -o-linear-gradient(45deg, rgba(129,129,129,1) 0%, rgba(115,115,115,1) 32%, rgba(79,74,79,1) 42%, rgba(48,45,48,1) 72%, rgba(20,18,20,1) 100%);
+background: -ms-linear-gradient(45deg, rgba(129,129,129,1) 0%, rgba(115,115,115,1) 32%, rgba(79,74,79,1) 42%, rgba(48,45,48,1) 72%, rgba(20,18,20,1) 100%);
+background: linear-gradient(45deg, rgba(129,129,129,1) 0%, rgba(115,115,115,1) 32%, rgba(79,74,79,1) 42%, rgba(48,45,48,1) 72%, rgba(20,18,20,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#818181', endColorstr='#141214', GradientType=1 ); border:3px solid #b7bdca; border-radius:10px;
+
+}
+
+.mainslides.slick-slide  .custom{ padding:10px !important}
+.slick-slide.mainslides a img {
+    padding: 0 10px;
+}
+
+
 }
 
 
