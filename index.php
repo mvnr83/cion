@@ -208,7 +208,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
 <br/><br/>
 
 <div class="container">
-<h1>Welcome to CionSystems</h1>
+<h1>Identity, access and authentication solutions</h1>
 <div class="welcomeblock"><p class="text-justify"><strong>CionSystems</strong> delivers a simple and cost effective solution to improve security and streamline managing IT infrastructure.  CionSystems Identity Management solutions are designed to integrate with enterprise HR systems, school information systems and other systems. Products are designed to provide benefits for schools districts and IT organizations of varying size, complexity, and skill levels in verticals like finance, insurance, education, telecom, technology etc.  Implement process driven Security and Auditing to reduce support costs and quickly respond to security incidents while continuous monitoring, reporting and alerting of directories like Active Directory, ldap, openldap, office365, azure AD.</p></div>
 
 
