@@ -2448,7 +2448,7 @@ ul.tag li a {
 
 }
 
-.footer h1 {
+.footer h1 ,.footer h3 {
 
     font-size: 20px;
 
@@ -2458,7 +2458,9 @@ ul.tag li a {
 
     margin-top: 0;
 
-    margin-bottom: 20px;
+     margin: 0 0 20px 0;
+    padding: 0 0 8px 0;    color: #2f7ca9;    position: relative;
+    font-family: 'Open Sans', sans-serif;
 
 }
 
@@ -2602,7 +2604,7 @@ ul.tag li a {
 
 .page-footer { padding: 0% 13% }
 
-.page-footer h1,.page-footer h3 { padding-left: 0 }
+.page-footer h1{ padding-left: 0 }
 
 ul.page-footer-list {
 

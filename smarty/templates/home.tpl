@@ -227,7 +227,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
     <div class="row">
       <div class="col-lg-3 col-sm-6  wow fadeInUp" data-wow-duration="2s" data-wow-delay=".1s" style="padding-left:30px;">
 <div class="address">
-        <h1> contact info </h1>
+        <h3> contact info </h3>
         <address>
         <p style="color:#F90">USA Address</p>
         <p>6640 185th Ave NE, Redmond, WA-98052. &nbsp;<i class="fa fa-phone"></i>Phone: 1-425-605-5325 </p>
@@ -240,7 +240,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
       </div>
       <div class="col-lg-4 col-sm-6">
         <div class="page-footer wow fadeInUp" data-wow-duration="2s" data-wow-delay=".5s">
-          <h1> Products </h1>
+          <h3> Products </h3>
           <ul class="page-footer-list">
            <li> <i class="fa fa-angle-right"></i> <a href="active-directory-manager.php">Active Directory Manager Pro</a> </li>
            <li> <i class="fa fa-angle-right"></i> <a href="Enterprise-Self-Service.php">Enterprise Self-Service</a> </li>
@@ -258,7 +258,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
       <div class="row">
       <div class="col-lg-8 col-sm-6">
         <div class="page-footer1 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".5s">
-          <h1> Our Company </h1>
+          <h3> Our Company </h3>
           <ul class="page-footer-list">
             <li> <i class="fa fa-angle-right"></i> <a href="aboutus.php">About Us</a> </li>
             <li> <i class="fa fa-angle-right"></i> <a href="http://cionsystems.com/events/">News & Events</a> </li>
@@ -271,7 +271,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
       </div>
       
       <div class="col-lg-4 col-sm-6">
-        <h1> Follow us </h1>
+        <h3> Follow us </h3>
         <a href="https://www.facebook.com/cionsystems/" target="_blank"><img src="img/facebook.png" ></a>  
         <a href="https://www.linkedin.com/company/cionsystems-inc" target="_blank"><img src="img/linkedin.png" ></a>
     	<a href="https://twitter.com/cionsystems?lang=en" target="_blank"><img src="img/twitter.png" ></a>
