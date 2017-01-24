@@ -2602,7 +2602,7 @@ ul.tag li a {
 
 .page-footer { padding: 0% 13% }
 
-.page-footer h1 { padding-left: 0 }
+.page-footer h1,.page-footer h3 { padding-left: 0 }
 
 ul.page-footer-list {
 
