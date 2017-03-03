@@ -43,6 +43,10 @@ if($_POST['uname'] != '')
                 $_SESSION['lname'] = $row['first_name'];
 
 		$_SESSION['id'] = $row[id];
+                if(isset($_SESSION['redirect_from']) && $_SESSION['redirect_from'] == 'shoppingcart'){
+                    header("Location: place-order.php");
+                    exit(0);
+                }
 
 		if($_SESSION['type']!="")
 

@@ -65,7 +65,20 @@ function clear()
                                 <td width="201" align="center" valign="middle">&nbsp;</td>
                                 <td width="55" align="left" valign="middle">&nbsp;</td>
                               </tr>
-                              
+                              <tr>
+                                <td align="right" valign="middle" class="aril">Add-on Name :</td>
+                                <td align="center" valign="middle">&nbsp;</td>
+                                <td height="25" align="left" valign="middle"><select name="addon_id">
+								
+                                        <option value="0" selected="selected">Select</option>
+                                        {if $addonsCnt gt 0}
+                             {section name=list loop=$addons}
+                                        <option value="{$addons[list].addon_id}">{$addons[list].addon_name}</option>
+                                        {/section}
+                                        {/if}
+								</select></td>
+                                <td align="left" valign="middle">&nbsp;</td>
+                              </tr>
                               <tr>
                                 <td align="right" valign="middle" class="aril">Plan Name :</td>
                                 <td align="center" valign="middle">&nbsp;</td>
@@ -76,6 +89,12 @@ function clear()
                                 <td align="right" valign="middle" class="aril">Price  :</td>
                                 <td align="center" valign="middle">&nbsp;</td>
                                 <td align="left" valign="middle"><input name="price" type="text" class="fieldwidth" /></td>
+                                <td align="left" valign="middle">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                <td align="right" valign="top" class="aril">Download Link  :</td>
+                                <td align="center" valign="middle">&nbsp;</td>
+                                <td align="left" valign="top"><input name="download_link" type="text" class="fieldwidth" value=""  /><br />Eg: Products/product.zip <br />&nbsp;</td>
                                 <td align="left" valign="middle">&nbsp;</td>
                               </tr>
 							  <tr>

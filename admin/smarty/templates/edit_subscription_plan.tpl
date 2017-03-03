@@ -78,7 +78,20 @@ function clear()
                                 <td align="center" valign="middle">&nbsp;</td>
                                 <td align="left" valign="middle">&nbsp;</td> 	
                               </tr>
-                              
+                              <tr>
+                                <td align="right" valign="middle" class="aril">Add-on Name :</td>
+                                <td align="center" valign="middle">&nbsp;</td>
+                                <td height="25" align="left" valign="middle"><select name="addon_id">
+								
+                                        <option value="0" selected="selected">Select</option>
+                                        {if $addonsCnt gt 0}
+                             {section name=list loop=$addons}
+                                        <option value="{$addons[list].addon_id}" {if $addons[list].addon_id eq $array[0].addon_id}selected{/if}>{$addons[list].addon_name}</option>
+                                        {/section}
+                                        {/if}
+								</select></td>
+                                <td align="left" valign="middle">&nbsp;</td>
+                              </tr>
 				<tr>
                                 <td align="right" valign="middle" class="aril">Plan Name :</td>
                                 <td align="center" valign="middle">&nbsp;</td>
@@ -89,6 +102,12 @@ function clear()
                                 <td align="right" valign="middle" class="aril">Price  :</td>
                                 <td align="center" valign="middle">&nbsp;</td>
                                 <td align="left" valign="middle"><input name="price" type="text" class="fieldwidth" value="{$array[0].price}"  /></td>
+                                <td align="left" valign="middle">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                <td align="right" valign="top" class="aril">Download Link  :</td>
+                                <td align="center" valign="middle">&nbsp;</td>
+                                <td align="left" valign="top"><input name="download_link" type="text" class="fieldwidth" value="{$array[0].download_link}"  /><br />Eg: Products/product.zip <br />&nbsp;</td>
                                 <td align="left" valign="middle">&nbsp;</td>
                               </tr>
 							  <tr>
@@ -124,8 +143,8 @@ function clear()
                                 <td align="center" valign="middle">&nbsp;</td>
                                 <td height="25" align="left" valign="middle"><select name="status">
 								<option value="" >Select</option>
-								<option value="Active" {if $array[0].status == "1"} selected{/if}>Active</option>
-								<option value="Inactive" {if $array[0].status == "0"} selected{/if}>Inactive</option>
+								<option value="1" {if $array[0].status == "1"} selected{/if}>Active</option>
+								<option value="0" {if $array[0].status == "0"} selected{/if}>Inactive</option>
 								</select></td>
                                 <td align="left" valign="middle">&nbsp;</td>
                               </tr>

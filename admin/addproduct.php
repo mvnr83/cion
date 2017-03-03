@@ -61,10 +61,43 @@ if($_POST[act] =='add')
 				move_uploaded_file($file3,$path3);
 			}
 		}
-		$sql_ins = "insert into product_details(product_name,product_code,product_image,download_image,short_description,html_file_name,trial_file_path,
-					original_file_path,posted_on,status,subscription_plan_name,subscription_addon_name_1,subscription_addon_name_2) values('".$_POST[pname]."','".$_POST[pcode]."','".$filename2."','".$filename3."','".$_POST[sdec]."',
+                $file4 = $_FILES['home_slider_image']['tmp_name'];
+		$filename4 = $_FILES['home_slider_image']['name'];
+		$path4 = "../product_images/".$filename4;
+		if($file4 != '')
+		{
+			if(is_uploaded_file($file4))
+			{
+				move_uploaded_file($file4,$path4);
+			}
+		}
+		$sql_ins = "insert into product_details(product_name,product_code,product_image,download_image,home_slider_image,short_description,html_file_name,trial_file_path,
+					original_file_path,posted_on,status,subscription_plan_name,subscription_addon_name_1,subscription_addon_name_2) values('".$_POST[pname]."','".$_POST[pcode]."','".$filename2."','".$filename3."','".$filename4."','".$_POST[sdec]."',
 					'".$_POST[hfname]."','".$filename."','".$filename1."',now(),'".$_POST[status]."','".$_POST['subscription_plan_name']."','".$_POST['subscription_addon_name_1']."','".$_POST['subscription_addon_name_2']."')";
+                
 		$res_ins = @mysql_query($sql_ins);
+                
+                //*************** start update add-on names ********/
+//                $insId = mysql_insert_id($res_ins);
+//                if($insId > 0){
+//                    if($_POST['subscription_addon_name_1'] != ''){
+//                        $ins = mysql_query("INSERT INTO subscription_addon (product_id,addon_name,addon_order) VALUES ('".$insId."','".$_POST['subscription_addon_name_1']."',1) ");
+//                    }
+//                    if($_POST['subscription_addon_name_2'] != ''){
+//                        $ins = mysql_query("INSERT INTO subscription_addon (product_id,addon_name,addon_order) VALUES ('".$insId."','".$_POST['subscription_addon_name_2']."',2) ");
+//                    }
+//                    if($_POST['subscription_addon_name_3'] != ''){
+//                        $ins = mysql_query("INSERT INTO subscription_addon (product_id,addon_name,addon_order) VALUES ('".$insId."','".$_POST['subscription_addon_name_3']."',3) ");
+//                    }
+//                    if($_POST['subscription_addon_name_4'] != ''){
+//                        $ins = mysql_query("INSERT INTO subscription_addon (product_id,addon_name,addon_order) VALUES ('".$insId."','".$_POST['subscription_addon_name_4']."',4) ");
+//                    }
+//                    if($_POST['subscription_addon_name_5'] != ''){
+//                        $ins = mysql_query("INSERT INTO subscription_addon (product_id,addon_name,addon_order) VALUES ('".$insId."','".$_POST['subscription_addon_name_5']."',5) ");
+//                    }
+//                }
+                //*************** end update add-on names ********/
+                
 		if(@mysql_affected_rows()>0)
 		{
 			$msg = "New Product added Successfully";

@@ -171,21 +171,41 @@ function clear()
                                 <td align="left" valign="middle">&nbsp;</td>
                               </tr>
                               <tr>
-                                <td align="right" valign="middle" class="aril">Subscription Plan Name  :</td>
+                                <td align="right" valign="middle" class="aril">Home page slider Image  :</td>
                                 <td align="center" valign="middle">&nbsp;</td>
-                                <td height="25" align="left" valign="middle"><input name="subscription_plan_name" type="text" value="{$array[0].subscription_plan_name}"/></td>
+                                <td height="25" align="left" valign="middle">{if $array[0].home_slider_image neq ''}<img style="width:150px; height:100px;" src="../product_images/{$array[0].home_slider_image}" name="im4" /><br />{/if}<input name="home_slider_image" type="file" /></td>
                                 <td align="left" valign="middle">&nbsp;</td>
                               </tr>
+                              
+                              
                               <tr>
                                 <td align="right" valign="middle" class="aril">Subscription plan add-on name 1  :</td>
                                 <td align="center" valign="middle">&nbsp;</td>
-                                <td height="25" align="left" valign="middle"><input name="subscription_addon_name_1" type="text" value="{$array[0].subscription_addon_name_1}"/></td>
+                                <td height="25" align="left" valign="middle"><input class="fieldwidth" name="subscription_addon_name_1" type="text" value="{$array2[0].addon_name}"/></td>
                                 <td align="left" valign="middle">&nbsp;</td>
                               </tr>
                               <tr>
                                 <td align="right" valign="middle" class="aril">Subscription plan add-on name 2 :</td>
                                 <td align="center" valign="middle">&nbsp;</td>
-                                <td height="25" align="left" valign="middle"><input name="subscription_addon_name_2" type="text" value="{$array[0].subscription_addon_name_2}"/></td>
+                                <td height="25" align="left" valign="middle"><input class="fieldwidth" name="subscription_addon_name_2" type="text" value="{$array2[1].addon_name}"/></td>
+                                <td align="left" valign="middle">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                <td align="right" valign="middle" class="aril">Subscription plan add-on name 3 :</td>
+                                <td align="center" valign="middle">&nbsp;</td>
+                                <td height="25" align="left" valign="middle"><input class="fieldwidth" name="subscription_addon_name_3" type="text" value="{$array2[2].addon_name}"/></td>
+                                <td align="left" valign="middle">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                <td align="right" valign="middle" class="aril">Subscription plan add-on name 4 :</td>
+                                <td align="center" valign="middle">&nbsp;</td>
+                                <td height="25" align="left" valign="middle"><input class="fieldwidth" name="subscription_addon_name_4" type="text" value="{$array2[3].addon_name}"/></td>
+                                <td align="left" valign="middle">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                <td align="right" valign="middle" class="aril">Subscription plan add-on name 5 :</td>
+                                <td align="center" valign="middle">&nbsp;</td>
+                                <td height="25" align="left" valign="middle"><input class="fieldwidth" name="subscription_addon_name_5" type="text" value="{$array2[4].addon_name}"/></td>
                                 <td align="left" valign="middle">&nbsp;</td>
                               </tr>
 							 <tr>

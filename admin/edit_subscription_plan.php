@@ -8,7 +8,7 @@ $product_id = $_GET['product_id'];
 if($_POST[act] == 'edit')
 {
 
-	$sql_up = "update subscription_plans set plan_name = '".$_POST['plan_name']."',price = '".$_POST['price']."',plan_type = '".$_POST['plan_type']."',price_type='".$_POST['price_type']."',is_addon='".$_POST['is_addon']."', status = '".$_POST[status]."'";
+	$sql_up = "update subscription_plans set download_link='".$_POST['download_link']."',addon_id='".$_POST['addon_id']."',plan_name = '".$_POST['plan_name']."',price = '".$_POST['price']."',plan_type = '".$_POST['plan_type']."',price_type='".$_POST['price_type']."',is_addon='".$_POST['is_addon']."', status = '".$_POST['status']."'";
 	$sql_up .= " where sub_id = '".$uid."'";
 	$res_up = @mysql_query($sql_up) or die(mysql_error());
 	
@@ -25,6 +25,15 @@ if($uid!='')
 		array_push($array,$row_sel);
 	}
 }
+
+//addon names
+    $sql = mysql_query("SELECT * FROM subscription_addon WHERE product_id = '".$product_id."'");
+    $addons = array();
+    while($res = mysql_fetch_assoc($sql)){
+        array_push($addons,$res);
+    }
+$smarty->assign("addons",$addons);
+$smarty->assign('addonsCnt',count($addons));
 
 $smarty->assign("msg",$msg);
 $smarty->assign("sub_id",$sub_id);

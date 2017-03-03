@@ -39,7 +39,15 @@ $res_sel = @mysql_query($sql_sel);
 $array= array();
 while($row_sel = @mysql_fetch_assoc($res_sel))
 {
-	array_push($array,$row_sel);
+    if($row_sel['addon_id'] == 0){
+        $row_sel['addon_name'] = $p_sel['product_name'];
+    } else {
+        $selqry = mysql_query("SELECT addon_name FROM subscription_addon WHERE addon_id = '".$row_sel['addon_id']."'");
+        while($res = mysql_fetch_assoc($selqry)){
+            $row_sel['addon_name'] = $res['addon_name'];
+        }
+    }
+    array_push($array,$row_sel);
 }
 $smarty->assign("msg",$msg);
 $smarty->assign("array",$array);

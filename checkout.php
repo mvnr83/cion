@@ -68,30 +68,39 @@ $pro_name = "<title>".$metatitle."</title>
 
 ";
 
-echo "<pre>";
-print_r($_SESSION);
-echo "</pre>";
+//echo "<pre>";
+//print_r($_SESSION);
+//echo "</pre>";
 
 
 $cartInfo = array();
+$total_price = 0;
 //get subscription plan information
-if(isset($_SESSION['cart']) && count($_SESSION['cart']) > 0){
-    foreach($_SESSION['cart'] as $k => $v){
+if(isset($_SESSION['cart_info']) && count($_SESSION['cart_info']) > 0){
+    
+    foreach($_SESSION['cart_info'] as $k => $v){
         $pInfo = array();
-        $sql = mysql_query("SELECT * FROM subscription_plans WHERE product_id = '".$v['pid']."'");
+        $sql = mysql_query("SELECT * FROM subscription_plans sp INNER JOIN product_details pd ON pd.id = sp.product_id  WHERE sp.sub_id = '".$k."'");
         while($res = mysql_fetch_assoc($sql)){
             $pInfo = $res;
-            
+            $total_price+= str_replace('$','',$res['price']);
         }
-        if(isset($v['add_on']) && count($v['add_on']) > 0){
-            $pInfo['addons'] = array();
-            $sql = mysql_query("SELECT * FROM subscription_plans WHERE product_id IN (".implode(',',$v['add_on']).")");
-            while($res = mysql_fetch_assoc($sql)){
-                $pInfo['addons'][] = $res;
-
+        $addOns = array();
+        if(count($v) > 0){
+            foreach($v as $key => $val){
+                $sql = mysql_query("SELECT * FROM subscription_plans sp INNER JOIN subscription_addon sa ON sp.addon_id = sa.addon_id WHERE sp.sub_id = '".$val."'");
+                while($res = mysql_fetch_assoc($sql)){
+                    $addOns[] = $res;
+                    $total_price+= str_replace('$','',$res['price']);
+                }
             }
         }
-        $cartInfo[] = $pInfo;
+        
+        $cartInfo[] = array('pInfo' => $pInfo, 'addOns' => $addOns);
+        
+        
+        
+        
     }
 }
 
@@ -119,13 +128,15 @@ if(isset($_SESSION['cart']) && count($_SESSION['cart']) > 0){
 //    //$products[$res['id']]['sub_plans_json'] = json_encode($products[$res['id']]['sub_plans']);
 //}
 //echo "<pre>";
-//print_r($products);
+//print_r($_SESSION);
+////print_r($cartInfo);
 //echo "</pre>";
 //exit();
 $smarty->assign("productname",$pro_name);
 
 $smarty->assign("session_username",$_SESSION['username']);
-$smarty->assign("products",$products);
+$smarty->assign("cartinfo",$cartInfo);
+$smarty->assign('cart_price','$'.$total_price);
 $content=$smarty->fetch("checkout.tpl");
 
 $smarty->assign("content",$content);

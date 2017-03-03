@@ -90,6 +90,7 @@ function fnOrder(id,or_id)
                               <tr>
 							  	<!-- <td align="center" valign="middle" class="Sub_menu"><input type="checkbox"/></td> -->
                                 <td align="center" valign="middle" class="Sub_menu">S.No </td>
+                                                                <td align="center" valign="middle" class="Sub_menu">Add-On Name</td>
 								<td align="center" valign="middle" class="Sub_menu">Plan name </td>
 								<td align="center" valign="middle" class="Sub_menu">Full / Trail</td>
                                                                 <td align="center" valign="middle" class="Sub_menu">Price</td>
@@ -104,6 +105,8 @@ function fnOrder(id,or_id)
 									<tr>
 										<!-- <td align="center" valign="middle" class="Sub_menu"><input type="checkbox" name="id" value="{$array[list].sub_id}" /></td> -->
 										<td class="aril" align="center">{$smarty.section.list.rownum}</td>
+                                                                                <td class="aril" align="center">{if $array[list].addon_name eq ''}{$product_name}{else}{$array[list].addon_name}{/if}</td>
+                                                                                
 										<td class="aril" align="center">{$array[list].plan_name}</td>
 										<td class="aril" align="center">{if $array[list].plan_type eq 1}Full{else}Trail{/if}</td>
 										<td class="aril" align="center">{if $array[list].price_type eq 1} Request Quote{else}{$array[list].price}{/if}</td>

@@ -96,14 +96,14 @@ function clear()
                     <tr>
                       <td align="left" valign="middle"><table width="408" border="0" align="center" cellpadding="0" cellspacing="0">
                         <tr>
-                          <td align="left" valign="top"><table width="600" border="0" align="left" cellpadding="0" cellspacing="0" background="images/login_bg.gif">
+                          <td align="left" valign="top"><table width="700" border="0" align="left" cellpadding="0" cellspacing="0" background="images/login_bg.gif">
                               <tr>
                                 <td height="29" align="center" valign="middle" class="wite">Add Product </td>
                               </tr>
                           </table></td>
                         </tr>
                         <tr>
-                          <td align="left" valign="top"><table width="600" border="0" align="center" cellpadding="0" cellspacing="0">
+                          <td align="left" valign="top"><table width="700" border="0" align="center" cellpadding="0" cellspacing="0">
                               <tr>
                                 <td width="144" align="right" valign="middle">&nbsp;</td>
                                 <td width="10" align="center" valign="middle">&nbsp;</td>
@@ -171,21 +171,39 @@ function clear()
                                 <td align="left" valign="middle">&nbsp;</td>
                               </tr>
                               <tr>
-                                <td align="right" valign="middle" class="aril">Subscription Plan Name  :</td>
+                                <td align="right" valign="middle" class="aril">Home page slider Image  :</td>
                                 <td align="center" valign="middle">&nbsp;</td>
-                                <td height="25" align="left" valign="middle"><input name="subscription_plan_name" type="text" value=""/></td>
+                                <td height="25" align="left" valign="middle"><input name="home_slider_image" type="file" /></td>
                                 <td align="left" valign="middle">&nbsp;</td>
                               </tr>
                               <tr>
                                 <td align="right" valign="middle" class="aril">Subscription plan add-on name 1  :</td>
                                 <td align="center" valign="middle">&nbsp;</td>
-                                <td height="25" align="left" valign="middle"><input name="subscription_addon_name_1" type="text" value=""/></td>
+                                <td height="25" align="left" valign="middle"><input class="fieldwidth" name="subscription_addon_name_1" type="text" value=""/></td>
                                 <td align="left" valign="middle">&nbsp;</td>
                               </tr>
                               <tr>
                                 <td align="right" valign="middle" class="aril">Subscription plan add-on name 2 :</td>
                                 <td align="center" valign="middle">&nbsp;</td>
-                                <td height="25" align="left" valign="middle"><input name="subscription_addon_name_2" type="text" value=""/></td>
+                                <td height="25" align="left" valign="middle"><input class="fieldwidth" name="subscription_addon_name_2" type="text" value=""/></td>
+                                <td align="left" valign="middle">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                <td align="right" valign="middle" class="aril">Subscription plan add-on name 3 :</td>
+                                <td align="center" valign="middle">&nbsp;</td>
+                                <td height="25" align="left" valign="middle"><input class="fieldwidth" name="subscription_addon_name_3" type="text" value=""/></td>
+                                <td align="left" valign="middle">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                <td align="right" valign="middle" class="aril">Subscription plan add-on name 4 :</td>
+                                <td align="center" valign="middle">&nbsp;</td>
+                                <td height="25" align="left" valign="middle"><input class="fieldwidth" name="subscription_addon_name_4" type="text" value=""/></td>
+                                <td align="left" valign="middle">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                <td align="right" valign="middle" class="aril">Subscription plan add-on name 5 :</td>
+                                <td align="center" valign="middle">&nbsp;</td>
+                                <td height="25" align="left" valign="middle"><input class="fieldwidth" name="subscription_addon_name_5" type="text" value=""/></td>
                                 <td align="left" valign="middle">&nbsp;</td>
                               </tr>
 							 <tr>

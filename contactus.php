@@ -14,7 +14,15 @@ $from = "webmaster@cionsystems.com";
 
 if(isset($_POST['keyword']) && $_POST['keyword']=="send")
 {
-	$subject = $contact." for Cion systems";
+    
+    if( $_SESSION['security_code'] != $_POST['security_code'] || empty($_SESSION['security_code'] ) ) { 
+        $msg = "Please enter valid captcha";
+        $smarty->assign("msg",$msg);
+        unset($_SESSION['security_code']);   
+        
+    } else { 
+        
+        $subject = $contact." for CionSystems";
 			$message = '<html><body>	
 			<table width="100%" border="0" cellspacing="3" cellpadding="2">
 		  <tr>
@@ -46,30 +54,38 @@ if(isset($_POST['keyword']) && $_POST['keyword']=="send")
 		
 		if($contact == "Sales")
 		{
-		$to = "sales@cionsystems.com";
+                    $to = "sales@cionsystems.com";
 		}
 		else if ($contact == "Support")
 		{
-		$to = "support@cionsystems.com";
+                    $to = "support@cionsystems.com";
 		}
 		else if ($contact == "General Info" || $contact == "webmaster")
 		{
-		$to = "info@cionsystems.com";
+                    $to = "info@cionsystems.com";
 		}
 		else
 		{
-		header("Location: contactus.php");
+                    header("Location: contactus.php");
 		}
 		$headers  = 'MIME-Version: 1.0' . "\r\n";
 		$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 		$headers .= "From: $from". "\r\n";
 		
 		if(@mail($to, $subject, $message, $headers))
-			{
-				
-				header("Location: contact_thankyou.php");
-				exit(0);
-			}
+                {
+
+                        header("Location: contact_thankyou.php");
+                        exit(0);
+                }
+        
+    }
+    
+    
+    
+    
+    
+	
 	}	
 $products_sql = "select * from product_details where status='Active' ORDER BY order_product";
 $res_product = mysql_query($products_sql) or die(mysql_error());
@@ -110,6 +126,7 @@ $pro_name = "<title>".$metatitle."</title>
 <meta name='description' content='".$metadesc."'>
 ";
 
+$smarty->assign("postval",$_POST);
 $smarty->assign("productname",$pro_name);	
 $smarty->assign("products",$products);
 $smarty->assign("session_username",$_SESSION['username']);

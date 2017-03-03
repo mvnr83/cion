@@ -8,12 +8,12 @@ session_start(); ?>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Active Directory Solutions | Managing Active Directory Company</title>
 <meta name='keywords' content='Microsoft, Azure, Quest, self-service, de-prvisioning, Ofice 365, active directory, exchange, 
-management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring, utilities, solutions,synchronization,maintenance,
+management,tools,CionSystems, Cion, reports,auditing,administration, monitoring, utilities, solutions,synchronization,maintenance,
  unix, self service,user import, user provision, user de-provision, Group Policy, Group policy object, gpo'>
 <meta name='description' content='We at Cion Systems offers active directory solutions to simplify your daily tasks and increased ROI. Simplify your AD infrastructure with the best active directory management company.'>
 <!--<meta name="google-site-verification" content="N28xp5KoLEmZKdtJalg54yKL1N6FxNkAeIMXemUgpXY" /> -->
 <meta name="google-site-verification" content="wyA5AqlyQ4FwzP0gM4MOYomx6JSmuLHEZV7L3aTAjLc" />
-<link rel="shortcut icon" href="favicon.ico">
+<link rel="shortcut icon" href="img/favicon.png">
 <title>Cion Systems</title>
 
 <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -74,7 +74,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
  </ul></div>
  </div>
 <?php } ?>
- <div class="cartBlock"><a href="checkout.php"><span class="itemcount"><?=count($_SESSION['cart_info'])?></span>Cart</a></div>
+<?php /*?> <div class="cartBlock"><a href="checkout.php"><span class="itemcount"><?=count($_SESSION['cart'])?></span>Cart</a></div><?php */?>
  
  
  
@@ -191,11 +191,17 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
   
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox" style="padding:0 0 0 0;"> 
-  <div class="item active"> <a href="active-directory-manager.php"><img src="img/jumbtron_bg_04.jpg" alt="" width="460" height="345"></a> </div>
-   <div class="item "> <a href="Cloud_Identity_Minder.php"> <img src="img/jumbtron_bg_03.jpg" alt="" width="460" height="345"></a> </div>
-        <div class="item"> <a href="Enterprise-Self-Service.php"><img src="img/jumbtron_bg_02.jpg" alt="" width="460" height="345"> </a></div>
-   <div class="item "> <a href="windows-management.php"><img src="img/jumbtron_bg_01.jpg" alt="" width="460" height="345"></a> </div>
-    <div class="item"> <a href="espm.php"> <img src="img/jumbtron_bg.jpg" alt="" width="460" height="345"></a> </div>
+
+  <div class="item active"> <a href="active-directory-manager.php"><img src="img/jumbtron_bg_04.jpg" alt="Active directory Manager" width="460" height="345"></a> </div>
+
+   <div class="item "> <a href="Cloud_Identity_Minder.php"> <img src="img/jumbtron_bg_03.jpg" alt="Cloud Identity Minder" width="460" height="345"></a> </div>
+
+        <div class="item"> <a href="Enterprise-Self-Service.php"><img src="img/jumbtron_bg_02.jpg" alt="Enterprise Self Service" width="460" height="345"> </a></div>
+
+   <div class="item "> <a href="windows-management.php"><img src="img/jumbtron_bg_01.jpg" alt="Windows Management" width="460" height="345"></a> </div>
+
+    <div class="item"> <a href="espm.php"> <img src="img/jumbtron_bg.jpg" alt="Enterprise Security and Policy Manager" width="460" height="345"></a> </div>
+
   </div>
   
   <!-- Left and right controls --> 
@@ -208,20 +214,16 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
 <br/><br/>
 
 <div class="container">
-<h1>Identity, access and authentication solutions</h1>
+<h1>Welcome to CionSystems</h1>
 <div class="welcomeblock"><p class="text-justify"><strong>CionSystems</strong> delivers a simple and cost effective solution to improve security and streamline managing IT infrastructure.  CionSystems Identity Management solutions are designed to integrate with enterprise HR systems, school information systems and other systems. Products are designed to provide benefits for schools districts and IT organizations of varying size, complexity, and skill levels in verticals like finance, insurance, education, telecom, technology etc.  Implement process driven Security and Auditing to reduce support costs and quickly respond to security incidents while continuous monitoring, reporting and alerting of directories like Active Directory, ldap, openldap, office365, azure AD.</p></div>
 
 
 
 
 <div class="productBlockmain">
-    <div class="welcomeblock productBlock"><ul><li><a href="active-directory-manager.php">Secure and Manage identities (all resources) of Active Directory, OpenLDAP, Office 365, Azure etc. <!-- Manage identities (users, computers, and all other resources) of Active Directory, OpenLDAP., Office 365, Azure and other SaaS applications. --></a></li><li><a href="ADProvisioning.php">Automated user and access provisioning / de-provisioning<!--Automated user and access provisioning / de-provisioning processes--></a></li><!-- <li><a href="Cloud_Identity_Minder.php">Office365/Azure directory sync from Active Directory and openldap</a></li> --><li><a href="Cloud_Identity_Minder.php">Office365 Email and one drive migration, archiving and management</a></li><li><a href="Cloud_Identity_Minder.php">Web Identity API for Web/SaaS application, use your existing IDM store</a></li><li><a href="SystemInformation_comparison.php">Track configuration, registry and file changes of Server, desktops</a></li><li><a href="active-directory-recovery.php">Active directory backup and recovery down to single attribute</a></li></ul><ul>    <li><a href="Enterprise-Self-Service.php">Multifactor authentication for virtual systems, Windows servers, desktops, laptops and any cloud</a></li>        <li><a href="active-directory-gpomanager.php">Group policies tracking, authoring, testing and management</a></li>    <li><a href="active-directory-ChangeNotifier.php">Active Directory Change tracking, monitoring, auditing, reporting</a></li>    <!-- <li><a href="Cloud_Identity_Minder.php">Office365 user, group, license management and reporting</a></li> --><li><a href="Enterprise-Self-Service.php">Self service, password, profile and full automated access management</a></li><li><a href="Enterprise-Self-Service.php">Reset Active Directory password from Windows login</a></li><li><a href="Enterprise-Self-Service.php">Password sync from Active Directory to other sources openLDAP, etc.</a></li></ul></div>
-    
-    
-    
-<!--<div class="welcomeblock productBlock"><ul>
-<li><a href="active-directory-manager.php">Secure and Manage identities (all resources) of Active Directory, OpenLDAP, Office 365, Azure etc.  Manage identities (users, computers, and all other resources) of Active Directory, OpenLDAP., Office 365, Azure and other SaaS applications. </a></li>
-<li><a href="ADProvisioning.php">Automated user and access provisioning / de-provisioningAutomated user and access provisioning / de-provisioning processes</a></li>
+<div class="welcomeblock productBlock"><ul>
+<li><a href="active-directory-manager.php">Secure and Manage identities (all resources) of Active Directory, OpenLDAP, Office 365, Azure etc. <!-- Manage identities (users, computers, and all other resources) of Active Directory, OpenLDAP., Office 365, Azure and other SaaS applications. --></a></li>
+<li><a href="ADProvisioning.php">Automated user and access provisioning / de-provisioning<!--Automated user and access provisioning / de-provisioning processes--></a></li>
 
 
 <li><a href="Cloud_Identity_Minder.php">Office365/Azure directory sync from Active Directory and openldap</a></li>
@@ -247,7 +249,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
 
 
 </ul>
-</div>-->
+</div>
 </div>
 
 
@@ -386,12 +388,12 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
  <section class="regular slider col-xs-12 regularnew">
  
  <div class="mainslides">
-    <div class="custom"><a href="mfauthentication.php"> <div class="mainproductssingle"><div><img src="images/products/multifactors_img.png"></div></div></a>
+     <div class="custom"><a href="mfauthentication.php"> <div class="mainproductssingle"><div><img alt="Multifactor Authentication" src="images/products/multifactors_img.png"></div></div></a>
       <span class="pbottom"> <a href="mfauthentication.php"> <span class="ptitle">Multifactor Authentication</span></a>
              <?php /*?> <a href="#" class="sliderlinkbuy">Buy Now</a><?php */?> <a href="mfauthentication.php" class="sliderlinktry">Try Now</a></span></div>
     </div>
  <div class="mainslides">
-    <div class="custom"><a href="ADProvisioning.php"> <div class="mainproductssingle"><div><img src="images/products/provisioning_img.png"></div></div></a>
+     <div class="custom"><a href="ADProvisioning.php"> <div class="mainproductssingle"><div><img alt="Provisioning System" src="images/products/provisioning_img.png"></div></div></a>
       <span class="pbottom"> <a href="ADProvisioning.php"><span class="ptitle">Provisioning System</span></a>
              <?php /*?> <a href="#" class="sliderlinkbuy">Buy Now</a> <?php */?><a href="ADProvisioning.php" class="sliderlinktry">Try Now</a></span></div>
     </div>
@@ -478,13 +480,13 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
  
   <div class="items1 "> 
    <div class="col-md-12 col-sm-12 col-xs-12 nopadding">
-        <div class="thumbnail" data-wow-delay=".1s"><a href="cmt.php" class=" "> <img src="images/products//office-365-cloud-_01.png" class="img-responsive" alt=""></a>
+        <div class="thumbnail" data-wow-delay=".1s"><a href="cmt.php" class=" "> <img alt="Microsoft | Office365 | Azure AD | Google Apps | Sales Force" src="images/products//office-365-cloud-_01.png" class="img-responsive" alt=""></a>
           
          
         </div>
       </div>
     <div class="col-md-12 col-sm-12 col-xs-12 nopadding">
-        <div class="thumbnail" data-wow-delay=".1s"> <a href="cloud-management.php" class=""> <img src="images/products/am_az.jpg" class="img-responsive" alt=""></a>
+        <div class="thumbnail" data-wow-delay=".1s"> <a href="cloud-management.php" class=""> <img alt="In any IaaS cloud"  src="images/products/am_az.jpg" class="img-responsive" alt=""></a>
         
              
          
@@ -493,24 +495,24 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
   </div>
     <div class="items1">
     <div class="col-md-12 col-sm-12 col-xs-12 nopadding">
-        <div class="thumbnail wow fadeInUp" data-wow-delay=".5s">   <a href="Cloud_Identity_Minder.php" class=""><img src="images/products/redHat.jpg" alt="" class="img-responsive"></a>
+        <div class="thumbnail wow fadeInUp" data-wow-delay=".5s">   <a href="Cloud_Identity_Minder.php" class=""><img alt="Cloud Identity and Minder" src="images/products/redHat.jpg" alt="" class="img-responsive"></a>
        
         </div>
       </div>
     <div class="col-md-12 col-sm-12 col-xs-12 nopadding">
-        <div class="thumbnail wow fadeInUp" data-wow-delay=".7s" > <a href="active_directory.php" class=""> <img src="images/products/activeDirectory.jpg" alt=""></a>
+        <div class="thumbnail wow fadeInUp" data-wow-delay=".7s" > <a href="active_directory.php" class=""> <img alt="Active Directory" src="images/products/activeDirectory.jpg" alt=""></a>
          
         </div>
       </div>
     </div>
       <div class="items1">
     <div class="col-md-12 col-sm-12 col-xs-12 nopadding">
-        <div class="thumbnail wow fadeInUp" data-wow-delay=".7s" ><a href="microsoft_exchange.php" class=""> <img src="images/products/microsoftExchange.jpg" alt=""></a>
+        <div class="thumbnail wow fadeInUp" data-wow-delay=".7s" ><a href="microsoft_exchange.php" class=""> <img alt="Microsoft Exchange" src="images/products/microsoftExchange.jpg" alt=""></a>
           
         </div>
       </div>
     <div class="col-md-12 col-sm-12 col-xs-12 nopadding">
-        <div class="thumbnail wow fadeInUp" data-wow-delay=".7s" ><a href="espm.php"><img src="images/products/sharePointLogo.jpg" alt=""></a>
+        <div class="thumbnail wow fadeInUp" data-wow-delay=".7s" ><a href="espm.php"><img alt="Enterprise Security and Policy Manager" src="images/products/sharePointLogo.jpg" alt=""></a>
        
         </div>
       </div>
@@ -522,12 +524,12 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
 
 <h3 class="subheading">Test Drive </h3>
         <div class="testdrive testdrive1">
-          <div><a href="http://mfa.ciontestdrive.com/MFASelfService/frmUserLogin.aspx" target="_blank"> <img src="images/logos/mfa_icon.png" width="86px" class="img-responsive" border="0"></a></div>
-		  <div><a href="https://www.ciontestdrive.com/ActiveDirectoryManager/UserLogin.aspx"> <img src="images/logos/adm_icon.png" width="86px" class="img-responsive" border="0"></a></div>
+          <div><a href="http://mfa.ciontestdrive.com/MFASelfService/frmUserLogin.aspx" target="_blank"> <img alt="MFASelfService" src="images/logos/mfa_icon.png" width="86px" class="img-responsive" border="0"></a></div>
+		  <div><a href="https://www.ciontestdrive.com/ActiveDirectoryManager/UserLogin.aspx"> <img alt="ActiveDirectoryManager" src="images/logos/adm_icon.png" width="86px" class="img-responsive" border="0"></a></div>
        
-          <div><a href="https://www.ciontestdrive.com/SelfService/frmUserLogin.aspx" target="_blank"> <img src="images/logos/cim_icon.png" width="86px" class="img-responsive" border="0"></a></div>
-          <div><a href="https://ciontestdrive.com/ADSelfService/frmUserLogin.aspx" target="_blank"> <img src="images/logos/ess_icon.png" width="70px" class="img-responsive" border="0"></a></div>
-          <div><a href="https://ciontestdrive.com/ADRecoverySetup/UserLogin.aspx" target="_blank"> <img src="images/logos/adr_icon.png" width="76px" class="img-responsive" border="0"></a></div>
+          <div><a href="https://www.ciontestdrive.com/SelfService/frmUserLogin.aspx" target="_blank"> <img alt="SelfService" src="images/logos/cim_icon.png" width="86px" class="img-responsive" border="0"></a></div>
+          <div><a href="https://ciontestdrive.com/ADSelfService/frmUserLogin.aspx" target="_blank"> <img alt="ADSelfService" src="images/logos/ess_icon.png" width="70px" class="img-responsive" border="0"></a></div>
+          <div><a href="https://ciontestdrive.com/ADRecoverySetup/UserLogin.aspx" target="_blank"> <img alt="ADRecoverySetup" src="images/logos/adr_icon.png" width="76px" class="img-responsive" border="0"></a></div>
           </div>
 <h3 class="subheading bu-subHea">Business Partners</h3>
    <div class="footerproduct2" >
@@ -535,9 +537,11 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
             <div> <img src="img/hpLogo.jpg" width="150" style="padding:3px"></div> 
             <div><img src="img/ibmLogo.jpg" width="150" style="padding:3px"></div> <?php */?>
             
-            <div><img src="images/logos/plo/msLogo.jpg"  ></div>
-            <div> <img src="images/logos/plo/hpLogo.jpg" ></div> 
-            <div><img src="images/logos/plo/ibmLogo.jpg"></div>
+            <div><img alt="Microsoft Gold Certified" src="images/logos/plo/msLogo.jpg"  ></div>
+
+            <div> <img alt="HP" src="images/logos/plo/hpLogo.jpg" ></div> 
+
+            <div><img alt="IBM business partner" src="images/logos/plo/ibmLogo.jpg"></div>
             
           </div>
   
@@ -704,7 +708,7 @@ $(this).closest('.tabing').next('.no-of-users').show();
     <div class="row">
       <div class="col-lg-3 col-sm-6  wow fadeInUp" data-wow-duration="2s" data-wow-delay=".1s" style="padding-left:30px;">
 <div class="address">
-        <h3> Contact info </h3>
+        <h1> contact info </h1>
         <address>
         <p style="color:#F90">USA Address</p>
         <p>6640 185th Ave NE, Redmond, WA-98052. &nbsp;<i class="fa fa-phone"></i>Phone: 1-425-605-5325 </p>
@@ -729,7 +733,7 @@ $(this).closest('.tabing').next('.no-of-users').show();
       </div>
       <div class="col-lg-4 col-sm-6">
         <div class="page-footer wow fadeInUp" data-wow-duration="2s" data-wow-delay=".5s">
-          <h3> Products </h3>
+          <h1> Products </h1>
           <ul class="page-footer-list">
            <li> <i class="fa fa-angle-right"></i> <a href="active-directory-manager.php">Active Directory Manager Pro</a> </li>
            <li> <i class="fa fa-angle-right"></i> <a href="Enterprise-Self-Service.php">Enterprise Self-Service</a> </li>
@@ -746,7 +750,7 @@ $(this).closest('.tabing').next('.no-of-users').show();
     <div class="row">
       <div class="col-lg-8 col-sm-6">
         <div class="page-footer1 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".5s">
-          <h3> Our Company </h3>
+          <h1> Our Company </h1>
           <ul class="page-footer-list">
             <li> <i class="fa fa-angle-right"></i> <a href="aboutus.php">About Us</a> </li>
             <li> <i class="fa fa-angle-right"></i> <a href="events/">News & Events</a> </li>
@@ -758,13 +762,13 @@ $(this).closest('.tabing').next('.no-of-users').show();
         </div>
       </div>
       <div class="col-lg-4 col-sm-6">
-        <h3> Follow us </h3>
-        <a href="https://www.facebook.com/cionsystems/" target="_blank"><img src="img/facebook.png" ></a>  
-        <a href="https://www.linkedin.com/company/cionsystems-inc" target="_blank"><img src="img/linkedin.png" ></a>
-    	<a href="https://twitter.com/cionsystems?lang=en" target="_blank"><img src="img/twitter.png" ></a>
-        <a href="https://www.youtube.com/channel/UCQdQ5lAZR5Fupfi-ZTw8m6Q" target="_blank"><img src="img/youtube.png" ></a>
+        <h1> Follow us </h1>
+        <a href="https://www.facebook.com/cionsystems/" target="_blank"><img alt="CionSystems facebook" src="img/facebook.png" ></a>  
+        <a href="https://www.linkedin.com/company/cionsystems-inc" target="_blank"><img alt="CionSystems LinkedIn" src="img/linkedin.png" ></a>
+    	<a href="https://twitter.com/cionsystems?lang=en" target="_blank"><img  alt="CionSystems Twitter" src="img/twitter.png" ></a>
+        <a href="https://www.youtube.com/channel/UCQdQ5lAZR5Fupfi-ZTw8m6Q" target="_blank"><img  alt="CionSystems Youtube" src="img/youtube.png" ></a>
 		
-        <a href="https://plus.google.com/112691275891403292756" target="_blank" ><img src="img/gplus.png"></a>
+        <a href="https://plus.google.com/110645672691254501959" target="_blank" ><img  alt="CionSystems google+" src="img/gplus.png"></a>
 	  
       
       </div>
@@ -801,7 +805,7 @@ $(this).closest('.tabing').next('.no-of-users').show();
      <li> <a href="aboutus.php" style="color:#fff">About Us</a></li> 
      <li> <a href="press/" style="color:#fff"> Press </a></li> 
     <li>  <a href="http://blog.cionsystems.com/" style="color:#fff">BLOG</a> </li></ul>
-   <a href="http://blog.cionsystems.com/?feed=rss2" target="_blank" class="rssblock"> <img src="images/rssicon.png"  border="0" title="RSS" alt="rss"></a>
+   <a href="http://blog.cionsystems.com/?feed=rss2" target="_blank" class="rssblock"> <img  src="images/rssicon.png"  border="0" title="RSS" alt="rss"></a>
       </div>
       
      

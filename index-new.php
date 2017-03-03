@@ -7,14 +7,13 @@ session_start(); ?>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Active Directory Solutions | Managing Active Directory Company</title>
-<meta name='keywords' content='Microsoft, Azure, Quest, self-service, de-prvisioning, Ofice 365, active directory, exchange, 
-management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring, utilities, solutions,synchronization,maintenance,
- unix, self service,user import, user provision, user de-provision, Group Policy, Group policy object, gpo'>
+<meta name='keywords' content='Microsoft, Azure, Quest, self-service, de-prvisioning, Ofice 365, active directory, exchange, management,tools,CionSystems, Cion, reports,auditing,administration, monitoring, utilities, solutions,synchronization,maintenance, unix, self service,user import, user provision, user de-provision, Group Policy, Group policy object, gpo'>
 <meta name='description' content='We at Cion Systems offers active directory solutions to simplify your daily tasks and increased ROI. Simplify your AD infrastructure with the best active directory management company.'>
+
 <!--<meta name="google-site-verification" content="N28xp5KoLEmZKdtJalg54yKL1N6FxNkAeIMXemUgpXY" /> -->
 <meta name="google-site-verification" content="wyA5AqlyQ4FwzP0gM4MOYomx6JSmuLHEZV7L3aTAjLc" />
-<link rel="shortcut icon" href="favicon.ico">
-<title>Cion Systems</title>
+<link rel="shortcut icon" href="img/favicon.png">
+<title>CionSystems</title>
 
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
@@ -36,6 +35,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
   
 
 </script>
+
 
 <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300 600 700' rel='stylesheet' type='text/css'>
 <!--
@@ -74,7 +74,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
  </ul></div>
  </div>
 <?php } ?>
- <div class="cartBlock"><a href="checkout.php"><span class="itemcount"><?=count($_SESSION['cart_info'])?></span>Cart</a></div>
+<?php /*?> <div class="cartBlock"><a href="checkout.php"><span class="itemcount"><?=count($_SESSION['cart'])?></span>Cart</a></div><?php */?>
  
  
  
@@ -208,20 +208,16 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
 <br/><br/>
 
 <div class="container">
-<h1>Identity, access and authentication solutions</h1>
+<h1>Welcome to CionSystems</h1>
 <div class="welcomeblock"><p class="text-justify"><strong>CionSystems</strong> delivers a simple and cost effective solution to improve security and streamline managing IT infrastructure.  CionSystems Identity Management solutions are designed to integrate with enterprise HR systems, school information systems and other systems. Products are designed to provide benefits for schools districts and IT organizations of varying size, complexity, and skill levels in verticals like finance, insurance, education, telecom, technology etc.  Implement process driven Security and Auditing to reduce support costs and quickly respond to security incidents while continuous monitoring, reporting and alerting of directories like Active Directory, ldap, openldap, office365, azure AD.</p></div>
 
 
 
 
 <div class="productBlockmain">
-    <div class="welcomeblock productBlock"><ul><li><a href="active-directory-manager.php">Secure and Manage identities (all resources) of Active Directory, OpenLDAP, Office 365, Azure etc. <!-- Manage identities (users, computers, and all other resources) of Active Directory, OpenLDAP., Office 365, Azure and other SaaS applications. --></a></li><li><a href="ADProvisioning.php">Automated user and access provisioning / de-provisioning<!--Automated user and access provisioning / de-provisioning processes--></a></li><!-- <li><a href="Cloud_Identity_Minder.php">Office365/Azure directory sync from Active Directory and openldap</a></li> --><li><a href="Cloud_Identity_Minder.php">Office365 Email and one drive migration, archiving and management</a></li><li><a href="Cloud_Identity_Minder.php">Web Identity API for Web/SaaS application, use your existing IDM store</a></li><li><a href="SystemInformation_comparison.php">Track configuration, registry and file changes of Server, desktops</a></li><li><a href="active-directory-recovery.php">Active directory backup and recovery down to single attribute</a></li></ul><ul>    <li><a href="Enterprise-Self-Service.php">Multifactor authentication for virtual systems, Windows servers, desktops, laptops and any cloud</a></li>        <li><a href="active-directory-gpomanager.php">Group policies tracking, authoring, testing and management</a></li>    <li><a href="active-directory-ChangeNotifier.php">Active Directory Change tracking, monitoring, auditing, reporting</a></li>    <!-- <li><a href="Cloud_Identity_Minder.php">Office365 user, group, license management and reporting</a></li> --><li><a href="Enterprise-Self-Service.php">Self service, password, profile and full automated access management</a></li><li><a href="Enterprise-Self-Service.php">Reset Active Directory password from Windows login</a></li><li><a href="Enterprise-Self-Service.php">Password sync from Active Directory to other sources openLDAP, etc.</a></li></ul></div>
-    
-    
-    
-<!--<div class="welcomeblock productBlock"><ul>
-<li><a href="active-directory-manager.php">Secure and Manage identities (all resources) of Active Directory, OpenLDAP, Office 365, Azure etc.  Manage identities (users, computers, and all other resources) of Active Directory, OpenLDAP., Office 365, Azure and other SaaS applications. </a></li>
-<li><a href="ADProvisioning.php">Automated user and access provisioning / de-provisioningAutomated user and access provisioning / de-provisioning processes</a></li>
+<div class="welcomeblock productBlock"><ul>
+<li><a href="active-directory-manager.php">Secure and Manage identities (all resources) of Active Directory, OpenLDAP, Office 365, Azure etc. <!-- Manage identities (users, computers, and all other resources) of Active Directory, OpenLDAP., Office 365, Azure and other SaaS applications. --></a></li>
+<li><a href="ADProvisioning.php">Automated user and access provisioning / de-provisioning<!--Automated user and access provisioning / de-provisioning processes--></a></li>
 
 
 <li><a href="Cloud_Identity_Minder.php">Office365/Azure directory sync from Active Directory and openldap</a></li>
@@ -247,7 +243,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
 
 
 </ul>
-</div>-->
+</div>
 </div>
 
 
@@ -290,7 +286,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
 <div class="row">
  <div class="col-xs-12"> <h2  class="subheading">Products<a class="viewmoreproducts" href="active-directory-tools.php">View more products &gt;&gt;</a></h2></div>
 
-<!--<section class="regular slider col-xs-12 regularnew">
+<section class="regular slider col-xs-12 regularnew">
  
  <div class="mainslides">
     <div class="custom"><a href="mfauthentication.php"> <div class="mainproductssingle"><div><img src="images/products/multifactors_img.png"></div></div></a>
@@ -379,34 +375,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
              <?php /*?> <a href="active-directory-tools.php" class="sliderlinkbuy">Buy Now</a><?php */?> <a href="SystemInformation_comparison.php" class="sliderlinktry">Try Now</a></span></div>
     </div>
     
-  </section>-->
- 
- 
- 
- <section class="regular slider col-xs-12 regularnew">
- 
- <div class="mainslides">
-    <div class="custom"><a href="mfauthentication.php"> <div class="mainproductssingle"><div><img src="images/products/multifactors_img.png"></div></div></a>
-      <span class="pbottom"> <a href="mfauthentication.php"> <span class="ptitle">Multifactor Authentication</span></a>
-             <?php /*?> <a href="#" class="sliderlinkbuy">Buy Now</a><?php */?> <a href="mfauthentication.php" class="sliderlinktry">Try Now</a></span></div>
-    </div>
- <div class="mainslides">
-    <div class="custom"><a href="ADProvisioning.php"> <div class="mainproductssingle"><div><img src="images/products/provisioning_img.png"></div></div></a>
-      <span class="pbottom"> <a href="ADProvisioning.php"><span class="ptitle">Provisioning System</span></a>
-             <?php /*?> <a href="#" class="sliderlinkbuy">Buy Now</a> <?php */?><a href="ADProvisioning.php" class="sliderlinktry">Try Now</a></span></div>
-    </div>
- 
- 
- 
- 
-    
-  
-    
   </section>
- 
- 
- 
- 
   <!-- End container --> 
 
 <div class="col-xs-12"></div>
@@ -704,7 +673,7 @@ $(this).closest('.tabing').next('.no-of-users').show();
     <div class="row">
       <div class="col-lg-3 col-sm-6  wow fadeInUp" data-wow-duration="2s" data-wow-delay=".1s" style="padding-left:30px;">
 <div class="address">
-        <h3> Contact info </h3>
+        <h1> contact info </h1>
         <address>
         <p style="color:#F90">USA Address</p>
         <p>6640 185th Ave NE, Redmond, WA-98052. &nbsp;<i class="fa fa-phone"></i>Phone: 1-425-605-5325 </p>
@@ -729,7 +698,7 @@ $(this).closest('.tabing').next('.no-of-users').show();
       </div>
       <div class="col-lg-4 col-sm-6">
         <div class="page-footer wow fadeInUp" data-wow-duration="2s" data-wow-delay=".5s">
-          <h3> Products </h3>
+          <h1> Products </h1>
           <ul class="page-footer-list">
            <li> <i class="fa fa-angle-right"></i> <a href="active-directory-manager.php">Active Directory Manager Pro</a> </li>
            <li> <i class="fa fa-angle-right"></i> <a href="Enterprise-Self-Service.php">Enterprise Self-Service</a> </li>
@@ -746,7 +715,7 @@ $(this).closest('.tabing').next('.no-of-users').show();
     <div class="row">
       <div class="col-lg-8 col-sm-6">
         <div class="page-footer1 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".5s">
-          <h3> Our Company </h3>
+          <h1> Our Company </h1>
           <ul class="page-footer-list">
             <li> <i class="fa fa-angle-right"></i> <a href="aboutus.php">About Us</a> </li>
             <li> <i class="fa fa-angle-right"></i> <a href="events/">News & Events</a> </li>
@@ -758,13 +727,13 @@ $(this).closest('.tabing').next('.no-of-users').show();
         </div>
       </div>
       <div class="col-lg-4 col-sm-6">
-        <h3> Follow us </h3>
+        <h1> Follow us </h1>
         <a href="https://www.facebook.com/cionsystems/" target="_blank"><img src="img/facebook.png" ></a>  
         <a href="https://www.linkedin.com/company/cionsystems-inc" target="_blank"><img src="img/linkedin.png" ></a>
     	<a href="https://twitter.com/cionsystems?lang=en" target="_blank"><img src="img/twitter.png" ></a>
         <a href="https://www.youtube.com/channel/UCQdQ5lAZR5Fupfi-ZTw8m6Q" target="_blank"><img src="img/youtube.png" ></a>
 		
-        <a href="https://plus.google.com/112691275891403292756" target="_blank" ><img src="img/gplus.png"></a>
+        <a href="https://plus.google.com/110645672691254501959" target="_blank" ><img src="img/gplus.png"></a>
 	  
       
       </div>
