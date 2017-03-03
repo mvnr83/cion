@@ -158,7 +158,11 @@
 
                     <a href="../datasheet/Cionsystems_authentication_service_wp.pdf"><img src="images/whitepaper.gif" width="175" height="37" border="0" /></a> 
 
-                    
+                    {if $product_info.id neq '' && $product_info.id neq 0}
+                                        <br />
+                                        <a href="javascript:;" data-toggle="modal" data-target="#myModal-{$product_info.id}"><img src="images/sidebuy.png" width="175" height="37" border="0" /></a>
+                     
+                     {/if}
 
                     <div class="system" style="margin-top:20px;">
 

@@ -7,6 +7,7 @@
 
  
 </script>
+<script src="Scripts/validator.js" type="text/javascript"></script>
 {/literal}
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
   <tr>

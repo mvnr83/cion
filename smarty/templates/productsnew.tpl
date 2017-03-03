@@ -8,11 +8,11 @@
         
 {foreach from=$products item=product_info}
         <div class="col-md-4"><div class="singleproduct"><div class="singleproductinner"><div class="productheader"><a>
-                            {assign var="pimg" value="product_images/$product_info.product_image"}
-                            {if file_exists($pimg)}
                             
-                            <img src="product_images/{$product_info.product_image}">
-                            {else} <img src="images/newproducts/productsheader1.jpg" />{/if}
+                            
+                            
+                            <img src="{$product_info.product_image}" alt="{$product_info.product_name}">
+                            
                                  
                             
                             </a>
@@ -110,155 +110,5 @@
 
 </div>
 
-<!-- Modal dialog start -->
-{foreach from=$products item=product_info}
-<div id="myModal-{$product_info.id}" class="modal fade productsmodal" role="dialog">
-  <div class="modal-dialog">
 
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close1" data-dismiss="modal"></button>
-        <h4 class="modal-title">{$product_info.product_name}</h4>
-      </div>
-      <div class="modal-body">
-        <h5>{$product_info.subscription_plan_name}</h5>
-        <ul class="popupulfirst">
-        {section name=cust loop=$product_info.sub_plans}
-            <li>
-                <div class="labelValue">
-                    <label class="radioBlock">
-                        <input type="radio" name="topGroup" value="{$product_info.sub_plans[cust].sub_id}"/>
-                        <span></span>{$product_info.sub_plans[cust].plan_name}
-                    </label>
-                </div>
-                <div class="divider">--</div>
-                <div class="costValue">{if $product_info.sub_plans[cust].price_type eq 1}<a href="javascript:;">Request A Quote</a> {else}{$product_info.sub_plans[cust].price}{/if}</div>
-            </li>
-        {/section}
-        <!-- <li><div class="labelValue"><label class="radioBlock"><input type="radio" name="topGroup"/><span></span>Up to 250 Users</label></div><div class="divider">--</div><div class="costValue">$780</div></li>
-        <li><div class="labelValue"><label class="radioBlock"><input type="radio" name="topGroup"/><span></span>Up to 250 Users</label></div><div class="divider">--</div><div class="costValue">$780</div></li>
-  <li><div class="labelValue">Up to 250 Users</div><div class="divider">--</div><div class="costValue"><a href="javascript:;">Request A Quote</a> </div></li>
-        -->
-        </ul>
-        {if $product_info.sub_plans_addon|@count gt 0}
-            
-        <div class="addonssec">
-        <h5><label class="checkBlock"><input type="checkbox"><em></em>{$product_info.subscription_addon_name_1}</label></h5>
-        <ul class="popupulfirst">
-            {section name=cust loop=$product_info.sub_plans_addon}
-                <li>
-                    <div class="labelValue">
-                        <label class="radioBlock">
-                            <input type="radio" name="changeGroup" id="{$product_info.sub_plans[cust].sub_id}"/>
-                            <span></span>{$product_info.sub_plans_addon[cust].plan_name}
-                        </label>
-                    </div>
-                    <div class="divider">--</div>
-                    <div class="costValue">{if $product_info.sub_plans_addon[cust].price_type eq 1}<a href="javascript:;">Request A Quote</a> {else}{$product_info.sub_plans_addon[cust].price}{/if}</div>
-                </li>
-            {/section}
-        <!-- <li><div class="labelValue"><label class="radioBlock"><input type="radio" name="changeGroup"/><span></span>Up to 250 Users</label></div><div class="divider">--</div><div class="costValue">$780</div></li>
-        <li><div class="labelValue"><label class="radioBlock"><input type="radio" name="changeGroup"/><span></span>Up to 250 Users</label></div><div class="divider">--</div><div class="costValue">$780</div></li>
-  <li><div class="labelValue">Up to 250 Users</div><div class="divider">--</div><div class="costValue"><a href="javascript:;">Request A Quote</a> </div></li>
-            -->
-        </ul>
-        
-        </div>
-        {/if}
-      </div>
-      <div class="modal-footer">
-        <a class="buynowBtn popupBuynow" href="javascript:;">Buy Now</a>
-      </div>
-    </div>
-
-  </div>
-</div>
-  {/foreach}
-<!-- Modal dialog end -->
-
-<div style="display:none;">
-    {section name=ploop loop=$products}
-        <div id="subplan-{$products[ploop].id}">
-            {$products[ploop].sub_plan_json}
-        </div>
-    {/section}
-</div>
-
-
-
-
-
-
-
-
-
-
-
-{literal}<script src="js/jquery-1.8.3.min.js" type="text/javascript"></script> <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
-<script>
-
-
-
-$(document).on('click','.popupBuynow', function () {
-    
-    //add to session
-    $.ajax({
-                type: 'POST',
-                data: {pid:'9',addonid:'8'},
-                async: false,
-                url: "add_to_cart.php",
-                success: function(result) {
-                    console.log(result);
-                    $('.itemcount').html(result);
-                }
-            });
-
-
-        var cart = $('.cartBlock');
-        var imgtodrag = $(this).closest('.modal-content').find(".modal-title");
-		
-		$(this).closest('.modal-content').find('.close1').click();
-		$("html, body").animate({ scrollTop: 0 }, "slow");
-		if (imgtodrag) {
-	
-            var imgclone = imgtodrag.clone().offset({
-                top: imgtodrag.offset().top,
-                left: imgtodrag.offset().left
-            })
-                .css({
-                'opacity': '0.5',
-                    'position': 'absolute',
-                    'height': '50px',
-                    'width': '400px',
-                    'z-index': '999999',
-					
-            })
-                .appendTo($('body'))
-                .animate({
-                'top': cart.offset().top + 10,
-                    'left': cart.offset().left + 10,
-                    'width': 75,
-                    'height': 75
-            }, 1000, 'easeInOutExpo');
-            
-            setTimeout(function () {
-			
-			
-			
-                cart.effect("shake", {
-                    times: 2
-                }, 200);
-            }, 1500);
-
-            imgclone.animate({
-                'width': 0,
-                    'height': 0
-            }, function () {
-                $(this).detach()
-            });
-        }
-    });
-</script>
-{/literal}
 

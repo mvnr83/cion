@@ -130,7 +130,11 @@
         </td>
 
         <td align="center" valign="middle">
-
+            {if $product_info.id neq '' && $product_info.id neq 0}
+                                        
+                                        <a href="javascript:;" data-toggle="modal" data-target="#myModal-{$product_info.id}"><img src="images/sidebuy.png" width="175" height="37" border="0" /></a>
+                     <br />
+                     {/if}
         <a href="buyitnow.php"><img src="images/requesta_quote.gif" width="175" height="37" border="0" /></a><br />
 
         <a href="Videos_all.php" target="_blank"><img src="images/videos.gif" height="37" width="175" border="0" /></a><br />
@@ -172,11 +176,12 @@
                    <br />-->
 
             <a href="../datasheet/ADRec_Datasheet.pdf"><img src="images/downdata.gif" width="175" height="37" border="0" /></a>
-
+            
              {/if}
 
           {/section}
-
+          
+          
             
 
             </td>

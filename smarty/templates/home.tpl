@@ -2,9 +2,15 @@
 <html lang="en">
 <head>
     
-{if $title_dispaly eq 'display' || $title_dispaly eq ''}
+
+    {if $productname eq ''}
 
 <title>::CionSystems::</title>
+<meta name='keywords' content='Microsoft, Azure, Quest, self-service, de-prvisioning, Ofice 365, active directory, exchange, 
+management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring, utilities, solutions,synchronization,maintenance,
+ unix, self service,user import, user provision, user de-provision, Group Policy, Group policy object, gpo'>
+<meta name='description' content='We at Cion Systems offers active directory solutions to simplify your daily tasks and increased ROI. Simplify your AD infrastructure with the best active directory management company.'>
+
 
 {else} {$productname}
 
@@ -12,10 +18,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name='keywords' content='Microsoft, Azure, Quest, self-service, de-prvisioning, Ofice 365, active directory, exchange, 
-management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring, utilities, solutions,synchronization,maintenance,
- unix, self service,user import, user provision, user de-provision, Group Policy, Group policy object, gpo'>
-<meta name='description' content='We at Cion Systems offers active directory solutions to simplify your daily tasks and increased ROI. Simplify your AD infrastructure with the best active directory management company.'>
 <!--<meta name="google-site-verification" content="N28xp5KoLEmZKdtJalg54yKL1N6FxNkAeIMXemUgpXY" /> -->
 
 <link rel="shortcut icon" href="img/favicon.png">
@@ -32,6 +34,32 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
  <link href="css/style-responsive.css" rel="stylesheet" />
 {literal}
+    
+<!-- js placed at the end of the document so the pages load faster
+<script src="js/jquery.js">
+</script>
+--> 
+  <link rel="stylesheet" type="text/css" href="css/slick.css">
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+  
+  
+  
+  
+  
+<script src="js/jquery-1.8.3.min.js" type="text/javascript"></script> 
+<script src="js/bootstrap.min.js" type="text/javascript"> </script> 
+<script type="text/javascript" src="js/hover-dropdown.js"> </script> 
+<script src="js/link-hover.js"> </script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<script src="Script/roundies.js" type="text/javascript"></script>
+
+
+<script src="Scripts/ajaxtabs.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="Script/p7exp.js"></script>
+<script defer src="js/jquery.flexslider.js"> </script> 
+<script src="js/slick.js"> </script>
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -227,7 +255,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
     <div class="row">
       <div class="col-lg-3 col-sm-6  wow fadeInUp" data-wow-duration="2s" data-wow-delay=".1s" style="padding-left:30px;">
 <div class="address">
-        <h3> contact info </h3>
+        <h3 class="footerheadings"> Contact info </h3>
         <address>
         <p style="color:#F90">USA Address</p>
         <p>6640 185th Ave NE, Redmond, WA-98052. &nbsp;<i class="fa fa-phone"></i>Phone: 1-425-605-5325 </p>
@@ -240,7 +268,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
       </div>
       <div class="col-lg-4 col-sm-6">
         <div class="page-footer wow fadeInUp" data-wow-duration="2s" data-wow-delay=".5s">
-          <h3> Products </h3>
+          <h3 class="footerheadings"> Products </h3>
           <ul class="page-footer-list">
            <li> <i class="fa fa-angle-right"></i> <a href="active-directory-manager.php">Active Directory Manager Pro</a> </li>
            <li> <i class="fa fa-angle-right"></i> <a href="Enterprise-Self-Service.php">Enterprise Self-Service</a> </li>
@@ -258,7 +286,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
       <div class="row">
       <div class="col-lg-8 col-sm-6">
         <div class="page-footer1 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".5s">
-          <h3> Our Company </h3>
+          <h3 class="footerheadings"> Our Company </h3>
           <ul class="page-footer-list">
             <li> <i class="fa fa-angle-right"></i> <a href="aboutus.php">About Us</a> </li>
             <li> <i class="fa fa-angle-right"></i> <a href="http://cionsystems.com/events/">News & Events</a> </li>
@@ -271,7 +299,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
       </div>
       
       <div class="col-lg-4 col-sm-6">
-        <h3> Follow us </h3>
+        <h3 class="footerheadings"> Follow us </h3>
         <a href="https://www.facebook.com/cionsystems/" target="_blank"><img src="img/facebook.png" ></a>  
         <a href="https://www.linkedin.com/company/cionsystems-inc" target="_blank"><img src="img/linkedin.png" ></a>
     	<a href="https://twitter.com/cionsystems?lang=en" target="_blank"><img src="img/twitter.png" ></a>
@@ -312,25 +340,6 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
 </div>
 <!--small footer end--> 
 
-<!-- js placed at the end of the document so the pages load faster
-<script src="js/jquery.js">
-</script>
---> 
-  <link rel="stylesheet" type="text/css" href="css/slick.css">
-  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
-<script src="js/jquery-1.8.3.min.js" type="text/javascript"></script> 
-<script src="js/bootstrap.min.js" type="text/javascript"> </script> 
-<script type="text/javascript" src="js/hover-dropdown.js"> </script> 
-<script src="js/link-hover.js"> </script>
-<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
-<script src="Script/roundies.js" type="text/javascript"></script>
-
-
-<script src="Scripts/ajaxtabs.js" type="text/javascript"></script>
-
-<script type="text/javascript" src="Script/p7exp.js"></script>
-<script defer src="js/jquery.flexslider.js"> </script> 
-<script src="js/slick.js"> </script>
 {literal}
 <script>
 
@@ -342,7 +351,7 @@ function fnRedirect(Obj){
     
     </script>
  <script type="text/javascript">
-    $(document).on('ready', function() {
+    $(document).ready('ready', function() {
 	
       $(".regular").slick({
         dots: false,
@@ -416,6 +425,178 @@ function fnRedirect(Obj){
   </div>
 </div>
 
+
+
+
+<!-- Modal dialog start -->
+{foreach from=$products item=product_info}
+<div id="myModal-{$product_info.id}" class="modal fade productsmodal" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close1" data-dismiss="modal"></button>
+        <h4 class="modal-title">{$product_info.product_name}</h4>
+      </div>
+      <div class="modal-body">
+        <h5>{$product_info.product_name}</h5>
+        <ul class="popupulfirst">
+        {section name=cust loop=$product_info.plans}
+            <li>
+                <div class="labelValue planvalues">
+                    <label class="radioBlock">
+                        {if $product_info.plans[cust].price_type eq 0}
+                        <input type="radio" name="plan_radio-{$product_info.id}" value="{$product_info.plans[cust].sub_id}"/>
+                        {/if}
+                        <span></span>{$product_info.plans[cust].plan_name}
+                    </label>
+                </div>
+                <div class="divider">--</div>
+                <div class="costValue">{if $product_info.plans[cust].price_type eq 1}<a href="javascript:;">Request A Quote</a> {else}{$product_info.plans[cust].price}{/if}</div>
+            </li>
+        {/section}
+        <!-- <li><div class="labelValue"><label class="radioBlock"><input type="radio" name="topGroup"/><span></span>Up to 250 Users</label></div><div class="divider">--</div><div class="costValue">$780</div></li>
+        <li><div class="labelValue"><label class="radioBlock"><input type="radio" name="topGroup"/><span></span>Up to 250 Users</label></div><div class="divider">--</div><div class="costValue">$780</div></li>
+  <li><div class="labelValue">Up to 250 Users</div><div class="divider">--</div><div class="costValue"><a href="javascript:;">Request A Quote</a> </div></li>
+        -->
+        </ul>
+        {if $product_info.addons|@count gt 0}
+            <h5><label class="checkBlock" style="margin:0px !important; font-weight: bold;">AddOn Products</label></h5>
+           {section name=addonsinfo loop=$product_info.addons} 
+        <div class="addonssec">
+        <h5><label class="checkBlock"><input type="checkbox"><em></em>{$product_info.addons[addonsinfo].addon_name}</label></h5>
+        <ul class="popupulfirst">
+            {section name=cust loop=$product_info.addons[addonsinfo].sub_plans}
+                <li>
+                    <div class="labelValue">
+                        <label class="radioBlock">
+                            {if $product_info.addons[addonsinfo].sub_plans[cust].price_type eq 0}
+                            <input type="radio" class="addonradio" name="addon-{$product_info.id}-{$product_info.addons[addonsinfo].addon_id}" value="{$product_info.addons[addonsinfo].sub_plans[cust].sub_id}"/>
+                            {/if}
+                            <span></span>{$product_info.addons[addonsinfo].sub_plans[cust].plan_name}
+                        </label>
+                    </div>
+                    <div class="divider">--</div>
+                    <div class="costValue">{if $product_info.addons[addonsinfo].sub_plans[cust].price_type eq 1}<a href="buyitnow.php">Request A Quote</a> {else}{$product_info.addons[addonsinfo].sub_plans[cust].price}{/if}</div>
+                </li>
+            {/section}
+        <!-- <li><div class="labelValue"><label class="radioBlock"><input type="radio" name="changeGroup"/><span></span>Up to 250 Users</label></div><div class="divider">--</div><div class="costValue">$780</div></li>
+        <li><div class="labelValue"><label class="radioBlock"><input type="radio" name="changeGroup"/><span></span>Up to 250 Users</label></div><div class="divider">--</div><div class="costValue">$780</div></li>
+  <li><div class="labelValue">Up to 250 Users</div><div class="divider">--</div><div class="costValue"><a href="javascript:;">Request A Quote</a> </div></li>
+            -->
+        </ul>
+        
+        </div>
+        {/section}
+        {/if}
+      </div>
+      <div class="modal-footer">
+        <a class="buynowBtn popupBuynow" data-id="{$product_info.id}" href="javascript:;">Buy Now</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+  {/foreach}
+<!-- Modal dialog end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+{literal}
+<script>
+
+
+
+jQuery(document).ready('click','.popupBuynow', function () {
+    
+    
+    //validate atlease one plan selected
+    var productID = jQuery(this).attr('data-id');
+    //alert(productID);
+    var planId = jQuery('input:radio[name=plan_radio-'+productID+']:checked').val();
+    
+    if(planId == '' || planId == undefined){
+        alert('Make Sure you select the Main Product');
+        return;
+    }
+    var addonProds = [];
+    $('#myModal-'+productID+' .addonssec input:radio:checked').each(function (){
+        addonProds.push($(this).val());
+    });
+    alert('ssss');
+    
+    
+    
+    //add to session
+    jQuery.ajax({
+                type: 'POST',
+                data: {pid:planId,addonid:addonProds},
+                async: false,
+                url: "add_to_cart.php",
+                success: function(result) {
+                    console.log(result);
+                    jQuery('.itemcount').html(result);
+                }
+            });
+
+
+        var cart = jQuery('.cartBlock');
+        var imgtodrag = jQuery(this).closest('.modal-content').find(".modal-title");
+		
+		jQuery(this).closest('.modal-content').find('.close1').click();
+		jQuery("html, body").animate({ scrollTop: 0 }, "slow");
+		if (imgtodrag) {
+	
+            var imgclone = imgtodrag.clone().offset({
+                top: imgtodrag.offset().top,
+                left: imgtodrag.offset().left
+            })
+                .css({
+                'opacity': '0.5',
+                    'position': 'absolute',
+                    'height': '50px',
+                    'width': '400px',
+                    'z-index': '999999',
+					
+            })
+                .appendTo(jQuery('body'))
+                .animate({
+                'top': cart.offset().top + 10,
+                    'left': cart.offset().left + 10,
+                    'width': 75,
+                    'height': 75
+            }, 1000, 'easeInOutExpo');
+            
+            setTimeout(function () {
+			
+			
+			
+                cart.effect("shake", {
+                    times: 2
+                }, 200);
+            }, 1500);
+
+            imgclone.animate({
+                'width': 0,
+                    'height': 0
+            }, function () {
+                jQuery(this).detach()
+            });
+        }
+    });
+</script>
+{/literal}
 
 </body>
 </html>

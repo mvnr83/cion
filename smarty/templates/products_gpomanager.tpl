@@ -364,7 +364,11 @@
 
     {/section}-->
 
-      <a href="javascript:;" data-toggle="modal" data-target="#innerBuyModal"><img src="images/sidebuy.png" width="175" height="37" border="0" /></a><br />
+      {if $product_info.id neq '' && $product_info.id neq 0}
+                                        
+                                        <a href="javascript:;" data-toggle="modal" data-target="#myModal-{$product_info.id}"><img src="images/sidebuy.png" width="175" height="37" border="0" /></a>
+                     <br />
+                     {/if}
 
      <div class="system" style="margin-top:50px">
 

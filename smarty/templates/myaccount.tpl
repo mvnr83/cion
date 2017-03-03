@@ -1,4 +1,5 @@
 {literal}
+    <script src="Scripts/ajaxtabs.js" type="text/javascript"></script>
 <script language="javascript" type="text/javascript">
 function validate()
 {
@@ -156,12 +157,12 @@ function validate()
             <td width="94%" height="350" align="left" valign="top"><ul id="countrytabs" class="shadetabs1">
                 <!--<li><a href="#" rel="#default" class="selected"><span>Tab 1</span></a></li>-->
                 <li><a href="contact_info.php" rel="countrycontainer"><span>Contact Information</span></a></li>
-              <li><a href="mydownloads.php" rel="countrycontainer"><span>My Downloads</span></a></li>
-              <li><a href="mybilling.php" rel="countrycontainer"><span>My Billing</span></a></li>
+              <li><a href="mydownloads.php" rel="downloadcontainer"><span>My Downloads</span></a></li>
+              <li><a href="mybilling.php" rel="billingcontainer"><span>My Billing</span></a></li>
               <!-- <li><a href="external4.htm" rel="#iframe"><span>Tab 4</span></a></li>-->
                 <!--<li><a href="http://www.dynamicdrive.com"><span>Dynamic Drive</span></a></li>-->
               </ul>
-                <div id="countrydivcontainer"  style="border:1px solid #bcbcbc; width:100%; height:100%; margin-bottom: 1em; margin-top:27px; padding: 10px"> </div>
+                <div id="countrydivcontainer"  style="overflow-y: scroll;border:1px solid #bcbcbc; width:100%; height:100%; margin-bottom: 1em; margin-top:27px; padding: 10px"> </div>
               {literal}
               <script type="text/javascript">
 

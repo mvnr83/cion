@@ -66,6 +66,9 @@
     <td align="center" height="20">Fields marked with<span class="error"> * </span>are required.</td>
   </tr>
   <tr>
+      <td align="center"><span style="color:#FF0000;">{$msg}</span></td>
+  </tr>
+  <tr>
     <td align="center">&nbsp;</td>
   </tr>
 </table>
@@ -146,6 +149,17 @@
       <td align="left" valign="top" class="error">*</td>
       <td align="left" valign="middle"><textarea name="comments" wrap="virtual" class="txtarea"></textarea></td>
     </tr>
+    
+    <tr>
+             <td height="42" align="right" colspan="2" valign="middle"></td>
+             <td align="left" valign="middle" ><img src="Captcha/CaptchaSecurityImages.php?width=100&height=40&characters=6" /></td>
+           </tr>
+            <tr>
+             <td height="32" align="right" valign="middle"><span class="error">*</span>Captcha:</td>
+             <td align="left" valign="top" class="error">*</td>
+             <td align="left" valign="middle"><input id="security_code" name="security_code" type="text" class="txtfield" /></td>
+           </tr>
+    
     <tr>
       <td height="35" align="right" valign="middle">&nbsp;</td>
       <td align="center" valign="middle">&nbsp;</td>

@@ -118,7 +118,14 @@
 <!--             <input type="image" onclick="javascript:showtrial('{$array[cust].id}','{$session_username}','{$array[cust].product_code}');" src="images/tryitnow.gif" alt="Try It Now" border="0" />-->
          
              <a href="../datasheet/SIC_Datasheet_2.2.pdf"><img src="images/downdata.gif" width="175" height="37" border="0" /></a> {/if}
-          {/section} </td>
+          {/section} 
+             
+             {if $product_info.id neq '' && $product_info.id neq 0}
+                                        <br />
+                                        <a href="javascript:;" data-toggle="modal" data-target="#myModal-{$product_info.id}"><img src="images/sidebuy.png" width="175" height="37" border="0" /></a>
+                    
+                     {/if}
+             </td>
         
       </tr>
       <tr>
