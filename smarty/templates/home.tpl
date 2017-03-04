@@ -77,6 +77,12 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
 {literal}
 <script type="text/javascript">
 
+if(window.location.hash) {
+    setTimeout(function (){
+        $('a[data-toggle="modal"]').trigger('click');
+    },5000);
+    
+}
 
 </script>
 {/literal}
