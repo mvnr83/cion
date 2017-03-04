@@ -79,21 +79,21 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
 
 
 
-jQuery(document).on('click','.popupBuynow', function () {
+$(document).on('click','.popupBuynow', function () {
     
     
     //validate atlease one plan selected
-    var productID = jQuery(this).attr('data-id');
+    var productID = $(this).attr('data-id');
     //alert(productID);
-    var planId = jQuery('input:radio[name=plan_radio-'+productID+']:checked').val();
+    var planId = $('input:radio[name=plan_radio-'+productID+']:checked').val();
     
     if(planId == '' || planId == undefined){
         alert('Make Sure you select the Main Product');
         return;
     }
     var addonProds = [];
-    jQuery('#myModal-'+productID+' .addonssec input:radio:checked').each(function (){
-        addonProds.push(jQuery(this).val());
+    $('#myModal-'+productID+' .addonssec input:radio:checked').each(function (){
+        addonProds.push($(this).val());
     });
     
     
@@ -107,16 +107,16 @@ jQuery(document).on('click','.popupBuynow', function () {
                 url: "add_to_cart.php",
                 success: function(result) {
                     console.log(result);
-                    jQuery('.itemcount').html(result);
+                    $('.itemcount').html(result);
                 }
             });
 
 
-        var cart = jQuery('.cartBlock');
-        var imgtodrag = jQuery(this).closest('.modal-content').find(".modal-title");
+        var cart = $('.cartBlock');
+        var imgtodrag = $(this).closest('.modal-content').find(".modal-title");
 		
-		jQuery(this).closest('.modal-content').find('.close1').click();
-		jQuery("html, body").animate({ scrollTop: 0 }, "slow");
+		$(this).closest('.modal-content').find('.close1').click();
+		$("html, body").animate({ scrollTop: 0 }, "slow");
 		if (imgtodrag) {
 	
             var imgclone = imgtodrag.clone().offset({
@@ -131,7 +131,7 @@ jQuery(document).on('click','.popupBuynow', function () {
                     'z-index': '999999',
 					
             })
-                .appendTo(jQuery('body'))
+                .appendTo($('body'))
                 .animate({
                 'top': cart.offset().top + 10,
                     'left': cart.offset().left + 10,
@@ -152,7 +152,7 @@ jQuery(document).on('click','.popupBuynow', function () {
                 'width': 0,
                     'height': 0
             }, function () {
-                jQuery(this).detach()
+                $(this).detach()
             });
         }
     });
@@ -435,9 +435,9 @@ function fnRedirect(Obj){
     
     </script>
  <script type="text/javascript">
-    jQuery(document).on('ready', function() {
-	if(jQuery(".regular").length >0)
-      jQuery(".regular").slick({
+    $(document).on('ready', function() {
+	if($(".regular").length >0)
+      $(".regular").slick({
         dots: false,
         infinite: false,
         slidesToShow: 2,
@@ -449,29 +449,29 @@ function fnRedirect(Obj){
 	  
 	  
 	  
-	  jQuery(document).on('click','.addonssec .checkBlock',function(e){
+	  $(document).on('click','.addonssec .checkBlock',function(e){
 	 e.stopPropagation();
 	  })
-	   jQuery(document).on('click','.addonssec .checkBlock input',function(e){
+	   $(document).on('click','.addonssec .checkBlock input',function(e){
 	 
-	 if(jQuery(this).is(':checked'))
+	 if($(this).is(':checked'))
 	 {
 	
-    	jQuery(this).closest('.addonssec').find('.popupulfirst li:first').find('.radioBlock input').click();
+    	$(this).closest('.addonssec').find('.popupulfirst li:first').find('.radioBlock input').click();
 	 }
 	 else
 	 {
-	 jQuery(this).closest('.addonssec').find('.popupulfirst li').find('.radioBlock input').removeAttr('checked')
+	 $(this).closest('.addonssec').find('.popupulfirst li').find('.radioBlock input').removeAttr('checked')
 	 	
 	 }
 	  });
 	  
 	  
-	    jQuery(document).on('click','.popupulfirst .radioBlock input',function(e){
-			if(!jQuery(this).closest('.addonssec').find('.checkBlock input').is(':checked'))
+	    $(document).on('click','.popupulfirst .radioBlock input',function(e){
+			if(!$(this).closest('.addonssec').find('.checkBlock input').is(':checked'))
 			{
 			
-			jQuery(this).closest('.addonssec').find('.checkBlock input').attr('checked','checked')
+			$(this).closest('.addonssec').find('.checkBlock input').attr('checked','checked')
 			}
 	    });
 	  
