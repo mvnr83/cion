@@ -74,6 +74,90 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
 
 </script>
 {/literal}
+{literal}
+<script type="text/javascript">
+
+
+
+jQuery(document).on('click','.popupBuynow', function () {
+    
+    
+    //validate atlease one plan selected
+    var productID = jQuery(this).attr('data-id');
+    //alert(productID);
+    var planId = jQuery('input:radio[name=plan_radio-'+productID+']:checked').val();
+    
+    if(planId == '' || planId == undefined){
+        alert('Make Sure you select the Main Product');
+        return;
+    }
+    var addonProds = [];
+    jQuery('#myModal-'+productID+' .addonssec input:radio:checked').each(function (){
+        addonProds.push(jQuery(this).val());
+    });
+    
+    
+    
+    
+    //add to session
+    jQuery.ajax({
+                type: 'POST',
+                data: {pid:planId,addonid:addonProds},
+                async: false,
+                url: "add_to_cart.php",
+                success: function(result) {
+                    console.log(result);
+                    jQuery('.itemcount').html(result);
+                }
+            });
+
+
+        var cart = jQuery('.cartBlock');
+        var imgtodrag = jQuery(this).closest('.modal-content').find(".modal-title");
+		
+		jQuery(this).closest('.modal-content').find('.close1').click();
+		jQuery("html, body").animate({ scrollTop: 0 }, "slow");
+		if (imgtodrag) {
+	
+            var imgclone = imgtodrag.clone().offset({
+                top: imgtodrag.offset().top,
+                left: imgtodrag.offset().left
+            })
+                .css({
+                'opacity': '0.5',
+                    'position': 'absolute',
+                    'height': '50px',
+                    'width': '400px',
+                    'z-index': '999999',
+					
+            })
+                .appendTo(jQuery('body'))
+                .animate({
+                'top': cart.offset().top + 10,
+                    'left': cart.offset().left + 10,
+                    'width': 75,
+                    'height': 75
+            }, 1000, 'easeInOutExpo');
+            
+            setTimeout(function () {
+			
+			
+			
+                cart.effect("shake", {
+                    times: 2
+                }, 200);
+            }, 1500);
+
+            imgclone.animate({
+                'width': 0,
+                    'height': 0
+            }, function () {
+                jQuery(this).detach()
+            });
+        }
+    });
+</script>
+{/literal}
 
 <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300 600 700' rel='stylesheet' type='text/css'>
 <!--
@@ -341,7 +425,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
 <!--small footer end--> 
 
 {literal}
-<script>
+<script type="text/javascript">
 
 function fnRedirect(Obj){
     var linkUrl = $(Obj).attr('href');
@@ -448,8 +532,9 @@ function fnRedirect(Obj){
                     <label class="radioBlock">
                         {if $product_info.plans[cust].price_type eq 0}
                         <input type="radio" name="plan_radio-{$product_info.id}" value="{$product_info.plans[cust].sub_id}"/>
+                        <span></span>
                         {/if}
-                        <span></span>{$product_info.plans[cust].plan_name}
+                        {$product_info.plans[cust].plan_name}
                     </label>
                 </div>
                 <div class="divider">--</div>
@@ -513,90 +598,7 @@ function fnRedirect(Obj){
 
 
 
-{literal}
-<script>
 
-
-
-jQuery(document).on('click','.popupBuynow', function () {
-    
-    
-    //validate atlease one plan selected
-    var productID = jQuery(this).attr('data-id');
-    //alert(productID);
-    var planId = jQuery('input:radio[name=plan_radio-'+productID+']:checked').val();
-    
-    if(planId == '' || planId == undefined){
-        alert('Make Sure you select the Main Product');
-        return;
-    }
-    var addonProds = [];
-    jQuery('#myModal-'+productID+' .addonssec input:radio:checked').each(function (){
-        addonProds.push(jQuery(this).val());
-    });
-    
-    
-    
-    
-    //add to session
-    jQuery.ajax({
-                type: 'POST',
-                data: {pid:planId,addonid:addonProds},
-                async: false,
-                url: "add_to_cart.php",
-                success: function(result) {
-                    console.log(result);
-                    jQuery('.itemcount').html(result);
-                }
-            });
-
-
-        var cart = jQuery('.cartBlock');
-        var imgtodrag = jQuery(this).closest('.modal-content').find(".modal-title");
-		
-		jQuery(this).closest('.modal-content').find('.close1').click();
-		jQuery("html, body").animate({ scrollTop: 0 }, "slow");
-		if (imgtodrag) {
-	
-            var imgclone = imgtodrag.clone().offset({
-                top: imgtodrag.offset().top,
-                left: imgtodrag.offset().left
-            })
-                .css({
-                'opacity': '0.5',
-                    'position': 'absolute',
-                    'height': '50px',
-                    'width': '400px',
-                    'z-index': '999999',
-					
-            })
-                .appendTo(jQuery('body'))
-                .animate({
-                'top': cart.offset().top + 10,
-                    'left': cart.offset().left + 10,
-                    'width': 75,
-                    'height': 75
-            }, 1000, 'easeInOutExpo');
-            
-            setTimeout(function () {
-			
-			
-			
-                cart.effect("shake", {
-                    times: 2
-                }, 200);
-            }, 1500);
-
-            imgclone.animate({
-                'width': 0,
-                    'height': 0
-            }, function () {
-                jQuery(this).detach()
-            });
-        }
-    });
-</script>
-{/literal}
 
 </body>
 </html>
