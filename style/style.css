@@ -511,13 +511,9 @@ color:#333333;
 .footer{
 
 background:url(../images/footerlinbg.gif) repeat-x left;
-
-
-
 }
 
 .copyright{
-
 background:url(../images/copyrightbg.gif) repeat-x left top;
 
 height:33px;
@@ -1527,3 +1523,8 @@ a.news:hover{text-decoration:none}
 h3.footerheadings{color:#FFF !important} 
 
 .productheader a img{ max-width:100%; border-radius:10px}
+
+.footer{ text-align:left !important}
+table td p:first-child{ margin-top:0; padding-top:0}
+table td { padding-right:10px; text-align:left}
+table th{ text-align:center; padding-bottom:10px}
