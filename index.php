@@ -304,18 +304,24 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
  
  
  <section class="regular slider col-xs-12 regularnew">
- <?php for($i=0; $i<count($images); $i++){ ?>
  <div class="mainslides">
     <div class="custom"><a href="mfauthentication.php"> <div class="mainproductssingle"><div><img src="images/products/multifactors_img.png"></div></div></a>
       <span class="pbottom"> <a href="mfauthentication.php"> <span class="ptitle">Multifactor Authentication</span></a>
              <?php /*?> <a href="#" class="sliderlinkbuy">Buy Now</a><?php */?> <a href="mfauthentication.php" class="sliderlinktry">Try Now</a></span></div>
+    </div>    
+ <?php for($i=0; $i<count($images); $i++){ ?>
+ 
+     <div class="mainslides">
+    <div class="custom"><a href="<?=$images[$i]['html_file_name']?>"> <div class="mainproductssingle"><div><img src="<?=(($images[$i]['home_slider_image'] != '' && file_exists('product_images/'.$images[$i]['home_slider_image']))?'product_images/'.$images[$i]['home_slider_image']:'images/products/multifactors_img.png')?>"></div></div></a>
+      <span class="pbottom"> <a href="<?=$images[$i]['html_file_name']?>"> <span class="ptitle"><?=$images[$i]['product_name']?></span></a>
+              <a href="<?=$images[$i]['html_file_name']?>#buy" class="sliderlinkbuy">Buy Now</a> <a href="<?=$images[$i]['html_file_name']?>" class="sliderlinktry">Try Now</a></span></div>
     </div>
  <?php } ?>
- <div class="mainslides">
+ <!-- <div class="mainslides">
     <div class="custom"><a href="ADProvisioning.php"> <div class="mainproductssingle"><div><img src="images/products/provisioning_img.png"></div></div></a>
       <span class="pbottom"> <a href="ADProvisioning.php"><span class="ptitle">Provisioning System</span></a>
              <?php /*?> <a href="#" class="sliderlinkbuy">Buy Now</a> <?php */?><a href="ADProvisioning.php" class="sliderlinktry">Try Now</a></span></div>
-    </div>
+    </div> -->
  
  
  
