@@ -78,84 +78,6 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
 <script type="text/javascript">
 
 
-
-$(document).on('click','.popupBuynow', function () {
-    
-    
-    //validate atlease one plan selected
-    var productID = $(this).attr('data-id');
-    //alert(productID);
-    var planId = $('input:radio[name=plan_radio-'+productID+']:checked').val();
-    
-    if(planId == '' || planId == undefined){
-        alert('Make Sure you select the Main Product');
-        return;
-    }
-    var addonProds = [];
-    $('#myModal-'+productID+' .addonssec input:radio:checked').each(function (){
-        addonProds.push($(this).val());
-    });
-    
-    
-    
-    
-    //add to session
-    jQuery.ajax({
-                type: 'POST',
-                data: {pid:planId,addonid:addonProds},
-                async: false,
-                url: "add_to_cart.php",
-                success: function(result) {
-                    console.log(result);
-                    $('.itemcount').html(result);
-                }
-            });
-
-
-        var cart = $('.cartBlock');
-        var imgtodrag = $(this).closest('.modal-content').find(".modal-title");
-		
-		$(this).closest('.modal-content').find('.close1').click();
-		$("html, body").animate({ scrollTop: 0 }, "slow");
-		if (imgtodrag) {
-	
-            var imgclone = imgtodrag.clone().offset({
-                top: imgtodrag.offset().top,
-                left: imgtodrag.offset().left
-            })
-                .css({
-                'opacity': '0.5',
-                    'position': 'absolute',
-                    'height': '50px',
-                    'width': '400px',
-                    'z-index': '999999',
-					
-            })
-                .appendTo($('body'))
-                .animate({
-                'top': cart.offset().top + 10,
-                    'left': cart.offset().left + 10,
-                    'width': 75,
-                    'height': 75
-            }, 1000, 'easeInOutExpo');
-            
-            setTimeout(function () {
-			
-			
-			
-                cart.effect("shake", {
-                    times: 2
-                }, 200);
-            }, 1500);
-
-            imgclone.animate({
-                'width': 0,
-                    'height': 0
-            }, function () {
-                $(this).detach()
-            });
-        }
-    });
 </script>
 {/literal}
 
@@ -481,6 +403,99 @@ function fnRedirect(Obj){
 	  
    
     });
+	
+	
+	
+	
+	
+
+j(document).on('click','.popupBuynow', function () {
+    
+    
+    //validate atlease one plan selected
+    var productID = j(this).attr('data-id');
+    //alert(productID);
+    var planId = j('input:radio[name=plan_radio-'+productID+']:checked').val();
+    
+    if(planId == '' || planId == undefined){
+        alert('Make Sure you select the Main Product');
+        return;
+    }
+    var addonProds = [];
+    j('#myModal-'+productID+' .addonssec input:radio:checked').each(function (){
+        addonProds.push($(this).val());
+    });
+    
+    
+    
+    
+    //add to session
+    jQuery.ajax({
+                type: 'POST',
+                data: {pid:planId,addonid:addonProds},
+                async: false,
+                url: "add_to_cart.php",
+                success: function(result) {
+                    console.log(result);
+                    $('.itemcount').html(result);
+                }
+            });
+
+
+        var cart = j('.cartBlock');
+        var imgtodrag = j(this).closest('.modal-content').find(".modal-title");
+		
+		j(this).closest('.modal-content').find('.close1').click();
+		$("html, body").animate({ scrollTop: 0 }, "slow");
+		if (imgtodrag) {
+	
+            var imgclone = imgtodrag.clone().offset({
+                top: imgtodrag.offset().top,
+                left: imgtodrag.offset().left
+            })
+                .css({
+                'opacity': '0.5',
+                    'position': 'absolute',
+                    'height': '50px',
+                    'width': '400px',
+                    'z-index': '999999',
+					
+            })
+                .appendTo($('body'))
+                .animate({
+                'top': cart.offset().top + 10,
+                    'left': cart.offset().left + 10,
+                    'width': 75,
+                    'height': 75
+            }, 1000, 'easeInOutExpo');
+            
+            setTimeout(function () {
+			
+			
+			
+                cart.effect("shake", {
+                    times: 2
+                }, 200);
+            }, 1500);
+
+            imgclone.animate({
+                'width': 0,
+                    'height': 0
+            }, function () {
+                j(this).detach()
+            });
+        }
+    });
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
   </script>
 
 
