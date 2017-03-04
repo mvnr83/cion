@@ -435,9 +435,10 @@ function fnRedirect(Obj){
     
     </script>
  <script type="text/javascript">
-    $(document).on('ready', function() {
-	if($(".regular").length >0)
-      $(".regular").slick({
+   var j = jQuery.noConflict();
+    j(document).on('ready', function() {
+	if(j(".regular").length >0)
+      j(".regular").slick({
         dots: false,
         infinite: false,
         slidesToShow: 2,
@@ -449,29 +450,29 @@ function fnRedirect(Obj){
 	  
 	  
 	  
-	  $(document).on('click','.addonssec .checkBlock',function(e){
+	  j(document).on('click','.addonssec .checkBlock',function(e){
 	 e.stopPropagation();
 	  })
-	   $(document).on('click','.addonssec .checkBlock input',function(e){
+	   j(document).on('click','.addonssec .checkBlock input',function(e){
 	 
-	 if($(this).is(':checked'))
+	 if(j(this).is(':checked'))
 	 {
 	
-    	$(this).closest('.addonssec').find('.popupulfirst li:first').find('.radioBlock input').click();
+    	j(this).closest('.addonssec').find('.popupulfirst li:first').find('.radioBlock input').click();
 	 }
 	 else
 	 {
-	 $(this).closest('.addonssec').find('.popupulfirst li').find('.radioBlock input').removeAttr('checked')
+	 j(this).closest('.addonssec').find('.popupulfirst li').find('.radioBlock input').removeAttr('checked')
 	 	
 	 }
 	  });
 	  
 	  
-	    $(document).on('click','.popupulfirst .radioBlock input',function(e){
-			if(!$(this).closest('.addonssec').find('.checkBlock input').is(':checked'))
+	    j(document).on('click','.popupulfirst .radioBlock input',function(e){
+			if(!j(this).closest('.addonssec').find('.checkBlock input').is(':checked'))
 			{
 			
-			$(this).closest('.addonssec').find('.checkBlock input').attr('checked','checked')
+			j(this).closest('.addonssec').find('.checkBlock input').attr('checked','checked')
 			}
 	    });
 	  
