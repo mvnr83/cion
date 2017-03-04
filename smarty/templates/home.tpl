@@ -351,9 +351,9 @@ function fnRedirect(Obj){
     
     </script>
  <script type="text/javascript">
-    $(document).on('ready', function() {
-	
-      $(".regular").slick({
+    jQuery(document).on('ready', function() {
+	if(jQuery(".regular").length >0)
+      jQuery(".regular").slick({
         dots: false,
         infinite: false,
         slidesToShow: 2,
@@ -365,29 +365,29 @@ function fnRedirect(Obj){
 	  
 	  
 	  
-	  $(document).on('click','.addonssec .checkBlock',function(e){
+	  jQuery(document).on('click','.addonssec .checkBlock',function(e){
 	 e.stopPropagation();
 	  })
-	   $(document).on('click','.addonssec .checkBlock input',function(e){
+	   jQuery(document).on('click','.addonssec .checkBlock input',function(e){
 	 
-	 if($(this).is(':checked'))
+	 if(jQuery(this).is(':checked'))
 	 {
 	
-    	$(this).closest('.addonssec').find('.popupulfirst li:first').find('.radioBlock input').click();
+    	jQuery(this).closest('.addonssec').find('.popupulfirst li:first').find('.radioBlock input').click();
 	 }
 	 else
 	 {
-	 $(this).closest('.addonssec').find('.popupulfirst li').find('.radioBlock input').removeAttr('checked')
+	 jQuery(this).closest('.addonssec').find('.popupulfirst li').find('.radioBlock input').removeAttr('checked')
 	 	
 	 }
 	  });
 	  
 	  
-	    $(document).on('click','.popupulfirst .radioBlock input',function(e){
-			if(!$(this).closest('.addonssec').find('.checkBlock input').is(':checked'))
+	    jQuery(document).on('click','.popupulfirst .radioBlock input',function(e){
+			if(!jQuery(this).closest('.addonssec').find('.checkBlock input').is(':checked'))
 			{
 			
-			$(this).closest('.addonssec').find('.checkBlock input').attr('checked','checked')
+			jQuery(this).closest('.addonssec').find('.checkBlock input').attr('checked','checked')
 			}
 	    });
 	  
@@ -531,8 +531,8 @@ jQuery(document).on('click','.popupBuynow', function () {
         return;
     }
     var addonProds = [];
-    $('#myModal-'+productID+' .addonssec input:radio:checked').each(function (){
-        addonProds.push($(this).val());
+    jQuery('#myModal-'+productID+' .addonssec input:radio:checked').each(function (){
+        addonProds.push(jQuery(this).val());
     });
     
     
