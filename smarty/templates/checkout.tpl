@@ -41,7 +41,7 @@
 {if $cartinfo|@count gt 0}
 <a class="btn-place btn"  href="start-order.php">PLACE ORDER</a>
 {/if}
-<a class="btn-shoping btn" href="active-directory-tools.php">Add MORE PRODUCTS</a>
+<a class="btn-shoping btn" href="active-directory-tools.php">ADD MORE PRODUCTS</a>
 </div></div>
 
 {literal}

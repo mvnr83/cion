@@ -351,7 +351,7 @@ function fnRedirect(Obj){
     
     </script>
  <script type="text/javascript">
-    $(document).ready('ready', function() {
+    $(document).on('ready', function() {
 	
       $(".regular").slick({
         dots: false,
@@ -518,7 +518,7 @@ function fnRedirect(Obj){
 
 
 
-jQuery(document).ready('click','.popupBuynow', function () {
+jQuery(document).on('click','.popupBuynow', function () {
     
     
     //validate atlease one plan selected
@@ -534,7 +534,7 @@ jQuery(document).ready('click','.popupBuynow', function () {
     $('#myModal-'+productID+' .addonssec input:radio:checked').each(function (){
         addonProds.push($(this).val());
     });
-    alert('ssss');
+    
     
     
     

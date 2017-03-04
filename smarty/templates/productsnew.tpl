@@ -18,7 +18,7 @@
                             </a>
                     </div>
 
-                    <div class="productContent">{if $product_info.short_description|strlen gt 300} {$product_info.short_description|substr:0:320}... {else}{$product_info.short_description}{/if}</div>
+                    <div class="productContent">{if $product_info.short_description|strlen gt 300} {$product_info.short_description|substr:0:320|stripslashes}... {else}{$product_info.short_description|stripslashes}{/if}</div>
 <!-- <ul>
     <li>GPO authoring, mangement and security workbench.</li>
     <li>Gives Active Directory administrators and security personnel's control of  GPO changes.</li>
