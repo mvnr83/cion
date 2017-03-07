@@ -6703,8 +6703,3 @@ address,.address{ margin-bottom:0;}
 
 
 
-.nav > li {
- float:left; width:100%; clear:both
-}
-
-.dropdown-menu a:hover{ background:#fc9023 !important}
