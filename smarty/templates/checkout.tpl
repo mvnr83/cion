@@ -47,7 +47,7 @@
 {literal}
     <script>
         function fnRemoveCart(ptype,pid){
-            $.ajax({
+            j.ajax({
                 type: 'POST',
                 data: {ptype:ptype,pid:pid},
                 async: false,

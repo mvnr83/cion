@@ -352,18 +352,148 @@ if(window.location.hash) {
 </div>
 <!--small footer end--> 
 
-{literal}
-<script type="text/javascript">
 
-function fnRedirect(Obj){
-    var linkUrl = $(Obj).attr('href');
+
+
+<div id="innerBuyModal" class="modal fade productsmodal" role="dialog" style="display: none;">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close1" data-dismiss="modal"></button>
+        <h4 class="modal-title">Active Directory Manager PRO</h4>
+      </div>
+      <div class="modal-body">
+        <h5></h5>
+        <ul class="popupulfirst">
+              
+        </ul>
+              </div>
+      <div class="modal-footer">
+        <a class="buynowBtn popupBuynow" href="javascript:;">Buy Now</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<!-- Modal dialog start -->
+{foreach from=$products item=product_info}
+<div id="myModal-{$product_info.id}" class="modal fade productsmodal" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close1" data-dismiss="modal"></button>
+        <h4 class="modal-title">{$product_info.product_name}</h4>
+      </div>
+      <div class="modal-body">
+        <h5>{$product_info.product_name}</h5>
+        <ul class="popupulfirst">
+        {section name=cust loop=$product_info.plans}
+            <li>
+                <div class="labelValue planvalues">
+                    <label class="radioBlock">
+                        {if $product_info.plans[cust].price_type eq 0}
+                        <input type="radio" name="plan_radio-{$product_info.id}" value="{$product_info.plans[cust].sub_id}"/>
+                        <span></span>
+                        {/if}
+                        {$product_info.plans[cust].plan_name}
+                    </label>
+                </div>
+                <div class="divider">--</div>
+                <div class="costValue">{if $product_info.plans[cust].price_type eq 1}<a href="buyitnow.php">Request A Quote</a> {else}{$product_info.plans[cust].price}{/if}</div>
+            </li>
+        {/section}
+        <!-- <li><div class="labelValue"><label class="radioBlock"><input type="radio" name="topGroup"/><span></span>Up to 250 Users</label></div><div class="divider">--</div><div class="costValue">$780</div></li>
+        <li><div class="labelValue"><label class="radioBlock"><input type="radio" name="topGroup"/><span></span>Up to 250 Users</label></div><div class="divider">--</div><div class="costValue">$780</div></li>
+  <li><div class="labelValue">Up to 250 Users</div><div class="divider">--</div><div class="costValue"><a href="javascript:;">Request A Quote</a> </div></li>
+        -->
+        </ul>
+        {if $product_info.addons|@count gt 0}
+            <h5><label class="checkBlock" style="margin:0px !important; font-weight: bold;">AddOn Products</label></h5>
+           {section name=addonsinfo loop=$product_info.addons} 
+        <div class="addonssec">
+        <h5><label class="checkBlock"><input type="checkbox"><em></em>{$product_info.addons[addonsinfo].addon_name}</label></h5>
+        <ul class="popupulfirst">
+            {section name=cust loop=$product_info.addons[addonsinfo].sub_plans}
+                <li>
+                    <div class="labelValue">
+                        <label class="radioBlock">
+                            {if $product_info.addons[addonsinfo].sub_plans[cust].price_type eq 0}
+                            <input type="radio" class="addonradio" name="addon-{$product_info.id}-{$product_info.addons[addonsinfo].addon_id}" value="{$product_info.addons[addonsinfo].sub_plans[cust].sub_id}"/>
+                            <span></span>
+                            {/if}
+                            {$product_info.addons[addonsinfo].sub_plans[cust].plan_name}
+                        </label>
+                    </div>
+                    <div class="divider">--</div>
+                    <div class="costValue">{if $product_info.addons[addonsinfo].sub_plans[cust].price_type eq 1}<a href="buyitnow.php">Request A Quote</a> {else}{$product_info.addons[addonsinfo].sub_plans[cust].price}{/if}</div>
+                </li>
+            {/section}
+        <!-- <li><div class="labelValue"><label class="radioBlock"><input type="radio" name="changeGroup"/><span></span>Up to 250 Users</label></div><div class="divider">--</div><div class="costValue">$780</div></li>
+        <li><div class="labelValue"><label class="radioBlock"><input type="radio" name="changeGroup"/><span></span>Up to 250 Users</label></div><div class="divider">--</div><div class="costValue">$780</div></li>
+  <li><div class="labelValue">Up to 250 Users</div><div class="divider">--</div><div class="costValue"><a href="javascript:;">Request A Quote</a> </div></li>
+            -->
+        </ul>
+        
+        </div>
+        {/section}
+        {/if}
+      </div>
+      <div class="modal-footer">
+        <a class="buynowBtn popupBuynow" data-id="{$product_info.id}" href="javascript:;">Buy Now</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+  {/foreach}
+<!-- Modal dialog end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+{literal}
+
+ <script>
+   var j = jQuery.noConflict();
+   
+   j(document).ready(function(){
+
+        j('.modal.productsmodal').each(function(){
+
+            if(j(this).find('input[type="radio"]').length ==0)
+            {
+                j(this).find('.buynowBtn.popupBuynow').hide();
+            }
+        });
+
+    });
+   
+   function fnRedirect(Obj){
+    var linkUrl = j(Obj).attr('href');
     if(linkUrl != '' && linkUrl != '#')
         window.location.href = linkUrl;
 }
-    
-    </script>
- <script type="text/javascript">
-   var j = jQuery.noConflict();
+
     j(document).on('ready', function() {
 	if(j(".regular").length >0)
       j(".regular").slick({
@@ -429,21 +559,21 @@ j(document).on('click','.popupBuynow', function () {
     }
     var addonProds = [];
     j('#myModal-'+productID+' .addonssec input:radio:checked').each(function (){
-        addonProds.push($(this).val());
+        addonProds.push(j(this).val());
     });
     
     
     
     
     //add to session
-    jQuery.ajax({
+    j.ajax({
                 type: 'POST',
                 data: {pid:planId,addonid:addonProds},
                 async: false,
                 url: "add_to_cart.php",
                 success: function(result) {
                     console.log(result);
-                    $('.itemcount').html(result);
+                    j('.itemcount').html(result);
                 }
             });
 
@@ -452,7 +582,7 @@ j(document).on('click','.popupBuynow', function () {
         var imgtodrag = j(this).closest('.modal-content').find(".modal-title");
 		
 		j(this).closest('.modal-content').find('.close1').click();
-		$("html, body").animate({ scrollTop: 0 }, "slow");
+		j("html, body").animate({ scrollTop: 0 }, "slow");
 		if (imgtodrag) {
 	
             var imgclone = imgtodrag.clone().offset({
@@ -467,7 +597,7 @@ j(document).on('click','.popupBuynow', function () {
                     'z-index': '999999',
 					
             })
-                .appendTo($('body'))
+                .appendTo(j('body'))
                 .animate({
                 'top': cart.offset().top + 10,
                     'left': cart.offset().left + 10,
@@ -506,121 +636,4 @@ j(document).on('click','.popupBuynow', function () {
 
 
 {/literal}
-
-
-<div id="innerBuyModal" class="modal fade productsmodal" role="dialog" style="display: none;">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close1" data-dismiss="modal"></button>
-        <h4 class="modal-title">Active Directory Manager PRO</h4>
-      </div>
-      <div class="modal-body">
-        <h5></h5>
-        <ul class="popupulfirst">
-              
-        </ul>
-              </div>
-      <div class="modal-footer">
-        <a class="buynowBtn popupBuynow" href="javascript:;">Buy Now</a>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-
-
-
-<!-- Modal dialog start -->
-{foreach from=$products item=product_info}
-<div id="myModal-{$product_info.id}" class="modal fade productsmodal" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close1" data-dismiss="modal"></button>
-        <h4 class="modal-title">{$product_info.product_name}</h4>
-      </div>
-      <div class="modal-body">
-        <h5>{$product_info.product_name}</h5>
-        <ul class="popupulfirst">
-        {section name=cust loop=$product_info.plans}
-            <li>
-                <div class="labelValue planvalues">
-                    <label class="radioBlock">
-                        {if $product_info.plans[cust].price_type eq 0}
-                        <input type="radio" name="plan_radio-{$product_info.id}" value="{$product_info.plans[cust].sub_id}"/>
-                        <span></span>
-                        {/if}
-                        {$product_info.plans[cust].plan_name}
-                    </label>
-                </div>
-                <div class="divider">--</div>
-                <div class="costValue">{if $product_info.plans[cust].price_type eq 1}<a href="javascript:;">Request A Quote</a> {else}{$product_info.plans[cust].price}{/if}</div>
-            </li>
-        {/section}
-        <!-- <li><div class="labelValue"><label class="radioBlock"><input type="radio" name="topGroup"/><span></span>Up to 250 Users</label></div><div class="divider">--</div><div class="costValue">$780</div></li>
-        <li><div class="labelValue"><label class="radioBlock"><input type="radio" name="topGroup"/><span></span>Up to 250 Users</label></div><div class="divider">--</div><div class="costValue">$780</div></li>
-  <li><div class="labelValue">Up to 250 Users</div><div class="divider">--</div><div class="costValue"><a href="javascript:;">Request A Quote</a> </div></li>
-        -->
-        </ul>
-        {if $product_info.addons|@count gt 0}
-            <h5><label class="checkBlock" style="margin:0px !important; font-weight: bold;">AddOn Products</label></h5>
-           {section name=addonsinfo loop=$product_info.addons} 
-        <div class="addonssec">
-        <h5><label class="checkBlock"><input type="checkbox"><em></em>{$product_info.addons[addonsinfo].addon_name}</label></h5>
-        <ul class="popupulfirst">
-            {section name=cust loop=$product_info.addons[addonsinfo].sub_plans}
-                <li>
-                    <div class="labelValue">
-                        <label class="radioBlock">
-                            {if $product_info.addons[addonsinfo].sub_plans[cust].price_type eq 0}
-                            <input type="radio" class="addonradio" name="addon-{$product_info.id}-{$product_info.addons[addonsinfo].addon_id}" value="{$product_info.addons[addonsinfo].sub_plans[cust].sub_id}"/>
-                            {/if}
-                            <span></span>{$product_info.addons[addonsinfo].sub_plans[cust].plan_name}
-                        </label>
-                    </div>
-                    <div class="divider">--</div>
-                    <div class="costValue">{if $product_info.addons[addonsinfo].sub_plans[cust].price_type eq 1}<a href="buyitnow.php">Request A Quote</a> {else}{$product_info.addons[addonsinfo].sub_plans[cust].price}{/if}</div>
-                </li>
-            {/section}
-        <!-- <li><div class="labelValue"><label class="radioBlock"><input type="radio" name="changeGroup"/><span></span>Up to 250 Users</label></div><div class="divider">--</div><div class="costValue">$780</div></li>
-        <li><div class="labelValue"><label class="radioBlock"><input type="radio" name="changeGroup"/><span></span>Up to 250 Users</label></div><div class="divider">--</div><div class="costValue">$780</div></li>
-  <li><div class="labelValue">Up to 250 Users</div><div class="divider">--</div><div class="costValue"><a href="javascript:;">Request A Quote</a> </div></li>
-            -->
-        </ul>
-        
-        </div>
-        {/section}
-        {/if}
-      </div>
-      <div class="modal-footer">
-        <a class="buynowBtn popupBuynow" data-id="{$product_info.id}" href="javascript:;">Buy Now</a>
-      </div>
-    </div>
-
-  </div>
-</div>
-  {/foreach}
-<!-- Modal dialog end -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
 </html>

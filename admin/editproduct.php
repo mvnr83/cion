@@ -6,7 +6,7 @@ $uid = $_GET['uid'];
 if($_POST[act] == 'edit')
 {
 
-	$sql_up = "update product_details set product_name = '".$_POST[pname]."',short_description = '".$_POST[sdec]."',html_file_name = '".$_POST[hfname]."',status = '".$_POST[status]."'";
+	$sql_up = "update product_details set product_name = '".$_POST[pname]."',short_description = '".addslashes($_POST[sdec])."',html_file_name = '".$_POST[hfname]."',status = '".$_POST[status]."'";
 	$file = $_FILES['tfpath']['tmp_name'];
 		$filename = $_FILES['tfpath']['name'];
 		//$name = explode(".",$filename);
