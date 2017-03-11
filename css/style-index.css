@@ -6699,3 +6699,17 @@ address,.address{ margin-bottom:0;}
     padding: 10px;
 }
 .mainproductssingle div{ background:none !important}
+
+
+@media only screen and (max-width: 600px) 
+{
+.shopingcarttable th
+{
+font:600 13px 'Open Sans'
+}
+
+.shopingcarttable thead>tr>th, .shopingcarttable tbody>tr>th, .shopingcarttable tfoot>tr>th, .shopingcarttable thead>tr>td, .shopingcarttable tbody>tr>td, .shopingcarttable tfoot>tr>td{ white-space:normal !important; padding:6px;font:400 13px 'Open Sans'}
+
+
+
+}

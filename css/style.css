@@ -4514,7 +4514,7 @@ span.filter {
 
 @media only screen and (max-width: 767px) {
 
-    .container { width: 95% }
+    .container { width: 99% }
 
     #portfoliolist .portfolio {
 
@@ -6699,7 +6699,26 @@ address,.address{ margin-bottom:0;}
     padding: 10px;
 }
 .mainproductssingle div{ background:none !important}
+.innerlogin .finput{ font:400 13px 'Open Sans'; float:left; width:100%; margin-bottom:10px;}
+.innerlogin .finput label{ float:left; width:50%;font:600 13px 'Open Sans';  }
+.innerlogin .finput div{ float:left; width:50%}
+.innerlogin .finput .txtfield{ padding:5px 10px; max-width:100%; width:100%}
+
+.chkshiping{font:600 13px 'Open Sans'; float:left; width:100%; margin-bottom:10px; }
 
 
+@media only screen and (max-width: 600px) 
+{
+.shopingcarttable th
+{
+font:600 13px 'Open Sans'
+}
+.maincontentbginner{ padding:0 !important}
 
+.shopingcarttable thead>tr>th, .shopingcarttable tbody>tr>th, .shopingcarttable tfoot>tr>th, .shopingcarttable thead>tr>td, .shopingcarttable tbody>tr>td, .shopingcarttable tfoot>tr>td{ white-space:normal !important; padding:6px;font:400 13px 'Open Sans'}
+
+.shopingcarttable table tr th:nth-child(2),.shopingcarttable table tr td:nth-child(2){ white-space:nowrap !important;}
+.innerlogin .finput label{ font:400 12px 'Open Sans'}
+.innerlogin  h3{font:600 15px 'Open Sans'; margin:0; padding:0 0 10px 0}
+}
 
