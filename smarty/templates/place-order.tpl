@@ -1,6 +1,6 @@
 {literal}<script src="Scripts/validator.js" type="text/javascript"></script>{/literal}
 
-    Fields marked with<span class="error"> * </span>are required.
+   
  
       <span style="color:#FF0000;">{$msg}</span>
  
@@ -11,7 +11,10 @@
 		 <input type="hidden" name="act" value="add">
                  <input type="hidden" name="cart_amount" value="{$cart_price}">
                 <div class="">
-<h2>Payment Information</h2>
+<h2 class="subheading">Payment Information</h2>
+
+ Fields marked with<span class="error"> * </span>are required.
+
 <div class="innerlogin">
 <div class="row">
 <div class="col-xs-12 col-md-6">
