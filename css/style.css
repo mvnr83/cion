@@ -6725,3 +6725,8 @@ font:600 13px 'Open Sans'
 .related{ max-width:100%; width:100%}
 }
 
+
+.productheader a img{    max-height: 56px;}
+
+.productContent{    max-height: 180px;}
+
