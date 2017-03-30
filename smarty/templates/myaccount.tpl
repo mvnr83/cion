@@ -147,11 +147,11 @@ function validate()
       </tr>
       <tr>
         <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
-          <tr>
+          <!-- <tr>
             <td>&nbsp;</td>
             <td align="left" valign="top"><span class="black1">Thank you for your interest. The item you have requested will be presented immediately after you provide some basic personal and corporate information.</span></td>
             <td>&nbsp;</td>
-          </tr>
+          </tr> -->
           <tr>
             <td width="4%">&nbsp;</td>
             <td width="94%" height="350" align="left" valign="top"><ul id="countrytabs" class="shadetabs1">

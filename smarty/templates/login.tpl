@@ -77,7 +77,7 @@ function check()
   </tr>
   <tr>
     <td align="right">&nbsp;</td>
-    <td align="left"><a href="register.php" ><strong>New User Sign Up</strong></a></td>
+    <td align="left"><a href="register.php" ><strong>New User Please Sign Up</strong></a></td>
   </tr>
   <tr>
     <td align="right">&nbsp;</td>

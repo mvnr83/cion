@@ -169,7 +169,7 @@ $requestAry['createTransactionRequest']['transactionRequest'] = $transactionRequ
 
 
 $reqStr = json_encode($requestAry);
-//exit();
+//exit($reqStr);
 
 
 
@@ -183,18 +183,30 @@ curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
 curl_setopt($ch, CURLOPT_POSTFIELDS, $reqStr);                                                                  
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); 
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+//curl_setopt($ch, CURLOPT_DNS_USE_GLOBAL_CACHE, false );
+//curl_setopt($ch, CURLOPT_DNS_CACHE_TIMEOUT, 2 );
+//curl_setopt($ch, CURLOPT_IPRESOLVE, CURL_IPRESOLVE_V4 );
 curl_setopt($ch, CURLOPT_HTTPHEADER, array(                                                                          
     'Content-Type: application/json',                                                                                
     'Content-Length: ' . strlen($reqStr))                                                                       
 );                                                                                                                   
 
-//if(curl_exec($ch) === false)
-//{
-//    echo 'Curl error: ' . curl_error($ch);
-//}
-
 
 $result = curl_exec($ch);
+
+
+if($result === false)
+{
+    //echo $reqStr;
+    //echo "<br />";
+    //echo 'Curl error: ' . curl_error($ch);
+    //exit();
+    $qry = "UPDATE authorize_trans_log SET api_response='".curl_error($ch)."' WHERE id = '".$logId."'";
+    $sql = mysql_query($qry);
+}
+
+
+
 $__BOM = pack('CCC', 239, 187, 191);
 // Careful about the three ='s -- they're all needed.
 while(0 === strpos($result, $__BOM))
@@ -211,8 +223,7 @@ if ($resAry != null && count($resAry) > 0)
   
   if ( isset($resAry['messages']['message'][0]['code']) && $resAry['messages']['message'][0]['code'] == 'I00001' && $resAry['transactionResponse']['responseCode'] == 1)
   {
-      //generate invoice pdf
-      //include_once('pdfvendor/create_pdf.php');
+      
       
       $qry = "UPDATE orders SET transaction_pending='Completed', payment_auth_code = '".$resAry['transactionResponse']['authCode']."', payment_trans_id = '".$resAry['transactionResponse']['transId']."' WHERE order_id = '".$insId."'";
       $sql = mysql_query($qry);
@@ -220,6 +231,13 @@ if ($resAry != null && count($resAry) > 0)
       
       $pay_success = 'yes';
       $send_downloadlink = 'yes';
+      
+      $pdfPath = 'invoicepdfs/'.$resAry['transactionResponse']['transId'].'.pdf';
+      
+      //generate invoice pdf
+      include_once('create_pdf.php');
+      
+      
       include_once('send_emails.php');
       header('Location: payment_success.php');
       exit();

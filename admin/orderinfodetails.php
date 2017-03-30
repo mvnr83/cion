@@ -2,8 +2,15 @@
 include("includes/application_start.php");
 include("includes/checksession.php");
 $item_number = $_GET['uid'];
-$productinfo = mysql_query("select * from order_items where order_id='".$item_number."'");	
-			$orderinfo = mysql_fetch_array(mysql_query("select * from orders where order_id ='".$item_number."'"));
+$productinfo = mysql_query("select * from order_items where order_id='".$item_number."'");
+
+$productinfo = mysql_query("SELECT oi.*,o.payment_date,o.amount,o.payment_trans_id FROM orders_info oi 
+         INNER JOIN orders o ON o.order_id = oi.order_id 
+         
+         WHERE o.order_id = '".$item_number."' ");
+
+
+$orderinfo = mysql_fetch_array(mysql_query("select * from orders where order_id ='".$item_number."'"));
 			
 			$subject_admin = "New Order Confirmation CionSystems";
 			$message_admin = '<html><head></head>
@@ -31,28 +38,61 @@ $productinfo = mysql_query("select * from order_items where order_id='".$item_nu
 						<th style="width:35%; padding: 0.6em 0;">Products</th>
 						<th style="width:10%; padding: 0.6em 0;">Number of Users</th>
 						<th style="width:15%; padding: 0.6em 0;">Price</th>						
-						<th style="width:20%; padding: 0.6em 0;">Total price</th>
+						<!-- <th style="width:20%; padding: 0.6em 0;">Total price</th> -->
 					</tr>';
 		if(mysql_num_rows($productinfo)!=0)
 		{
 				$totalammount = 0;
-			while($fetch_items=mysql_fetch_assoc($productinfo))
+                                $transId = '';
+			while($res=mysql_fetch_assoc($productinfo))
 			{
-				$res_product = mysql_query("select * from product_details where id=".$fetch_items['product_id']) or die(mysql_error());
-				$fetch = mysql_fetch_assoc($res_product);
-				$get_product = mysql_fetch_array(mysql_query("select * from product_details where id=".$fetch_items['product_id']));
-				$product=str_replace(' ','+',$get_product['product_name']);
-				
-				
-		$message_admin .='<tr bgcolor="#FFFFFF"><td height="42" align="center" valign="middle">&nbsp;&nbsp;&nbsp;'.$get_product['product_name'].'</td>
-             <td align="center" valign="middle">'.$fetch_items['product_no_users'].'</td>                    
-                    <td align="center" valign="middle">$'.$fetch_items['product_price'].'</td>
-					 <td align="center" valign="middle">$'.$fetch_items['product_price'].'</td>
+                            $totalammount = $res['amount'];
+                            $transId = $res['payment_trans_id'];
+                            $aqry = "SELECT * FROM subscription_plans p INNER JOIN product_details pd ON pd.id = p.product_id WHERE p.sub_id = '".$res['sub_id']."' ORDER BY p.addon_id ASC";
+                            $asql = mysql_query($aqry);
+                            while($ares = mysql_fetch_assoc($asql)){
+                                $res['subplans'] = $ares;
+                                $message_admin .='<tr bgcolor="#FFFFFF"><td height="42" align="center" valign="middle">&nbsp;&nbsp;&nbsp;'.$ares['product_name'].'</td>
+             <td align="center" valign="middle">'.$ares['plan_name'].'</td>                    
+                    <td align="center" valign="middle">'.$ares['price'].'</td>
+					 <!-- <td align="center" valign="middle">$'.$fetch_items['product_price'].'</td> -->
                     </tr>';
+                                if($ares['addon_id'] != 0){
+                                    $bqry = "SELECT * FROM subscription_addon p  WHERE p.addon_id = '".$ares['addon_id']."'";
+                                    $bsql = mysql_query($bqry);
+                                    while($bres = mysql_fetch_assoc($bsql)){
+                                        $message_admin .='<tr bgcolor="#FFFFFF"><td height="42" align="center" valign="middle">&nbsp;&nbsp;&nbsp;'.$bres['product_name'].'</td>
+             <td align="center" valign="middle">'.$bres['plan_name'].'</td>                    
+                    <td align="center" valign="middle">'.$bres['price'].'</td>
+					 <!-- <td align="center" valign="middle">$'.$fetch_items['product_price'].'</td> -->
+                    </tr>';
+                                        $res['addons'] = $bres;
+                                    }
+                                }
+                            }
+                            
+                            
+//				$res_product = mysql_query("select * from product_details where id=".$fetch_items['product_id']) or die(mysql_error());
+//				$fetch = mysql_fetch_assoc($res_product);
+//				$get_product = mysql_fetch_array(mysql_query("select * from product_details where id=".$fetch_items['product_id']));
+//				$product=str_replace(' ','+',$get_product['product_name']);
+				
+				
+//		$message_admin .='<tr bgcolor="#FFFFFF"><td height="42" align="center" valign="middle">&nbsp;&nbsp;&nbsp;'.$get_product['product_name'].'</td>
+//             <td align="center" valign="middle">'.$fetch_items['product_no_users'].'</td>                    
+//                    <td align="center" valign="middle">$'.$fetch_items['product_price'].'</td>
+//					 <td align="center" valign="middle">$'.$fetch_items['product_price'].'</td>
+//                    </tr>';
 					
-					$totalammount = $totalammount + $fetch_items['product_price'];
+					//$totalammount = $totalammount + $res['product_price'];
 						
 			}
+                        
+                        $message_admin .= '<tr style="text-align:right; font-weight:bold;">
+						<td>&nbsp;</td>
+						<td style="background-color:#F1AECF; padding:0.6em 0.4em;">Total Ammount</td>
+						<td style="background-color:#F1AECF; padding:0.6em 0.4em;">$'.($totalammount).'</td>
+					</tr>';
 				if(isset($orderinfo['shipping_cd']) && ($orderinfo['shipping_cd']=='on'))
 				{
 					
@@ -74,21 +114,21 @@ $productinfo = mysql_query("select * from order_items where order_id='".$item_nu
 					{
 						$tax = '0';
 					}
-			$message_admin .= '<tr style="text-align:right;">
-						<td>&nbsp;</td>
-						<td colspan="2" style="background-color:#DDE2E6; padding:0.6em 0.4em;">Tax</td>
-						<td style="background-color:#DDE2E6; padding:0.6em 0.4em;">$'.number_format($tax, 2, '.', '').'</td>
-					</tr>
-						<tr style="text-align:right;">
-						<td>&nbsp;</td>
-						<td colspan="2" style="background-color:#DDE2E6; padding:0.6em 0.4em;">Shipping</td>
-						<td style="background-color:#DDE2E6; padding:0.6em 0.4em;">$'.number_format($shipping, 2, '.', '').'</td>
-					</tr>
-					<tr style="text-align:right; font-weight:bold;">
-						<td>&nbsp;</td>
-						<td colspan="2" style="background-color:#F1AECF; padding:0.6em 0.4em;">Total Ammount</td>
-						<td style="background-color:#F1AECF; padding:0.6em 0.4em;">$'.($totalammount+$shipping+$tax).'</td>
-					</tr>';
+//			$message_admin .= '<tr style="text-align:right;">
+//						<td>&nbsp;</td>
+//						<td colspan="2" style="background-color:#DDE2E6; padding:0.6em 0.4em;">Tax</td>
+//						<td style="background-color:#DDE2E6; padding:0.6em 0.4em;">$'.number_format($tax, 2, '.', '').'</td>
+//					</tr>
+//						<tr style="text-align:right;">
+//						<td>&nbsp;</td>
+//						<td colspan="2" style="background-color:#DDE2E6; padding:0.6em 0.4em;">Shipping</td>
+//						<td style="background-color:#DDE2E6; padding:0.6em 0.4em;">$'.number_format($shipping, 2, '.', '').'</td>
+//					</tr>
+//					<tr style="text-align:right; font-weight:bold;">
+//						<td>&nbsp;</td>
+//						<td colspan="2" style="background-color:#F1AECF; padding:0.6em 0.4em;">Total Ammount</td>
+//						<td style="background-color:#F1AECF; padding:0.6em 0.4em;">$'.($totalammount+$shipping+$tax).'</td>
+//					</tr>';
 					
 		}
 		$countryname = mysql_fetch_array(mysql_query("select * from country where iso='".$orderinfo['billing_country']."'"));
@@ -141,7 +181,11 @@ $productinfo = mysql_query("select * from order_items where order_id='".$item_nu
   </tr>
 
   <tr>
-    <td align=center><a href="JavaScript:window.print();">Print</a></td>
+    <td align=center><a href="JavaScript:window.print();">Print</a>';
+                if($transId != '' && file_exists('../invoicepdfs/'.$transId.'.pdf')){
+                    $message_admin .= ' | <a href="http://dev.cionsystems.com/invoicepdfs/'.$transId.'.pdf" target="_blank">Invoice</a>';
+                }
+               $message_admin .= ' </td>
   </tr>
 </table>
 </body>

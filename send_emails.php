@@ -10,7 +10,8 @@ if($pay_success == 'yes'){
     <table width="100%" border="0" cellspacing="3" cellpadding="2">
     <tr><td >Hi '.$userInfo['first_name'].' '.$userInfo['last_name'].'</td></tr>
     <tr><td >&nbsp;</td></tr>
-    <tr><td >Your payment of $ '.str_replace('$','',$_POST['cart_amount']).' to Cionsystems is successful</td></tr>
+    <tr><td >Your payment of $'.str_replace('$','',$_POST['cart_amount']).' to Cionsystems is successful</td></tr>
+        <tr><td ><a href="http://dev.cionsystems.com/'.$pdfPath.'">Click Here</a> to view/download invoice</td></tr>
     <tr><td >You will receive a seperate email with the download links to each product you purchase</td></tr>
     <tr><td >&nbsp;</td></tr>
     <tr><td>Thanks,</td></tr>
@@ -37,7 +38,7 @@ if($pay_failed == 'yes'){
     <table width="100%" border="0" cellspacing="3" cellpadding="2">
     <tr><td >Hi '.$userInfo['first_name'].' '.$userInfo['last_name'].'</td></tr>
     <tr><td >&nbsp;</td></tr>
-    <tr><td >Your payment of $ '.str_replace('$','',$_POST['cart_amount']).' to Cionsystems is failed</td></tr>
+    <tr><td >Your payment of $'.str_replace('$','',$_POST['cart_amount']).' to Cionsystems is failed</td></tr>
     
     <tr><td >&nbsp;</td></tr>
     <tr><td>Thanks,</td></tr>

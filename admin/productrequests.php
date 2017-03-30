@@ -17,7 +17,7 @@ if($_POST['act'] == 'del')
 		$msg = "Status changed Successfully";
 		
 }
-*/$sql_sel = "select * from product_register";
+*/$sql_sel = "select * from product_register ORDER BY id desc";
 $res_sel = @mysql_query($sql_sel);
 $array= array();
 $name = array();

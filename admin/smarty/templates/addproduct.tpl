@@ -146,12 +146,12 @@ function clear()
                                 <td align="left" valign="middle"><input name="hfname" type="text" class="fieldwidth" /></td>
                                 <td align="left" valign="middle">&nbsp;</td>
                               </tr>
-							  <tr>
+						<!-- 	  <tr>
                                 <td align="right" valign="middle" class="aril">Trial File Path  :</td>
                                 <td align="center" valign="middle">&nbsp;</td>
                                 <td align="left" valign="middle"><input name="tfpath" type="file"  /></td>
                                 <td align="left" valign="middle">&nbsp;</td>
-                              </tr>
+                              </tr> -->
 							  <tr>
                                 <td align="right" valign="middle" class="aril">Original File Path  :</td>
                                 <td align="center" valign="middle">&nbsp;</td>
@@ -174,6 +174,19 @@ function clear()
                                 <td align="right" valign="middle" class="aril">Home page slider Image  :</td>
                                 <td align="center" valign="middle">&nbsp;</td>
                                 <td height="25" align="left" valign="middle"><input name="home_slider_image" type="file" /></td>
+                                <td align="left" valign="middle">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                <td align="right" valign="middle" class="aril">Product type :</td>
+                                <td align="center" valign="middle">&nbsp;</td>
+                                <td height="25" align="left" valign="middle">
+                                    <select name="product_type">
+								
+                                        <option value="1" selected>Normal</option>
+                                        <option value="2">Request Quote</option>
+                                        <option value="3">Free</option>
+                                    </select>
+                                </td>
                                 <td align="left" valign="middle">&nbsp;</td>
                               </tr>
                               <tr>

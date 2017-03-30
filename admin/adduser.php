@@ -1,6 +1,7 @@
 <?php
 include("includes/application_start.php");
 include("includes/checksession.php");
+echo date("Y-m-d H:i:s");
 if($_POST[act] =='add')
 {
 	$sql_chk = "select id from admin_users where user_name = '".$_POST[uname]."'";

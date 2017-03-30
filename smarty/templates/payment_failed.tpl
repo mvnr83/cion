@@ -3,7 +3,8 @@
 
           <tr>
 
-            <td colspan="3" align="left" valign="top"><table width="100%" height="32" border="0" align="left" cellpadding="0" cellspacing="0" background="images/inner_headingbg.gif" class="whitestr">
+            <td colspan="3" align="left" valign="top">
+                <table width="100%" height="32" border="0" align="left" cellpadding="0" cellspacing="0" background="images/inner_headingbg.gif" class="whitestr">
 
 			
 
@@ -95,8 +96,12 @@
 
           <tr>
 
-            <td align="center" valign="top" class="ver11" colspan="3"><strong> Your payment was decliend / failed</strong>  
-                <br /> The transaction has been declined because of an AVS mismatch. The address provided does not match with the billing address of cardholder. Please <a href="checkout.php" style="color:#647781">Try again</a>.
+              <td align="center" valign="top" class="ver11" colspan="3"><strong> Your payment was decliend / failed</strong></td></tr>
+          <tr>
+
+              <td align="center" valign="top" class="ver11" colspan="3">
+                The transaction has been declined because of an AVS mismatch. The address provided does not match with the billing address of cardholder. Please <a href="checkout.php" style="color:#647781">Try again</a>.
+                
 
     
 

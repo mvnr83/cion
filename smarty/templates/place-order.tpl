@@ -121,16 +121,16 @@
 <script language="JavaScript" type="text/javascript">
     function fnReplicate(obj){
 
-        if($(obj).prop("checked") == true){
-            $('input[name="billing_company"]').val($('input[name="shipping_company"]').val());
-            $('input[name="billing_name"]').val($('input[name="shipping_name"]').val());
-            $('input[name="billing_address1"]').val($('input[name="shipping_address1"]').val());
-            $('input[name="billing_address2"]').val($('input[name="shipping_address2"]').val());
-            $('input[name="billing_city"]').val($('input[name="shipping_city"]').val());
-            $('input[name="billing_state"]').val($('input[name="shipping_state"]').val());
-            $('input[name="shipping_country"]').val($('input[name="shipping_country"]').val());
-            $('input[name="billing_pcode"]').val($('input[name="shipping_pcode"]').val());
-            $('input[name="billing_phone"]').val($('input[name="shipping_phone"]').val());
+        if(j(obj).prop("checked") == true){
+            j('input[name="billing_company"]').val(j('input[name="shipping_company"]').val());
+            j('input[name="billing_name"]').val(j('input[name="shipping_name"]').val());
+            j('input[name="billing_address1"]').val(j('input[name="shipping_address1"]').val());
+            j('input[name="billing_address2"]').val(j('input[name="shipping_address2"]').val());
+            j('input[name="billing_city"]').val(j('input[name="shipping_city"]').val());
+            j('input[name="billing_state"]').val(j('input[name="shipping_state"]').val());
+            j('input[name="shipping_country"]').val(j('input[name="shipping_country"]').val());
+            j('input[name="billing_pcode"]').val(j('input[name="shipping_pcode"]').val());
+            j('input[name="billing_phone"]').val(j('input[name="shipping_phone"]').val());
         }
     }
     

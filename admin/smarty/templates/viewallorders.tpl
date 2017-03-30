@@ -239,7 +239,7 @@ function showbuyuser(buy_id)
                               <tr>
 
                                 <td height="29" align="center" valign="middle" class="wite">Orders
-                                Management&nbsp; (Total Orders : {$total_members})</td>
+                                Management&nbsp; (Total Orders : {$totalCount})</td>
                             </tr>
 
                           </table></td>
@@ -264,7 +264,7 @@ function showbuyuser(buy_id)
 								<td width="12%" align="center" valign="middle" class="Sub_menu">Name / Company /
 								  Phone </td>
 								<td width="1%" align="center" valign="middle" class="Sub_menu">&nbsp;</td>
-								<td width="20%" align="center" valign="middle" class="Sub_menu">Email</td>							
+								<td width="20%" align="center" valign="middle" class="Sub_menu">User Email</td>							
 								<td width="24%" align="center" valign="middle" class="Sub_menu">Status</td>
                                 <td width="2%" align="center" valign="middle" class="Sub_menu">View</td>                                
 								<td width="12%" align="center" valign="middle" class="Sub_menu">Transaction Id</td>
@@ -277,10 +277,11 @@ function showbuyuser(buy_id)
 										<td class="aril" align="center">{$array[list].order_id}</td>
 
 										<td align="center" class="aril">{$array[list].payment_date}</td>
-										<td align="center" class="aril">{$array[list].amount}</td>
+										<td align="center" class="aril">${$array[list].amount}</td>
 										<td class="aril" align="center">{$array[list].billing_name} <br />{$array[list].billing_company}<br />{$array[list].billing_phone}</td>
 										<td class="aril" align="center"></td>										
-										<td class="aril" align="center">{$array[list].billing_email}</td>
+										<!-- <td class="aril" align="center">{$array[list].billing_email}</td> -->
+                                                                                <td class="aril" align="center">{$array[list].email}</td>
 										<td class="aril" align="center">{if $array[list].transaction_pending == 'Completed'}Completed{else}Pending{/if}</td>
                                         <td class="aril" align="center"><img src="images/b_view.png"  width="16"/ onclick="javascript:showbuyuser('{$array[list].order_id}')" style="cursor:pointer;" title="View Order Info"></td>
 									  <td class="aril" align="center">{$array[list].transaction_id}</td>

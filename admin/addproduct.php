@@ -71,8 +71,8 @@ if($_POST[act] =='add')
 				move_uploaded_file($file4,$path4);
 			}
 		}
-		$sql_ins = "insert into product_details(product_name,product_code,product_image,download_image,home_slider_image,short_description,html_file_name,trial_file_path,
-					original_file_path,posted_on,status,subscription_plan_name,subscription_addon_name_1,subscription_addon_name_2) values('".$_POST[pname]."','".$_POST[pcode]."','".$filename2."','".$filename3."','".$filename4."','".addslashes($_POST[sdec])."',
+		$sql_ins = "insert into product_details(product_type,product_name,product_code,product_image,download_image,home_slider_image,short_description,html_file_name,trial_file_path,
+					original_file_path,posted_on,status,subscription_plan_name,subscription_addon_name_1,subscription_addon_name_2) values('".$_POST['product_type']."', '".$_POST[pname]."','".$_POST[pcode]."','".$filename2."','".$filename3."','".$filename4."','".addslashes($_POST[sdec])."',
 					'".$_POST[hfname]."','".$filename."','".$filename1."',now(),'".$_POST[status]."','".$_POST['subscription_plan_name']."','".$_POST['subscription_addon_name_1']."','".$_POST['subscription_addon_name_2']."')";
                 
 		$res_ins = @mysql_query($sql_ins);

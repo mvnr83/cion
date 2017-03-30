@@ -146,12 +146,12 @@ function clear()
                                 <td align="left" valign="middle"><input name="hfname" type="text" class="fieldwidth" value="{$array[0].html_file_name}" /></td>
                                 <td align="left" valign="middle">&nbsp;</td>
                               </tr>
-							  <tr>
+							  <!-- <tr>
                                 <td align="right" valign="middle" class="aril">Trial File Path  :</td>
                                 <td align="center" valign="middle">&nbsp;</td>
                                 <td align="left" valign="middle"><img src="../trail/{$array[0].trial_file_path}" name="im1" /><br /><input name="tfpath" type="file"  /></td>
                                 <td align="left" valign="middle">&nbsp;</td>
-                              </tr>
+                              </tr> -->
 							  <tr>
                                 <td align="right" valign="middle" class="aril">Original File Path  :</td>
                                 <td align="center" valign="middle">&nbsp;</td>
@@ -176,7 +176,19 @@ function clear()
                                 <td height="25" align="left" valign="middle">{if $array[0].home_slider_image neq ''}<img style="width:150px; height:100px;" src="../product_images/{$array[0].home_slider_image}" name="im4" /><br />{/if}<input name="home_slider_image" type="file" /></td>
                                 <td align="left" valign="middle">&nbsp;</td>
                               </tr>
-                              
+                              <tr>
+                                <td align="right" valign="middle" class="aril">Product type :</td>
+                                <td align="center" valign="middle">&nbsp;</td>
+                                <td height="25" align="left" valign="middle">
+                                    <select name="product_type">
+								
+                                        <option value="1" {if $array[0].product_type == "1"} selected{/if}>Normal</option>
+                                        <option value="2" {if $array[0].product_type == "2"} selected{/if}>Request Quote</option>
+                                        <option value="3" {if $array[0].product_type == "3"} selected{/if}>Free</option>
+                                    </select>
+                                </td>
+                                <td align="left" valign="middle">&nbsp;</td>
+                              </tr>
                               
                               <tr>
                                 <td align="right" valign="middle" class="aril">Subscription plan add-on name 1  :</td>

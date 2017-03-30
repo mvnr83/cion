@@ -1528,3 +1528,5 @@ h3.footerheadings{color:#FFF !important}
 table td p:first-child{ margin-top:0; padding-top:0}
 table td { padding-right:10px; text-align:left}
 table th{ text-align:center; padding-bottom:10px}
+
+.grid{padding-right:0px !important; text-align:center !important}

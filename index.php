@@ -3,7 +3,7 @@ error_reporting(E_ALL^E_NOTICE);
 session_start(); 
 require_once("admin/includes/db_connect.php");
 //get all images marked for slider
-$sql = mysql_query('SELECT * FROM product_details WHERE display_home_page = 1 and status = "ACTIVE"') or die(mysql_error());
+$sql = mysql_query('SELECT * FROM product_details WHERE display_home_page = 1 and status = "ACTIVE" ORDER BY order_product ASC');
 $images = array();
 while($res = mysql_fetch_assoc($sql)){
     $images[] = $res;
@@ -314,7 +314,19 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
      <div class="mainslides">
     <div class="custom"><a href="<?=$images[$i]['html_file_name']?>"> <div class="mainproductssingle"><div><img src="<?=(($images[$i]['home_slider_image'] != '' && file_exists('product_images/'.$images[$i]['home_slider_image']))?'product_images/'.$images[$i]['home_slider_image']:'images/products/multifactors_img.png')?>"></div></div></a>
       <span class="pbottom"> <a href="<?=$images[$i]['html_file_name']?>"> <span class="ptitle"><?=$images[$i]['product_name']?></span></a>
-              <a href="<?=$images[$i]['html_file_name']?>#buy" class="sliderlinkbuy">Buy Now</a> <a href="<?=$images[$i]['html_file_name']?>" class="sliderlinktry">Try Now</a></span></div>
+          
+              <a href="<?=$images[$i]['html_file_name']?>#buy" class="sliderlinkbuy">Buy</a> 
+              
+              <?php if(!isset($_SESSION['username']) && $_SESSION['username'] == ''){
+                  $tryHref = 'href="javascript:void(0);" onclick="javascript:return login(\''.$images[$i]['id'].'\',\''.addslashes($images[$i]['product_name']).'\');"';
+              } else { 
+                  $tryHref = 'href="download.php?id='.$images[$i]['id'].'"';
+              }
+              ?>
+              
+              <a <?=$tryHref?> class="sliderlinktry">Try</a>
+          
+      </span></div>
     </div>
  <?php } ?>
  <!-- <div class="mainslides">
@@ -581,7 +593,35 @@ $(this).closest('.tabing').next('.no-of-users').show();
 
 })
 
+function login(id, pname) {
+
+        document.getElementById('product_id').value = id;
+
+        document.getElementById('keyword').value = 'trial';
+
+        document.getElementById('download_type').value = 'trial';
+
+        document.getElementById('pname').value = pname;
+
+        if (id != '') {
+
+            document.form1.action = "login.php";
+
+            document.form1.submit();
+
+        }
+
+
+
+}
+
 </script>
+<form name="form1" id="form1">
+    <input type="hidden" name="product_id" id="product_id" value="">
+    <input type="hidden" name="keyword" id="keyword" value="">
+    <input type="hidden" name="download_type" id="download_type" value="">
+    <input type="hidden" name="pname" id="pname" value="">
+</form>
 <?php /*?><div id="home-services" style="display:none" >
   <div class="container">
     <div class="row"> 

@@ -23,6 +23,12 @@ while($res = mysql_fetch_assoc($sql)){
             $res['transaction_pending'] = 'N/A';
     }
     
+    if(file_exists('invoicepdfs/'.$res['payment_trans_id'].'.pdf')){
+        $res['invoice_link'] = '<a href="invoicepdfs/'.$res['payment_trans_id'].'.pdf" target="_blank">Invoice</a>';
+    } else {
+        $res['invoice_link'] = '&dash;';
+    }
+    
     $parray[] = $res;
 }
 

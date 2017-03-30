@@ -145,7 +145,10 @@ function clear()
                                         <td width="67" height="23" align="left" valign="middle"><label>
                                           <input name="submit" type="submit" class="formbutton" value="Submit" onclick="javascript:return check();"/>
                                         </label></td>
-                                        <td width="114" align="left" valign="top"><input name="submit2" type="reset" class="formbutton" value="Cancel"  onclick="javscript:clear();" /></td>
+                                        <td width="114" align="left" valign="top">
+                                            <!-- <input name="submit2" type="reset" class="formbutton" value="Cancel"  onclick="javscript:clear();" /> -->
+                                            <input name="submit2" type="button" class="formbutton" value="Cancel"  onclick="javscript:window.location.href='viewwhitepapers.php';" />
+                                            </td>
                                       </tr>
                                     </table>
                                   <a href="#"></a></td>

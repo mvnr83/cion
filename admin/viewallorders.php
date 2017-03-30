@@ -28,7 +28,7 @@ $rowcount = 0;
 $tbl_name="orders";		//your table name
 // How many adjacent pages should be shown on each side?
 $adjacents = 3;
-$query = "SELECT COUNT(*) as num FROM $tbl_name";
+$query = "SELECT COUNT(o.order_id) as num FROM $tbl_name  as o INNER JOIN users u ON o.user_id = u.id ";
 $total_pages = mysql_fetch_array(mysql_query($query));
 $total_pages = $total_pages[num];
 /* Setup vars for query. */
@@ -40,7 +40,7 @@ $total_pages = $total_pages[num];
 	else
 		$start = 0;								//if no page var is given, set start to 0
 /* Get data. */
-	$sql = "SELECT * FROM $tbl_name ORDER BY order_id DESC LIMIT $start, $limit";
+	$sql = "SELECT o.*,u.email FROM ".$tbl_name." as o INNER JOIN users u ON o.user_id = u.id ORDER BY order_id DESC LIMIT $start, $limit";
 	$result = @mysql_query($sql);
 	/* Setup page vars for display. */
 	if ($page == 0) $page = 1;					//if no page var is given, default to 1.
@@ -142,6 +142,7 @@ while($row_sel = @mysql_fetch_assoc($result))
 /*End of Pagination */
 $smarty->assign("pagination",$pagination);
 $smarty->assign("total_members",$tot_count);
+$smarty->assign('totalCount',$total_pages);
 $smarty->assign("msg",$msg);
 $smarty->assign("array",$array);
 $smarty->assign("rowcount",$rowcount);

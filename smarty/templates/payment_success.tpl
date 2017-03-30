@@ -95,7 +95,7 @@
 
           <tr>
 
-            <td align="center" valign="top" class="ver11" colspan="3"><strong> Thank you for your payment in CionSystems</strong>  
+            <td align="center" valign="top" class="ver11" colspan="3" style="padding-right:0px !important; text-align:center !important"><strong> Thank you for your payment in CionSystems</strong>  
 
     
 
@@ -104,7 +104,7 @@
           </tr>
           <tr>
 
-            <td align="center" valign="top" class="ver11" colspan="3"><strong> An email will sent with product information. </strong>  
+            <td align="center" valign="top" class="ver11" colspan="3" style="padding-right:0px !important; text-align:center !important"><strong> An email will sent with product information. </strong>  
 
     
 

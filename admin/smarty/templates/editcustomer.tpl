@@ -231,7 +231,10 @@ function clear()
 
                                         </label></td>
 
-                                        <td width="114" align="left" valign="top"><input name="submit2" type="submit" class="formbutton" value="Cancel"  onclick="javscript:clear();" /></td>
+                                        <td width="114" align="left" valign="top">
+                                            <!-- <input name="submit2" type="submit" class="formbutton" value="Cancel"  onclick="javscript:clear();" /> -->
+                                            <input name="submit2" type="button" class="formbutton" value="Cancel"  onclick="javscript:window.location.href='viewcustomers.php';" />
+                                        </td>
 
                                       </tr>
 
