@@ -157,7 +157,7 @@ if(window.location.hash) {
     <div class="navbar-collapse collapse">
 
       <ul class="nav navbar-nav">
-        <li > <a href="index.php">Home </a> </li>
+        <li > <a href="index.php">Home</a> </li>
         <li class="dropdown"> 
             <a class="dropdown-toggle" data-close-others="false" data-delay="0" onClick="fnRedirect(this);" 
         data-hover="dropdown" data-toggle="dropdown" href="solution_all.php">Solutions <i class="fa fa-angle-down"></i> </a>
@@ -180,7 +180,7 @@ if(window.location.hash) {
           <ul class="dropdown-menu">
 		   <li><a href="mfauthentication.php">MultiFactor Autentication</a> </li>
  <li> <a href="active-directory-manager.php">Active Directory Manager Pro</a> </li>
- </li>
+
 <li> <a href="office365_bundle.php" tabindex="-1">Office 365 | Azure Management Simplified</a> </li>
             <li><a href="active-directory-gpomanager.php">GPO Manager</a> </li>
             <li> <a href="cim_selfservice.php">DirSync for O365 | Azure</a> </li>
