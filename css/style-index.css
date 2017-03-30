@@ -3677,7 +3677,7 @@ ul#filters > .active > span {
 
 }
 
-#searchÂ id="search" { background-color: #fff }
+#searchÃ‚ id="search" { background-color: #fff }
 
 .btn-lg {
 
@@ -4361,7 +4361,7 @@ ol.unstyled {
 
 @media (max-width: 768px) {
     
-    .pbottom a.sliderlinktry{    clear: left;float: left; margin-top:10px; margin-left:10px}
+    .pbottom a.sliderlinktry{   float: left; margin-top:10px; margin-left:10px}
 .pbottom a.sliderlinkbuy{float: left; margin-top:10px;}
 .nav > li { float:left; width:100%; clear:both}
 .dropdown-menu a:hover{ background:#fc9023 !important}
@@ -6724,5 +6724,5 @@ font:600 13px 'Open Sans'
 	.sliderlinkbuy{    clear: both !important;
     float: left!important;
     margin: 10px 0 0 10px!important;
-}}
+}
 }
