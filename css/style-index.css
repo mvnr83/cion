@@ -6713,3 +6713,16 @@ font:600 13px 'Open Sans'
 
 
 }
+
+
+
+@media only screen and (max-width: 700px) 
+{
+.sliderlinktry{float: left!important;
+    margin: 10px 0 0 10px!important;}
+	
+	.sliderlinkbuy{    clear: both !important;
+    float: left!important;
+    margin: 10px 0 0 10px!important;
+}}
+}
