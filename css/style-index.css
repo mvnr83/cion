@@ -3677,7 +3677,7 @@ ul#filters > .active > span {
 
 }
 
-#searchÃ‚ id="search" { background-color: #fff }
+#searchÃƒâ€š id="search" { background-color: #fff }
 
 .btn-lg {
 
@@ -6716,8 +6716,10 @@ font:600 13px 'Open Sans'
 
 
 
-@media only screen and (max-width: 700px) 
+@media only screen and (max-width: 767px) 
 {
+.pbottom a:first-child{ width:100%; clear:both; float:left }
+
 .sliderlinktry{float: left!important;
     margin: 10px 0 0 10px!important;}
 	
