@@ -6728,3 +6728,14 @@ font:600 13px 'Open Sans'
     margin: 10px 0 0 10px!important;
 }
 }
+
+
+.scheduledemo:before{    background: url(../img/demoicon.png) no-repeat;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .6;
+	width:10px; height:10px; top:2px
+}
+.scheduledemo{    padding-left: 15px;}
