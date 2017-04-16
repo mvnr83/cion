@@ -20,15 +20,15 @@ if(isset($_POST['keyword']) && $_POST['keyword']=="send" && ($ClientIp!="94.242.
 {
 session_start();if( $_SESSION['security_code'] != $_POST['security_code'] || empty($_SESSION['security_code'] ) ) { $msg = "<div align='center' class='error'>Please Enter correct captcha</div>";		$smarty->assign("msg",$msg);		unset($_SESSION['security_code']);   }   else   {
 
-	$sql_chk = "select buy_id from buy where email = '".$_POST[email]."'";
-	 $res_chk = @mysql_query($sql_chk);
-	if(@mysql_num_rows($res_chk)>0)
-		{
-		$msg = "<div align='center' class='error'>Email address already exists</div>";
-		$smarty->assign("msg",$msg);
-		}
-	
-		 else{
+//	$sql_chk = "select buy_id from buy where email = '".$_POST[email]."'";
+//	 $res_chk = @mysql_query($sql_chk);
+//	if(@mysql_num_rows($res_chk)>0)
+//		{
+//		$msg = "<div align='center' class='error'>Email address already exists</div>";
+//		$smarty->assign("msg",$msg);
+//		}
+//	
+//		 else{
 		
 		$sql = "insert into buy (product,name,phone,email,company,designation,domains,users,description,created_on) values ('".$_POST['proname']."','".$_POST['first_name']."','".$_POST['phone']."','".addslashes(mysql_real_escape_string($_POST['email']))."','".$_POST['company']."','".$_POST['designation']."','".$_POST['domain']."','".$_POST['number_users']."','".$_POST['description']."',now())";
 $rs = mysql_query($sql);
@@ -79,7 +79,7 @@ $smarty->assign("msg",$msg);
 			}
 }
 unset($_SESSION['security_code']);
-}
+//}
 	
 	}	
 }

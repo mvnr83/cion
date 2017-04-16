@@ -128,7 +128,7 @@
             j('input[name="billing_address2"]').val(j('input[name="shipping_address2"]').val());
             j('input[name="billing_city"]').val(j('input[name="shipping_city"]').val());
             j('input[name="billing_state"]').val(j('input[name="shipping_state"]').val());
-            j('input[name="shipping_country"]').val(j('input[name="shipping_country"]').val());
+            j('input[name="billing_country"]').val(j('input[name="shipping_country"]').val());
             j('input[name="billing_pcode"]').val(j('input[name="shipping_pcode"]').val());
             j('input[name="billing_phone"]').val(j('input[name="shipping_phone"]').val());
         }

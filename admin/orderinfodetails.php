@@ -90,7 +90,7 @@ $orderinfo = mysql_fetch_array(mysql_query("select * from orders where order_id 
                         
                         $message_admin .= '<tr style="text-align:right; font-weight:bold;">
 						<td>&nbsp;</td>
-						<td style="background-color:#F1AECF; padding:0.6em 0.4em;">Total Ammount</td>
+						<td style="background-color:#F1AECF; padding:0.6em 0.4em;">Total Amount</td>
 						<td style="background-color:#F1AECF; padding:0.6em 0.4em;">$'.($totalammount).'</td>
 					</tr>';
 				if(isset($orderinfo['shipping_cd']) && ($orderinfo['shipping_cd']=='on'))

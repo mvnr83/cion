@@ -215,7 +215,7 @@ if(window.location.hash) {
                       "dropdown" data-toggle="dropdown"  onclick="fnRedirect(this);" href="aboutus.php">Company <i class="fa fa-angle-down"></i> </a>
           <ul class="dropdown-menu">
             <li> <a href="http://cionsystems.com/aboutus.php">About Us</a> </li>
-            <li> <a href="http://cionsystems.com/events/">News and Events</a> </li>
+            <!-- <li> <a href="http://cionsystems.com/events/">News and Events</a> </li> -->
             <li> <a href="http://cionsystems.com/careers.php">Careers</a> </li>
             <li> <a href="http://cionsystems.com/press/">Press</a> </li>
             <li> <a href="http://cionsystems.com/contactus.php">Contact Us </a> </li>
