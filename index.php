@@ -973,13 +973,84 @@ var j = jQuery.noConflict();
    
 
     j(document).on('ready', function() {
-	if(j(".regular").length >0)
+	/*if(j(".regular").length >0)
       j(".regular").slick({
         dots: false,
         infinite: false,
         slidesToShow: 2,
         slidesToScroll: 1
+      });*/
+	  
+	  
+	  if(j(".regular").length >0)
+	  {
+	    j(".regular").slick({
+        dots: false,
+        infinite: false,
+        slidesToShow: 2,
+        slidesToScroll: 1,  responsive: [{ 
+        breakpoint: 600,
+        settings: {
+            dots: false,
+             dots: false,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1, autoplay:false
+        } 
+    }]
       });
+	  }
+ if(j(".regular1").length >0)
+	  {
+	  
+	    j(".regular1").slick({
+        dots: false,
+        infinite: false,
+        slidesToShow: 2,
+        slidesToScroll: 1,  responsive: [{ 
+        breakpoint: 600,
+        settings: {
+            dots: false,
+             dots: false,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1, autoplay:false
+        } 
+    }]
+      });
+	  
+	  }
+	   if(j(".solutionthumb").length >0)
+	   {
+		j(".solutionthumb").slick({
+
+     dots: false,
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1, autoplay:false,
+
+    responsive: [{ 
+        breakpoint: 600,
+        settings: {
+            dots: false,
+             dots: false,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1, autoplay:false
+        } 
+    }]
+});
+	 
+	 } 
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
 	  
 	  
 	  
@@ -1120,57 +1191,7 @@ function fnRedirect(Obj){
 	
 	
 	
-      $(".regular").slick({
-        dots: false,
-        infinite: false,
-        slidesToShow: 2,
-        slidesToScroll: 1,  responsive: [{ 
-        breakpoint: 600,
-        settings: {
-            dots: false,
-             dots: false,
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1, autoplay:false
-        } 
-    }]
-      });
-	  
-	    $(".regular1").slick({
-        dots: false,
-        infinite: false,
-        slidesToShow: 2,
-        slidesToScroll: 1,  responsive: [{ 
-        breakpoint: 600,
-        settings: {
-            dots: false,
-             dots: false,
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1, autoplay:false
-        } 
-    }]
-      });
-	  
-	  
-		$(".solutionthumb").slick({
-
-     dots: false,
-        infinite: true,
-        slidesToShow: 2,
-        slidesToScroll: 1, autoplay:false,
-
-    responsive: [{ 
-        breakpoint: 600,
-        settings: {
-            dots: false,
-             dots: false,
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1, autoplay:false
-        } 
-    }]
-});
+    
 	
 	  
    
