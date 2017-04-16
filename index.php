@@ -9,6 +9,42 @@ while($res = mysql_fetch_assoc($sql)){
     $images[] = $res;
 }
 
+
+$sql = mysql_query("SELECT * FROM product_details WHERE status = 'Active' ORDER BY order_product ASC ");
+
+$products = array();
+while($res = mysql_fetch_assoc($sql)){
+    if(!file_exists('product_images/'.$res['product_image'])){
+        $res['product_image'] = 'images/newproducts/productsheader1.jpg';
+    }else{
+        $res['product_image'] = 'product_images/'.$res['product_image'];
+    }
+    $products[$res['id']] = $res;
+    $products[$res['id']]['sub_plans'] = array();
+    $products[$res['id']]['plans'] = array();
+    $pSql = mysql_query("SELECT * FROM subscription_plans  WHERE product_id = '".$res['id']."' AND status = 1 AND addon_id = 0 ORDER BY sub_id ASC");
+    
+    while($presaa = @mysql_fetch_assoc($pSql)){
+        
+        $products[$res['id']]['plans'][] = $presaa;
+    }
+    $pSql1 = mysql_query("SELECT * FROM subscription_addon  WHERE product_id = '".$res['id']." AND status = 1 ORDER BY addon_order ASC'");
+    
+    while($presq = mysql_fetch_assoc($pSql1)){
+        //$products[$res['id']]['addons'][] = $pres;
+        $pSqla = mysql_query("SELECT * FROM subscription_plans  WHERE product_id = '".$res['id']."' AND addon_id = '".$presq['addon_id']."' AND status = 1 ORDER BY sub_id ASC");
+    
+        while($presa = mysql_fetch_assoc($pSqla)){
+            $presq['sub_plans'][] = $presa;
+        }
+        $products[$res['id']]['addons'][] = $presq;
+    }
+    
+    
+    //$products[$res['id']]['sub_plans_json'] = json_encode($products[$res['id']]['sub_plans']);
+}
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -175,7 +211,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
                       "dropdown" data-toggle="dropdown"  onclick="fnRedirect(this);" href="aboutus.php">Company <i class="fa fa-angle-down"></i> </a>
           <ul class="dropdown-menu">
             <li> <a href="aboutus.php">About Us</a> </li>
-            <li> <a href="events/">News and Events</a> </li>
+            <!-- <li> <a href="events/">News and Events</a> </li> -->
             <li> <a href="careers.php">Careers</a> </li>
             <li> <a href="press/">Press</a> </li>
             <li> <a href="contactus.php">Contact Us </a> </li>
@@ -224,7 +260,25 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
 
 
 <div class="productBlockmain">
-    <div class="welcomeblock productBlock"><ul><li><a href="active-directory-manager.php">Secure and Manage identities (all resources) of Active Directory, OpenLDAP, Office 365, Azure etc. <!-- Manage identities (users, computers, and all other resources) of Active Directory, OpenLDAP., Office 365, Azure and other SaaS applications. --></a></li><li><a href="ADProvisioning.php">Automated user and access provisioning / de-provisioning<!--Automated user and access provisioning / de-provisioning processes--></a></li><!-- <li><a href="Cloud_Identity_Minder.php">Office365/Azure directory sync from Active Directory and openldap</a></li> --><li><a href="Cloud_Identity_Minder.php">Office365 Email and one drive migration, archiving and management</a></li><li><a href="Cloud_Identity_Minder.php">Web Identity API for Web/SaaS application, use your existing IDM store</a></li><li><a href="SystemInformation_comparison.php">Track configuration, registry and file changes of Server, desktops</a></li><li><a href="active-directory-recovery.php">Active directory backup and recovery down to single attribute</a></li></ul><ul>    <li><a href="Enterprise-Self-Service.php">Multifactor authentication for virtual systems, Windows servers, desktops, laptops and any cloud</a></li>        <li><a href="active-directory-gpomanager.php">Group policies tracking, authoring, testing and management</a></li>    <li><a href="active-directory-ChangeNotifier.php">Active Directory Change tracking, monitoring, auditing, reporting</a></li>    <!-- <li><a href="Cloud_Identity_Minder.php">Office365 user, group, license management and reporting</a></li> --><li><a href="Enterprise-Self-Service.php">Self service, password, profile and full automated access management</a></li><li><a href="Enterprise-Self-Service.php">Reset Active Directory password from Windows login</a></li><li><a href="Enterprise-Self-Service.php">Password sync from Active Directory to other sources openLDAP, etc.</a></li></ul></div>
+    <div class="welcomeblock productBlock">
+        <ul>
+            <li><a href="active-directory-manager.php">Secure and Manage identities (all resources) of Active Directory, OpenLDAP, Office 365, Azure etc.  <!-- Manage identities (users, computers, and all other resources) of Active Directory, OpenLDAP., Office 365, Azure and other SaaS applications. --></a></li>
+            <li><a href="ADProvisioning.php">Automated user and access provisioning / de-provisioning</a></li> 
+            <li><a href="Cloud_Identity_Minder.php">Office365/Azure directory sync from Active Directory and openldap</a></li> 
+            <li><a href="Cloud_Identity_Minder.php">Office365 Email and one drive migration, archiving and management</a></li>
+            <li><a href="Cloud_Identity_Minder.php">Web Identity API for Web/SaaS application, use your existing IDM store</a></li>
+            <li><a href="SystemInformation_comparison.php">Track configuration, registry and file changes of Server, desktops</a></li>
+            <li><a href="active-directory-recovery.php">Active directory backup and recovery down to single attribute</a></li>
+        </ul>
+        <ul>    
+            <li><a href="Enterprise-Self-Service.php">Multifactor authentication for virtual systems, Windows servers, desktops, laptops and any cloud</a></li>
+            <li><a href="active-directory-gpomanager.php">Group policies tracking, authoring, testing and management</a></li>
+            <li><a href="active-directory-ChangeNotifier.php">Active Directory Change tracking, monitoring, auditing, reporting</a></li>
+            <li><a href="Cloud_Identity_Minder.php">Office365 user, group, license management and reporting</a></li>
+            <li><a href="Enterprise-Self-Service.php">Self service, password, profile and full automated access management</a></li>
+            <li><a href="Enterprise-Self-Service.php">Reset Active Directory password from Windows login</a></li>
+            <li><a href="Enterprise-Self-Service.php">Password sync from Active Directory to other sources openLDAP, etc.</a></li>
+        </ul></div>
     
     
     
@@ -304,18 +358,20 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
  
  
  <section class="regular slider col-xs-12 regularnew">
- <div class="mainslides">
+ <!-- <div class="mainslides">
     <div class="custom"><a href="mfauthentication.php"> <div class="mainproductssingle"><div><img src="images/products/multifactors_img.png"></div></div></a>
       <span class="pbottom"> <a href="mfauthentication.php"> <span class="ptitle">Multifactor Authentication</span></a>
              <?php /*?> <a href="#" class="sliderlinkbuy">Buy Now</a><?php */?> <a href="mfauthentication.php" class="sliderlinktry">Try Now</a></span></div>
     </div>    
+ 
+ -->
  <?php for($i=0; $i<count($images); $i++){ ?>
  
      <div class="mainslides">
     <div class="custom"><a href="<?=$images[$i]['html_file_name']?>"> <div class="mainproductssingle"><div><img src="<?=(($images[$i]['home_slider_image'] != '' && file_exists('product_images/'.$images[$i]['home_slider_image']))?'product_images/'.$images[$i]['home_slider_image']:'images/products/multifactors_img.png')?>"></div></div></a>
       <span class="pbottom"> <a href="<?=$images[$i]['html_file_name']?>"> <span class="ptitle"><?=$images[$i]['product_name']?></span></a>
           
-              <a href="<?=$images[$i]['html_file_name']?>#buy" class="sliderlinkbuy">Buy</a> 
+              <a  class="sliderlinkbuy" data-toggle="modal" data-target="#myModal-<?=$images[$i]['id']?>" style="cursor: pointer">Buy Now</a> 
               
               <?php if(!isset($_SESSION['username']) && $_SESSION['username'] == ''){
                   $tryHref = 'href="javascript:void(0);" onclick="javascript:return login(\''.$images[$i]['id'].'\',\''.addslashes($images[$i]['product_name']).'\');"';
@@ -324,7 +380,7 @@ management,tools,Cionsystems, Cion, reports,auditing,administration, monitoring,
               }
               ?>
               
-              <a <?=$tryHref?> class="sliderlinktry">Try</a>
+              <a <?=$tryHref?> class="sliderlinktry">Try Now</a>
           
       </span></div>
     </div>
@@ -787,6 +843,102 @@ function login(id, pname) {
 
 <!--small footer end--> 
 
+
+
+<?php foreach($products as $item => $product_info){ ?>
+<div id="myModal-<?=$product_info['id']?>" class="modal fade productsmodal" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close1" data-dismiss="modal"></button>
+        <h4 class="modal-title"><?=$product_info['product_name']?></h4>
+      </div>
+      <div class="modal-body">
+        <h5><?=$product_info['product_name']?></h5>
+        <ul class="popupulfirst">
+        <?php foreach($product_info['plans'] as $key => $plans) { ?>
+        
+            <li>
+                <div class="labelValue planvalues">
+                    <label class="radioBlock">
+                        <?php if($plans['price_type'] == 0) { ?>
+                        <input type="radio" name="plan_radio-<?=$product_info['id'] ?>" value="<?=$plans['sub_id']?>"/>
+                        <span></span>
+                        <?php } ?>
+                        <?=$plans['plan_name'] ?>
+                    </label>
+                </div>
+                <div class="divider">--</div>
+                <div class="costValue">
+                    <?php if($plans['price_type'] == 1) { ?>
+                    <a href="buyitnow.php">Request A Quote</a>
+                    <?php } else { ?>
+                        <?=$plans['price'] ?>
+                    <?php } ?>
+                </div>
+            </li>
+        <?php } //foreach ?>
+        <!-- <li><div class="labelValue"><label class="radioBlock"><input type="radio" name="topGroup"/><span></span>Up to 250 Users</label></div><div class="divider">--</div><div class="costValue">$780</div></li>
+        <li><div class="labelValue"><label class="radioBlock"><input type="radio" name="topGroup"/><span></span>Up to 250 Users</label></div><div class="divider">--</div><div class="costValue">$780</div></li>
+  <li><div class="labelValue">Up to 250 Users</div><div class="divider">--</div><div class="costValue"><a href="javascript:;">Request A Quote</a> </div></li>
+        -->
+        </ul>
+        <?php if(count($product_info['addons']) > 0) { ?>
+            <h5><label class="checkBlock" style="margin:0px !important; font-weight: bold;">AddOn Products</label></h5>
+           <?php 
+//           echo "<pre>";
+//           print_r($product_info['addons']);
+//           echo "</pre>";
+           //exit();
+           foreach($product_info['addons'] as $k => $addonsinfo){  ?>
+        <div class="addonssec">
+        <h5><label class="checkBlock"><input type="checkbox"><em></em><?=$addonsinfo['addon_name']?></label></h5>
+        <ul class="popupulfirst">
+            <?php foreach($addonsinfo['sub_plans'] as $cust => $subplans) { ?>
+                <li>
+                    <div class="labelValue">
+                        <label class="radioBlock">
+                            <?php if ($subplans['price_type'] == 0) { ?>
+                            <input type="radio" class="addonradio" name="addon-<?=$product_info['id']?>-<?=$plans['addon_id'] ?>" value="<?=$subplans['sub_id']?>"/>
+                            <span></span>
+                            <?php } ?>
+                            <?=$subplans['plan_name']?>
+                        </label>
+                    </div>
+                    <div class="divider">--</div>
+                    <div class="costValue"><?php if($subplans['price_type'] == 1){?>
+                        <a href="buyitnow.php">Request A Quote</a> <?php } else { ?>
+                        <?=$subplans['price']?>
+                        <?php } ?></div>
+                </li>
+            <?php } ?>
+        <!-- <li><div class="labelValue"><label class="radioBlock"><input type="radio" name="changeGroup"/><span></span>Up to 250 Users</label></div><div class="divider">--</div><div class="costValue">$780</div></li>
+        <li><div class="labelValue"><label class="radioBlock"><input type="radio" name="changeGroup"/><span></span>Up to 250 Users</label></div><div class="divider">--</div><div class="costValue">$780</div></li>
+  <li><div class="labelValue">Up to 250 Users</div><div class="divider">--</div><div class="costValue"><a href="javascript:;">Request A Quote</a> </div></li>
+            -->
+        </ul>
+        
+        </div>
+            <?php } ?>
+           <?php } ?>
+      </div>
+      <div class="modal-footer">
+        <a class="buynowBtn popupBuynow" data-id="<?=$product_info['id']?>" href="javascript:;">Buy Now</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+   <?php } ?>
+
+
+
+
+
+
+
 <!-- js placed at the end of the document so the pages load faster
 <script src="js/jquery.js">
 </script>
@@ -803,6 +955,156 @@ function login(id, pname) {
 <script defer src="js/jquery.flexslider.js"> </script> 
 <script src="js/slick.js"> </script>
 <script>
+
+var j = jQuery.noConflict();
+   
+   j(document).ready(function(){
+
+        j('.modal.productsmodal').each(function(){
+
+            if(j(this).find('input[type="radio"]').length ==0)
+            {
+                j(this).find('.buynowBtn.popupBuynow').hide();
+            }
+        });
+
+    });
+   
+   
+
+    j(document).on('ready', function() {
+	if(j(".regular").length >0)
+      j(".regular").slick({
+        dots: false,
+        infinite: false,
+        slidesToShow: 2,
+        slidesToScroll: 1
+      });
+	  
+	  
+	  
+	  
+	  
+	  
+	  j(document).on('click','.addonssec .checkBlock',function(e){
+	 e.stopPropagation();
+	  })
+	   j(document).on('click','.addonssec .checkBlock input',function(e){
+	 
+	 if(j(this).is(':checked'))
+	 {
+	
+    	j(this).closest('.addonssec').find('.popupulfirst li:first').find('.radioBlock input').click();
+	 }
+	 else
+	 {
+	 j(this).closest('.addonssec').find('.popupulfirst li').find('.radioBlock input').removeAttr('checked')
+	 	
+	 }
+	  });
+	  
+	  
+	    j(document).on('click','.popupulfirst .radioBlock input',function(e){
+			if(!j(this).closest('.addonssec').find('.checkBlock input').is(':checked'))
+			{
+			
+			j(this).closest('.addonssec').find('.checkBlock input').attr('checked','checked')
+			}
+	    });
+	  
+	  
+	  
+	  
+   
+    });
+	
+	
+	
+	
+	
+
+j(document).on('click','.popupBuynow', function () {
+    
+    
+    //validate atlease one plan selected
+    var productID = j(this).attr('data-id');
+    //alert(productID);
+    var planId = j('input:radio[name=plan_radio-'+productID+']:checked').val();
+    
+    if(planId == '' || planId == undefined){
+        alert('Make Sure you select the Main Product');
+        return;
+    }
+    var addonProds = [];
+    j('#myModal-'+productID+' .addonssec input:radio:checked').each(function (){
+        addonProds.push(j(this).val());
+    });
+    
+    
+    
+    
+    //add to session
+    j.ajax({
+                type: 'POST',
+                data: {pid:planId,addonid:addonProds},
+                async: false,
+                url: "add_to_cart.php",
+                success: function(result) {
+                    console.log(result);
+                    j('.itemcount').html(result);
+                }
+            });
+
+
+        var cart = j('.cartBlock');
+        var imgtodrag = j(this).closest('.modal-content').find(".modal-title");
+		
+		j(this).closest('.modal-content').find('.close1').click();
+		j("html, body").animate({ scrollTop: 0 }, "slow");
+		if (imgtodrag) {
+	
+            var imgclone = imgtodrag.clone().offset({
+                top: imgtodrag.offset().top,
+                left: imgtodrag.offset().left
+            })
+                .css({
+                'opacity': '0.5',
+                    'position': 'absolute',
+                    'height': '50px',
+                    'width': '400px',
+                    'z-index': '999999',
+					
+            })
+                .appendTo(j('body'))
+                .animate({
+                'top': cart.offset().top + 10,
+                    'left': cart.offset().left + 10,
+                    'width': 75,
+                    'height': 75
+            }, 1000, 'easeInOutExpo');
+            
+            setTimeout(function () {
+			
+			
+			
+                cart.effect("shake", {
+                    times: 2
+                }, 200);
+            }, 1500);
+
+            imgclone.animate({
+                'width': 0,
+                    'height': 0
+            }, function () {
+                j(this).detach()
+            });
+        }
+    });
+	
+	
+
+
+
 
 function fnRedirect(Obj){
     var linkUrl = $(Obj).attr('href');
