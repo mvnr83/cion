@@ -14,7 +14,7 @@
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
 
 
 
@@ -362,6 +362,7 @@ clear:both;
 
 
 
+
     /*Slider Parallax*/
 
     .da-slide p {
@@ -371,4 +372,3 @@ clear:both;
     }
 
 }
-
